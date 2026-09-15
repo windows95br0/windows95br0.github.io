@@ -141,6 +141,15 @@ h3 { font-size: 29px; margin-bottom: 14px; color: var(--cyan); text-shadow: 0 0 
 .contact-panel p:not(.panel-label) { color: var(--muted); font-size: 14px; margin-bottom: 26px; }
 .contact-panel .button { display: flex; width: fit-content; }
 .contact-panel .button + .button { margin-top: 14px; }
+.social-links { margin-top: 30px; padding-top: 22px; border-top: 1px solid rgba(122, 250, 255, .3); }
+.social-links .panel-label { margin-bottom: 14px; }
+.social-link-list { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.social-link-list a { display: inline-flex; align-items: center; justify-content: center; min-height: 36px; padding: 7px 10px; border: 1px solid rgba(220, 230, 223, .4); color: var(--paper); text-decoration: none; font-size: 10px; letter-spacing: .08em; transition: border-color .2s, transform .2s, background .2s; }
+.social-link-list a:hover { border-color: var(--cyan); background: rgba(122, 250, 255, .12); transform: translateY(-2px); }
+.social-link-list img { width: auto; max-width: 116px; max-height: 30px; object-fit: contain; }
+.shop-links { padding: 0 0 52px; border-top: 1px solid var(--line); }
+.shop-links .eyebrow { margin: 28px 0 14px; }
+.shop-links .social-link-list img { max-height: 34px; }
 /* Shared footer. */
 .footer { display: flex; justify-content: space-between; gap: 20px; padding: 24px 0 34px; color: var(--muted); border-top: 1px solid var(--line); }
 
