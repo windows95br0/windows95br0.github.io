@@ -1,14 +1,18 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <!-- Basic browser and search-engine information for the shop page. -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="See examples of Alien Cultist Labs workmanship and visit eBay for current inventory.">
   <title>Shop With Us // Alien Cultist Labs</title>
+  <!-- The shop page shares all visual rules with the home page. -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Shared centered page wrapper. -->
   <div class="site-shell">
+    <!-- Shared header; links with index.html#section jump back to the home page. -->
     <header class="topbar" id="top">
       <a class="brand" href="index.html" aria-label="Alien Cultist Labs home">
         <span class="brand-wordmark">ALIENCULTIST.COM</span>
@@ -20,12 +24,13 @@
       <nav class="main-nav" aria-label="Main navigation">
         <a href="index.html#services">SERVICES</a>
         <a href="index.html#about">THE LAB</a>
-        <a href="shopwithus.html" aria-current="page">SHOP WITH US</a>
+        <a class="shop-nav-link" href="shopwithus.html" aria-current="page"><span>SHOP WITH US</span><small>NEW</small></a>
         <a href="index.html#contact">CONTACT</a>
       </nav>
     </header>
 
     <main>
+      <!-- Shop introduction. The eBay image is the live-inventory call to action. -->
       <section class="shop-hero" aria-labelledby="shop-title">
         <p class="eyebrow">[ WORKMANSHIP ARCHIVE // FIELD NOTES ]</p>
         <h1 id="shop-title">Built with care.<br><span>Ready for a new home.</span></h1>
@@ -35,30 +40,34 @@
         </a>
       </section>
 
+      <!-- Portfolio gallery: these are examples of past work, not live inventory. -->
       <section class="shop-section" aria-labelledby="products-title">
         <div class="shop-section-heading">
           <p class="eyebrow">[ PAST WORK // BUILD RECORD ]</p>
           <h2 id="products-title">The workbench archive</h2>
           <p>These builds are examples of our workmanship and attention to detail, not a live inventory list. Check eBay for what is currently available.</p>
         </div>
+        <!-- To add a portfolio item, copy one figure and update its image path, alt text, and caption. -->
         <div class="product-grid">
-          <figure class="product-card"><img src="assets/images/products/customconsole1.jpg" alt="Custom retro game console, front view"><figcaption>Custom console // 01</figcaption></figure>
-          <figure class="product-card"><img src="assets/images/products/customconsole2.jpg" alt="Custom retro game console, angled view"><figcaption>Custom console // 02</figcaption></figure>
-          <figure class="product-card"><img src="assets/images/products/customconsole3.jpg" alt="Custom retro game console, detail view"><figcaption>Custom console // 03</figcaption></figure>
-          <figure class="product-card"><img src="assets/images/products/customconsole4.jpg" alt="Custom retro game console, alternate view"><figcaption>Custom console // 04</figcaption></figure>
-          <figure class="product-card"><img src="assets/images/products/customconsole5.jpg" alt="Custom retro game console, rear view"><figcaption>Custom console // 05</figcaption></figure>
-          <figure class="product-card"><img src="assets/images/products/gamingpc.jpg" alt="Custom gaming PC build"><figcaption>Gaming PC // 01</figcaption></figure>
-          <figure class="product-card"><img src="assets/images/products/gamingpc1.jpg" alt="Custom gaming PC build, alternate view"><figcaption>Gaming PC // 02</figcaption></figure>
-          <figure class="product-card"><img src="assets/images/products/profesionalbuildquality.jpg" alt="Professional custom PC build quality detail"><figcaption>Build quality // 01</figcaption></figure>
+          <figure class="product-card"><img src="assets/images/products/customconsole1.jpg" alt="Custom retro game console, front view"><figcaption>Neon Relic // console</figcaption></figure>
+          <figure class="product-card"><img src="assets/images/products/customconsole2.jpg" alt="Custom retro game console, angled view"><figcaption>Chrome Comet // console</figcaption></figure>
+          <figure class="product-card"><img src="assets/images/products/customconsole3.jpg" alt="Custom retro game console, detail view"><figcaption>Signal Runner // console</figcaption></figure>
+          <figure class="product-card"><img src="assets/images/products/customconsole4.jpg" alt="Custom retro game console, alternate view"><figcaption>Void Bloom // console</figcaption></figure>
+          <figure class="product-card"><img src="assets/images/products/customconsole5.jpg" alt="Custom retro game console, rear view"><figcaption>Circuit Wraith // console</figcaption></figure>
+          <figure class="product-card"><img src="assets/images/products/gamingpc.jpg" alt="Custom gaming PC build"><figcaption>Starforge // gaming rig</figcaption></figure>
+          <figure class="product-card"><img src="assets/images/products/gamingpc1.jpg" alt="Custom gaming PC build, alternate view"><figcaption>Lunar Relay // gaming rig</figcaption></figure>
+          <figure class="product-card"><img src="assets/images/products/profesionalbuildquality.jpg" alt="Professional custom PC build quality detail"><figcaption>Precision Core // build detail</figcaption></figure>
         </div>
       </section>
 
+      <!-- Review section: native text keeps customer feedback readable on small screens. -->
       <section class="shop-section" aria-labelledby="reviews-title">
         <div class="shop-section-heading">
           <p class="eyebrow">[ SIGNAL REPORTS ]</p>
           <h2 id="reviews-title">What buyers are saying</h2>
           <p>Real feedback from people who found a good machine and gave it a new home. Readable, human-sized, and easier to scan than a screenshot.</p>
         </div>
+        <!-- The summary is full width; each following article is one customer review. -->
         <div class="review-grid">
           <article class="review-card review-summary">
             <p class="review-kicker">SELLER RECORD</p>
@@ -93,6 +102,7 @@
       </section>
     </main>
 
+    <!-- Shared footer with a page-local back-to-top link. -->
     <footer class="footer shop-footer">
       <p>© 2026 ALIEN CULTIST LABS // GALT, CALIFORNIA</p>
       <a href="#top">BACK TO TOP ↑</a>
