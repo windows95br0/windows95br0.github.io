@@ -37,6 +37,38 @@ body {
   text-shadow: 0 0 12px rgba(122, 250, 255, .18);
 }
 
+/* Coming-soon pages use a separate red/purple signal palette. */
+.coming-soon-page {
+  --cyan: #ff405f;
+  --cyan-dark: #8f163e;
+  --pink: #c052ff;
+  --yellow: #ffb3c1;
+  --line: rgba(255, 64, 95, .52);
+  background-image:
+    radial-gradient(circle at 15% 18%, rgba(255, 64, 95, .3), transparent 22rem),
+    radial-gradient(circle at 80% 14%, rgba(192, 82, 255, .28), transparent 20rem),
+    radial-gradient(circle at 45% 70%, rgba(255, 64, 95, .12), transparent 28rem),
+    linear-gradient(180deg, rgba(23, 5, 18, .77), rgba(19, 4, 17, .94)),
+    linear-gradient(135deg, #10030b 0%, #1a0716 26%, #210c25 55%, #10040f 100%);
+  text-shadow: 0 0 12px rgba(255, 64, 95, .18);
+}
+
+/* The shop has its own green/purple inventory signal palette. */
+.shop-page {
+  --cyan: #70ff9b;
+  --cyan-dark: #16804b;
+  --pink: #c05cff;
+  --yellow: #dfff78;
+  --line: rgba(112, 255, 155, .52);
+  background-image:
+    radial-gradient(circle at 15% 18%, rgba(112, 255, 155, .28), transparent 22rem),
+    radial-gradient(circle at 80% 14%, rgba(192, 92, 255, .28), transparent 20rem),
+    radial-gradient(circle at 45% 70%, rgba(112, 255, 155, .12), transparent 28rem),
+    linear-gradient(180deg, rgba(4, 16, 11, .77), rgba(5, 10, 12, .94)),
+    linear-gradient(135deg, #03100a 0%, #091d16 26%, #180d24 55%, #07110d 100%);
+  text-shadow: 0 0 12px rgba(112, 255, 155, .18);
+}
+
 /* Faint logo watermark behind the content. */
 body::before {
   content: "";
@@ -175,7 +207,7 @@ h3 { font-size: 29px; margin-bottom: 14px; color: var(--cyan); text-shadow: 0 0 
 .product-card, .review-card { margin: 0; border: 1px solid rgba(220, 230, 223, .2); background: #000; }
 .product-card { transition: border-color .2s, transform .2s; }
 .product-card:hover { border-color: var(--cyan); transform: translateY(-5px); }
-.product-card img { width: 100%; aspect-ratio: 1; object-fit: contain; background: var(--ink); border-bottom: 1px solid rgba(94, 244, 230, .35); }
+.product-card img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: var(--ink); border-bottom: 1px solid rgba(94, 244, 230, .35); }
 .product-card figcaption { padding: 15px 16px 17px; color: var(--cyan); font-family: var(--display); font-size: 20px; line-height: 1; text-transform: uppercase; }
 /* Readable, text-based customer reviews. The summary spans both columns. */
 .review-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
