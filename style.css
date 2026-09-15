@@ -118,6 +118,8 @@ a { color: inherit; }
 .main-nav { grid-column: 1 / -1; display: flex; justify-content: flex-end; flex-wrap: wrap; gap: 10px 22px; padding: 14px 0; border-top: 1px solid rgba(122, 250, 255, .22); }
 .main-nav a, .footer a { text-decoration: none; color: var(--paper); }
 .main-nav a:hover, .footer a:hover, .text-link:hover { color: var(--cyan); }
+.home-nav-link { display: inline-flex; align-items: center; padding: 7px 9px; border: 1px solid var(--cyan-dark); color: var(--paper) !important; text-decoration: none; box-shadow: 3px 3px 0 var(--cyan-dark); }
+.home-nav-link:hover { background: var(--cyan); color: var(--ink) !important; border-color: var(--cyan); }
 .shop-nav-link { position: relative; display: inline-flex; align-items: center; gap: 7px; padding: 7px 9px; border: 1px solid var(--pink); color: var(--cyan) !important; box-shadow: 3px 3px 0 var(--pink); text-shadow: 0 0 9px rgba(122, 250, 255, .7); animation: shop-pulse 3s ease-in-out infinite; }
 .shop-nav-link small { color: var(--ink); background: var(--yellow); padding: 1px 4px; font-size: 8px; font-weight: bold; letter-spacing: .08em; line-height: 1.2; text-shadow: none; }
 .shop-nav-link:hover { background: var(--pink); color: var(--ink) !important; box-shadow: 4px 4px 0 var(--cyan); }
@@ -146,6 +148,7 @@ h3 { font-size: 29px; margin-bottom: 14px; color: var(--cyan); text-shadow: 0 0 
 .button-game { border-color: var(--yellow); color: var(--yellow); box-shadow: 4px 4px 0 var(--cyan-dark); }
 .terminal-note { width: fit-content; padding: 15px 18px; border-left: 2px solid var(--pink); background: #000; color: var(--muted); font-size: 12px; }
 .prompt { color: var(--pink); }
+.shop-page .product-card .prompt { color: #c052ff; }
 /* Announcement ticker. The animation moves the duplicated text continuously. */
 .ticker { overflow: hidden; color: var(--ink); background: var(--cyan); border-top: 1px solid var(--cyan); border-bottom: 1px solid var(--cyan); white-space: nowrap; font-family: var(--display); letter-spacing: .12em; }
 .ticker-track { display: inline-flex; width: max-content; padding: 8px 0; animation: ticker 24s linear infinite; }
@@ -238,6 +241,7 @@ h3 { font-size: 29px; margin-bottom: 14px; color: var(--cyan); text-shadow: 0 0 
   .brand-wordmark { font-size: 17px; }
   .status-line { display: none; }
   .main-nav { grid-column: 1 / -1; justify-content: space-between; gap: 8px; padding: 12px 0; }
+  .home-nav-link { padding: 6px 5px; }
   .shop-nav-link { padding: 6px 5px; gap: 4px; }
   .shop-nav-link small { font-size: 7px; }
   .game-nav-link, .archive-nav-link { padding: 6px 5px; gap: 4px; }
