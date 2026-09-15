@@ -1,14 +1,18 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <!-- Basic browser and search-engine information for the home page. -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Alien Cultist Labs preserves old media, converts tapes, restores discs, and recycles obsolete hardware.">
   <title>Alien Cultist Labs // By Windows95br0</title>
+  <!-- Both pages use this one shared stylesheet. -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- site-shell keeps the content centered and limits its maximum width. -->
   <div class="site-shell">
+    <!-- Shared header: brand, status display, and links to page sections. -->
     <header class="topbar" id="top">
       <a class="brand" href="#top" aria-label="Alien Cultist Labs home">
         <span class="brand-wordmark">ALIENCULTIST.COM</span>
@@ -20,12 +24,13 @@
       <nav class="main-nav" aria-label="Main navigation">
         <a href="#services">SERVICES</a>
         <a href="#about">THE LAB</a>
-        <a href="shopwithus.html">SHOP WITH US</a>
+        <a class="shop-nav-link" href="shopwithus.html"><span>SHOP WITH US</span><small>NEW</small></a>
         <a href="#contact">CONTACT</a>
       </nav>
     </header>
 
     <main>
+      <!-- Hero is the first large message visitors see. -->
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
           <p class="eyebrow">[ ARCHIVE RECOVERY DIVISION ]</p>
@@ -42,13 +47,16 @@
         </div>
       </section>
 
+      <!-- This repeated text creates the moving announcement strip. -->
       <div class="ticker" aria-label="Announcement">
         <div class="ticker-track" aria-live="polite">
+          <span>FREE E-WASTE PICKUP IN GALT CA &nbsp; ✦ &nbsp; VHS TO DIGITAL CONVERSION &nbsp; ✦ &nbsp; DISC RESTORATION &nbsp; ✦ &nbsp;</span>
           <span>FREE E-WASTE PICKUP IN GALT CA &nbsp; ✦ &nbsp; VHS TO DIGITAL CONVERSION &nbsp; ✦ &nbsp; DISC RESTORATION &nbsp; ✦ &nbsp;</span>
           <span>FREE E-WASTE PICKUP IN GALT CA &nbsp; ✦ &nbsp; VHS TO DIGITAL CONVERSION &nbsp; ✦ &nbsp; DISC RESTORATION &nbsp; ✦ &nbsp;</span>
         </div>
       </div>
 
+      <!-- Services section: duplicate a service-card article to add another service. -->
       <section class="services section-grid" id="services" aria-labelledby="services-title">
         <div class="section-heading">
           <p class="eyebrow">[ AVAILABLE PROTOCOLS ]</p>
@@ -56,6 +64,7 @@
           <p>Old formats. New life. Select a service packet below and send us a signal.</p>
         </div>
         <div class="service-list">
+          <!-- Each service card contains an image, description, and contact link. -->
           <article class="service-card service-card-featured">
             <div class="service-image"><img src="assets/images/ad1.jpg" alt="CD restoration service showing damaged discs restored to clean discs"></div>
             <div class="service-body">
@@ -86,6 +95,7 @@
         </div>
       </section>
 
+      <!-- About section introduces the business and its working principles. -->
       <section class="about section-grid" id="about" aria-labelledby="about-title">
         <div class="about-mark">AC<br><span>LABS</span></div>
         <div>
@@ -100,6 +110,7 @@
         </div>
       </section>
 
+      <!-- Contact section contains phone, text-message, and Facebook actions. -->
       <section class="contact section-grid" id="contact" aria-labelledby="contact-title">
         <div>
           <p class="eyebrow">[ OPEN CHANNEL ]</p>
@@ -116,6 +127,7 @@
       </section>
     </main>
 
+    <!-- Footer appears on every page and links back to the top. -->
     <footer class="footer">
       <p>© 2026 ALIEN CULTIST LABS // GALT, CALIFORNIA</p>
       <a href="#top">BACK TO TOP ↑</a>
