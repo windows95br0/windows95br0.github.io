@@ -178,8 +178,8 @@ h3 { font-size: 29px; margin-bottom: 14px; color: var(--cyan); text-shadow: 0 0 
 .text-link { color: var(--paper); text-decoration: none; font-size: 12px; letter-spacing: .08em; margin-top: auto; }
 /* Home page about and contact sections. */
 .about { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 100px 0; align-items: center; }
-.about-mark { color: var(--pink); font-family: var(--display); font-size: clamp(80px, 13vw, 170px); line-height: .66; letter-spacing: -.06em; text-shadow: 0 0 20px rgba(255, 89, 240, .9), 0 0 42px rgba(255, 89, 240, .35), 7px 7px 0 var(--cyan-dark); }
-.about-mark span { font-size: .57em; color: var(--paper); text-shadow: 0 0 18px rgba(122, 250, 255, .8); }
+.about-mark { width: min(100%, 360px); justify-self: center; }
+.about-mark img { width: 100%; height: auto; border: 1px solid var(--cyan); box-shadow: 7px 7px 0 var(--pink), 0 0 24px rgba(122, 250, 255, .35); }
 .spec-grid { display: flex; gap: 10px; margin-top: 38px; }
 .spec-grid div { border-top: 2px solid var(--cyan); padding: 12px 18px 0 0; min-width: 120px; }
 .spec-grid strong { display: block; color: var(--pink); font-size: 24px; }
@@ -207,9 +207,13 @@ h3 { font-size: 29px; margin-bottom: 14px; color: var(--cyan); text-shadow: 0 0 
 .shop-hero { padding: 92px 0 80px; max-width: 760px; }
 .shop-hero h1 { margin-bottom: 24px; }
 .shop-hero-text { max-width: 620px; color: var(--muted); font-size: 17px; }
+.store-cta-row { display: flex; align-items: center; gap: 22px; margin-top: 28px; }
 .store-cta { display: inline-flex; align-items: center; justify-content: center; margin-top: 28px; padding: 12px 16px; border: 1px solid var(--cyan); background: #000; box-shadow: 5px 5px 0 var(--pink); transition: transform .2s, box-shadow .2s; }
+.store-cta-row .store-cta { margin-top: 0; }
 .store-cta:hover { transform: translate(-2px, -2px); box-shadow: 7px 7px 0 var(--cyan); }
 .store-cta img { width: 170px; height: auto; }
+.store-callout { max-width: 330px; margin: 0; padding: 12px 15px; border: 1px solid var(--pink); background: #000; color: var(--yellow); font-family: var(--display); font-size: 20px; line-height: 1.05; text-transform: uppercase; text-shadow: 0 0 10px rgba(223, 255, 120, .65); box-shadow: 4px 4px 0 var(--pink); }
+.store-callout span { display: inline-block; margin-right: 8px; color: var(--pink); font-family: var(--mono); font-size: 30px; line-height: .6; vertical-align: middle; text-shadow: 0 0 12px rgba(192, 92, 255, .9); }
 .shop-section { padding: 24px 0 110px; }
 .shop-section + .shop-section { border-top: 1px solid var(--line); padding-top: 100px; }
 .shop-section-heading { max-width: 620px; margin-bottom: 42px; }
@@ -262,10 +266,11 @@ h3 { font-size: 29px; margin-bottom: 14px; color: var(--cyan); text-shadow: 0 0 
   .service-image { aspect-ratio: 1; }
   .product-grid, .review-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .shop-hero { padding: 72px 0 58px; }
+  .store-cta-row { align-items: flex-start; flex-direction: column; gap: 16px; }
   .shop-section { padding-bottom: 80px; }
   .shop-section + .shop-section { padding-top: 76px; }
   .about { padding: 80px 0; }
-  .about-mark { order: 2; width: 100%; min-width: 0; font-size: 72px; text-align: right; }
+  .about-mark { order: 2; width: min(100%, 300px); min-width: 0; }
   .spec-grid { flex-wrap: wrap; }
   .contact { padding: 88px 0; }
   .coming-soon { min-height: 520px; padding: 58px 0; }
