@@ -69,6 +69,15 @@ body {
   text-shadow: 0 0 12px rgba(112, 255, 155, .18);
 }
 
+/* The 404 page uses a clear deep-red warning background. */
+.error-page {
+  background-color: #3a0712;
+  background-image:
+    radial-gradient(circle at 18% 20%, rgba(255, 55, 82, .34), transparent 24rem),
+    linear-gradient(180deg, rgba(58, 7, 18, .82), rgba(30, 3, 10, .96)),
+    linear-gradient(135deg, #5a0b1b 0%, #300611 55%, #180209 100%);
+}
+
 /* Faint logo watermark behind the content. */
 body::before {
   content: "";
