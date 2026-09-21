@@ -228,9 +228,10 @@ h3 { font-size: 29px; margin-bottom: 14px; color: var(--cyan); text-shadow: 0 0 
 .product-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
 .product-card, .review-card { margin: 0; border: 1px solid rgba(220, 230, 223, .2); background: #000; }
 .product-card { transition: border-color .2s, transform .2s; }
+.product-card { color: inherit; text-decoration: none; }
 .product-card:hover { border-color: var(--cyan); transform: translateY(-5px); }
 .product-card img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: var(--ink); border-bottom: 1px solid rgba(94, 244, 230, .35); }
-.product-card figcaption { padding: 15px 16px 17px; color: var(--cyan); font-family: var(--display); font-size: 20px; line-height: 1; text-transform: uppercase; }
+.product-card-caption { display: block; padding: 15px 16px 17px; color: var(--cyan); font-family: var(--display); font-size: 20px; line-height: 1; text-transform: uppercase; }
 .car-section { border-top-color: rgba(255, 89, 240, .55); }
 .car-grid .product-card img { aspect-ratio: 1; object-fit: cover; }
 /* Readable, text-based customer reviews. The summary spans both columns. */
