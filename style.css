@@ -176,6 +176,12 @@ h3 { font-size: 29px; margin-bottom: 14px; color: var(--cyan); text-shadow: 0 0 
 .service-code { color: var(--pink); margin-bottom: 17px; }
 .service-body p:not(.service-code) { color: var(--muted); font-size: 14px; margin-bottom: 26px; }
 .text-link { color: var(--paper); text-decoration: none; font-size: 12px; letter-spacing: .08em; margin-top: auto; }
+/* Homepage feature ad for the custom kids car line. */
+.car-promo { align-items: center; padding: 100px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.car-promo-image { border: 1px solid var(--pink); background: #000; box-shadow: 7px 7px 0 var(--cyan); }
+.car-promo-image img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+.car-promo-copy p:not(.eyebrow) { max-width: 500px; color: var(--muted); font-size: 16px; }
+.car-promo-copy .button { margin-top: 16px; }
 /* Home page about and contact sections. */
 .about { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 100px 0; align-items: center; }
 .about-mark { width: min(100%, 360px); justify-self: center; }
@@ -225,6 +231,8 @@ h3 { font-size: 29px; margin-bottom: 14px; color: var(--cyan); text-shadow: 0 0 
 .product-card:hover { border-color: var(--cyan); transform: translateY(-5px); }
 .product-card img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: var(--ink); border-bottom: 1px solid rgba(94, 244, 230, .35); }
 .product-card figcaption { padding: 15px 16px 17px; color: var(--cyan); font-family: var(--display); font-size: 20px; line-height: 1; text-transform: uppercase; }
+.car-section { border-top-color: rgba(255, 89, 240, .55); }
+.car-grid .product-card img { aspect-ratio: 1; object-fit: cover; }
 /* Readable, text-based customer reviews. The summary spans both columns. */
 .review-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
 .review-card { padding: 24px; }
