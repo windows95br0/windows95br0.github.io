@@ -182,7 +182,8 @@ h3 { font-size: 29px; margin-bottom: 14px; color: var(--cyan); text-shadow: 0 0 
 .car-promo-image img { width: 100%; aspect-ratio: 1; object-fit: cover; }
 .car-promo-copy p:not(.eyebrow) { max-width: 500px; color: var(--muted); font-size: 16px; }
 .car-price-note { max-width: 500px; color: var(--yellow); font-family: var(--display); font-size: 24px; line-height: 1; text-shadow: 0 0 12px rgba(223, 255, 120, .65); }
-.car-promo-copy .button { margin-top: 16px; }
+.car-promo-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 16px; }
+.car-promo-actions .button { margin-top: 0; }
 /* Home page about and contact sections. */
 .about { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 100px 0; align-items: center; }
 .about-mark { width: min(100%, 360px); justify-self: center; }
