@@ -309,8 +309,9 @@ h3 { font-size: 29px; margin-bottom: 14px; color: var(--cyan); text-shadow: 0 0 
   .shop-nav-link small { font-size: 7px; }
   .game-nav-link, .archive-nav-link { padding: 6px 5px; gap: 4px; }
   .game-nav-link small { font-size: 7px; }
-  .hero, .about, .contact { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .hero, .about, .contact, .car-promo { grid-template-columns: minmax(0, 1fr); gap: 48px; }
   .hero { padding: 72px 0 90px; }
+  .car-promo { padding: 72px 0 80px; }
   .services { padding: 88px 0; }
   .service-list { grid-template-columns: 1fr; }
   .service-image { aspect-ratio: 1; }
