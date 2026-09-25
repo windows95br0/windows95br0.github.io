@@ -1,158 +1,180 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <!-- Basic browser and search-engine information for the home page. -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Alien Cultist Labs preserves old media, converts tapes, restores discs, and recycles obsolete hardware.">
-  <title>Alien Cultist Labs // By Windows95br0</title>
-  <!-- Every page uses this one shared stylesheet. -->
+  <meta name="description" content="Alien Cultist Labs is temporarily offline for maintenance.">
+  <title>Alien Cultist Labs // Maintenance</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      min-height: 100vh;
+    }
+
+    .maintenance-page {
+      min-height: 100vh;
+      padding-bottom: 40px;
+    }
+
+    .maintenance-page .topbar {
+      padding-top: 8px;
+    }
+
+    .maintenance-page .brand-wordmark {
+      font-size: 26px;
+      letter-spacing: 0.06em;
+    }
+
+    .maintenance-page .main-nav {
+      padding-top: 10px;
+    }
+
+    .maintenance-hero {
+      align-items: center;
+      padding: 72px 0 90px;
+    }
+
+    .maintenance-copy {
+      max-width: 620px;
+    }
+
+    .maintenance-copy .eyebrow {
+      margin-bottom: 18px;
+    }
+
+    .maintenance-copy h1 {
+      margin-bottom: 18px;
+      max-width: 500px;
+    }
+
+    .maintenance-copy .hero-text {
+      max-width: 540px;
+    }
+
+    .maintenance-copy .hero-actions {
+      margin-top: 26px;
+    }
+
+    .maintenance-panel {
+      padding: 26px 22px 18px;
+      border: 1px solid var(--line);
+      background: rgba(0, 0, 0, 0.52);
+      box-shadow: 7px 7px 0 var(--pink);
+      min-height: 330px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .maintenance-panel img {
+      width: 100%;
+      max-width: 180px;
+      margin: 0 auto 18px;
+      filter: drop-shadow(0 0 18px rgba(122, 250, 255, .28));
+    }
+
+    .panel-label {
+      color: var(--pink);
+      margin-bottom: 12px;
+    }
+
+    .maintenance-panel .system-readout {
+      display: grid;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .readout-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(122, 250, 255, .25);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .readout-row strong {
+      color: var(--paper);
+      font-weight: 700;
+    }
+
+    .maintenance-note {
+      margin-top: 18px;
+      padding: 14px 16px;
+      border-left: 2px solid var(--pink);
+      background: rgba(0, 0, 0, 0.4);
+      color: var(--paper);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+    }
+
+    .maintenance-note .prompt {
+      color: var(--pink);
+    }
+
+    @media (max-width: 800px) {
+      .maintenance-hero {
+        grid-template-columns: 1fr;
+      }
+
+      .maintenance-panel {
+        max-width: 420px;
+      }
+    }
+  </style>
 </head>
-<body>
-  <!-- site-shell keeps the content centered and limits its maximum width. -->
+<body class="coming-soon-page maintenance-page">
   <div class="site-shell">
-    <!-- Shared header: brand, status display, and links to page sections. -->
     <header class="topbar" id="top">
-      <a class="brand" href="#top" aria-label="Alien Cultist Labs home">
+      <a class="brand" href="old-index.html" aria-label="Alien Cultist Labs home">
         <span class="brand-wordmark">ALIENCULTIST.COM</span>
       </a>
       <div class="status-line" aria-label="System status">
         <span class="status-dot"></span>
-        SYSTEMS ONLINE <span class="status-divider">//</span> GALT, CA <span class="status-divider">//</span> EST. 2026 BY Windows95br0
+        SYSTEMS OFFLINE <span class="status-divider">//</span> GALT, CA <span class="status-divider">//</span> EST. 2026 BY Windows95br0
       </div>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a class="home-nav-link" href="index.html" aria-current="page">HOME</a>
-        <a class="shop-nav-link" href="shopwithus.html"><span>SHOP WITH US</span><small>NEW</small></a>
-        <a class="game-nav-link" href="dedicatedservers.html"><span>GAME WITH US!!</span><small>SOON</small></a>
-        <a class="archive-nav-link" href="xrayarchives.html">X-RAY ARCHIVES</a>
-      </nav>
     </header>
 
-    <main>
-      <!-- This repeated text creates the moving announcement strip. -->
-      <div class="ticker" aria-label="Announcement">
-        <div class="ticker-track" aria-live="polite">
-          <span>FREE E-WASTE PICKUP IN GALT CA &nbsp; ✦ &nbsp; VHS TO DIGITAL CONVERSION &nbsp; ✦ &nbsp; DISC RESTORATION &nbsp; ✦ &nbsp;</span>
-          <span>FREE E-WASTE PICKUP IN GALT CA &nbsp; ✦ &nbsp; VHS TO DIGITAL CONVERSION &nbsp; ✦ &nbsp; DISC RESTORATION &nbsp; ✦ &nbsp;</span>
-          <span>FREE E-WASTE PICKUP IN GALT CA &nbsp; ✦ &nbsp; VHS TO DIGITAL CONVERSION &nbsp; ✦ &nbsp; DISC RESTORATION &nbsp; ✦ &nbsp;</span>
-        </div>
+    <div class="ticker" aria-label="Maintenance status">
+      <div class="ticker-track" aria-live="polite">
+        <span>MAINTENANCE MODE ACTIVE &nbsp; ✦ &nbsp; ARCHIVE RECOVERY IN PROGRESS &nbsp; ✦ &nbsp; BACK ONLINE SOON &nbsp; ✦ &nbsp;</span>
+        <span>MAINTENANCE MODE ACTIVE &nbsp; ✦ &nbsp; ARCHIVE RECOVERY IN PROGRESS &nbsp; ✦ &nbsp; BACK ONLINE SOON &nbsp; ✦ &nbsp;</span>
+        <span>MAINTENANCE MODE ACTIVE &nbsp; ✦ &nbsp; ARCHIVE RECOVERY IN PROGRESS &nbsp; ✦ &nbsp; BACK ONLINE SOON &nbsp; ✦ &nbsp;</span>
       </div>
+    </div>
 
-      <!-- Seasonal ad for the new custom kids car line. -->
-      <section class="car-promo section-grid" aria-labelledby="car-promo-title">
-        <div class="car-promo-image"><img src="assets/images/Kidscars/christmasadvert.jpg" alt="Christmas advertisement for custom 12V ride-on cars with solar panel, LiFePO4 battery, and remote control"></div>
-        <div class="car-promo-copy">
-          <p class="eyebrow">[ HOLIDAY TRANSMISSION // LITTLE DRIVERS ]</p>
-          <h2 id="car-promo-title">The ultimate Christmas gift.</h2>
-          <p>Big adventures start under the tree. Custom 12V ride-on cars are available in six colors for $500 plus shipping, with a 10Ah LiFePO4 battery, 25W solar panel, and parent remote control.</p>
-          <p class="car-price-note">CUSTOM SOLAR RIDE-ON // $500 + SHIPPING</p>
-          <div class="car-promo-actions">
-            <a class="button button-primary" href="products/customcars.html">VIEW THE SOLAR BUILD <span>→</span></a>
-            <a class="button button-quiet" href="https://www.ebay.com/itm/398415935163" target="_blank" rel="noopener noreferrer">PURCHASE A 12V CAR <span>→</span></a>
+    <main>
+      <section class="maintenance-hero section-grid" aria-labelledby="maintenance-title">
+        <div class="maintenance-copy">
+          <p class="eyebrow">[ SYSTEM STATUS ]</p>
+          <h1 id="maintenance-title">Lab is<br><span>under repair.</span></h1>
+          <p class="hero-text">The archive is currently offline while we update the site, refresh the recovery queue, and prepare the next wave of preservation work.</p>
+          <div class="terminal-note" aria-label="Status terminal output">
+            <span class="prompt">ACLAB:~$</span> maintenance --active<br>
+            <span class="prompt">READY.</span> archive queue paused until reboot.
           </div>
         </div>
-      </section>
 
-      <!-- Hero is the main archive-recovery message. -->
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow">[ ARCHIVE RECOVERY DIVISION ]</p>
-          <h1 id="hero-title">Your memories<br><span>deserve a future.</span></h1>
-          <p class="hero-text">We rescue the good stuff from obsolete formats, tired hardware, and the bottom of the junk drawer.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#services">SCAN SERVICES <span>→</span></a>
-            <a class="button button-quiet" href="#contact">TRANSMIT A MESSAGE</a>
-          </div>
-          <div class="terminal-note">
-            <span class="prompt">ACLAB:~$</span> preserve --everything<br>
-            <span class="prompt">READY.</span> analog memories accepted.
-          </div>
-        </div>
-      </section>
-
-      <!-- Services section: duplicate a service-card article to add another service. -->
-      <section class="services section-grid" id="services" aria-labelledby="services-title">
-        <div class="section-heading">
-          <p class="eyebrow">[ AVAILABLE PROTOCOLS ]</p>
-          <h2 id="services-title">What the lab can do</h2>
-          <p>Old formats. New life. Select a service packet below and send us a signal.</p>
-        </div>
-        <div class="service-list">
-          <!-- Each service card contains an image, description, and contact link. -->
-          <article class="service-card service-card-featured">
-            <div class="service-image"><img src="assets/images/ad1.jpg" alt="CD restoration service showing damaged discs restored to clean discs"></div>
-            <div class="service-body">
-              <p class="service-code">PROC_01 // OPTICAL MEDIA</p>
-              <h3>Disc restoration</h3>
-              <p>Full-service cleaning, polishing, and repair for your scratched CD, DVD, and game disc collection.</p>
-              <a class="text-link" href="#contact">REQUEST A QUOTE <span>→</span></a>
-            </div>
-          </article>
-          <article class="service-card">
-            <div class="service-image"><img src="assets/images/ad2.jpg" alt="VHS tape to digital conversion service"></div>
-            <div class="service-body">
-              <p class="service-code">PROC_02 // MAGNETIC MEDIA</p>
-              <h3>VHS to digital</h3>
-              <p>Convert old tapes into easy-to-share digital archives, with doorstep pickup and drop-off available.</p>
-              <a class="text-link" href="#contact">START AN ARCHIVE <span>→</span></a>
-            </div>
-          </article>
-          <article class="service-card">
-            <div class="service-image"><img src="assets/images/frewastead.jpg" alt="Free e-waste pickup service showing retro computers and hardware"></div>
-            <div class="service-body">
-              <p class="service-code">PROC_03 // HARDWARE RECOVERY</p>
-              <h3>Free e-waste pickup</h3>
-              <p>Give obsolete computers and electronics a dignified exit. We collect qualifying e-waste in Galt.</p>
-              <a class="text-link" href="#contact">SCHEDULE PICKUP <span>→</span></a>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- About section introduces the business and its working principles. -->
-      <section class="about section-grid" id="about" aria-labelledby="about-title">
-        <div class="about-mark"><img src="assets/images/ac-logo.jpg" alt="Alien Cultist Labs logo"></div>
-        <div>
-          <p class="eyebrow">[ ABOUT THE OPERATOR ]</p>
-          <h2 id="about-title">A small lab for big throwbacks.</h2>
-          <p>Alien Cultist Labs is an independent preservation and recovery shop in Galt, California. We believe the things people made, recorded, and played are worth keeping around.</p>
-          <div class="spec-grid">
-            <div><strong>01</strong><span>Careful handling</span></div>
-            <div><strong>02</strong><span>Human service</span></div>
-            <div><strong>03</strong><span>No gatekeeping</span></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact section contains phone, text-message, and Facebook actions. -->
-      <section class="contact section-grid" id="contact" aria-labelledby="contact-title">
-        <div>
-          <p class="eyebrow">[ OPEN CHANNEL ]</p>
-          <h2 id="contact-title">Ready to boot<br>up a project?</h2>
-          <p>Tell us what you have, what you need, and where to find you. We will get back to you with the next step.</p>
-        </div>
-        <div class="contact-panel">
-          <p class="panel-label">PRIMARY COMMS</p>
-          <a class="phone" href="tel:+12799772898">(279) 977-2898</a>
-          <p>Text us or message AlienCultist on Facebook.</p>
-          <a class="button button-primary" href="sms:+12799772898">SEND A TEXT <span>→</span></a>
-          <a class="button button-quiet" href="https://www.facebook.com/profile.php?id=100092184115147" target="_blank" rel="noopener noreferrer">CONNECT ON FACEBOOK <span>→</span></a>
-          <!-- Social and marketplace links use the supplied logo GIFs. -->
-          <div class="social-links" aria-label="Find Alien Cultist Labs online">
-            <p class="panel-label">EXTERNAL SIGNALS</p>
-            <div class="social-link-list">
-              <a href="https://www.ebay.com/usr/aliencultist-labs" target="_blank" rel="noopener noreferrer" aria-label="Alien Cultist Labs on eBay"><img src="assets/images/logos/ebay.gif" alt="eBay"></a>
-              <a href="https://www.instagram.com/aliencultist/" target="_blank" rel="noopener noreferrer" aria-label="Alien Cultist Labs on Instagram"><img src="assets/images/logos/instagram.gif" alt="Instagram"></a>
-              <a href="https://discord.gg/EB4MGUKesh" target="_blank" rel="noopener noreferrer" aria-label="Join the Alien Cultist Labs Discord"><img src="assets/images/logos/discord.gif" alt="Discord"></a>
-              <a href="https://www.youtube.com/@AlienCultist-Labs" target="_blank" rel="noopener noreferrer" aria-label="Alien Cultist Labs on YouTube"><img src="assets/images/logos/youtube.gif" alt="YouTube"></a>
+        <aside class="maintenance-panel" aria-label="Maintenance details panel">
+          <div>
+            <img src="assets/images/ac-logo.jpg" alt="Alien Cultist Labs logo">
+            <p class="panel-label">SERVICE WINDOW</p>
+            <div class="system-readout">
+              <div class="readout-row"><span>STATUS</span><strong>MAINT</strong></div>
+              <div class="readout-row"><span>MODE</span><strong>REBOOT</strong></div>
+              <div class="readout-row"><span>LOCATION</span><strong>GALT, CA</strong></div>
             </div>
           </div>
-        </div>
+          <div class="maintenance-note">
+            <span class="prompt">ACLAB:~$</span> restore --later
+          </div>
+        </aside>
       </section>
     </main>
 
-    <!-- Footer appears on every page and links back to the top. -->
     <footer class="footer">
       <p>© 2026 ALIEN CULTIST LABS // GALT, CALIFORNIA</p>
       <a href="404.html">404 PAGE</a>
