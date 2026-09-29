@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300" role="img" aria-labelledby="title desc">
+<title id="title">Coral Dev Board schematic</title><desc id="desc">Original local board-layout schematic for Coral Dev Board, with chipset, processor, memory and expansion regions.</desc>
+<rect width="360" height="300" rx="12" fill="#101815"/><path d="M20 20h320v260H20z" fill="#0d1412" stroke="#8de04d" stroke-width="2"/>
+<text x="28" y="35" fill="#8de04d" font-family="monospace" font-size="9">BOARD ARCHIVE // GOOGLE-CORAL-DEV-BOARD</text><path d="M28 43H332" stroke="#3f594f"/>
+<rect x="52" y="62" width="98" height="75" rx="4" fill="#172b27" stroke="#8de04d" stroke-width="2"/>
+<text x="63" y="102" fill="#d3e2d9" font-family="monospace" font-size="8">CPU / SOC</text>
+<rect x="174" y="57" width="142" height="22" rx="3" fill="#172b27" stroke="#8de04d"/><rect x="174" y="88" width="142" height="22" rx="3" fill="#172b27" stroke="#8de04d"/>
+<text x="183" y="72" fill="#d3e2d9" font-family="monospace" font-size="7">MEMORY CHANNEL A</text><text x="183" y="103" fill="#d3e2d9" font-family="monospace" font-size="7">MEMORY CHANNEL B</text>
+<rect x="44" y="158" width="28" height="94" rx="3" fill="#172b27" stroke="#8de04d"/><rect x="83" y="158" width="28" height="94" rx="3" fill="#172b27" stroke="#8de04d"/>
+<rect x="122" y="158" width="194" height="28" rx="3" fill="#172b27" stroke="#8de04d"/><rect x="122" y="199" width="194" height="28" rx="3" fill="#172b27" stroke="#8de04d"/>
+<path d="M140 99h20v68H92m48 0v-18m-48 18v-20m70-58v88m94-105v24m0 9v20H226v26" fill="none" stroke="#8de04d" stroke-width="1" opacity=".55"/>
+<text x="37" y="269" fill="#d3e2d9" font-family="monospace" font-size="9">Coral Dev Board</text>
+<text x="37" y="290" fill="#98a9a0" font-family="monospace" font-size="7">ORIGINAL LOCAL REFERENCE // NOT TO SCALE</text></svg>

@@ -47,8 +47,6 @@
 .closing-record { margin: 20px 0 90px; padding: 28px; border: 1px solid var(--pink); background: rgba(0, 0, 0, .6); box-shadow: 6px 6px 0 rgba(217, 75, 75, .38); }
 .closing-record p { color: var(--muted); }
 .closing-record .source-note { margin: 0; font-size: 11px; }
-.classified-link { opacity: .42; font-size: 9px !important; letter-spacing: .12em; }
-.classified-link:hover, .classified-link:focus-visible { opacity: 1; color: var(--pink) !important; }
 .area42-page .footer { border-top-color: var(--line); }
 @media (max-width: 800px) {
   .case-hero { grid-template-columns: 1fr; }

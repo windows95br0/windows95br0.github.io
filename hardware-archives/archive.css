@@ -20,6 +20,16 @@
 .archive-index-panel p:not(.panel-label) { color: var(--muted); font-size: 13px; }
 .archive-index-panel .button { margin-top: 12px; }
 .catalog-section { padding: 20px 0 100px; }
+.component-catalog { padding: 36px 0 54px; }
+.component-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.component-record .record-back { flex-wrap: wrap; }
+.component-card { display: flex; flex-direction: column; min-height: 230px; padding: 20px; border: 1px solid rgba(140, 255, 198, .35); background: rgba(0, 0, 0, .75); color: var(--paper); text-decoration: none; transition: border-color .15s, transform .15s; }
+.component-card:hover, .component-card:focus-visible { border-color: var(--yellow); transform: translateY(-3px); }
+.component-card span { color: var(--yellow); font-size: 9px; letter-spacing: .1em; }
+.component-card strong { margin: 12px 0 8px; color: var(--cyan); font-family: var(--display); font-size: 25px; font-weight: 400; line-height: 1; text-transform: uppercase; }
+.component-card p { flex: 1; color: var(--muted); font-size: 12px; }
+.component-card b { color: var(--yellow); font-size: 10px; letter-spacing: .1em; }
+.component-record .record-hero h1 { font-size: clamp(42px, 5vw, 64px); overflow-wrap: anywhere; }
 .hardware-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
 .hardware-card { display: block; min-height: 190px; padding: 22px; border: 1px solid rgba(140, 255, 198, .35); background: rgba(0, 0, 0, .75); color: var(--paper); text-decoration: none; transition: border-color .15s, transform .15s; }
 .hardware-card:hover, .hardware-card:focus-visible { border-color: var(--yellow); transform: translateY(-3px); }
@@ -30,6 +40,7 @@
 .archive-note h2 { font-size: clamp(34px, 4vw, 50px); }
 .archive-note p:last-child { margin: 0; color: var(--muted); }
 .hardware-record { padding: 52px 0 100px; }
+.hardware-record > .section-heading h1 { margin-bottom: 18px; font-size: clamp(34px, 5vw, 60px); overflow-wrap: anywhere; }
 .record-back { display: flex; gap: 18px; margin-bottom: 34px; color: var(--yellow); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; }
 .record-back a { text-decoration: none; }
 .record-hero { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(250px, .85fr); gap: 38px; align-items: center; padding-bottom: 42px; border-bottom: 1px solid var(--line); }
@@ -53,13 +64,16 @@
 .record-sources small { color: var(--muted); }
 .hardware-page .footer { border-top-color: var(--line); }
 @media (max-width: 800px) {
-  .hardware-page .archive-hero, .record-hero { grid-template-columns: 1fr; }
+  .hardware-page .archive-hero, .record-hero { grid-template-columns: minmax(0, 1fr); }
   .hardware-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .component-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .record-art { max-width: 540px; }
 }
 @media (max-width: 520px) {
   .hardware-grid { grid-template-columns: 1fr; }
+  .component-grid { grid-template-columns: 1fr; }
   .hardware-page .archive-hero { padding: 66px 0; }
+  .record-hero h1 { font-size: clamp(36px, 9vw, 42px); overflow-wrap: anywhere; }
   .hardware-card { min-height: 0; }
   .hardware-card p { min-height: 0; }
   .spec-table, .spec-table tbody, .spec-table tr, .spec-table th, .spec-table td { display: block; width: 100%; }

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 370" role="img" aria-labelledby="title desc">
+<title id="title">SanDisk MAX Endurance microSDXC 256 GB</title><desc id="desc">Original schematic of a microSDXC card, not to scale or a product photograph.</desc>
+<rect width="600" height="370" fill="#080e0d"/><path d="M26 34h548M26 332h548" stroke="#247d62" stroke-width="2"/>
+<text x="30" y="27" fill="#ffe99a" font-family="monospace" font-size="12">LOCAL MEDIA SCHEMATIC // SDSQQVR-256G-GN6IA</text>
+<path d="M205 92h150l40 40v143H205z" fill="#ffc45c"/><path d="M355 92v42h40" fill="#14251f"/>
+<g fill="#d5c68b"><rect x="223" y="230" width="20" height="45"/><rect x="249" y="230" width="20" height="45"/><rect x="275" y="230" width="20" height="45"/><rect x="301" y="230" width="20" height="45"/><rect x="327" y="230" width="20" height="45"/></g>
+<text x="280" y="190" text-anchor="middle" fill="#14251f" font-family="monospace" font-size="17">microSDXC</text>
+<text x="300" y="310" text-anchor="middle" fill="#8cffc6" font-family="monospace" font-size="15">MAX ENDURANCE // 256 GB</text>
+<text x="300" y="353" text-anchor="middle" fill="#a5aaa3" font-family="monospace" font-size="11">NOT A PRODUCT PHOTOGRAPH // NOT TO SCALE</text></svg>
