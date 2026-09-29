@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">NaturalPoint SmartNav 4 AT schematic</title><desc id="desc">A USB optical sensor detects a head-worn reflective marker and sends pointer movement to a legacy computer.</desc>
+<rect width="640" height="360" fill="#101820"/><path d="M26 26h588v308H26z" fill="none" stroke="#557079" stroke-width="2"/>
+<text x="320" y="58" fill="#9fffe0" font-family="monospace" font-size="18" text-anchor="middle">SMARTNAV 4:AT / LEGACY HEAD-POINTING</text>
+<path d="M73 209q0-82 68-86 62 0 72 59l-8 46q-22 38-69 35-50-4-63-54z" fill="#21313a" stroke="#4ce0bd" stroke-width="4"/><circle cx="184" cy="135" r="9" fill="#daff00"/><text x="141" y="293" fill="#fff" font-family="monospace" font-size="11" text-anchor="middle">REFLECTOR</text>
+<path d="M199 136l139 37m-139-24 139 22m-139-8 139 7" stroke="#ffb46a" stroke-width="2" stroke-dasharray="5 7"/>
+<rect x="349" y="116" width="96" height="112" rx="12" fill="#182d38" stroke="#4ce0bd" stroke-width="4"/><circle cx="397" cy="160" r="19" fill="#101820" stroke="#daff00" stroke-width="3"/><path d="M376 197h42" stroke="#ffb46a" stroke-width="3"/><text x="397" y="254" fill="#fff" font-family="monospace" font-size="11" text-anchor="middle">USB SENSOR</text>
+<path d="M448 174h76" stroke="#4ce0bd" stroke-width="4"/><path d="m515 165 14 9-14 9" fill="none" stroke="#4ce0bd" stroke-width="4"/>
+<rect x="538" y="105" width="68" height="132" rx="7" fill="#21313a" stroke="#daff00" stroke-width="3"/><rect x="548" y="118" width="48" height="82" fill="none" stroke="#4ce0bd" stroke-width="2"/><path d="m557 184 9-14 9 8 12-31" fill="none" stroke="#ffb46a" stroke-width="3"/>
+<rect x="330" y="288" width="142" height="28" rx="7" fill="#182d38" stroke="#ffb46a" stroke-width="2"/><text x="401" y="307" fill="#fff" font-family="monospace" font-size="11" text-anchor="middle">DWELL / CLICK SOFTWARE</text>
+<path d="M474 302h48" stroke="#ffb46a" stroke-width="2" stroke-dasharray="4 5"/>
+</svg>

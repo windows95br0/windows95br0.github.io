@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 230" role="img" aria-labelledby="title desc">
+  <title id="title">Wireless mouse with open shell schematic</title>
+  <desc id="desc">Original mouse outline with an abstract vented upper shell, scroll wheel, and side buttons.</desc>
+  <rect width="360" height="230" fill="#11141a"/>
+  <g fill="none" stroke="#5be7d0" stroke-width="3">
+    <path d="M180 30c-40 0-68 30-68 78v40c0 30 23 48 68 48s68-18 68-48v-40c0-48-28-78-68-78z"/>
+    <path d="M180 32v51m-66 18h132m-66-17v53"/>
+    <rect x="171" y="56" width="18" height="32" rx="8"/>
+    <path d="M132 111l12 11m-12 7 12 11m-12 7 12 11m72-47-12 11m12 7-12 11m12 7-12 11"/>
+    <path d="M255 112h25v16h-25m0 8h25v16h-25"/>
+  </g>
+  <g fill="#ffc857" font-family="monospace" font-size="11"><text x="15" y="25">VENTED SHELL / INPUTS</text><text x="15" y="215">SCHEMATIC / NOT TO SCALE</text></g>
+</svg>

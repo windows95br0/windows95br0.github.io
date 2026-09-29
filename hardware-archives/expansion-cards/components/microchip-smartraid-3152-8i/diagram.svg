@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-labelledby="title desc">
+  <title id="title">SmartRAID 3152-8i board schematic</title>
+  <desc id="desc">Original schematic drawing of a RAID controller with cache, paired storage headers and PCIe edge.</desc>
+  <rect width="720" height="420" fill="#111323"/>
+  <path d="M60 64h520l76 70v190H60z" fill="#20213a" stroke="#f6b84d" stroke-width="4"/>
+  <path d="M112 108h90v44h-90zm0 122h90v44h-90z" fill="#161a2c" stroke="#f6b84d" stroke-width="3"/>
+  <text x="157" y="135" fill="#f5f7ef" font-family="monospace" font-size="12" text-anchor="middle">PORT A</text>
+  <text x="157" y="257" fill="#f5f7ef" font-family="monospace" font-size="12" text-anchor="middle">PORT B</text>
+  <rect x="278" y="144" width="178" height="110" rx="8" fill="#131725" stroke="#e9e9ef" stroke-width="3"/>
+  <text x="367" y="185" fill="#f5f7ef" font-family="monospace" font-size="17" text-anchor="middle">SMARTROC</text>
+  <text x="367" y="221" fill="#f6b84d" font-family="monospace" font-size="18" text-anchor="middle">3152-8i</text>
+  <path d="M202 130h76m-76 122h76m178-84h102v-42h48m-150 78h74v55h76" fill="none" stroke="#f6b84d" stroke-width="4"/>
+  <path d="M155 342h410l-18 26H173z" fill="#d2d3d6"/>
+  <path d="M190 342v26m24-26v26m24-26v26m24-26v26m24-26v26m24-26v26m24-26v26m24-26v26m24-26v26m24-26v26m24-26v26m24-26v26m24-26v26m24-26v26" stroke="#394151" stroke-width="8"/>
+  <text x="360" y="402" fill="#aab2c4" font-family="monospace" font-size="14" text-anchor="middle">SAS / SATA RAID // CONCEPT</text>
+</svg>

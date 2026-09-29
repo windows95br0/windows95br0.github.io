@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" role="img" aria-labelledby="title desc">
+<title id="title">Fractal Design North schematic</title><desc id="desc">Original compact ATX tower drawing with a slatted timber front and front radiator zone.</desc>
+<rect width="520" height="360" fill="#131a20"/><rect x="139" y="48" width="231" height="248" rx="5" fill="#1c2b31" stroke="#c8894e" stroke-width="4"/><rect x="159" y="70" width="183" height="206" fill="#0e171c" stroke="#607075" stroke-width="2"/><path d="M146 61v221m12-220v218m12-218v218m12-218v218m12-218v218m12-218v218m12-218v218m12-218v218m12-218v218m12-218v218m12-218v218m12-218v218" stroke="#c8894e" stroke-opacity=".8" stroke-width="3"/><rect x="211" y="112" width="105" height="75" fill="#293842" stroke="#aab8b8" stroke-width="3"/><path d="M153 49h194" stroke="#b9c9c8" stroke-width="5"/><circle cx="263" cy="148" r="23" fill="none" stroke="#75d8cb" stroke-width="3"/><path d="M123 304h265" stroke="#7f9093" stroke-width="3"/><text x="260" y="336" fill="#f3eee4" font-family="Arial,sans-serif" font-size="17" text-anchor="middle">NORTH // 447 × 215 × 469 mm</text>
+</svg>
+

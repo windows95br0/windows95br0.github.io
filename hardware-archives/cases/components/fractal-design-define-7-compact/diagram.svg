@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" role="img" aria-labelledby="title desc">
+<title id="title">Define 7 Compact schematic</title><desc id="desc">Original compact tower drawing with a closed front panel and filtered top vent.</desc>
+<rect width="520" height="360" fill="#10171e"/><rect x="147" y="53" width="226" height="239" rx="8" fill="#252f35" stroke="#b9c7c3" stroke-width="4"/><rect x="160" y="78" width="65" height="199" fill="#1b282e" stroke="#79898a" stroke-width="2"/><path d="M169 91v173m11-173v173m11-173v173m11-173v173" stroke="#617177" stroke-width="2"/><rect x="240" y="79" width="117" height="195" fill="#10191e" stroke="#53666b" stroke-width="2"/><rect x="257" y="117" width="83" height="64" fill="#263742" stroke="#9eafb2" stroke-width="3"/><path d="M244 64h119" stroke="#72d8c3" stroke-width="6" stroke-dasharray="9 6"/><path d="M128 301h264" stroke="#7b8c92" stroke-width="3"/><circle cx="300" cy="149" r="19" fill="none" stroke="#72d8c3" stroke-width="3"/><text x="260" y="334" fill="#eef4ef" font-family="Arial,sans-serif" font-size="17" text-anchor="middle">DEFINE 7 COMPACT // 427 × 210 × 474 mm</text>
+</svg>
+

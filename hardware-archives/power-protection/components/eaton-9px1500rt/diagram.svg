@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">Eaton 9PX1500RT functional schematic</title>
+  <desc id="desc">120 volt online UPS with lead-acid battery and eight NEMA 5-15R outlets.</desc>
+  <rect width="720" height="360" rx="18" fill="#171b25"/>
+  <g fill="none" stroke="#ffcc33" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M52 178h120m108 0h72m108 0h71m110 0h29"/>
+    <path d="M214 130v96m-26-48h52m108-45 45 45-45 45m70-90v90"/>
+    <path d="M324 260h83m-67-18v36m22-36v36m22-36v36"/>
+    <rect x="586" y="120" width="95" height="116" rx="5"/>
+    <path d="M603 145h21m-21 20h21m-21 20h21m-21 20h21m34-60h21m-21 20h21m-21 20h21m-21 20h21"/>
+  </g>
+  <g fill="#f3f4f6" font-family="monospace" font-size="17">
+    <text x="48" y="126">120 V INPUT</text><text x="179" y="99">RECTIFIER</text>
+    <text x="305" y="99">INVERTER</text><text x="320" y="307">VRLA</text>
+    <text x="583" y="260">8 × 5-15R</text>
+    <text x="48" y="337" fill="#ffcc33">9PX1500RT // 1500 VA / 1350 W</text>
+  </g>
+</svg>

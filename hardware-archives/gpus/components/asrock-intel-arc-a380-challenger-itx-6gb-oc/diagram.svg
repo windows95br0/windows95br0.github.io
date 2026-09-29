@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title-a380 cli 6go desc-a380 cli 6go">
+<title id="title-a380 cli 6go">ASRock Intel Arc A380 Challenger ITX 6GB OC conceptual board schematic</title>
+<desc id="desc-a380 cli 6go">Original schematic showing GPU, GDDR6 modules, PCI Express interface, power and display outputs for board SKU A380 CLI 6GO; not to scale.</desc>
+<rect width="640" height="360" rx="22" fill="#101925"/><path d="M28 40h584M28 316h584" stroke="#ff9c49" stroke-width="3" opacity=".8"/>
+<text x="36" y="76" fill="#ff9c49" font-family="Arial,sans-serif" font-size="19" font-weight="700">ASROCK // A380 CLI 6GO</text>
+<rect x="56" y="112" width="212" height="150" rx="12" fill="#202f40" stroke="#ff9c49" stroke-width="3"/><rect x="105" y="145" width="114" height="82" rx="8" fill="#111c28" stroke="#e7edf5" stroke-width="2"/>
+<text x="162" y="179" fill="#f4f7fb" font-family="Arial,sans-serif" font-size="18" text-anchor="middle" font-weight="700">Arc A380</text><text x="162" y="207" fill="#aebed0" font-family="Arial,sans-serif" font-size="13" text-anchor="middle">ACM-G11</text>
+<rect x="306" y="118" width="102" height="38" rx="5" fill="#1b2938" stroke="#ff9c49" stroke-width="2"/><text x="357" y="143" fill="#e7edf5" font-family="Arial,sans-serif" font-size="12" text-anchor="middle">GDDR6 1</text><rect x="430" y="118" width="102" height="38" rx="5" fill="#1b2938" stroke="#ff9c49" stroke-width="2"/><text x="481" y="143" fill="#e7edf5" font-family="Arial,sans-serif" font-size="12" text-anchor="middle">GDDR6 2</text><rect x="306" y="173" width="102" height="38" rx="5" fill="#1b2938" stroke="#ff9c49" stroke-width="2"/><text x="357" y="198" fill="#e7edf5" font-family="Arial,sans-serif" font-size="12" text-anchor="middle">GDDR6 3</text>
+<path d="M268 186h32M510 186h72M82 279h88v17h210v-17h104" fill="none" stroke="#ff9c49" stroke-width="4"/><text x="320" y="292" fill="#cbd5e1" font-family="Arial,sans-serif" font-size="13" text-anchor="middle">PCI Express 4.0 x8 // 75 W reference board-power class</text>
+<text x="36" y="340" fill="#aebed0" font-family="Arial,sans-serif" font-size="13">6 GB GDDR6, 96-bit · GDDR6 BLOCKS SHOWN · PCIe HOST / DISPLAY SIGNAL MAP</text>
+</svg>

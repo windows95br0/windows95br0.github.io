@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+<title id="title">Seagate Exos X16 ST16000NM002G drive schematic</title><desc id="desc">Original red and graphite diagram of a 16 terabyte helium SAS disk.</desc>
+<rect width="640" height="400" rx="18" fill="#18181b"/><path d="M54 55h532v290H54z" fill="#27272a" stroke="#f87171" stroke-width="6"/>
+<circle cx="238" cy="197" r="117" fill="#09090b" stroke="#dc2626" stroke-width="9"/><circle cx="238" cy="197" r="78" fill="none" stroke="#71717a" stroke-width="13"/><circle cx="238" cy="197" r="18" fill="#ef4444"/>
+<path d="M238 197l153-91 22 28-160 78" fill="#d4d4d8"/><rect x="427" y="120" width="105" height="37" rx="8" fill="#450a0a"/><rect x="427" y="176" width="105" height="37" rx="8" fill="#450a0a"/>
+<text x="438" y="145" fill="#fecaca" font-size="16" font-family="sans-serif">SAS PORT A</text><text x="438" y="201" fill="#fecaca" font-size="16" font-family="sans-serif">SAS PORT B</text><text x="79" y="308" fill="#fafafa" font-size="25" font-family="sans-serif">EXOS X16 · 16 TB</text><text x="78" y="94" fill="#fca5a5" font-size="17" font-family="sans-serif">ST16000NM002G // 512e</text></svg>

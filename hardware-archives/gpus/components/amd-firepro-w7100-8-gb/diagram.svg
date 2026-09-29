@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 150" role="img" aria-labelledby="title desc">
+  <title id="title">FirePro W7100 board schematic</title><desc id="desc">Tonga professional workstation card with four DisplayPort outputs and a 6-pin power input.</desc>
+  <rect width="380" height="150" rx="8" fill="#12212d"/><path d="M26 31h273l32 24v61H26z" fill="#1f3849" stroke="#89c2ed" stroke-width="2"/>
+  <rect x="99" y="53" width="88" height="53" rx="5" fill="#101a23" stroke="#6697b9"/><text x="143" y="77" fill="#e0f4ff" text-anchor="middle" font-family="monospace" font-size="11">TONGA</text><text x="143" y="93" fill="#b1d8ee" text-anchor="middle" font-family="monospace" font-size="9">8 GB GDDR5</text>
+  <path d="M37 114h219v7H37z" fill="#c0a354"/><rect x="57" y="40" width="27" height="12" rx="2" fill="#10131a" stroke="#f0d99b"/><text x="71" y="49" fill="#fff0c4" text-anchor="middle" font-family="monospace" font-size="7">6-PIN</text>
+  <g fill="#0a141b" stroke="#d2ebfb"><rect x="295" y="48" width="24" height="14"/><rect x="295" y="65" width="24" height="14"/><rect x="295" y="82" width="24" height="14"/><rect x="295" y="99" width="24" height="14"/></g><text x="40" y="46" fill="#89c2ed" font-family="monospace" font-size="9">W7100 // 130 W // 8 GB</text>
+</svg>

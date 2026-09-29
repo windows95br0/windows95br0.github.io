@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" role="img" aria-labelledby="title desc">
+<title id="title">CORSAIR 6500X schematic</title><desc id="desc">Original dual-chamber enclosure drawing, with front glass and side/top/bottom cooling locations.</desc>
+<rect width="520" height="360" fill="#10161e"/><path d="M93 62h321v225H93z" fill="#1b2731" stroke="#63d6c8" stroke-width="4"/><rect x="103" y="75" width="154" height="196" fill="#16212a" stroke="#b3c5c8" stroke-width="3"/><rect x="266" y="75" width="136" height="196" fill="#10181f" stroke="#536873" stroke-width="2"/><path d="M280 89h108v54H280zM280 152h108v54H280z" fill="#20313c" stroke="#76939c" stroke-width="2"/><path d="M270 52h131M273 280h121" stroke="#e6bf54" stroke-width="10" stroke-dasharray="10 7"/><path d="M415 88v166" stroke="#63d6c8" stroke-width="10" stroke-dasharray="9 6"/><path d="M82 297h346" stroke="#7c8e98" stroke-width="3"/><text x="260" y="330" fill="#f0f6f3" font-family="Arial,sans-serif" font-size="17" text-anchor="middle">6500X // 506 × 328 × 481 mm</text>
+</svg>
+

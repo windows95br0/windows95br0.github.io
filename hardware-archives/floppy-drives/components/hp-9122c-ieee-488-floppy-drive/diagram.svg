@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">HP 9122C schematic</title><desc id="desc">Original conceptual drawing of an HP floppy unit with an IEEE-488 host connection.</desc>
+  <rect width="640" height="360" rx="18" fill="#101c2a"/><text x="320" y="56" fill="#d3e5e7" font-family="sans-serif" font-size="22" text-anchor="middle">HP 9122C // HP-IB DISK PERIPHERAL</text>
+  <rect x="91" y="91" width="458" height="169" rx="14" fill="#1a3042" stroke="#73d4c4" stroke-width="4"/>
+  <rect x="124" y="126" width="292" height="92" rx="8" fill="#10202d" stroke="#d8b46a" stroke-width="4"/><path d="M157 163h113" stroke="#73d4c4" stroke-width="12" stroke-linecap="round"/>
+  <rect x="445" y="139" width="73" height="63" rx="6" fill="#d8b46a"/><text x="481" y="177" fill="#10202d" font-family="sans-serif" font-size="15" text-anchor="middle">HP-IB</text>
+  <path d="M320 261v38M263 299h114" fill="none" stroke="#73d4c4" stroke-width="4"/>
+  <text x="320" y="338" fill="#d3e5e7" font-family="sans-serif" font-size="16" text-anchor="middle">3.5-INCH DISK SYSTEM // NOT TO SCALE</text>
+</svg>

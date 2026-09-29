@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Model-specific archival record for the Broadcom LSI SAS 9300-4i4e SAS/SATA host bus adapter.">
+  <title>Broadcom LSI SAS 9300-4i4e // Expansion Cards // Hardware Archives</title>
+  <link rel="stylesheet" href="../../../../style.css">
+  <link rel="stylesheet" href="../../../archive.css">
+</head>
+<body class="hardware-page">
+  <div class="site-shell">
+    <header class="topbar" id="top"><a class="brand" href="../../../../index.html"><span class="brand-wordmark">ALIENCULTIST.COM</span></a><div class="status-line"><span class="status-dot"></span> HARDWARE ARCHIVES // PART RECORD</div><nav class="main-nav" aria-label="Archive navigation"><a class="home-nav-link" href="../../../../index.html">HOME</a><a class="archive-nav-link" href="../../index.html">EXPANSION CARDS</a><a class="hardware-nav-link" href="../../../index.html">ALL CATEGORIES</a></nav></header>
+    <main class="hardware-record">
+      <nav class="record-back"><a href="../../subcategories/storage-and-disk-controllers/index.html">&larr; Storage and disk controllers</a><span>PART RECORD // EXPANSION CARDS</span></nav>
+      <section class="record-hero"><div><p class="eyebrow">[ INDIVIDUAL COMPONENT // STORAGE / DISK I/O ]</p><h1>Broadcom / LSI SAS 9300-4i4e</h1><p class="record-intro">An eight-lane SAS3 HBA with four internal and four external SAS/SATA lanes on a single card.</p></div><figure class="record-figure"><img class="record-art" src="diagram.svg" alt="Original schematic of the LSI SAS 9300-4i4e adapter"><figcaption>SCHEMATIC // INTERNAL + EXTERNAL STORAGE</figcaption></figure></section>
+      <p class="record-scope">MODEL SCOPE: SAS 9300-4i4e, LSI00348 family. Confirm board and subsystem IDs because OEM versions can use different firmware and brackets.</p>
+      <section class="record-section"><h2>Reference specifications</h2><table class="spec-table"><tbody>
+        <tr><th>Controller</th><td>LSI SAS3008 Fusion-MPT 2.5 SAS controller.</td></tr>
+        <tr><th>Host bus</th><td>PCI Express 3.0 x8.</td></tr>
+        <tr><th>Ports</th><td>Four internal lanes on one SFF-8643 Mini-SAS HD connector and four external lanes on one SFF-8644 connector.</td></tr>
+        <tr><th>Protocols</th><td>SAS 12/6/3 Gb/s and SATA 6/3 Gb/s, negotiated to the capabilities of the connected drive and path.</td></tr>
+        <tr><th>RAID / HBA mode</th><td>HBA/pass-through mode with optional Integrated RAID firmware functions (including RAID 0/1/10/1E); it is not a MegaRAID write-back controller.</td></tr>
+        <tr><th>Cache / protection</th><td>No protected write-back cache or BBU. Use host-managed software RAID or the supported Integrated RAID feature set.</td></tr>
+        <tr><th>Firmware / OS</th><td>Use the Broadcom firmware and OS driver matching the 9300-4i4e board/OEM ID. Validate the target Windows, Linux, FreeBSD or hypervisor version before deployment.</td></tr>
+        <tr><th>Drive / backplane caveats</th><td>Internal Mini-SAS HD and external Mini-SAS HD are distinct connector styles. Match internal backplane cables and external enclosure cables separately; verify enclosure expander and power design.</td></tr>
+      </tbody></table></section>
+      <section class="record-section"><h2>Compatibility and service notes</h2><ul><li>The external connector is for a compatible SAS/SATA enclosure, not a generic Mini-SAS cable-to-disk connection.</li><li>Do not expect SATA disks to support dual paths; path redundancy requires compatible SAS devices, enclosure and cabling.</li><li>Record firmware, operating-system driver, cable routes and device topology when troubleshooting link negotiation.</li></ul></section>
+      <section class="record-section"><h2>Sources &amp; further reading</h2><ol class="record-sources">
+        <li><a href="https://www.broadcom.com/products/storage/host-bus-adapters/sas-9300-4i4e" rel="noopener noreferrer">Broadcom — SAS 9300-4i4e product page</a><small>Manufacturer model reference and support downloads.</small></li>
+        <li><a href="https://docs.broadcom.com/doc/12354875" rel="noopener noreferrer">Broadcom — SAS 9300-4i4e PCI Express to 12 Gb/s SAS HBA User Guide</a><small>Official adapter manual covering installation, operation and supported configuration.</small></li>
+        <li><a href="https://docs.broadcom.com/doc/12352390" rel="noopener noreferrer">Broadcom — SAS 9300-4i4e Quick Installation Guide</a><small>Manufacturer quick installation and hardware connection reference.</small></li>
+      </ol></section>
+    </main>
+    <footer class="footer"><p>&copy; 2026 ALIEN CULTIST LABS // GALT, CALIFORNIA</p><a href="../../subcategories/storage-and-disk-controllers/index.html">SUBCATEGORY FILE</a><a href="#top">BACK TO TOP &uarr;</a></footer>
+  </div>
+</body>
+</html>

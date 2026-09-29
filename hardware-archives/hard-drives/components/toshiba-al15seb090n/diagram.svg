@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+<title id="title">Toshiba AL15SEB090N drive schematic</title><desc id="desc">Original teal and charcoal illustration of a 900 gigabyte dual-port SAS hard drive.</desc>
+<rect width="640" height="400" rx="30" fill="#082f49"/><path d="M62 68h516v266H62z" rx="16" fill="#164e63" stroke="#2dd4bf" stroke-width="5"/>
+<circle cx="257" cy="201" r="112" fill="#083344" stroke="#2dd4bf" stroke-width="8"/><circle cx="257" cy="201" r="77" fill="none" stroke="#67e8f9" stroke-width="8"/><circle cx="257" cy="201" r="27" fill="#14b8a6"/>
+<path d="M257 201l125-94 20 25-132 85" fill="#cbd5e1"/><rect x="433" y="125" width="92" height="35" rx="9" fill="#042f2e"/><rect x="433" y="181" width="92" height="35" rx="9" fill="#042f2e"/>
+<text x="445" y="150" fill="#99f6e4" font-size="15" font-family="sans-serif">PORT A</text><text x="445" y="206" fill="#99f6e4" font-size="15" font-family="sans-serif">PORT B</text><text x="86" y="303" fill="#ecfeff" font-size="25" font-family="sans-serif">AL15SEB090N // 900 GB</text><text x="84" y="99" fill="#5eead4" font-size="17" font-family="sans-serif">10,500 RPM · 512n · 12G SAS</text></svg>

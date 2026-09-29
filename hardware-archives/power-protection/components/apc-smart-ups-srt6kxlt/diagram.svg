@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">SRT6KXLT functional schematic</title>
+  <desc id="desc">208 volt online conversion path with a battery and two L6-20R and three L6-30R outlets.</desc>
+  <rect width="720" height="360" rx="18" fill="#151923"/>
+  <g fill="none" stroke="#42d6c5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M48 180h108m120 0h78m120 0h75m88 0h36"/>
+    <path d="M202 135v90m-24-45h48m136-44 44 44-44 44m70-88v88"/>
+    <path d="M330 260h82m-66-16v32m22-32v32m22-32v32"/>
+    <path d="M613 124v52m-15-38h30m-30 24h30m-15 27v52m-15-38h30m-30 24h30m27-105v52m-15-38h30m-30 24h30m-15 27v52m-15-38h30m-30 24h30"/>
+  </g>
+  <g fill="#f4f4f5" font-family="monospace" font-size="17">
+    <text x="42" y="128">208 V AC</text><text x="165" y="105">AC/DC</text>
+    <text x="310" y="105">DC/AC</text><text x="324" y="307">SEALED BATTERY</text>
+    <text x="510" y="100">2 × L6-20R</text><text x="510" y="290">3 × L6-30R</text>
+    <text x="45" y="337" fill="#42d6c5">SRT6KXLT // 6000 VA / 6000 W</text>
+  </g>
+</svg>

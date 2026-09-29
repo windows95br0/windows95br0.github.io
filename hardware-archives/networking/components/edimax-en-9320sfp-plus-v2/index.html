@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Revision-specific record for the Edimax EN-9320SFP+ V2 dual-port 10GbE PCIe adapter.">
+<title>Edimax EN-9320SFP+ V2 Dual-Port 10GbE Adapter // Networking Hardware // Hardware Archives</title>
+<link rel="stylesheet" href="../../../../style.css">
+<link rel="stylesheet" href="../../../archive.css">
+</head>
+<body class="hardware-page">
+<div class="site-shell">
+<header class="topbar" id="top"><a class="brand" href="../../../../index.html" aria-label="Alien Cultist Labs home"><span class="brand-wordmark">ALIENCULTIST.COM</span></a><div class="status-line"><span class="status-dot"></span> HARDWARE ARCHIVES <span class="status-divider">//</span> COMPONENT RECORD</div><nav class="main-nav" aria-label="Archive navigation"><a class="home-nav-link" href="../../../../index.html">HOME</a><a class="archive-nav-link" href="../../subcategories/ethernet-adapters/index.html">ETHERNET ADAPTERS</a><a class="hardware-nav-link" href="../../../index.html">ALL CATEGORIES</a></nav></header>
+<main class="hardware-record component-record">
+<nav class="record-back"><a href="../../subcategories/ethernet-adapters/index.html">← Ethernet adapters</a><span>NETWORKING // INDIVIDUAL PART RECORD</span></nav>
+<section class="record-hero"><div><p class="eyebrow">[ MODEL-SPECIFIC NETWORK HARDWARE RECORD ]</p><h1>Edimax EN-9320SFP+ V2 Dual-Port 10GbE Adapter</h1><p class="record-intro">A two-port SFP+ PCIe adapter. The transceiver or DAC is a separate component and must match the card, peer, fiber plant and supported driver.</p></div><figure class="record-figure"><img class="record-art" src="diagram.svg" alt="Original local schematic of the Edimax EN-9320SFP+ V2 dual-port SFP+ Ethernet adapter"><figcaption>UNIQUE LOCAL SVG // SCHEMATIC, NOT TO SCALE</figcaption></figure></section>
+<p class="record-scope"><strong>IDENTIFICATION:</strong> Exact card model EN-9320SFP+ V2. Do not treat the suffix-free EN-9320SFP+ or another brand’s AQC100 implementation as the same card or support package.</p>
+<section class="record-section"><h2>Exact SKU, interface and compatibility</h2><table class="spec-table"><tbody>
+<tr><th>Exact model / SKU / revision</th><td>Edimax EN-9320SFP+ V2, dual SFP+ PCI Express 10GbE network adapter.</td></tr>
+<tr><th>Controller</th><td>Marvell FastLinQ Edge AQC100 family, as identified for the V2 adapter; verify the chip marking and PCI device ID on an individual board.</td></tr>
+<tr><th>Bus, ports and connectors</th><td>PCI Express Gen 3 x4; two SFP+ cages. Optical LC-duplex or direct-attach cable connectors are on the separately selected transceiver/DAC, not directly on the card.</td></tr>
+<tr><th>Per-port link rates</th><td>10GbE per SFP+ port with a compatible 10GbE module or DAC. Lower-speed support depends on module, link partner and driver; do not assume 1GbE/2.5GbE/5GbE support from the SFP+ cage alone.</td></tr>
+<tr><th>Driver and operating systems</th><td>Use the Edimax V2 Marvell FastLinQ Edge driver package. Its archived matrix lists Windows 7/8.1/10, Windows Server 2008 R2/2012/2012 R2/2016, Linux 2.6/3.x/4.x, macOS 10.10–10.12 and ESXi 5.1/5.5/6.0; confirm the PCI ID and driver availability for current OS releases.</td></tr>
+<tr><th>Optics and compatibility caveats</th><td>Choose a supported SFP+ module or DAC for the intended wavelength, reach, fiber type and peer coding. Monitor airflow and temperature; unsupported optics, incompatible DACs, or wrong fiber can prevent link-up.</td></tr>
+<tr><th>Revision warning</th><td>V2 is part of the exact model. Keep the PCB version, controller marking, bracket and driver version attached to any compatibility report.</td></tr>
+</tbody></table></section>
+<section class="record-section"><h2>Link qualification</h2><p>Each port has a nominal 10GbE signaling rate; aggregate throughput is not guaranteed. For optical testing, record module vendor/SKU, wavelength, fiber grade, connector, link partner and driver. For DAC, record cable length and both end identifiers.</p></section>
+<section class="record-section"><h2>Edimax V2 datasheet and installation guide</h2><ol class="record-sources">
+<li><a href="https://download.edimax.com/mw/cufiles/files/download/datasheet/EN-9320SFP_plus_V2_datasheet_English.pdf" rel="noopener noreferrer">Edimax EN-9320SFP+ V2 datasheet (PDF)</a><small>Manufacturer model-specific technical document.</small></li>
+<li><a href="https://download.edimax.com/mw/cufiles/files/download/QIG/EN-9320SFP_plus_v2/EN-9320SFP_plus_V2_QIG_Engilsh_EN.pdf" rel="noopener noreferrer">Edimax EN-9320SFP+ V2 Quick Installation Guide (PDF)</a><small>Manufacturer installation and driver guidance for this revision.</small></li>
+<li><a href="https://www.edimax.com/edimax/merchandise/merchandise_detail/data/edimax/global/smb_network_adapters_pci_card/en-9320sfp_plus_v2/" rel="noopener noreferrer">Edimax EN-9320SFP+ V2 product page</a><small>Manufacturer product identity and revision context.</small></li>
+</ol></section>
+</main><footer class="footer"><p>© 2026 ALIEN CULTIST LABS // GALT, CALIFORNIA</p><a href="../../index.html">NETWORKING CATEGORY</a><a href="#top">BACK TO TOP ↑</a></footer>
+</div></body></html>

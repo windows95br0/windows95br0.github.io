@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+<title id="title">Seagate Exos X12 ST12000NM0027 drive schematic</title><desc id="desc">Original gold-accented schematic of a 12 terabyte 512e SAS disk drive.</desc>
+<rect width="640" height="400" rx="26" fill="#1c1917"/><rect x="48" y="48" width="544" height="304" rx="12" fill="#292524" stroke="#fbbf24" stroke-width="5"/>
+<circle cx="244" cy="198" r="114" fill="#0c0a09" stroke="#f59e0b" stroke-width="7"/><circle cx="244" cy="198" r="72" fill="none" stroke="#78716c" stroke-width="12"/><circle cx="244" cy="198" r="24" fill="#fbbf24"/>
+<path d="M244 198 390 111l18 30-153 74" fill="#e7e5e4"/><g stroke="#fbbf24" stroke-width="4"><path d="M441 124h82v34h-82z"/><path d="M441 181h82v34h-82z"/></g>
+<text x="449" y="147" fill="#fef3c7" font-size="14" font-family="sans-serif">PORT 1</text><text x="449" y="204" fill="#fef3c7" font-size="14" font-family="sans-serif">PORT 2</text><text x="75" y="309" fill="#fff7ed" font-size="24" font-family="sans-serif">ST12000NM0027 // 12 TB</text><text x="76" y="88" fill="#fcd34d" font-size="17" font-family="sans-serif">EXOS X12 · 512e · 7,200 RPM</text></svg>

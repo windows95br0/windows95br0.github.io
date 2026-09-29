@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" role="img" aria-labelledby="title desc">
+<title id="title">Phanteks NV7 chassis schematic</title><desc id="desc">Original dual-chamber tower silhouette with top, side and bottom radiator outlines.</desc>
+<rect width="520" height="360" fill="#10171e"/><path d="M132 50h263v249H112V70z" fill="#172630" stroke="#66e5d2" stroke-width="4"/><rect x="134" y="78" width="218" height="196" fill="#0d151c" stroke="#436772" stroke-width="2"/><rect x="365" y="81" width="20" height="188" fill="#233b45" stroke="#66e5d2" stroke-width="2"/><path d="M152 65h192M142 286h205" stroke="#e0bc57" stroke-width="13" stroke-dasharray="11 7"/><rect x="174" y="119" width="134" height="81" fill="#21313d" stroke="#a5b9c0" stroke-width="3"/><circle cx="239" cy="158" r="27" fill="none" stroke="#66e5d2" stroke-width="3"/><path d="M218 158h42m-21-21v42M97 308h315" stroke="#788e98" stroke-width="3"/><text x="260" y="337" fill="#eff7f2" font-family="Arial,sans-serif" font-size="17" text-anchor="middle">NV7 // 253 × 532 × 586 mm</text>
+</svg>
+

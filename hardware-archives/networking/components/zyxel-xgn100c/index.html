@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Model-specific record for the Zyxel XGN100C 10GBASE-T PCIe adapter.">
+<title>Zyxel XGN100C 10G PCIe Network Adapter // Networking Hardware // Hardware Archives</title>
+<link rel="stylesheet" href="../../../../style.css">
+<link rel="stylesheet" href="../../../archive.css">
+</head>
+<body class="hardware-page">
+<div class="site-shell">
+<header class="topbar" id="top"><a class="brand" href="../../../../index.html" aria-label="Alien Cultist Labs home"><span class="brand-wordmark">ALIENCULTIST.COM</span></a><div class="status-line"><span class="status-dot"></span> HARDWARE ARCHIVES <span class="status-divider">//</span> COMPONENT RECORD</div><nav class="main-nav" aria-label="Archive navigation"><a class="home-nav-link" href="../../../../index.html">HOME</a><a class="archive-nav-link" href="../../subcategories/ethernet-adapters/index.html">ETHERNET ADAPTERS</a><a class="hardware-nav-link" href="../../../index.html">ALL CATEGORIES</a></nav></header>
+<main class="hardware-record component-record">
+<nav class="record-back"><a href="../../subcategories/ethernet-adapters/index.html">← Ethernet adapters</a><span>NETWORKING // INDIVIDUAL PART RECORD</span></nav>
+<section class="record-hero"><div><p class="eyebrow">[ MODEL-SPECIFIC NETWORK HARDWARE RECORD ]</p><h1>Zyxel XGN100C 10G Network Adapter</h1><p class="record-intro">Single-port 10GBASE-T PCIe card with multigigabit fallback. The manufacturer’s public sheet does not identify the silicon stepping, so this record does not assign a guessed controller variant.</p></div><figure class="record-figure"><img class="record-art" src="diagram.svg" alt="Original local schematic of the Zyxel XGN100C PCIe multi-gigabit Ethernet adapter"><figcaption>UNIQUE LOCAL SVG // SCHEMATIC, NOT TO SCALE</figcaption></figure></section>
+<p class="record-scope"><strong>IDENTIFICATION:</strong> Exact Zyxel model XGN100C. The product name is the published SKU; verify the hardware label and device ID for a particular revision.</p>
+<section class="record-section"><h2>Exact SKU, interface and compatibility</h2><table class="spec-table"><tbody>
+<tr><th>Exact model / SKU / revision</th><td>Zyxel XGN100C 10G Network Adapter; public datasheet does not assign a separate hardware revision to the retail model.</td></tr>
+<tr><th>Controller</th><td>Marvell AQtion 10GbE controller family, commonly identified with the AQC107 on this model; Zyxel’s public datasheet does not state the ASIC stepping. Verify PCI vendor/device ID and chip marking rather than treating the inferred family as a board-revision guarantee.</td></tr>
+<tr><th>Bus, ports and connector</th><td>PCI Express Gen 3 x4 (the datasheet also allows compatible Gen 2 x4 operation); one 8P8C/RJ-45 copper port; standard and low-profile bracket options.</td></tr>
+<tr><th>Per-port link rates</th><td>10GBASE-T, 5GBASE-T, 2.5GBASE-T, 1000BASE-T and 100BASE-TX according to the XGN100C datasheet.</td></tr>
+<tr><th>Driver and operating systems</th><td>Zyxel’s archived package lists Windows 7/8/8.1/10 and Windows Server 2012, plus selected Linux 3.x and 4.2/4.4 kernels. Use the XGN100C driver from Zyxel’s download library; this older matrix does not certify later Windows or Linux releases.</td></tr>
+<tr><th>Cabling and compatibility caveats</th><td>Use a standards-compliant cable and channel length for the target speed, a multi-gigabit link partner and a PCIe slot with four usable lanes. Thermal clearance and NAS/server qualification are chassis-specific.</td></tr>
+<tr><th>Controller/revision caveat</th><td>The official user guide and datasheet do not document a controller stepping. Do not claim every card bearing XGN100C uses the same silicon revision without inspecting the card.</td></tr>
+</tbody></table></section>
+<section class="record-section"><h2>Field qualification</h2><p>Check the link partner’s advertised rate, cable path, PCIe lane allocation, OS driver and card temperature. A link falling back to 1GbE can be caused by the peer or cabling and does not by itself establish a defective adapter.</p></section>
+<section class="record-section"><h2>Zyxel datasheet and quick-start guide</h2><ol class="record-sources">
+<li><a href="https://download.zyxel.com/XGN100C/datasheet/XGN100C_3.pdf" rel="noopener noreferrer">Zyxel XGN100C datasheet (PDF)</a><small>Manufacturer link-rate, interface and compatibility reference.</small></li>
+<li><a href="https://download.zyxel.com/XGN100C/quick_start_guide/XGN100C_003.pdf" rel="noopener noreferrer">Zyxel XGN100C Quick Start Guide (PDF)</a><small>Manufacturer installation and product identification guide.</small></li>
+<li><a href="https://www.zyxel.com/global/en/support/download?model=XGN100C" rel="noopener noreferrer">Zyxel XGN100C download library</a><small>Manufacturer drivers, documentation and release-specific support.</small></li>
+</ol></section>
+</main><footer class="footer"><p>© 2026 ALIEN CULTIST LABS // GALT, CALIFORNIA</p><a href="../../index.html">NETWORKING CATEGORY</a><a href="#top">BACK TO TOP ↑</a></footer>
+</div></body></html>

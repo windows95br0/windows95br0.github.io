@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300" role="img" aria-labelledby="title desc">
+<title id="title">SilverStone SUGO 15 (SG15) enclosure schematic</title>
+<desc id="desc">Original schematic showing the SUGO 15 case layout and the radiator side feature. Not a dimensional drawing.</desc>
+<rect width="360" height="300" rx="16" fill="#101820"/><path d="M28 264h304" stroke="#566773" stroke-width="2"/>
+<path d="M82 48h202v190H82z" fill="#18232e" stroke="#c4512d" stroke-width="4"/><path d="M98 64h84v158H98z" fill="#202f3c" stroke="#84939d"/><path d="M195 64h73v158h-73z" fill="#17212b" stroke="#84939d"/><circle cx="226" cy="107" r="24" fill="none" stroke="{c}" stroke-width="3"/><circle cx="226" cy="178" r="24" fill="none" stroke="{c}" stroke-width="3"/>
+<path d="M58 229h244" stroke="#667984" stroke-width="2"/><text x="180" y="258" fill="#d1d9dd" font-family="sans-serif" font-size="13" text-anchor="middle">SUGO 15</text>
+</svg>

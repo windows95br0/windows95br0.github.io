@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">ST9100824AS SATA drive schematic</title><desc id="desc">Original abstract drive illustration with SATA contacts and one platter.</desc>
+<rect width="640" height="360" fill="#101b29"/><path d="M90 52h460q24 0 24 24v208q0 24-24 24H90q-24 0-24-24V76q0-24 24-24Z" fill="#213148" stroke="#71d3bd" stroke-width="4"/>
+<circle cx="250" cy="180" r="88" fill="#111e2e" stroke="#84e2cf" stroke-width="5"/><circle cx="250" cy="180" r="40" fill="none" stroke="#65879b" stroke-width="3"/><circle cx="250" cy="180" r="13" fill="#ffc66b"/>
+<path d="M250 180 352 124l10 18-96 52Z" fill="#cad9df"/><path d="M414 122h89v18h-89zm0 30h89v18h-89z" fill="#7fd5be"/><text x="412" y="208" fill="#d7ebe7" font-family="monospace" font-size="17">SATA</text>
+<text x="94" y="89" fill="#71d3bd" font-family="monospace" font-size="20">ST9100824AS / 100 GB</text><text x="94" y="274" fill="#a2b6c3" font-family="monospace" font-size="17">5400.2 • 5400 RPM</text>
+</svg>

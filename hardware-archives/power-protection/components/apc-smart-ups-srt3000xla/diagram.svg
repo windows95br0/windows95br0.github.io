@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" role="img" aria-labelledby="title desc">
+<title id="title">SRT3000XLA online UPS power-flow schematic</title>
+<desc id="desc">Original functional diagram showing the SRT3000XLA rectifier, DC battery bus and inverter output.</desc>
+<rect width="720" height="300" rx="18" fill="#111b29"/><path d="M26 28h668v244H26z" fill="none" stroke="#4a6077" stroke-width="2"/>
+<text x="360" y="57" text-anchor="middle" fill="#e3edf5" font-family="sans-serif" font-size="22" font-weight="700">SRT3000XLA</text>
+<text x="360" y="84" text-anchor="middle" fill="#8fa7bc" font-family="sans-serif" font-size="13">ONLINE DOUBLE-CONVERSION // FUNCTIONAL ONLY</text>
+<g fill="#162b3e" stroke="#57c8b0" stroke-width="2"><rect x="48" y="122" width="140" height="76" rx="9"/><rect x="248" y="122" width="140" height="76" rx="9"/><rect x="448" y="122" width="140" height="76" rx="9"/></g>
+<g fill="#dce8f0" font-family="sans-serif" font-size="14" text-anchor="middle"><text x="118" y="153">AC INPUT</text><text x="118" y="176">rectifier</text><text x="318" y="153">DC BUS</text><text x="318" y="176">battery reserve</text><text x="518" y="153">AC OUTPUT</text><text x="518" y="176">inverter</text></g>
+<g stroke="#f2bf5e" stroke-width="4" fill="none"><path d="M188 160h58"/><path d="M388 160h58"/><path d="M580 160h83"/></g><path d="m239 153 10 7-10 7m198-14 10 7-10 7m214-7h12" fill="none" stroke="#f2bf5e" stroke-width="3"/>
+<path d="M248 223h140" stroke="#57c8b0" stroke-width="2"/><text x="318" y="247" fill="#a9bdcc" font-family="sans-serif" font-size="12" text-anchor="middle">battery chemistry &amp; runtime: consult SKU-specific manual</text>
+</svg>

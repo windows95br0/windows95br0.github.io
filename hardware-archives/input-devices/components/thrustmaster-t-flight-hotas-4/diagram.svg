@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 380" role="img" aria-labelledby="title desc">
+<title id="title">Reference drawing: Thrustmaster T.Flight HOTAS 4</title><desc id="desc">Original local vector schematic with a model-specific joystick outline and controls. Not a product photograph.</desc>
+<defs><linearGradient id="g-thrustmaster-t-flight-hotas-4" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff6c6c"/><stop offset="1" stop-color="#101b22"/></linearGradient></defs>
+<rect width="440" height="380" fill="#081110"/><path d="M18 24h404M18 355h404M28 18v340M412 18v340" stroke="#1f4035" stroke-width="1"/>
+<g fill="url(#g-thrustmaster-t-flight-hotas-4)" stroke="#ff6c6c" stroke-width="3" stroke-linejoin="round"><path d="M64 280h118l12 18-13 15H65l-13-15z"/><path d="M103 278l8-76h31l8 76z"/><path d="M115 202l-4-70q0-20 17-20t17 20l-4 70z"/><path d="M255 280h109l-8 32h-93z"/><path d="M285 280v-72h23v72"/><rect x="331" y="209" width="23" height="25" rx="4"/><path d="M113 178h30"/><circle cx="127" cy="115" r="6"/><text x="249" y="338">PC / CONSOLE MODE</text></g>
+<g fill="#ff6c6c" font-family="monospace" font-size="12" letter-spacing="1.3"><text x="32" y="48">THRUSTMASTER / HOTAS 4</text><text x="32" y="335">MODEL REFERENCE // NOT TO SCALE</text></g>
+<circle cx="390" cy="42" r="12" fill="none" stroke="#ff6c6c" stroke-width="2"/><path d="M390 34v16m-8-8h16" stroke="#ff6c6c" stroke-width="1.5"/>
+</svg>

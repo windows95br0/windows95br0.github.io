@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" role="img" aria-labelledby="title desc">
+<title id="title">ROG Hyperion GR701 case schematic</title><desc id="desc">Original side-view diagram showing a full-tower chassis with front and top radiator zones.</desc>
+<rect width="520" height="360" fill="#101820"/><path d="M112 34h282l18 18v257H96V52z" fill="#182833" stroke="#55ddc0" stroke-width="5"/><path d="M115 57h264v226H115z" fill="#0c141b" stroke="#4a7280" stroke-width="3"/><rect x="130" y="75" width="102" height="190" rx="4" fill="#153d42" stroke="#55ddc0" stroke-width="3"/><path d="M251 98h106v93H251z" fill="#253847" stroke="#a6cad1" stroke-width="3"/><path d="M251 215h103v36H251z" fill="#253847" stroke="#a6cad1" stroke-width="3"/><path d="M126 44h217" stroke="#f6c65b" stroke-width="10" stroke-dasharray="12 8"/><circle cx="181" cy="168" r="36" fill="none" stroke="#55ddc0" stroke-width="4"/><path d="M160 168h42M181 147v42M136 296h310" stroke="#78919b" stroke-width="3"/><text x="260" y="324" fill="#e9f1ed" font-family="Arial,sans-serif" font-size="17" text-anchor="middle">GR701 // 268 × 639 × 659 mm</text>
+</svg>
+

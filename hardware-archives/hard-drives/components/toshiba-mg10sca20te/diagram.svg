@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+<title id="title">Toshiba MG10SCA20TE drive schematic</title><desc id="desc">Original illustration of a helium-sealed ten-platter 20 terabyte SAS drive.</desc>
+<rect width="640" height="400" rx="26" fill="#172554"/><rect x="53" y="50" width="534" height="300" rx="20" fill="#1e3a8a" stroke="#a78bfa" stroke-width="5"/>
+<g fill="none" stroke="#c4b5fd" stroke-width="5"><ellipse cx="245" cy="135" rx="105" ry="27"/><ellipse cx="245" cy="154" rx="105" ry="27"/><ellipse cx="245" cy="173" rx="105" ry="27"/><ellipse cx="245" cy="192" rx="105" ry="27"/><ellipse cx="245" cy="211" rx="105" ry="27"/><ellipse cx="245" cy="230" rx="105" ry="27"/></g>
+<circle cx="245" cy="192" r="21" fill="#a78bfa"/><rect x="410" y="116" width="122" height="42" rx="8" fill="#0f172a"/><rect x="410" y="174" width="122" height="42" rx="8" fill="#0f172a"/>
+<text x="425" y="143" fill="#ddd6fe" font-size="16" font-family="sans-serif">SAS PORT A</text><text x="425" y="201" fill="#ddd6fe" font-size="16" font-family="sans-serif">SAS PORT B</text><text x="76" y="306" fill="#f5f3ff" font-size="25" font-family="sans-serif">MG10SCA20TE // 20 TB</text><text x="78" y="88" fill="#c4b5fd" font-size="17" font-family="sans-serif">10-DISK HELIUM · 7,200 RPM</text></svg>

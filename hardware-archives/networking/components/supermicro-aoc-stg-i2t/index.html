@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Model-specific record for the Supermicro AOC-STG-i2T dual-port 10GbE PCIe card.">
+<title>Supermicro AOC-STG-i2T Dual-Port 10GbE Adapter // Networking Hardware // Hardware Archives</title>
+<link rel="stylesheet" href="../../../../style.css">
+<link rel="stylesheet" href="../../../archive.css">
+</head>
+<body class="hardware-page">
+<div class="site-shell">
+<header class="topbar" id="top"><a class="brand" href="../../../../index.html" aria-label="Alien Cultist Labs home"><span class="brand-wordmark">ALIENCULTIST.COM</span></a><div class="status-line"><span class="status-dot"></span> HARDWARE ARCHIVES <span class="status-divider">//</span> COMPONENT RECORD</div><nav class="main-nav" aria-label="Archive navigation"><a class="home-nav-link" href="../../../../index.html">HOME</a><a class="archive-nav-link" href="../../subcategories/ethernet-adapters/index.html">ETHERNET ADAPTERS</a><a class="hardware-nav-link" href="../../../index.html">ALL CATEGORIES</a></nav></header>
+<main class="hardware-record component-record">
+<nav class="record-back"><a href="../../subcategories/ethernet-adapters/index.html">← Ethernet adapters</a><span>NETWORKING // INDIVIDUAL PART RECORD</span></nav>
+<section class="record-hero"><div><p class="eyebrow">[ MODEL-SPECIFIC NETWORK HARDWARE RECORD ]</p><h1>Supermicro AOC-STG-i2T Dual-Port 10GbE Adapter</h1><p class="record-intro">Server-oriented dual-port 10GBASE-T PCIe card with Intel X540 silicon. The OEM board identifier and server compatibility should be checked independently of the controller family.</p></div><figure class="record-figure"><img class="record-art" src="diagram.svg" alt="Original local schematic of the Supermicro AOC-STG-i2T dual RJ45 adapter"><figcaption>UNIQUE LOCAL SVG // SCHEMATIC, NOT TO SCALE</figcaption></figure></section>
+<p class="record-scope"><strong>IDENTIFICATION:</strong> Exact Supermicro board model AOC-STG-i2T. The “-P” retail variant and third-party rebadges are separate assembly/SKU identities; check the silkscreen and board label.</p>
+<section class="record-section"><h2>Exact SKU, interface and compatibility</h2><table class="spec-table"><tbody>
+<tr><th>Exact model / SKU / revision</th><td>Supermicro AOC-STG-i2T; board-revision suffix is not included in the model name in the cited manual. Record the physical revision/assembly label.</td></tr>
+<tr><th>Controller</th><td>Intel Ethernet Controller X540 dual-port 10GBASE-T generation.</td></tr>
+<tr><th>Bus, ports and connectors</th><td>PCI Express 2.1 x8; two 8P8C/RJ-45 copper ports; low-profile card format and bracket fit depend on server chassis.</td></tr>
+<tr><th>Per-port link rates</th><td>10GBASE-T and 1000BASE-T auto-negotiation; do not assume 2.5GBASE-T or 5GBASE-T from the 10GbE label.</td></tr>
+<tr><th>Driver and operating systems</th><td>Supermicro’s guide covers Windows, Linux and FreeBSD driver installation; the Linux X540 driver is Intel ixgbe. The guide’s OS list is legacy, so verify the current OS/driver release and Supermicro server qualification rather than extrapolating.</td></tr>
+<tr><th>Cabling and compatibility caveats</th><td>Use Cat 6a for full 10GbE channel length and a 10GBASE-T-capable peer. Host firmware, PCIe lane availability, low-profile clearance, power and airflow must meet the server’s requirements.</td></tr>
+<tr><th>Variant warning</th><td>AOC-STG-i2T and AOC-STG-i2T-P are not silently treated as one SKU. Preserve the complete model suffix, PCB revision and OEM system qualification.</td></tr>
+</tbody></table></section>
+<section class="record-section"><h2>Server installation notes</h2><p>Both ports share the card’s PCIe resources. Validate electrical x8 connectivity, chassis airflow and supported firmware before deployment. Link aggregation or failover behavior is software/configuration-dependent and does not multiply a single flow’s line rate.</p></section>
+<section class="record-section"><h2>Supermicro user guide and product references</h2><ol class="record-sources">
+<li><a href="https://www.supermicro.com/manuals/other/AOC-STG-i2T.pdf" rel="noopener noreferrer">Supermicro AOC-STG-i2T User’s Guide (PDF)</a><small>Manufacturer installation and hardware reference for the exact board model.</small></li>
+<li><a href="https://www.cisco.com/c/dam/en/us/products/collateral/interfaces-modules/ucs-virtual-interface-card-1225/ethernet_x540_brief.pdf" rel="noopener noreferrer">Intel X540 Ethernet Controller brief (PDF)</a><small>Controller-vendor document hosted by Cisco; it does not replace Supermicro’s board-specific guide.</small></li>
+<li><a href="https://www.supermicro.com/support/resources/manuals" rel="noopener noreferrer">Supermicro manuals and downloads</a><small>Manufacturer document portal for board-specific revisions and related materials.</small></li>
+</ol></section>
+</main><footer class="footer"><p>© 2026 ALIEN CULTIST LABS // GALT, CALIFORNIA</p><a href="../../index.html">NETWORKING CATEGORY</a><a href="#top">BACK TO TOP ↑</a></footer>
+</div></body></html>

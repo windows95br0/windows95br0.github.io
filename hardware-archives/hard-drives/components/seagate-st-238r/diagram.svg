@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">Original schematic for Seagate ST-238R</title>
+<desc id="desc">A locally drawn abstract top view of a legacy hard disk with drive outline, platter rings, spindle, interface cable markers and model label. Not to scale.</desc>
+<rect width="640" height="360" rx="18" fill="#07111a"/>
+<g fill="none" stroke="#f0b85b" stroke-width="3" opacity=".9">
+<path d="M54 45h430l74 68v202H54z"/><path d="M484 45v68h74"/><circle cx="83" cy="75" r="8"/><circle cx="523" cy="285" r="8"/>
+<circle cx="268" cy="185" r="102"/><circle cx="268" cy="185" r="79"/><circle cx="268" cy="185" r="55"/><circle cx="268" cy="185" r="22" fill="#f0b85b" fill-opacity=".16"/>
+<path d="M268 83v102h102" stroke-dasharray="6 8"/><path d="M394 125h92M394 145h71M394 165h82"/>
+<path d="M82 260h188M82 278h150" opacity=".55"/>
+<path d="M552 143h36v25h-36M552 180h36v25h-36" stroke-width="2"/>
+</g>
+<text x="394" y="95" fill="#b9cbd8" font-family="monospace" font-size="12">MODEL // Seagate ST-238R</text>
+<text x="394" y="228" fill="#eef4f8" font-family="monospace" font-size="13">5.25-inch half-height (HH)</text>
+<text x="394" y="249" fill="#f0b85b" font-family="monospace" font-size="13">RLL 2,7 (Run Length Limited); model suffix R identifies the RLL-qualified variant</text>
+<text x="82" y="316" fill="#9bb0bf" font-family="monospace" font-size="12">615 cylinders × 4 heads × 26 sectors/track; 512-byte sectors per the model listing</text>
+</svg>

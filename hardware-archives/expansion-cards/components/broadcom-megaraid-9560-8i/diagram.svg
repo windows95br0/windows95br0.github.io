@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-labelledby="title desc">
+  <title id="title">MegaRAID 9560-8i board schematic</title>
+  <desc id="desc">Original Tri-Mode RAID adapter sketch with SlimSAS port, controller and cache protection module.</desc>
+  <rect width="720" height="420" fill="#0d1720"/>
+  <path d="M54 74h504l101 75v172H54z" fill="#18303c" stroke="#55c6ed" stroke-width="4"/>
+  <rect x="277" y="136" width="168" height="114" rx="12" fill="#101b24" stroke="#e6f5fa" stroke-width="3"/>
+  <text x="361" y="180" fill="#f5f7ef" font-family="monospace" font-size="16" text-anchor="middle">SAS3908 ROC</text>
+  <text x="361" y="218" fill="#55c6ed" font-family="monospace" font-size="18" text-anchor="middle">9560-8i</text>
+  <rect x="105" y="135" width="74" height="43" rx="5" fill="#283e4a" stroke="#55c6ed" stroke-width="3"/>
+  <text x="142" y="162" fill="#edf8fb" font-family="monospace" font-size="11" text-anchor="middle">8654 8i</text>
+  <rect x="488" y="214" width="75" height="42" rx="5" fill="#283e4a" stroke="#55c6ed" stroke-width="3"/>
+  <text x="525" y="241" fill="#edf8fb" font-family="monospace" font-size="10" text-anchor="middle">CVPM05</text>
+  <path d="M179 156h98m168 36h79m-79 37h30m-230-20h-61v44h-40" fill="none" stroke="#55c6ed" stroke-width="4"/>
+  <path d="M134 337h450l-17 29H151z" fill="#c4d0d5"/>
+  <path d="M167 337v29m26-29v29m26-29v29m26-29v29m26-29v29m26-29v29m26-29v29m26-29v29m26-29v29m26-29v29m26-29v29m26-29v29m26-29v29m26-29v29" stroke="#38464c" stroke-width="8"/>
+  <text x="360" y="401" fill="#9cb5bf" font-family="monospace" font-size="14" text-anchor="middle">TRI-MODE STORAGE // SCHEMATIC</text>
+</svg>

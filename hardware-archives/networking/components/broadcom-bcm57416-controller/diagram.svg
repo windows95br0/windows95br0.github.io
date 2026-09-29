@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">Broadcom NetXtreme-E BCM57416 Ethernet Controller controller schematic</title><desc id="desc">Original conceptual schematic showing a 2-port PCIe Ethernet controller, not to scale or a product photograph.</desc>
+<rect width="640" height="360" fill="#101821"/><path d="M0 286H640M36 35H604" stroke="#30414f" stroke-width="2"/>
+<text x="40" y="26" fill="#9fb1c1" font-family="monospace" font-size="12">NETWORK SILICON // ARCHIVE SCHEMATIC</text>
+<rect x="188" y="92" width="264" height="160" rx="9" fill="#182633" stroke="#ff8b73" stroke-width="3"/>
+<text x="320" y="133" fill="#f3f6f8" text-anchor="middle" font-family="monospace" font-size="17">Broadcom NetXtreme-E BCM57416 Ethernet</text>
+<text x="320" y="161" fill="#ff8b73" text-anchor="middle" font-family="monospace" font-size="13">BNXT_EN // PCIe HOST</text>
+<path d="M64 177H188M452 177H576" stroke="#ff8b73" stroke-width="4"/>
+<text x="47" y="158" fill="#c5d2dc" font-family="monospace" font-size="12">PCIe</text>
+<text x="499" y="158" fill="#c5d2dc" font-family="monospace" font-size="12">ETHERNET</text>
+<rect x="493" y="188" width="104" height="15" rx="3" fill="#1d303b" stroke="#ff8b73"/><text x="545" y="199" fill="#dce8ef" text-anchor="middle" font-family="monospace" font-size="9">PORT 1</text><rect x="493" y="210" width="104" height="15" rx="3" fill="#1d303b" stroke="#ff8b73"/><text x="545" y="221" fill="#dce8ef" text-anchor="middle" font-family="monospace" font-size="9">PORT 2</text>
+<path d="M88 292H552" stroke="#30414f" stroke-width="1"/><text x="320" y="321" fill="#9fb1c1" text-anchor="middle" font-family="monospace" font-size="12">PCI EXPRESS 3.0 X8 HOST INTERFACE.</text>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">GlassOuse PRO head mouse schematic</title><desc id="desc">A wearable head sensor sends pointer movement to a receiver or Bluetooth host while selection is handled separately.</desc>
+<rect width="640" height="360" fill="#101820"/><path d="M26 26h588v308H26z" fill="none" stroke="#557079" stroke-width="2"/>
+<text x="320" y="58" fill="#9fffe0" font-family="monospace" font-size="18" text-anchor="middle">GLASSOUSE PRO / POINTER ACCESS PATH</text>
+<path d="M90 197q4-71 76-78 61 0 73 57l-18 44q-27 33-79 27-48-5-52-50z" fill="#21313a" stroke="#4ce0bd" stroke-width="4"/>
+<path d="M114 181q42-48 101-2" fill="none" stroke="#ffb46a" stroke-width="10" stroke-linecap="round"/><circle cx="200" cy="179" r="9" fill="#daff00"/><path d="M200 169v-22" stroke="#daff00" stroke-width="3"/>
+<text x="155" y="278" fill="#fff" font-family="monospace" font-size="12" text-anchor="middle">HEAD-WORN SENSOR</text>
+<path d="M249 186h106" stroke="#ffb46a" stroke-width="4" stroke-dasharray="7 8"/><path d="m346 177 14 9-14 9" fill="none" stroke="#ffb46a" stroke-width="4"/>
+<rect x="369" y="142" width="96" height="90" rx="12" fill="#182d38" stroke="#4ce0bd" stroke-width="3"/><text x="417" y="181" fill="#fff" font-family="monospace" font-size="12" text-anchor="middle">G-RECEIVER</text><text x="417" y="205" fill="#9fffe0" font-family="monospace" font-size="11" text-anchor="middle">OR BT PATH</text>
+<path d="M468 187h63" stroke="#4ce0bd" stroke-width="4"/><path d="m521 178 14 9-14 9" fill="none" stroke="#4ce0bd" stroke-width="4"/>
+<rect x="543" y="115" width="66" height="142" rx="8" fill="#21313a" stroke="#daff00" stroke-width="3"/><rect x="552" y="127" width="48" height="95" fill="none" stroke="#4ce0bd" stroke-width="2"/><path d="m562 196 10-15 8 9 10-29" fill="none" stroke="#ffb46a" stroke-width="3"/><circle cx="576" cy="240" r="5" fill="#fff"/>
+<text x="576" y="280" fill="#fff" font-family="monospace" font-size="11" text-anchor="middle">HOST</text>
+<path d="M360 277h162" stroke="#557079" stroke-width="2" stroke-dasharray="4 6"/><text x="441" y="303" fill="#ffb46a" font-family="monospace" font-size="12" text-anchor="middle">SELECTION / CLICK SETUP</text>
+</svg>

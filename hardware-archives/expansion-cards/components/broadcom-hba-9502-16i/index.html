@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Model-specific archival record for the Broadcom HBA 9502-16i OCP 3.0 Tri-Mode storage adapter.">
+  <title>Broadcom HBA 9502-16i // Expansion Cards // Hardware Archives</title>
+  <link rel="stylesheet" href="../../../../style.css">
+  <link rel="stylesheet" href="../../../archive.css">
+</head>
+<body class="hardware-page">
+  <div class="site-shell">
+    <header class="topbar" id="top"><a class="brand" href="../../../../index.html"><span class="brand-wordmark">ALIENCULTIST.COM</span></a><div class="status-line"><span class="status-dot"></span> HARDWARE ARCHIVES // PART RECORD</div><nav class="main-nav" aria-label="Archive navigation"><a class="home-nav-link" href="../../../../index.html">HOME</a><a class="archive-nav-link" href="../../index.html">EXPANSION CARDS</a><a class="hardware-nav-link" href="../../../index.html">ALL CATEGORIES</a></nav></header>
+    <main class="hardware-record">
+      <nav class="record-back"><a href="../../subcategories/storage-and-disk-controllers/index.html">&larr; Storage and disk controllers</a><span>PART RECORD // EXPANSION CARDS</span></nav>
+      <section class="record-hero"><div><p class="eyebrow">[ INDIVIDUAL COMPONENT // STORAGE / DISK I/O ]</p><h1>Broadcom HBA 9502-16i</h1><p class="record-intro">An OCP 3.0 SFF host bus adapter exposing sixteen internal Tri-Mode storage lanes; it is not a conventional bracketed PCIe card.</p></div><figure class="record-figure"><img class="record-art" src="diagram.svg" alt="Original schematic of the Broadcom HBA 9502-16i OCP adapter"><figcaption>SCHEMATIC // OCP STORAGE ADAPTER</figcaption></figure></section>
+      <p class="record-scope">MODEL SCOPE: HBA 9502-16i. Confirm that the server has a compatible OCP 3.0 SFF slot and that the exact adapter SKU matches chassis and backplane wiring.</p>
+      <section class="record-section"><h2>Reference specifications</h2><table class="spec-table"><tbody>
+        <tr><th>Controller / form factor</th><td>Broadcom Tri-Mode SAS controller; OCP 3.0 NIC Small Form Factor (SFF) adapter.</td></tr>
+        <tr><th>Host bus</th><td>PCI Express 4.0 x8 host interface via the OCP 3.0 connector.</td></tr>
+        <tr><th>Ports</th><td>Sixteen internal lanes using two SFF-8654 8i SlimSAS connectors.</td></tr>
+        <tr><th>Protocols</th><td>SAS 12 Gb/s, SATA 6 Gb/s and supported NVMe over PCIe Tri-Mode paths.</td></tr>
+        <tr><th>RAID / HBA mode</th><td>HBA/eHBA pass-through mode; no MegaRAID array creation or write-back cache is provided by this HBA model.</td></tr>
+        <tr><th>Cache / protection</th><td>No RAID write cache or BBU specified; storage policy and redundancy are host-side.</td></tr>
+        <tr><th>Firmware / OS</th><td>Use Broadcom 95xx HBA firmware and a driver supported for the installed Windows, Linux or hypervisor release. Verify OCP platform qualification and OEM firmware requirements.</td></tr>
+        <tr><th>Drive / backplane caveats</th><td>NVMe requires a supported direct-attach or tri-mode backplane mapping; SAS expanders do not route NVMe. Use only the correct SlimSAS cable pinout and OCP connector generation.</td></tr>
+      </tbody></table></section>
+      <section class="record-section"><h2>Compatibility and service notes</h2><ul><li>The OCP 3.0 SFF form factor and power/management pins are platform-specific; this is not a standard PCIe x8 slot card.</li><li>Map each lane to a compatible backplane bay before enabling drives; SAS/SATA and NVMe may follow different physical paths.</li><li>Keep the HBA in pass-through mode for host-managed filesystems and record firmware and drive identifiers.</li></ul></section>
+      <section class="record-section"><h2>Sources &amp; further reading</h2><ol class="record-sources">
+        <li><a href="https://www.broadcom.com/products/storage/host-bus-adapters/sas-nvme-9502-16i" rel="noopener noreferrer">Broadcom — HBA 9502-16i Tri-Mode OCP 3.0 Storage Adapter</a><small>Official exact-model product details and downloads.</small></li>
+        <li><a href="https://docs.broadcom.com/doc/95xx-MR-HBA-Tri-Mode-UG" rel="noopener noreferrer">Broadcom — 95xx PCIe 4.0 MegaRAID and HBA Tri-Mode Storage Adapters User Guide</a><small>Official HBA setup, firmware, cabling and compatibility guidance.</small></li>
+        <li><a href="https://docs.broadcom.com/doc/BC-0510EN" rel="noopener noreferrer">Broadcom — 9500 Series PCIe Gen 4.0 Tri-Mode Storage HBA product brief</a><small>Manufacturer family brief covering the HBA series and supported adapter configurations.</small></li>
+      </ol></section>
+    </main>
+    <footer class="footer"><p>&copy; 2026 ALIEN CULTIST LABS // GALT, CALIFORNIA</p><a href="../../subcategories/storage-and-disk-controllers/index.html">SUBCATEGORY FILE</a><a href="#top">BACK TO TOP &uarr;</a></footer>
+  </div>
+</body>
+</html>

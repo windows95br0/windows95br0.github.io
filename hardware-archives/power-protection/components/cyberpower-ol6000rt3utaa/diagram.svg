@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">OL6000RT3UTAA functional schematic</title>
+  <desc id="desc">6000 volt-amp online UPS with 5400 watt output, sealed lead-acid batteries and four L6 receptacles.</desc>
+  <rect width="720" height="360" rx="18" fill="#161921"/>
+  <g fill="none" stroke="#e3a7ff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M48 177h116m110 0h73m112 0h76m95 0h38"/>
+    <path d="M205 128v98m-26-49h52m107-47 47 47-47 47m72-94v94"/>
+    <path d="M320 260h90m-72-18v36m24-36v36m24-36v36"/>
+    <rect x="587" y="124" width="85" height="107" rx="7"/>
+    <path d="M604 150h22m-22 23h22m30-23h22m-22 23h22m-50 31h22m28-18v19"/>
+  </g>
+  <g fill="#f3f4f6" font-family="monospace" font-size="17">
+    <text x="44" y="123">200–240 V</text><text x="174" y="98">AC/DC</text>
+    <text x="302" y="98">DC/AC</text><text x="322" y="308">VRLA</text>
+    <text x="580" y="255">2 × L6-20</text><text x="580" y="280">2 × L6-30</text>
+    <text x="44" y="337" fill="#e3a7ff">OL6000RT3UTAA // 6000 VA / 5400 W</text>
+  </g>
+</svg>

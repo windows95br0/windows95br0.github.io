@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-labelledby="title desc">
+  <title id="title">HighPoint RocketRAID 3740A board schematic</title>
+  <desc id="desc">Original RAID card drawing with four Mini-SAS HD ports and a central controller.</desc>
+  <rect width="720" height="420" fill="#0f1813"/>
+  <path d="M45 83h530l95 64v170H45z" fill="#1c3328" stroke="#7fda9a" stroke-width="4"/>
+  <rect x="274" y="144" width="172" height="103" rx="7" fill="#122118" stroke="#eaf7ee" stroke-width="3"/>
+  <text x="360" y="183" fill="#f5f7ef" font-family="monospace" font-size="15" text-anchor="middle">HIGHPOINT</text>
+  <text x="360" y="219" fill="#7fda9a" font-family="monospace" font-size="18" text-anchor="middle">RR3740A</text>
+  <g fill="#294634" stroke="#7fda9a" stroke-width="2"><rect x="81" y="111" width="68" height="38" rx="4"/><rect x="81" y="161" width="68" height="38" rx="4"/><rect x="81" y="211" width="68" height="38" rx="4"/><rect x="81" y="261" width="68" height="31" rx="4"/></g>
+  <text x="115" y="136" fill="#f3fff6" font-family="monospace" font-size="9" text-anchor="middle">8643 1</text>
+  <text x="115" y="186" fill="#f3fff6" font-family="monospace" font-size="9" text-anchor="middle">8643 2</text>
+  <text x="115" y="236" fill="#f3fff6" font-family="monospace" font-size="9" text-anchor="middle">8643 3</text>
+  <text x="115" y="282" fill="#f3fff6" font-family="monospace" font-size="9" text-anchor="middle">8643 4</text>
+  <path d="M149 130h125m-125 50h125m-125 50h79m-79 42h77m172-86h91v-39h54m-145 80h90v42h55" fill="none" stroke="#7fda9a" stroke-width="3"/>
+  <path d="M132 337h458l-19 30H151z" fill="#c8d3cb"/>
+  <g fill="#37443b"><path d="M166 337v30h8v-30m23 0v30h8v-30m23 0v30h8v-30m23 0v30h8v-30m23 0v30h8v-30m23 0v30h8v-30m23 0v30h8v-30m23 0v30h8v-30m23 0v30h8v-30m23 0v30h8v-30m23 0v30h8v-30m23 0v30h8v-30m23 0v30h8v-30"/></g>
+  <text x="360" y="401" fill="#a4baaa" font-family="monospace" font-size="14" text-anchor="middle">16 DRIVE LANES // NOT TO SCALE</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 150" role="img" aria-labelledby="title desc">
+  <title id="title">FirePro W4300 board schematic</title><desc id="desc">Compact Bonaire professional card with four Mini DisplayPort outputs and 4 GB memory.</desc>
+  <rect width="380" height="150" rx="8" fill="#102322"/><path d="M26 33h276l27 22v60H26z" fill="#183c37" stroke="#7bcab2" stroke-width="2"/>
+  <rect x="91" y="52" width="91" height="54" rx="5" fill="#0a1716" stroke="#65b99f"/><path d="M100 61h73v36h-73z" fill="none" stroke="#355f56"/><text x="136" y="76" fill="#ddfff5" text-anchor="middle" font-family="monospace" font-size="11">BONAIRE</text><text x="136" y="92" fill="#a7d8ca" text-anchor="middle" font-family="monospace" font-size="9">4 GB GDDR5</text>
+  <circle cx="232" cy="79" r="19" fill="#102421" stroke="#477e70"/><path d="M232 60v38m-19-19h38" stroke="#477e70"/>
+  <path d="M35 114h222v7H35z" fill="#b49c5d"/><g fill="#091311" stroke="#d4f2e8"><rect x="295" y="48" width="25" height="12"/><rect x="295" y="65" width="25" height="12"/><rect x="295" y="82" width="25" height="12"/><rect x="295" y="99" width="25" height="12"/></g>
+  <text x="39" y="46" fill="#7bcab2" font-family="monospace" font-size="9">W4300 // 50 W // 4 × mDP</text>
+</svg>

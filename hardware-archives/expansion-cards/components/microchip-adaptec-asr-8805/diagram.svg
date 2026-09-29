@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-labelledby="title desc">
+  <title id="title">Adaptec RAID ASR-8805 board schematic</title>
+  <desc id="desc">Original SAS RAID card schematic with two internal ports, ROC and flash backup module area.</desc>
+  <rect width="720" height="420" fill="#19150e"/>
+  <path d="M54 78h502l103 70v168H54z" fill="#33291b" stroke="#e7c24a" stroke-width="4"/>
+  <rect x="268" y="140" width="174" height="108" fill="#1c1a14" stroke="#fff5d7" stroke-width="3"/>
+  <text x="355" y="181" fill="#f5f7ef" font-family="monospace" font-size="15" text-anchor="middle">RAID ROC</text>
+  <text x="355" y="217" fill="#e7c24a" font-family="monospace" font-size="19" text-anchor="middle">ASR-8805</text>
+  <rect x="99" y="120" width="81" height="45" rx="4" fill="#46381f" stroke="#e7c24a" stroke-width="2"/>
+  <rect x="99" y="229" width="81" height="45" rx="4" fill="#46381f" stroke="#e7c24a" stroke-width="2"/>
+  <rect x="492" y="249" width="62" height="30" rx="4" fill="#46381f" stroke="#e7c24a" stroke-width="2"/>
+  <text x="139" y="148" fill="#fff7df" font-family="monospace" font-size="11" text-anchor="middle">SFF-8643</text>
+  <text x="139" y="257" fill="#fff7df" font-family="monospace" font-size="11" text-anchor="middle">SFF-8643</text>
+  <text x="523" y="269" fill="#fff7df" font-family="monospace" font-size="10" text-anchor="middle">AFM</text>
+  <path d="M180 143h88m-88 108h88m174-68h58v36h80m-80 55h-12" fill="none" stroke="#e7c24a" stroke-width="4"/>
+  <path d="M136 338h450l-18 29H154z" fill="#d3cbb2"/>
+  <path d="M170 338v29m25-29v29m25-29v29m25-29v29m25-29v29m25-29v29m25-29v29m25-29v29m25-29v29m25-29v29m25-29v29m25-29v29m25-29v29m25-29v29" stroke="#514c3d" stroke-width="7"/>
+  <text x="360" y="402" fill="#c5b995" font-family="monospace" font-size="14" text-anchor="middle">SERIES 8 RAID // CONCEPT</text>
+</svg>

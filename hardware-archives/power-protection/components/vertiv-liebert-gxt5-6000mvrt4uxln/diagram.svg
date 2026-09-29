@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">GXT5-6000MVRT4UXLN functional schematic</title>
+  <desc id="desc">6000 watt online conversion path, battery and configurable hardwire or POD output.</desc>
+  <rect width="720" height="360" rx="18" fill="#111827"/>
+  <g fill="none" stroke="#f5b544" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M50 180h115m111 0h72m111 0h82m87 0h40"/>
+    <path d="M210 130v100m-28-50h56m106-46 46 46-46 46m72-92v92"/>
+    <path d="M320 264h92m-75-18v36m25-36v36m25-36v36"/>
+    <rect x="586" y="125" width="86" height="108" rx="8"/>
+    <path d="M605 151h48m-48 28h48m-48 28h48"/>
+  </g>
+  <g fill="#f3f4f6" font-family="monospace" font-size="18">
+    <text x="47" y="125">208 V AC</text><text x="177" y="99">AC/DC</text>
+    <text x="302" y="99">DC/AC</text><text x="331" y="312">BATTERY</text>
+    <text x="589" y="267">POD / OUTPUT</text>
+    <text x="47" y="338" fill="#f5b544">GXT5-6000 // 6000 VA / 6000 W</text>
+  </g>
+</svg>

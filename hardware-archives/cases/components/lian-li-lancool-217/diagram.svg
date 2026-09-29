@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" role="img" aria-labelledby="title desc">
+<title id="title">LANCOOL 217 case schematic</title><desc id="desc">Original tower drawing with two large front intake fans and rear exhaust fan.</desc>
+<rect width="520" height="360" fill="#111820"/><path d="M127 55h259v235H108V74z" fill="#1c2c31" stroke="#c99052" stroke-width="4"/><rect x="139" y="85" width="214" height="188" fill="#0c151a" stroke="#52666a" stroke-width="2"/><rect x="366" y="80" width="18" height="191" fill="#263c3f"/><circle cx="129" cy="126" r="34" fill="none" stroke="#e7bc72" stroke-width="4"/><circle cx="129" cy="220" r="34" fill="none" stroke="#e7bc72" stroke-width="4"/><path d="M129 99v54m-27-27h54M129 193v54m-27-27h54" stroke="#e7bc72" stroke-width="3"/><rect x="185" y="124" width="122" height="77" fill="#263944" stroke="#98b3b6" stroke-width="3"/><path d="M95 299h325" stroke="#788c90" stroke-width="3"/><text x="260" y="332" fill="#f4eee5" font-family="Arial,sans-serif" font-size="17" text-anchor="middle">LANCOOL 217 // 482 × 238 × 503 mm</text>
+</svg>
+

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Amstrad FD-1 schematic</title><desc id="desc">Original conceptual drawing of the FD-1 3-inch drive linked to a CPC host through DDI-1.</desc>
+  <rect width="640" height="360" rx="18" fill="#101c2a"/><text x="320" y="54" fill="#d3e5e7" font-family="sans-serif" font-size="22" text-anchor="middle">AMSTRAD FD-1 // 3-INCH CF2</text>
+  <rect x="57" y="105" width="190" height="132" rx="12" fill="#1a3042" stroke="#73d4c4" stroke-width="4"/><rect x="83" y="136" width="138" height="43" rx="5" fill="#10202d" stroke="#d8b46a" stroke-width="3"/><text x="152" y="210" fill="#d3e5e7" font-family="sans-serif" font-size="17" text-anchor="middle">FD-1</text>
+  <rect x="402" y="114" width="178" height="115" rx="10" fill="#1a3042" stroke="#d8b46a" stroke-width="4"/><text x="491" y="165" fill="#d3e5e7" font-family="sans-serif" font-size="18" text-anchor="middle">CPC HOST</text><text x="491" y="192" fill="#73d4c4" font-family="sans-serif" font-size="14" text-anchor="middle">DDI-1</text>
+  <path d="M247 171h155m-34-18 20 18-20 18M320 239v55M263 294h114" fill="none" stroke="#73d4c4" stroke-width="4"/>
+  <text x="320" y="334" fill="#d3e5e7" font-family="sans-serif" font-size="16" text-anchor="middle">AMSTRAD SYSTEM CABLE // NOT TO SCALE</text>
+</svg>

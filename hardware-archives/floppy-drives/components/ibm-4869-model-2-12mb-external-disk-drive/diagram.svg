@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">IBM 4869 Model 2 schematic</title><desc id="desc">Original schematic of the 1.2 MB IBM external drive and compatible PS/2 adapter.</desc>
+  <rect width="640" height="360" rx="18" fill="#101c2a"/><text x="320" y="53" fill="#d3e5e7" font-family="sans-serif" font-size="22" text-anchor="middle">IBM 4869 MODEL 2 // 1.2 MB</text>
+  <path d="M69 104h245v143H69z" fill="#1a3042" stroke="#73d4c4" stroke-width="4"/><path d="M96 132h191v55H96z" fill="#10202d" stroke="#d8b46a" stroke-width="3"/>
+  <g fill="#73d4c4"><rect x="104" y="202" width="27" height="16"/><rect x="140" y="202" width="27" height="16"/><rect x="176" y="202" width="27" height="16"/></g>
+  <rect x="411" y="119" width="157" height="111" rx="10" fill="#1a3042" stroke="#d8b46a" stroke-width="4"/><text x="490" y="171" fill="#d3e5e7" font-family="sans-serif" font-size="19" text-anchor="middle">PS/2</text><text x="490" y="197" fill="#73d4c4" font-family="sans-serif" font-size="13" text-anchor="middle">FLOPPY ADAPTER</text>
+  <path d="M314 175h97m-36-17 19 17-19 17M320 248v47M252 295h136" fill="none" stroke="#73d4c4" stroke-width="4"/>
+  <text x="320" y="335" fill="#d3e5e7" font-family="sans-serif" font-size="16" text-anchor="middle">HIGH-DENSITY EXTERNAL DRIVE // NOT TO SCALE</text>
+</svg>

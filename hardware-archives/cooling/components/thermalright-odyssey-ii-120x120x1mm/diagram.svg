@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" role="img" aria-labelledby="title desc">
+  <title id="title">Odyssey II pad plan view</title>
+  <desc id="desc">Original plan-view schematic of a square thermal pad with dimension annotations.</desc>
+  <rect width="640" height="260" rx="20" fill="#17212b"/>
+  <rect x="184" y="39" width="182" height="182" rx="4" fill="#75808a" stroke="#c8d1d7" stroke-width="4"/>
+  <path d="M184 26h182m-182-7v14m182-14v14" stroke="#e8b969" stroke-width="3"/>
+  <path d="M171 39v182m-7-182h14m-14 182h14" stroke="#e8b969" stroke-width="3"/>
+  <path d="M205 61h140v140H205z" fill="none" stroke="#a6b0b8" stroke-width="2" stroke-dasharray="7 7"/>
+  <text x="237" y="134" fill="#1e2932" font-family="sans-serif" font-size="18" font-weight="700">ODYSSEY II</text>
+  <text x="245" y="160" fill="#1e2932" font-family="sans-serif" font-size="17">1.0 mm</text>
+  <text x="236" y="19" fill="#f0ce8a" font-family="sans-serif" font-size="16">120 mm</text>
+  <text x="66" y="136" fill="#f0ce8a" font-family="sans-serif" font-size="16">120 mm</text>
+  <text x="399" y="130" fill="#dce5ea" font-family="sans-serif" font-size="17">14.8 W/(m·K)</text>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" role="img" aria-labelledby="title desc">
+<title id="title">ProArt PA602 case schematic</title><desc id="desc">Original schematic with wide mesh front and top radiator zone.</desc>
+<rect width="520" height="360" fill="#111921"/><path d="M121 67h214v218H121z" fill="#252e35" stroke="#d7aa63" stroke-width="4"/><path d="M335 78l66 20v187l-66 0z" fill="#17252d" stroke="#8ca0a2" stroke-width="3"/><path d="M134 88h187v177H134z" fill="#161d23" stroke="#57676d" stroke-width="2"/><path d="M143 98v157m14-157v157m14-157v157m14-157v157m14-157v157m14-157v157m14-157v157m14-157v157m14-157v157m14-157v157m14-157v157" stroke="#d7aa63" stroke-opacity=".58"/><path d="M130 57h190" stroke="#f2cf87" stroke-width="9"/><circle cx="376" cy="145" r="25" fill="none" stroke="#d7aa63" stroke-width="3"/><path d="M357 145h38m-19-19v38" stroke="#d7aa63" stroke-width="3"/><path d="M105 294h325" stroke="#718286" stroke-width="3"/><text x="260" y="328" fill="#f2eee5" font-family="Arial,sans-serif" font-size="17" text-anchor="middle">PA602 // 593 × 560 × 245 mm</text>
+</svg>
+

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-labelledby="title desc">
+<title id="title">ADATA XPG GAMMIX S70 BLADE 1 TB board schematic</title><desc id="desc">Original vector schematic of an M.2 2280 NVMe module labeled AGAMMIXS70B-1T-CS; not a product photograph or measured drawing.</desc>
+<defs><linearGradient id="board" x2="0" y2="1"><stop stop-color="#183942"/><stop offset="1" stop-color="#10252d"/></linearGradient><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#8cb2a9" stroke-opacity=".11"/></pattern></defs>
+<rect width="720" height="420" rx="24" fill="#0d171c"/><path d="M36 70h648v282H36z" fill="url(#grid)" stroke="#526c70" stroke-width="2"/>
+<path d="M94 138h438l46 45v88l-46 35H94q-26 0-26-26v-116q0-26 26-26Z" fill="url(#board)" stroke="#bd314c" stroke-width="5"/>
+<path d="M102 151h398v142H102q-14 0-14-14V165q0-14 14-14Z" fill="none" stroke="#74999a" stroke-width="2"/>
+<rect x="230" y="174" width="158" height="94" rx="8" fill="#142128" stroke="#bd314c" stroke-width="3"/><path d="M247 192h124M247 207h124M247 222h124M247 237h124M247 252h74" stroke="#6e8582" stroke-width="3"/>
+<rect x="410" y="184" width="70" height="68" rx="5" fill="#17262a" stroke="#81958b" stroke-width="2"/><path d="M421 195h48v46h-48z" fill="#bd314c" fill-opacity=".22"/>
+<circle cx="104" cy="222" r="10" fill="#0d171c" stroke="#8ea6a1" stroke-width="3"/><circle cx="580" cy="222" r="10" fill="#0d171c" stroke="#bd314c" stroke-width="3"/>
+<path d="M548 148v-26h44v26M152 151v-29h28v29M154 293v28h54v-28" fill="none" stroke="#8ba7a0" stroke-width="3"/>
+<path d="M610 175v93" stroke="#cfb66f" stroke-width="3"/><text x="616" y="205" fill="#f2df9a" font-family="monospace" font-size="15">M.2</text><text x="616" y="229" fill="#f2df9a" font-family="monospace" font-size="15">2280</text>
+<text x="86" y="99" fill="#d9e5dd" font-family="monospace" font-size="16" letter-spacing="2">ADATA XPG // PCIE 4.0 X4 NVME</text><text x="88" y="376" fill="#9db2a9" font-family="monospace" font-size="16">AGAMMIXS70B-1T-CS // LOCAL ORIGINAL SCHEMATIC</text>
+</svg>

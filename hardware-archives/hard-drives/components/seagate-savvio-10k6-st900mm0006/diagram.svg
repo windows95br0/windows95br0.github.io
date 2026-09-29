@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+<title id="title">Seagate Savvio 10K.6 ST900MM0006 schematic</title><desc id="desc">Original cobalt schematic marking the 900 gigabyte, 10K SAS drive and its small form factor.</desc>
+<rect width="640" height="400" rx="22" fill="#172554"/><rect x="88" y="75" width="464" height="250" rx="22" fill="#1e40af" stroke="#60a5fa" stroke-width="5"/>
+<circle cx="258" cy="198" r="92" fill="#0f172a" stroke="#93c5fd" stroke-width="7"/><circle cx="258" cy="198" r="54" fill="none" stroke="#64748b" stroke-width="10"/><circle cx="258" cy="198" r="18" fill="#60a5fa"/>
+<path d="M258 198 374 135l18 24-122 55" fill="#cbd5e1"/><path d="M437 130h72m-72 54h72" stroke="#bfdbfe" stroke-width="8"/>
+<text x="420" y="120" fill="#dbeafe" font-size="15" font-family="sans-serif">DUAL SAS PORTS</text><text x="111" y="287" fill="#eff6ff" font-size="22" font-family="sans-serif">ST900MM0006 · 900 GB</text><text x="112" y="105" fill="#bfdbfe" font-size="17" font-family="sans-serif">10K.6 // 6G SAS-2 // 64 MB</text></svg>

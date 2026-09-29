@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 230" role="img" aria-labelledby="title desc">
+  <title id="title">Lightweight wireless mouse schematic</title>
+  <desc id="desc">Original top-view outline of a compact mouse, receiver, and wireless signal arcs.</desc>
+  <rect width="360" height="230" fill="#11141a"/>
+  <g fill="none" stroke="#5be7d0" stroke-width="3">
+    <path d="M180 33c-42 0-68 31-68 78v29c0 31 26 54 68 54s68-23 68-54v-29c0-47-26-78-68-78z"/>
+    <path d="M180 34v59m-68 18h136M180 94v34"/>
+    <path d="M55 72a116 116 0 0 0 0 104m250-104a116 116 0 0 1 0 104" stroke-dasharray="7 8"/>
+    <rect x="163" y="202" width="34" height="15" rx="3"/>
+  </g>
+  <g fill="#ffc857" font-family="monospace" font-size="11"><text x="15" y="28">RADIO / RECEIVER</text><text x="15" y="215">TOP VIEW // SCHEMATIC ONLY</text></g>
+</svg>

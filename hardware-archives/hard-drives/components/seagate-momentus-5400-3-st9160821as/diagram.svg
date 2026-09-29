@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">ST9160821AS 160 GB drive schematic</title><desc id="desc">Original diagram of the 2.5-inch SATA disk with offset actuator arm.</desc>
+<rect width="640" height="360" fill="#1c1713"/><rect x="78" y="56" width="484" height="248" rx="18" fill="#35271b" stroke="#ff9e57" stroke-width="4"/>
+<circle cx="246" cy="180" r="83" fill="#1c1a1a" stroke="#ffbd79" stroke-width="5"/><circle cx="246" cy="180" r="34" fill="none" stroke="#76553c" stroke-width="3"/><circle cx="246" cy="180" r="12" fill="#efdc9d"/>
+<path d="m246 180 118-63 12 22-116 58Z" fill="#d4d7d9"/><path d="M412 118h102v15H412zm0 25h102v15H412zm0 25h102v15H412z" fill="#ff9e57"/>
+<text x="101" y="91" fill="#ffad6d" font-family="monospace" font-size="20">ST9160821AS / 160 GB</text><text x="101" y="279" fill="#dfc8ad" font-family="monospace" font-size="16">2.5-INCH • 5400.3</text>
+</svg>

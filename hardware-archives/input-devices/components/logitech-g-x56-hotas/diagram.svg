@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 380" role="img" aria-labelledby="title desc">
+<title id="title">Reference drawing: Logitech G X56 H.O.T.A.S.</title><desc id="desc">Original local vector schematic with a model-specific joystick outline and controls. Not a product photograph.</desc>
+<defs><linearGradient id="g-logitech-g-x56-hotas" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6fc8ff"/><stop offset="1" stop-color="#101b22"/></linearGradient></defs>
+<rect width="440" height="380" fill="#081110"/><path d="M18 24h404M18 355h404M28 18v340M412 18v340" stroke="#1f4035" stroke-width="1"/>
+<g fill="url(#g-logitech-g-x56-hotas)" stroke="#6fc8ff" stroke-width="3" stroke-linejoin="round"><path d="M64 280h118l12 18-13 15H65l-13-15z"/><path d="M103 278l8-76h31l8 76z"/><path d="M115 202l-4-70q0-20 17-20t17 20l-4 70z"/><path d="M248 279h120l-8 33H253z"/><path d="M276 278v-75h22v75m24 0v-98h21v98"/><rect x="270" y="190" width="31" height="25" rx="4"/><rect x="319" y="165" width="31" height="25" rx="4"/><text x="256" y="338">DUAL THROTTLE</text></g>
+<g fill="#6fc8ff" font-family="monospace" font-size="12" letter-spacing="1.3"><text x="32" y="48">LOGITECH / X56</text><text x="32" y="335">MODEL REFERENCE // NOT TO SCALE</text></g>
+<circle cx="390" cy="42" r="12" fill="none" stroke="#6fc8ff" stroke-width="2"/><path d="M390 34v16m-8-8h16" stroke="#6fc8ff" stroke-width="1.5"/>
+</svg>

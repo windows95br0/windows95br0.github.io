@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300" role="img" aria-labelledby="title desc">
+<title id="title">SilverStone SUGO SG06-LITE enclosure schematic</title>
+<desc id="desc">Original schematic showing the SG06-LITE case layout and the front optical feature. Not a dimensional drawing.</desc>
+<rect width="360" height="300" rx="16" fill="#101820"/><path d="M28 264h304" stroke="#566773" stroke-width="2"/>
+<path d="M82 48h202v190H82z" fill="#18232e" stroke="#a46f36" stroke-width="4"/><path d="M98 64h84v158H98z" fill="#202f3c" stroke="#84939d"/><path d="M195 64h73v158h-73z" fill="#17212b" stroke="#84939d"/><rect x="105" y="75" width="65" height="15" rx="2" fill="none" stroke="#a46f36" stroke-width="3"/>
+<path d="M58 229h244" stroke="#667984" stroke-width="2"/><text x="180" y="258" fill="#d1d9dd" font-family="sans-serif" font-size="13" text-anchor="middle">SG06-LITE</text>
+</svg>

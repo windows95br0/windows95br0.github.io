@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Revision-aware record for the D-Link DGE-562T PCIe 2.5GbE Ethernet adapter.">
+<title>D-Link DGE-562T 2.5G Ethernet Adapter // Networking Hardware // Hardware Archives</title>
+<link rel="stylesheet" href="../../../../style.css">
+<link rel="stylesheet" href="../../../archive.css">
+</head>
+<body class="hardware-page">
+<div class="site-shell">
+<header class="topbar" id="top"><a class="brand" href="../../../../index.html" aria-label="Alien Cultist Labs home"><span class="brand-wordmark">ALIENCULTIST.COM</span></a><div class="status-line"><span class="status-dot"></span> HARDWARE ARCHIVES <span class="status-divider">//</span> COMPONENT RECORD</div><nav class="main-nav" aria-label="Archive navigation"><a class="home-nav-link" href="../../../../index.html">HOME</a><a class="archive-nav-link" href="../../subcategories/ethernet-adapters/index.html">ETHERNET ADAPTERS</a><a class="hardware-nav-link" href="../../../index.html">ALL CATEGORIES</a></nav></header>
+<main class="hardware-record component-record">
+<nav class="record-back"><a href="../../subcategories/ethernet-adapters/index.html">← Ethernet adapters</a><span>NETWORKING // INDIVIDUAL PART RECORD</span></nav>
+<section class="record-hero"><div><p class="eyebrow">[ MODEL-SPECIFIC NETWORK HARDWARE RECORD ]</p><h1>D-Link DGE-562T PCI Express 2.5G Ethernet Adapter</h1><p class="record-intro">Single-port 2.5GBASE-T client card. This record follows the DGE-562T model; it does not imply that every hardware-label revision has an identical controller stepping or driver package.</p></div><figure class="record-figure"><img class="record-art" src="diagram.svg" alt="Original local schematic of the D-Link DGE-562T single-port PCIe Ethernet card"><figcaption>UNIQUE LOCAL SVG // SCHEMATIC, NOT TO SCALE</figcaption></figure></section>
+<p class="record-scope"><strong>IDENTIFICATION:</strong> Exact product SKU is DGE-562T. D-Link’s public documents do not assign one universal PCB revision; record the full revision printed on the individual card label before matching firmware or drivers.</p>
+<section class="record-section"><h2>Exact SKU, interface and compatibility</h2><table class="spec-table"><tbody>
+<tr><th>Exact model / SKU / revision</th><td>D-Link DGE-562T; hardware revision is label-specific and not fixed by the model name. Verify the card sticker and PCB before support lookup.</td></tr>
+<tr><th>Controller</th><td>Realtek RTL8125-family 2.5GbE PCIe controller; D-Link’s model documentation does not state a controller stepping. Do not infer a newer RTL8125B/RTL8125BG revision from the SKU alone.</td></tr>
+<tr><th>Bus, ports and connector</th><td>PCI Express 2.1 x1; one 8P8C (commonly called RJ-45) copper port; standard-height bracket, with case clearance still to be checked.</td></tr>
+<tr><th>Per-port link rates</th><td>2.5GBASE-T, 1000BASE-T, 100BASE-TX and 10BASE-T with auto-negotiation. These are nominal Ethernet link rates, not measured payload throughput.</td></tr>
+<tr><th>Driver and operating systems</th><td>D-Link’s archived packages list Windows 7/8/8.1/10 and Windows Server 2008/2012, plus Linux support through kernel 4.15. Newer Linux may use an in-kernel Realtek driver or the vendor r8125 package; confirm PCI ID and kernel support rather than assuming current D-Link certification.</td></tr>
+<tr><th>Cabling and compatibility caveats</th><td>Use Cat 5e or better and a 2.5G-capable peer for 2.5GbE. Link speed falls back to a common supported rate. A physical x1 card requires an electrically available PCIe lane; an M.2, riser or NAS whitelist is a separate compatibility question.</td></tr>
+<tr><th>Revision caveat</th><td>Do not treat DGE-562T/A1, A2 or other label variants as interchangeable without checking their own D-Link files. Confirm the label revision, controller marking, device ID and OS-specific driver.</td></tr>
+</tbody></table></section>
+<section class="record-section"><h2>Identification and practical limits</h2><p>The card adds a single multigigabit copper interface; it does not create a 2.5Gb/s Internet service or guarantee that a file transfer will reach line rate. Switch/router support, cabling, peer negotiation, driver behavior and host workload all matter. Record these with any measured result.</p></section>
+<section class="record-section"><h2>Manufacturer datasheet and installation documentation</h2><ol class="record-sources">
+<li><a href="https://dlinkmea.com/upload/downloadable/DGE_562T_60586e0996021.pdf" rel="noopener noreferrer">D-Link DGE-562T datasheet (PDF)</a><small>Manufacturer technical sheet for the named card model.</small></li>
+<li><a href="https://downloads.d-link.co.za/DGE/dge562t/manual/" rel="noopener noreferrer">D-Link DGE-562T manual downloads</a><small>Manufacturer directory for installation and revision-related files.</small></li>
+<li><a href="https://www.d-link.co.za/product/dge-562t/" rel="noopener noreferrer">D-Link DGE-562T product and support page</a><small>Manufacturer product identification and links to revision-specific downloads.</small></li>
+<li><a href="https://standards.ieee.org/ieee/802.3/10422/" rel="noopener noreferrer">IEEE 802.3 Ethernet standard</a><small>Standards context for Ethernet link signaling; not a card compatibility claim.</small></li>
+</ol></section>
+</main><footer class="footer"><p>© 2026 ALIEN CULTIST LABS // GALT, CALIFORNIA</p><a href="../../index.html">NETWORKING CATEGORY</a><a href="#top">BACK TO TOP ↑</a></footer>
+</div></body></html>

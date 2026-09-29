@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-labelledby="title desc">
+  <title id="title">SAS 9300-4i4e board schematic</title>
+  <desc id="desc">Original mixed internal and external SAS adapter drawing with SFF-8643 and SFF-8644 ports.</desc>
+  <rect width="720" height="420" fill="#10171c"/>
+  <path d="M48 81h530l84 65v172H48z" fill="#1d2c31" stroke="#f4a45c" stroke-width="4"/>
+  <rect x="277" y="145" width="166" height="98" rx="5" fill="#141e23" stroke="#eaf0ea" stroke-width="3"/>
+  <text x="360" y="184" fill="#f5f7ef" font-family="monospace" font-size="15" text-anchor="middle">SAS3008</text>
+  <text x="360" y="218" fill="#f4a45c" font-family="monospace" font-size="17" text-anchor="middle">9300-4i4e</text>
+  <rect x="86" y="130" width="86" height="52" fill="#293c40" stroke="#f4a45c" stroke-width="3"/>
+  <rect x="525" y="211" width="84" height="52" fill="#293c40" stroke="#f4a45c" stroke-width="3"/>
+  <text x="129" y="162" fill="#fff5eb" font-family="monospace" font-size="11" text-anchor="middle">8643 // IN</text>
+  <text x="567" y="243" fill="#fff5eb" font-family="monospace" font-size="11" text-anchor="middle">8644 // OUT</text>
+  <path d="M172 156h105m166 38h82v42h5m-230 7h-66v-32h-57" fill="none" stroke="#f4a45c" stroke-width="4"/>
+  <path d="M135 339h452l-19 29H154z" fill="#c5cccb"/>
+  <g fill="#384447"><path d="M166 339v29h8v-29m24 0v29h8v-29m24 0v29h8v-29m24 0v29h8v-29m24 0v29h8v-29m24 0v29h8v-29m24 0v29h8v-29m24 0v29h8v-29m24 0v29h8v-29m24 0v29h8v-29m24 0v29h8v-29m24 0v29h8v-29m24 0v29h8v-29"/></g>
+  <text x="360" y="402" fill="#b2bdc0" font-family="monospace" font-size="14" text-anchor="middle">INTERNAL + EXTERNAL SAS // NOT TO SCALE</text>
+</svg>

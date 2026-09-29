@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">Pretorian iSwitch Bluetooth access schematic</title><desc id="desc">An integrated switch and two external switches feed the iSwitch, which pairs over Bluetooth to a tablet.</desc>
+<rect width="640" height="360" fill="#101820"/><path d="M26 26h588v308H26z" fill="none" stroke="#557079" stroke-width="2"/>
+<text x="320" y="58" fill="#9fffe0" font-family="monospace" font-size="18" text-anchor="middle">iSWITCH / BUILT-IN + AUXILIARY ACTIVATION</text>
+<rect x="218" y="108" width="210" height="170" rx="24" fill="#21313a" stroke="#4ce0bd" stroke-width="4"/><circle cx="323" cy="182" r="46" fill="#101820" stroke="#daff00" stroke-width="5"/>
+<text x="323" y="190" fill="#fff" font-family="monospace" font-size="14" text-anchor="middle">75 mm</text><text x="323" y="252" fill="#9fffe0" font-family="monospace" font-size="13" text-anchor="middle">iSWITCH</text>
+<rect x="69" y="137" width="78" height="36" rx="7" fill="#182d38" stroke="#ffb46a" stroke-width="3"/><rect x="69" y="220" width="78" height="36" rx="7" fill="#182d38" stroke="#ffb46a" stroke-width="3"/>
+<text x="108" y="161" fill="#fff" font-family="monospace" font-size="12" text-anchor="middle">EXT 1</text><text x="108" y="244" fill="#fff" font-family="monospace" font-size="12" text-anchor="middle">EXT 2</text>
+<path d="M150 155h65m-65 83h65" stroke="#ffb46a" stroke-width="3"/>
+<path d="M446 192h57" stroke="#4ce0bd" stroke-width="4" stroke-dasharray="6 6"/><path d="m493 183 14 9-14 9" fill="none" stroke="#4ce0bd" stroke-width="4"/>
+<rect x="518" y="123" width="72" height="136" rx="12" fill="#182d38" stroke="#4ce0bd" stroke-width="3"/><rect x="531" y="138" width="46" height="82" rx="5" fill="none" stroke="#daff00" stroke-width="2"/><circle cx="554" cy="239" r="6" fill="#9fffe0"/>
+<text x="554" y="282" fill="#fff" font-family="monospace" font-size="12" text-anchor="middle">BLE HOST</text>
+</svg>

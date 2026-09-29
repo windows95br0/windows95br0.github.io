@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-labelledby="title desc">
+<title id="title">CyberPower CP425SLG original functional schematic</title><desc id="desc">Standby UPS functional path from utility input through surge and standby transfer to AC outlets; battery supplies the inverter during outages. Not to scale.</desc>
+<rect width="720" height="420" rx="22" fill="#101827"/><g fill="none" stroke="#54d8c5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M52 210h98m82 0h88m82 0h88m82 0h96"/><rect x="150" y="168" width="82" height="84" rx="12"/><rect x="320" y="168" width="82" height="84" rx="12"/><rect x="490" y="168" width="82" height="84" rx="12"/>
+<path d="M273 292h176M294 292v45m134-45v45m-134 0h134" stroke="#f2ba57"/><path d="M318 322h86M330 308v28m60-28v28" stroke="#f2ba57"/>
+</g><g fill="#eef6ff" font-family="Arial,Helvetica,sans-serif" text-anchor="middle"><text x="360" y="54" font-size="23" font-weight="700">CyberPower CP425SLG</text><text x="98" y="198" font-size="17">UTILITY</text><text x="191" y="199" font-size="17">SURGE</text><text x="361" y="195" font-size="16">STANDBY</text><text x="361" y="219" font-size="16">TRANSFER</text><text x="531" y="196" font-size="16">INVERTER</text><text x="628" y="199" font-size="17">AC LOAD</text><text x="360" y="372" font-size="17" fill="#f2ba57">BATTERY // 425 VA • 260 W</text><text x="360" y="402" font-size="13" fill="#aebdce">FUNCTIONAL BLOCK DIAGRAM • NOT TO SCALE</text></g>
+</svg>

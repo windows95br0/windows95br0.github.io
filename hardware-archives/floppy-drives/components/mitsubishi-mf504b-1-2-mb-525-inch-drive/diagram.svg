@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">Mitsubishi MF504B schematic</title>
+  <desc id="desc">Original not-to-scale high-density drive schematic with two-sided disk indicator.</desc>
+  <rect width="640" height="420" fill="#101920"/>
+  <path d="M80 100h480v220H80z" fill="#263a43" stroke="#7dd9ef" stroke-width="5"/>
+  <path d="M118 128h404v84H118z" fill="#0c1115" stroke="#b7d4dc" stroke-width="3"/>
+  <path d="M154 158h330" stroke="#7dd9ef" stroke-width="8"/>
+  <path d="M218 251h204v43H218z" fill="none" stroke="#abc5cb" stroke-width="3"/>
+  <circle cx="490" cy="271" r="10" fill="#7dd9ef"/>
+  <text x="320" y="365" fill="#e6f8fc" font-family="monospace" font-size="22" text-anchor="middle">MITSUBISHI MF504B // 1.2 MB</text>
+</svg>

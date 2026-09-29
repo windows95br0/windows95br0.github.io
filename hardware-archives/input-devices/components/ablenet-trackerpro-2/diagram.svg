@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">AbleNet TrackerPro 2 optical head mouse schematic</title><desc id="desc">A reflective marker worn by a user is tracked by a USB sensor; optional switches provide click actions.</desc>
+<rect width="640" height="360" fill="#101820"/><path d="M26 26h588v308H26z" fill="none" stroke="#557079" stroke-width="2"/>
+<text x="320" y="58" fill="#9fffe0" font-family="monospace" font-size="18" text-anchor="middle">TRACKERPRO 2 / OPTICAL HEAD-POINTING</text>
+<path d="M78 218q0-92 75-92 66 0 74 64l-10 51q-17 33-69 33-54-2-70-56z" fill="#21313a" stroke="#4ce0bd" stroke-width="4"/><circle cx="190" cy="144" r="10" fill="#daff00"/>
+<text x="151" y="302" fill="#fff" font-family="monospace" font-size="12" text-anchor="middle">REFLECTIVE DOT</text>
+<path d="M202 145l153 30m-153-17 153 15m-153-3 153 0" stroke="#ffb46a" stroke-width="2" stroke-dasharray="6 6"/>
+<rect x="366" y="118" width="114" height="118" rx="12" fill="#182d38" stroke="#4ce0bd" stroke-width="4"/><circle cx="423" cy="163" r="21" fill="#101820" stroke="#daff00" stroke-width="3"/><circle cx="423" cy="163" r="7" fill="#4ce0bd"/><path d="M400 204h46" stroke="#ffb46a" stroke-width="3"/><text x="423" y="260" fill="#fff" font-family="monospace" font-size="12" text-anchor="middle">USB TRACKER</text>
+<path d="M482 175h53" stroke="#4ce0bd" stroke-width="4"/><path d="m526 166 14 9-14 9" fill="none" stroke="#4ce0bd" stroke-width="4"/>
+<rect x="548" y="112" width="60" height="124" rx="6" fill="#21313a" stroke="#daff00" stroke-width="3"/><rect x="558" y="124" width="40" height="80" fill="none" stroke="#4ce0bd" stroke-width="2"/><path d="m566 184 9-15 8 8 10-29" fill="none" stroke="#ffb46a" stroke-width="3"/>
+<rect x="367" y="288" width="38" height="22" rx="8" fill="#182d38" stroke="#ffb46a" stroke-width="2"/><rect x="413" y="288" width="38" height="22" rx="8" fill="#182d38" stroke="#ffb46a" stroke-width="2"/><text x="409" y="328" fill="#fff" font-family="monospace" font-size="11" text-anchor="middle">OPTIONAL CLICK SWITCHES</text>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" role="img" aria-labelledby="title desc">
+<title id="title">Phanteks NV9 chassis schematic</title><desc id="desc">Original tall-tower silhouette with top, side, bottom and rear cooling zones.</desc>
+<rect width="520" height="360" fill="#111820"/><path d="M118 31h277l18 18v254H100V49z" fill="#192831" stroke="#70dfc1" stroke-width="4"/><rect x="122" y="58" width="230" height="222" fill="#0d151c" stroke="#486674" stroke-width="2"/><rect x="362" y="62" width="31" height="213" fill="#24404a" stroke="#70dfc1" stroke-width="2"/><path d="M138 48h207M131 291h213" stroke="#e6c663" stroke-width="14" stroke-dasharray="12 8"/><rect x="180" y="113" width="132" height="91" fill="#243541" stroke="#a7bec5" stroke-width="3"/><circle cx="246" cy="160" r="33" fill="none" stroke="#70dfc1" stroke-width="3"/><path d="M219 160h54m-27-27v54M89 309h340" stroke="#81939b" stroke-width="3"/><text x="260" y="337" fill="#eff7f2" font-family="Arial,sans-serif" font-size="17" text-anchor="middle">NV9 // 575 × 280 × 615 mm</text>
+</svg>
+

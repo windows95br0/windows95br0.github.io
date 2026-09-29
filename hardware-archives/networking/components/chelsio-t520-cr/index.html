@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Model-specific record for the Chelsio T520-CR dual-port 10GbE SFP+ PCIe adapter.">
+<title>Chelsio T520-CR Dual-Port 10GbE Adapter // Networking Hardware // Hardware Archives</title>
+<link rel="stylesheet" href="../../../../style.css">
+<link rel="stylesheet" href="../../../archive.css">
+</head>
+<body class="hardware-page">
+<div class="site-shell">
+<header class="topbar" id="top"><a class="brand" href="../../../../index.html" aria-label="Alien Cultist Labs home"><span class="brand-wordmark">ALIENCULTIST.COM</span></a><div class="status-line"><span class="status-dot"></span> HARDWARE ARCHIVES <span class="status-divider">//</span> COMPONENT RECORD</div><nav class="main-nav" aria-label="Archive navigation"><a class="home-nav-link" href="../../../../index.html">HOME</a><a class="archive-nav-link" href="../../subcategories/ethernet-adapters/index.html">ETHERNET ADAPTERS</a><a class="hardware-nav-link" href="../../../index.html">ALL CATEGORIES</a></nav></header>
+<main class="hardware-record component-record">
+<nav class="record-back"><a href="../../subcategories/ethernet-adapters/index.html">← Ethernet adapters</a><span>NETWORKING // INDIVIDUAL PART RECORD</span></nav>
+<section class="record-hero"><div><p class="eyebrow">[ MODEL-SPECIFIC NETWORK HARDWARE RECORD ]</p><h1>Chelsio T520-CR Dual-Port 10GbE Unified Wire Adapter</h1><p class="record-intro">Dual SFP+ PCIe card based on Chelsio’s T5 generation adapter architecture. Optical transceivers and DACs are selected separately and must be supported by the card and link partner.</p></div><figure class="record-figure"><img class="record-art" src="diagram.svg" alt="Original local schematic of the Chelsio T520-CR dual-port SFP+ adapter"><figcaption>UNIQUE LOCAL SVG // SCHEMATIC, NOT TO SCALE</figcaption></figure></section>
+<p class="record-scope"><strong>IDENTIFICATION:</strong> Exact Chelsio model T520-CR, dual-port CR low-profile card variant. The product designation, not just the shared T5 ASIC, is required for selecting firmware, bracket and optics.</p>
+<section class="record-section"><h2>Exact SKU, interface and compatibility</h2><table class="spec-table"><tbody>
+<tr><th>Exact model / SKU / revision</th><td>Chelsio T520-CR (CR dual-port adapter). Chelsio identifies the card by model; record the board revision and any OEM label on the specimen.</td></tr>
+<tr><th>Controller</th><td>Chelsio T5-generation Unified Wire ASIC with onboard protocol-offload engine.</td></tr>
+<tr><th>Bus, ports and connectors</th><td>PCI Express 3.0 x8; two SFP+ cages. LC connectors are on compatible optical transceivers; DAC cables plug into the SFP+ cages directly.</td></tr>
+<tr><th>Per-port link rates</th><td>10GbE SFP+ operation; 1GbE is possible only with a supported module and driver combination. The CR datasheet’s named optical interfaces are 10GBASE-SR/LR; module capabilities must be checked individually.</td></tr>
+<tr><th>Driver and operating systems</th><td>Chelsio Unified Wire provides T5 drivers for supported Linux (cxgb4), Windows, FreeBSD and hypervisor releases. Use the current T520-CR support matrix and driver package; do not infer current OS support from a legacy product brief.</td></tr>
+<tr><th>Compatibility caveats</th><td>Requires an electrically x8 PCIe connection for full interface bandwidth. SFP+ optics, DAC coding, fiber type and peer support constrain link-up. Offload, SR-IOV, iSCSI, FCoE and RDMA features depend on driver, license/stack, OS and configuration.</td></tr>
+<tr><th>Variant warning</th><td>T520-CR is distinct from T520-SO and other T5 port/connector variants. Use only the correct card-specific support files and supported transceivers.</td></tr>
+</tbody></table></section>
+<section class="record-section"><h2>Measurement notes</h2><p>The two port link rates are independent physical link settings. Report each port’s negotiated speed, optics/DAC identifiers, peer, firmware, driver and PCIe link width/speed; do not describe the sum of link rates as measured throughput.</p></section>
+<section class="record-section"><h2>Chelsio product brief and manufacturer documentation</h2><ol class="record-sources">
+<li><a href="https://www.chelsio.com/nic/unified-wire-adapters/t520-cr/" rel="noopener noreferrer">Chelsio T520-CR product specifications</a><small>Manufacturer card model, port, optics and architecture information.</small></li>
+<li><a href="https://www.chelsio.com/wp-content/uploads/2013/10/T520-CR-PB.pdf" rel="noopener noreferrer">Chelsio T520-CR Product Brief (PDF)</a><small>Manufacturer product-family brief linked from the exact model page.</small></li>
+<li><a href="https://www.chelsio.com/support/" rel="noopener noreferrer">Chelsio support and driver documentation</a><small>Manufacturer source for current Unified Wire drivers and installation guidance.</small></li>
+</ol></section>
+</main><footer class="footer"><p>© 2026 ALIEN CULTIST LABS // GALT, CALIFORNIA</p><a href="../../index.html">NETWORKING CATEGORY</a><a href="#top">BACK TO TOP ↑</a></footer>
+</div></body></html>

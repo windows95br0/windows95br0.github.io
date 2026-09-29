@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-labelledby="title desc">
+<title id="title">Lexar Professional NM1090 PRO 2 TB schematic</title><desc id="desc">Original not-to-scale vector schematic showing an M.2 NVMe module, connector edge, controller, memory packages and local callouts.</desc>
+<rect width="680" height="300" rx="18" fill="#101821"/><path d="M24 242H656M24 40H656" stroke="#b99bff" stroke-opacity=".32" stroke-width="2" stroke-dasharray="7 8"/>
+<text x="34" y="30" fill="#b99bff" font-family="monospace" font-size="13" letter-spacing="2">LEXAR // Professional NM1090 PRO // BLOCK SCHEMATIC</text>
+<path d="M70 95h530a14 14 0 0 1 14 14v82a14 14 0 0 1-14 14H70a14 14 0 0 1-14-14v-82a14 14 0 0 1 14-14z" fill="#1d2a34" stroke="#b99bff" stroke-width="3"/>
+<path d="M56 125h-18v50h18" fill="none" stroke="#d5ba72" stroke-width="8"/>
+<rect x="92" y="126" width="68" height="42" rx="4" fill="#253d49" stroke="#b99bff" stroke-width="2"/><text x="126" y="151" text-anchor="middle" fill="#f3f5f7" font-family="monospace" font-size="10">PCIe x4</text>
+<rect x="205" y="116" width="90" height="60" rx="5" fill="#11151b" stroke="#b99bff" stroke-width="2"/><text x="250" y="142" text-anchor="middle" fill="#fff" font-family="monospace" font-size="10">NVMe</text><text x="250" y="157" text-anchor="middle" fill="#fff" font-family="monospace" font-size="10">CONTROLLER</text>
+<rect x="340" y="114" width="72" height="64" rx="4" fill="#27333b" stroke="#93a4b0" stroke-width="2"/><text x="376" y="151" text-anchor="middle" fill="#eef2f5" font-family="monospace" font-size="10">NAND</text>
+<rect x="430" y="114" width="72" height="64" rx="4" fill="#27333b" stroke="#93a4b0" stroke-width="2"/><text x="466" y="151" text-anchor="middle" fill="#eef2f5" font-family="monospace" font-size="10">NAND</text>
+<rect x="520" y="123" width="55" height="46" rx="4" fill="#27333b" stroke="#93a4b0" stroke-width="2"/><text x="547" y="151" text-anchor="middle" fill="#eef2f5" font-family="monospace" font-size="9">CACHE</text>
+<path d="M160 147h38m97 0h37m73 0h18m72 0h15" stroke="#b99bff" stroke-width="2" stroke-dasharray="4 5"/>
+<text x="34" y="273" fill="#d4dde4" font-family="monospace" font-size="11">2 TB // M.2 2280 // PCI EXPRESS 5.0 x4</text><text x="646" y="273" text-anchor="end" fill="#8da0ad" font-family="monospace" font-size="10">SCHEMATIC ONLY</text></svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300" role="img" aria-labelledby="title desc">
+<title id="title">SilverStone SUGO SG11 enclosure schematic</title>
+<desc id="desc">Original schematic showing the SUGO SG11 case layout and the side intake feature. Not a dimensional drawing.</desc>
+<rect width="360" height="300" rx="16" fill="#101820"/><path d="M28 264h304" stroke="#566773" stroke-width="2"/>
+<path d="M82 48h202v190H82z" fill="#18232e" stroke="#677d43" stroke-width="4"/><path d="M98 64h84v158H98z" fill="#202f3c" stroke="#84939d"/><path d="M195 64h73v158h-73z" fill="#17212b" stroke="#84939d"/><circle cx="139" cy="143" r="28" fill="none" stroke="#677d43" stroke-width="3"/><path d="M139 115v56m-28-28h56" stroke="#677d43" stroke-width="2"/>
+<path d="M58 229h244" stroke="#667984" stroke-width="2"/><text x="180" y="258" fill="#d1d9dd" font-family="sans-serif" font-size="13" text-anchor="middle">SUGO SG11</text>
+</svg>

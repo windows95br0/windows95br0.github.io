@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 220" role="img" aria-labelledby="title desc">
+<title id="title">Original schematic — MOTU M6</title><desc id="desc">Locally drawn, not-to-scale interface diagram identifying MOTU M6; ports and meters are schematic, not a product photograph.</desc>
+<defs><linearGradient id="panel" x2="0" y2="1"><stop stop-color="#303945"/><stop offset="1" stop-color="#171d26"/></linearGradient></defs>
+<rect x="5" y="5" width="440" height="210" rx="14" fill="#0e1219" stroke="#57a9ff" stroke-width="2"/>
+<rect x="45" y="45" width="360" height="130" rx="10" fill="url(#panel)" stroke="#778395" stroke-width="1.5"/>
+<path d="M57 60h336" stroke="#57a9ff" stroke-width="4" opacity=".9"/>
+<text x="63" y="87" fill="#f3f6fb" font-family="Arial,sans-serif" font-size="17" font-weight="700">MOTU M6</text>
+<text x="63" y="106" fill="#aab5c4" font-family="Arial,sans-serif" font-size="10">USB AUDIO // SCHEMATIC 04</text>
+<g aria-hidden="true"><circle cx="140.0" cy="157.0" r="6.5" fill="#10151d" stroke="#57a9ff" stroke-width="2.5"/><circle cx="182.0" cy="157.0" r="6.5" fill="#10151d" stroke="#57a9ff" stroke-width="2.5"/><circle cx="224.0" cy="157.0" r="6.5" fill="#10151d" stroke="#57a9ff" stroke-width="2.5"/><circle cx="266.0" cy="157.0" r="6.5" fill="#10151d" stroke="#57a9ff" stroke-width="2.5"/><circle cx="308.0" cy="157.0" r="6.5" fill="#10151d" stroke="#57a9ff" stroke-width="2.5"/><circle cx="350.0" cy="157.0" r="6.5" fill="#10151d" stroke="#57a9ff" stroke-width="2.5"/></g><g aria-hidden="true"><rect x="287" y="67" width="7" height="32" rx="2" fill="#57a9ff" opacity="0.52"/><rect x="303" y="71" width="7" height="28" rx="2" fill="#57a9ff" opacity="0.67"/><rect x="319" y="67" width="7" height="32" rx="2" fill="#57a9ff" opacity="0.82"/><rect x="335" y="71" width="7" height="28" rx="2" fill="#57a9ff" opacity="0.52"/><rect x="351" y="67" width="7" height="32" rx="2" fill="#57a9ff" opacity="0.67"/></g>
+<circle cx="367" cy="84" r="10" fill="#121820" stroke="#57a9ff" stroke-width="2"/><circle cx="367" cy="84" r="3" fill="#57a9ff"/>
+<path d="M346 182h56m-28-10v20" stroke="#57a9ff" stroke-width="2" opacity=".75"/><text x="302" y="196" fill="#8996a7" font-family="Arial,sans-serif" font-size="9">LOCAL ORIGINAL ART</text>
+</svg>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="SKU-specific enterprise SATA HDD record for Toshiba MG11 Series MG11ACA22TE: 22 TB, sector format, workload and host compatibility.">
+<title>Toshiba MG11 Series MG11ACA22TE // Hardware Archives</title>
+<link rel="stylesheet" href="../../../../style.css">
+<link rel="stylesheet" href="../../../archive.css">
+</head>
+<body class="hardware-page">
+<div class="site-shell">
+<header class="topbar" id="top">
+<a class="brand" href="../../../../index.html" aria-label="Alien Cultist Labs home"><span class="brand-wordmark">ALIENCULTIST.COM</span></a>
+<div class="status-line"><span class="status-dot"></span> HARDWARE ARCHIVES <span class="status-divider">//</span> HDD MODEL RECORD</div>
+<nav class="main-nav" aria-label="Archive navigation">
+<a class="home-nav-link" href="../../../../index.html">HOME</a>
+<a class="archive-nav-link" href="../../subcategories/enterprise-capacity-drives/index.html">ENTERPRISE SATA CAPACITY DRIVES</a>
+<a class="hardware-nav-link" href="../../../index.html">ALL CATEGORIES</a>
+</nav>
+</header>
+<main class="hardware-record component-record">
+<nav class="record-back"><a href="../../subcategories/enterprise-capacity-drives/index.html">← Enterprise SATA capacity drives</a><span>ENTERPRISE SATA CAPACITY DRIVES // PART RECORD</span></nav>
+<section class="record-hero"><div>
+<p class="eyebrow">[ IDENTIFIED HDD // SKU-SPECIFIC RECORD ]</p>
+<h1>Toshiba MG11 Series MG11ACA22TE</h1>
+<p class="record-intro">22 TB; 3.5-inch; SATA 6 Gb/s. This SKU-specific record summarizes sector format, performance and workload ratings, recording technology, and host integration. Capacity, sector modes, firmware and security options vary by exact part number; verify the label and manufacturer documentation before deployment.</p>
+</div>
+<figure class="record-figure"><img class="record-art" src="diagram.svg" alt="Original local schematic identifying Toshiba MG11 Series MG11ACA22TE, not a product photograph or dimensional drawing"><figcaption>LOCAL MODEL-CODED ART // NOT TO SCALE OR A PRODUCT PHOTOGRAPH</figcaption></figure>
+</section>
+<p class="record-scope"><strong>IDENTIFICATION:</strong> Confirm the full manufacturer model/SKU, firmware, security configuration and sector presentation from the drive label and host inquiry. Do not substitute a nearby capacity or suffix based only on family name or connector fit.</p>
+<section class="record-section"><h2>Recorded specifications</h2><table class="spec-table"><tbody>
+<tr><th>Exact model / SKU</th><td>Toshiba MG11 Series MG11ACA22TE</td></tr>
+<tr><th>Capacity</th><td>22 TB decimal, manufacturer-rated; formatted capacity is lower.</td></tr>
+<tr><th>Form factor</th><td>3.5-inch enterprise drive; check tray, carrier, height, mounting, airflow and acoustic/vibration constraints.</td></tr>
+<tr><th>Interface</th><td>SATA 6 Gb/s; link speed negotiates with the host and does not imply support for every SATA feature.</td></tr>
+<tr><th>Sector format (512e / 4Kn)</th><td>512e (512-byte logical sectors on 4,096-byte physical sectors). 4Kn is a separate model/configuration where offered; verify the exact label and reported sector format before deployment.</td></tr>
+<tr><th>Rotation / cache</th><td>7200 rpm; 1 GiB (1,024 MiB) buffer.</td></tr>
+<tr><th>Recording technology</th><td>CMR (Conventional Magnetic Recording); helium-sealed MG11 platform with FC-MAMR recording technology.</td></tr>
+<tr><th>Workload rating</th><td>550 TB/year rated workload (MG11 series). This is an annualized workload ceiling, not a throughput or duty-cycle guarantee.</td></tr>
+<tr><th>Reliability caveat</th><td>2.5 million-hour MTTF and 1 per 10^16 unrecoverable read error rate are statistical design ratings, not a service-life or individual-drive guarantee.</td></tr>
+<tr><th>Host compatibility</th><td>Requires a SATA-capable port/backplane and suitable power; a SAS connector does not by itself establish SATA-device support. Confirm HBA/RAID firmware and qualification, 3.5-inch bay clearance, spin-up power, cooling, vibration handling, GPT/OS support above 2 TB and sector-mode alignment. Hardware RAID and expander behavior are system-specific.</td></tr>
+</tbody></table></section>
+<section class="record-section"><h2>Workload and integration notes</h2><ul>
+<li>Use only with a documented SATA-compatible controller/backplane; verify controller support for this exact model, capacity, sector mode and drive firmware. A physical connector match is not proof of compatibility.</li>
+<li>For initial provisioning, check host-reported logical and physical sector sizes first. Ensure the operating system, HBA, RAID metadata, filesystem and recovery tools agree; changing sector presentation after writing data can make it inaccessible.</li>
+<li>Annual workload and population reliability ratings are not guarantees. Maintain independent backups, monitor SMART/vendor telemetry, and validate rebuild time, vibration, temperature, power cycling and write workload in the target enclosure.</li>
+<li>If a drive contains data and is failing, avoid formatting, writes, repeated power cycles or stress tests. Preserve exact label/SKU and firmware details and seek qualified recovery assistance when data matters.</li>
+</ul></section>
+<section class="record-section"><h2>Manufacturer sources</h2><ol class="record-sources">
+<li><a href="https://toshiba.semicon-storage.com/content/dam/toshiba-ss-v3/master/en/storage/product/data-center-enterprise/MG11-Product-Manual_rev.0.pdf" rel="noopener noreferrer">Toshiba MG11 Series manufacturer product manual</a><small>Primary engineering reference for exact-model options, sector formats, interface and operating limits; check revision and model table.</small></li>
+<li><a href="https://toshiba.semicon-storage.com/us/storage/product/data-center-enterprise/cloud-scale-capacity/articles/mg11-series.html" rel="noopener noreferrer">Toshiba MG11 series product information</a><small>Official manufacturer product-family information and specification context. Confirm exact SKU and available configuration in the linked documentation.</small></li>
+</ol><p><small>Specifications and ratings are manufacturer-family data and can vary by suffix, firmware, region or security configuration. Verify both primary sources and the actual label before procurement or use.</small></p></section>
+</main>
+<footer class="footer"><p>© 2026 ALIEN CULTIST LABS // GALT, CALIFORNIA</p><a href="../../index.html">HARD DRIVE CATALOG</a><a href="#top">BACK TO TOP ↑</a></footer>
+</div>
+</body>
+</html>

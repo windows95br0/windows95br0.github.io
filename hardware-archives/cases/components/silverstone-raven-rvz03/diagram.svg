@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300" role="img" aria-labelledby="title desc">
+<title id="title">SilverStone Raven RVZ03 enclosure schematic</title>
+<desc id="desc">Original schematic showing the RAVEN RVZ03 case layout and the dual chamber feature. Not a dimensional drawing.</desc>
+<rect width="360" height="300" rx="16" fill="#101820"/><path d="M28 264h304" stroke="#566773" stroke-width="2"/>
+<path d="M92 38h170v220H92z" fill="#18232e" stroke="#5b79a9" stroke-width="4"/><path d="M108 55h138v84H108z" fill="#202f3c" stroke="#84939d"/><path d="M108 151h138v91H108z" fill="#17212b" stroke="#84939d"/><path d="M178 52v190" stroke="#5b79a9" stroke-width="3"/><rect x="124" y="166" width="104" height="35" fill="none" stroke="#5b79a9" stroke-width="3"/>
+<path d="M58 229h244" stroke="#667984" stroke-width="2"/><text x="180" y="258" fill="#d1d9dd" font-family="sans-serif" font-size="13" text-anchor="middle">RAVEN RVZ03</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" role="img" aria-labelledby="title desc">
+  <title id="title">GC-Extreme contact interface diagram</title>
+  <desc id="desc">Original schematic of a thin thermal-compound bond line between a chip and heatsink.</desc>
+  <rect width="640" height="260" rx="20" fill="#171e28"/>
+  <path d="M142 62h356v65H142z" fill="#b3c2ce" stroke="#e3edf3" stroke-width="3"/>
+  <path d="M142 128h356v12H142z" fill="#e2a252"/>
+  <rect x="194" y="140" width="252" height="69" rx="5" fill="#344c63" stroke="#7795ac" stroke-width="3"/>
+  <path d="M213 210v18m53-18v18m53-18v18m53-18v18m53-18v18" stroke="#7795ac" stroke-width="4"/>
+  <circle cx="320" cy="94" r="18" fill="#e8b971"/>
+  <text x="258" y="99" fill="#243647" font-family="sans-serif" font-size="17" font-weight="700">GC-EXTREME</text>
+  <text x="221" y="250" fill="#dfe8ee" font-family="sans-serif" font-size="16">TC-GC-03-A // 3.5 g</text>
+</svg>

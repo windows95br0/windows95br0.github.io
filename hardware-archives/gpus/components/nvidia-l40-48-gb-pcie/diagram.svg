@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300" role="img" aria-labelledby="title-nvidia-l40-48-gb-pcie desc-nvidia-l40-48-gb-pcie">
+<title id="title-nvidia-l40-48-gb-pcie">NVIDIA L40 48 GB PCIe accelerator reference schematic</title>
+<desc id="desc-nvidia-l40-48-gb-pcie">Original schematic card silhouette for NVIDIA L40 48 GB PCIe accelerator; illustrative and not to scale.</desc>
+<rect x="1" y="1" width="518" height="298" rx="18" fill="#111a17" stroke="#89b92f" stroke-width="2"/>
+<path d="M66 62h322l37 28v108l-38 32H66z" fill="#202b25" stroke="#89b92f" stroke-width="4"/>
+<circle cx="190" cy="144" r="54" fill="#121915" stroke="#89b92f" stroke-width="5"/>
+<circle cx="190" cy="144" r="10" fill="#89b92f"/>
+<path d="M190 98c15 12 16 23 5 37 18-4 28 4 30 19-18-3-27 5-30 22-12-14-24-15-38-4 2-18-5-28-21-34 17-7 23-19 20-36 15 11 27 10 34-4z" fill="none" stroke="#89b92f" stroke-width="3" opacity=".8"/>
+<path d="M67 232h195l-16 24H85z" fill="#a98b58"/>
+<path d="M267 113h114M267 132h82M267 151h102M267 170h71" stroke="#66756b" stroke-width="4" stroke-linecap="round"/>
+<text x="260" y="282" text-anchor="middle" fill="#d8e3db" font-family="monospace" font-size="15">NVIDIA L40 // REFERENCE BOARD OUTLINE</text>
+</svg>

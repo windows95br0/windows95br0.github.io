@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">IBM 4869 Model 1 schematic</title><desc id="desc">Original schematic of an IBM external drive, dedicated adapter cable and PS/2 host.</desc>
+  <rect width="640" height="360" rx="18" fill="#101c2a"/><text x="320" y="53" fill="#d3e5e7" font-family="sans-serif" font-size="22" text-anchor="middle">IBM 4869 MODEL 1 // 360 KB</text>
+  <rect x="70" y="103" width="242" height="145" rx="11" fill="#1a3042" stroke="#73d4c4" stroke-width="4"/><rect x="97" y="128" width="187" height="62" rx="5" fill="#10202d" stroke="#d8b46a" stroke-width="3"/><circle cx="259" cy="218" r="8" fill="#d8b46a"/>
+  <rect x="410" y="118" width="154" height="115" rx="10" fill="#1a3042" stroke="#d8b46a" stroke-width="4"/><text x="487" y="174" fill="#d3e5e7" font-family="sans-serif" font-size="19" text-anchor="middle">PS/2</text><text x="487" y="200" fill="#73d4c4" font-family="sans-serif" font-size="13" text-anchor="middle">ADAPTER</text>
+  <path d="M312 176h98m-37-17 19 17-19 17M320 250v46M250 296h140" fill="none" stroke="#73d4c4" stroke-width="4"/>
+  <text x="320" y="335" fill="#d3e5e7" font-family="sans-serif" font-size="16" text-anchor="middle">IBM EXTERNAL CONNECTION // NOT TO SCALE</text>
+</svg>

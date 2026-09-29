@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="SKU-specific record for Intel Ethernet Converged Network Adapter X520-DA1, E10G41BTDA.">
+<title>Intel Ethernet Converged Network Adapter X520-DA1 E10G41BTDA // Networking Hardware // Hardware Archives</title>
+<link rel="stylesheet" href="../../../../style.css">
+<link rel="stylesheet" href="../../../archive.css">
+</head>
+<body class="hardware-page">
+<div class="site-shell">
+<header class="topbar" id="top"><a class="brand" href="../../../../index.html" aria-label="Alien Cultist Labs home"><span class="brand-wordmark">ALIENCULTIST.COM</span></a><div class="status-line"><span class="status-dot"></span> HARDWARE ARCHIVES <span class="status-divider">//</span> COMPONENT RECORD</div><nav class="main-nav" aria-label="Archive navigation"><a class="home-nav-link" href="../../../../index.html">HOME</a><a class="archive-nav-link" href="../../subcategories/ethernet-adapters/index.html">ETHERNET ADAPTERS</a><a class="hardware-nav-link" href="../../../index.html">ALL CATEGORIES</a></nav></header>
+<main class="hardware-record component-record">
+<nav class="record-back"><a href="../../subcategories/ethernet-adapters/index.html">← Ethernet adapters</a><span>NETWORKING // INDIVIDUAL PART RECORD</span></nav>
+<section class="record-hero"><div><p class="eyebrow">[ MODEL-SPECIFIC NETWORK HARDWARE RECORD ]</p><h1>Intel Ethernet Converged Network Adapter X520-DA1</h1><p class="record-intro">Single-port 10GbE SFP+ adapter with exact Intel ordering code E10G41BTDA. This one-port model is distinct from the already cataloged X520-DA2 and X520-T2 variants.</p></div><figure class="record-figure"><img class="record-art" src="diagram.svg" alt="Original local schematic of the Intel X520-DA1 single-port SFP+ adapter"><figcaption>UNIQUE LOCAL SVG // SCHEMATIC, NOT TO SCALE</figcaption></figure></section>
+<p class="record-scope"><strong>IDENTIFICATION:</strong> Intel model X520-DA1; ordering code E10G41BTDA. Keep the product SKU distinct from X520-DA2, X520-T2 and OEM boards using related 82599 silicon.</p>
+<section class="record-section"><h2>Exact SKU, interface and compatibility</h2><table class="spec-table"><tbody>
+<tr><th>Exact model / SKU / revision</th><td>Intel Ethernet Converged Network Adapter X520-DA1, product code E10G41BTDA. The ordering code identifies the card SKU; record board revision and Intel label from the specimen.</td></tr>
+<tr><th>Controller</th><td>Intel 82599ES 10GbE controller.</td></tr>
+<tr><th>Bus, ports and connectors</th><td>PCI Express 2.0 x8; one SFP+ cage. Fiber uses a compatible SFP+ optic and duplex LC fiber; direct-attach copper uses a supported SFP+ DAC.</td></tr>
+<tr><th>Per-port link rates</th><td>10GbE with supported SFP+ modules/DACs. 1GbE operation is module- and driver-dependent; the adapter is not a 2.5GbE or 5GbE NBASE-T card.</td></tr>
+<tr><th>Driver and operating systems</th><td>Intel’s legacy X520 package uses ixgbe on Linux and provides specified Windows Server and VMware ESXi driver bundles. The adapter is legacy; check the Intel release notes for the target OS, signed-driver availability, NVM and exact PCI ID before installation.</td></tr>
+<tr><th>Compatibility caveats</th><td>Requires an electrically x8 PCIe connection for rated adapter bandwidth. Use Intel-supported optical transceivers or DACs and compatible far-end equipment; unsupported module coding or firmware can prevent link-up.</td></tr>
+<tr><th>Variant warning</th><td>DA1 means one SFP+ port. Do not reuse DA2 or T2 connector counts, thermal assumptions, board outlines or SKU information.</td></tr>
+</tbody></table></section>
+<section class="record-section"><h2>Identification and testing</h2><p>Confirm the E10G41BTDA marking, controller/device ID, SFP+ module part number and driver version. A host link reporting x4 or a lower PCIe generation can limit aggregate bandwidth even if the card fits physically.</p></section>
+<section class="record-section"><h2>Intel specifications and product brief</h2><ol class="record-sources">
+<li><a href="https://www.intel.com/content/www/us/en/products/details/ethernet.html" rel="noopener noreferrer">Intel Ethernet products and support index</a><small>Manufacturer documentation index; use the exact DA1 ordering code to distinguish card variants.</small></li>
+<li><a href="https://www.intel.com/content/dam/doc/product-brief/ethernet-x520-server-adapters-brief.pdf" rel="noopener noreferrer">Intel Ethernet X520 Server Adapters Product Brief (PDF)</a><small>Manufacturer family product brief; compare DA1 details against the SKU entry.</small></li>
+<li><a href="https://www.intel.com/content/dam/doc/product-brief/ethernet-sfp-optics-brief.pdf" rel="noopener noreferrer">Intel Ethernet SFP+ optics product brief (PDF)</a><small>Manufacturer media compatibility context; confirm supported optics for this adapter and its driver.</small></li>
+<li><a href="https://www.intel.com/content/www/us/en/support/articles/000005584/ethernet-products.html" rel="noopener noreferrer">Intel Ethernet adapter driver support</a><small>Manufacturer driver and operating-system support guidance.</small></li>
+</ol></section>
+</main><footer class="footer"><p>© 2026 ALIEN CULTIST LABS // GALT, CALIFORNIA</p><a href="../../index.html">NETWORKING CATEGORY</a><a href="#top">BACK TO TOP ↑</a></footer>
+</div></body></html>

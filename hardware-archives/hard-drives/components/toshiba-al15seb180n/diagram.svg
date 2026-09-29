@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+<title id="title">Toshiba AL15SEB180N drive schematic</title><desc id="desc">Original magenta and slate illustration of a 1.8 terabyte, 10,500 rpm dual-port SAS HDD.</desc>
+<rect width="640" height="400" rx="24" fill="#2e1065"/><rect x="57" y="55" width="526" height="290" rx="18" fill="#4c1d95" stroke="#e879f9" stroke-width="5"/>
+<circle cx="251" cy="197" r="111" fill="#1e1b4b" stroke="#d946ef" stroke-width="8"/><circle cx="251" cy="197" r="74" fill="none" stroke="#cbd5e1" stroke-width="12"/><circle cx="251" cy="197" r="23" fill="#e879f9"/>
+<path d="M251 197 394 110l22 30-153 75" fill="#f1f5f9"/><rect x="445" y="123" width="80" height="34" rx="6" fill="#2e1065"/><rect x="445" y="177" width="80" height="34" rx="6" fill="#2e1065"/>
+<text x="456" y="146" fill="#fae8ff" font-size="14" font-family="sans-serif">SAS A</text><text x="456" y="200" fill="#fae8ff" font-size="14" font-family="sans-serif">SAS B</text><text x="80" y="307" fill="#fdf4ff" font-size="24" font-family="sans-serif">AL15SEB180N // 1.8 TB</text><text x="80" y="91" fill="#f0abfc" font-size="17" font-family="sans-serif">512n · 10,500 RPM · 12G SAS</text></svg>

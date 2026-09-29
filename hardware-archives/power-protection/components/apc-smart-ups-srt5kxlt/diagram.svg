@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">SRT5KXLT functional schematic</title>
+  <desc id="desc">208 volt double-conversion path, battery, and two L6-20R and two L6-30R output receptacles.</desc>
+  <rect width="720" height="360" rx="18" fill="#111827"/>
+  <g fill="none" stroke="#ff6b35" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M55 180h105m115 0h80m115 0h80m70 0h45"/>
+    <path d="M208 135v90m-25-45h50m130-45 45 45-45 45m70-90v90"/>
+    <path d="M338 260h80m-65-18v36m22-36v36m22-36v36"/>
+    <path d="M610 148v64m-18-45h36m-36 28h36m19-47v64m-18-45h36m-36 28h36"/>
+  </g>
+  <g fill="#f4f4f5" font-family="monospace" font-size="18">
+    <text x="50" y="130">208 V INPUT</text><text x="175" y="105">RECTIFIER</text>
+    <text x="310" y="105">INVERTER</text><text x="325" y="307">VRLA BANK</text>
+    <text x="520" y="108">2 × L6-20R</text><text x="520" y="283">2 × L6-30R</text>
+    <text x="52" y="330" fill="#ff6b35">SRT5KXLT // 5400 VA / 4500 W</text>
+  </g>
+</svg>

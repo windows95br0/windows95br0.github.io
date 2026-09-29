@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 150" role="img" aria-labelledby="title desc">
+  <title id="title">FirePro W5000 board schematic</title><desc id="desc">Pitcairn workstation card with two DisplayPort outputs and a DVI-I output.</desc>
+  <rect width="380" height="150" rx="8" fill="#241710"/><path d="M29 32h266l34 24v60H29z" fill="#463023" stroke="#e2a777" stroke-width="2"/>
+  <rect x="112" y="53" width="73" height="52" rx="4" fill="#1d1511" stroke="#cf8a56"/><text x="148" y="77" fill="#fff1e5" text-anchor="middle" font-family="monospace" font-size="11">PITCAIRN</text><text x="148" y="93" fill="#e4ba9e" text-anchor="middle" font-family="monospace" font-size="9">2 GB GDDR5</text>
+  <path d="M42 114h211v7H42z" fill="#c1a45e"/><g fill="#0d0b09" stroke="#f4d4bb"><rect x="295" y="53" width="25" height="14"/><rect x="295" y="72" width="25" height="14"/><rect x="294" y="92" width="27" height="19"/></g><text x="325" y="64" fill="#fae8dc" font-family="monospace" font-size="8">DP</text><text x="325" y="83" fill="#fae8dc" font-family="monospace" font-size="8">DP</text><text x="325" y="106" fill="#fae8dc" font-family="monospace" font-size="8">DVI-I</text>
+  <text x="43" y="46" fill="#e2a777" font-family="monospace" font-size="9">W5000 // 75 W // SINGLE SLOT</text>
+</svg>

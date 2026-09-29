@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">GXT5-5000MVRT4UXLN functional schematic</title>
+  <desc id="desc">Double-conversion 208 volt UPS with internal battery, hardwired power and an optional output distribution pod.</desc>
+  <rect width="720" height="360" rx="18" fill="#101a20"/>
+  <g fill="none" stroke="#c2e812" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M54 178h116m100 0h70m100 0h82m90 0h50"/>
+    <path d="M212 130v96m-26-48h52m106-46 47 46-47 46m73-92v92"/>
+    <path d="M320 257h91m-73-18v36m24-36v36m24-36v36"/>
+    <rect x="588" y="126" width="83" height="105" rx="6"/>
+    <path d="M607 155h45m-45 24h45m-45 24h45"/>
+  </g>
+  <g fill="#e9f0f2" font-family="monospace" font-size="18">
+    <text x="49" y="126">208 V</text><text x="180" y="100">RECTIFY</text>
+    <text x="308" y="100">INVERT</text><text x="325" y="306">VRLA</text>
+    <text x="587" y="265">POD / HARDWIRE</text>
+    <text x="50" y="335" fill="#c2e812">GXT5-5000 // 5000 VA / 5000 W</text>
+  </g>
+</svg>

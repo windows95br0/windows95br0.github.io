@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">OL10000RT3U functional schematic</title>
+  <desc id="desc">Ten kilovolt-amp double-conversion UPS with 9000 watt output, battery bank and three L6-30R plus hardwire output.</desc>
+  <rect width="720" height="360" rx="18" fill="#111a25"/>
+  <g fill="none" stroke="#ff8c69" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M48 177h116m110 0h73m112 0h76m95 0h38"/>
+    <path d="M205 128v98m-26-49h52m107-47 47 47-47 47m72-94v94"/>
+    <path d="M320 260h90m-72-18v36m24-36v36m24-36v36"/>
+    <rect x="586" y="120" width="88" height="114" rx="7"/>
+    <path d="M603 145h23m-23 21h23m-23 21h23m33-42v42m-15-21h30"/>
+  </g>
+  <g fill="#f3f4f6" font-family="monospace" font-size="17">
+    <text x="44" y="123">200–240 V</text><text x="174" y="98">RECTIFIER</text>
+    <text x="302" y="98">INVERTER</text><text x="320" y="308">VRLA BANK</text>
+    <text x="580" y="260">3 × L6-30R</text><text x="580" y="283">+ HARDWIRE</text>
+    <text x="44" y="337" fill="#ff8c69">OL10000RT3U // 10000 VA / 9000 W</text>
+  </g>
+</svg>

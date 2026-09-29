@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 150" role="img" aria-labelledby="title desc">
+  <title id="title">FirePro W8100 board schematic</title><desc id="desc">Dual-slot Hawaii workstation card with 8 GB memory, four DisplayPort outputs and two 6-pin inputs.</desc>
+  <rect width="380" height="150" rx="8" fill="#181e2c"/><path d="M24 29h278l33 25v64H24z" fill="#252f47" stroke="#a0b5ec" stroke-width="2"/>
+  <rect x="100" y="51" width="95" height="54" rx="5" fill="#111521" stroke="#7488bd"/><text x="147" y="75" fill="#edf1ff" text-anchor="middle" font-family="monospace" font-size="11">HAWAII</text><text x="147" y="93" fill="#bfcaec" text-anchor="middle" font-family="monospace" font-size="9">8 GB GDDR5</text>
+  <path d="M33 114h225v7H33z" fill="#b8a45e"/><g fill="#0d1019" stroke="#e2e7fa"><rect x="295" y="48" width="24" height="14"/><rect x="295" y="65" width="24" height="14"/><rect x="295" y="82" width="24" height="14"/><rect x="295" y="99" width="24" height="14"/></g><rect x="45" y="37" width="25" height="13" fill="#111" stroke="#e7d59a"/><rect x="75" y="37" width="25" height="13" fill="#111" stroke="#e7d59a"/>
+  <text x="51" y="46" fill="#fff0bf" font-family="monospace" font-size="7">6P</text><text x="81" y="46" fill="#fff0bf" font-family="monospace" font-size="7">6P</text><text x="38" y="135" fill="#a0b5ec" font-family="monospace" font-size="9">W8100 // 220 W // DUAL SLOT</text>
+</svg>

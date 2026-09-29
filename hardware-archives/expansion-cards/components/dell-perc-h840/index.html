@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Model-specific archival record for the Dell PERC H840 external SAS RAID controller.">
+  <title>Dell PERC H840 // Expansion Cards // Hardware Archives</title>
+  <link rel="stylesheet" href="../../../../style.css">
+  <link rel="stylesheet" href="../../../archive.css">
+</head>
+<body class="hardware-page">
+  <div class="site-shell">
+    <header class="topbar" id="top"><a class="brand" href="../../../../index.html"><span class="brand-wordmark">ALIENCULTIST.COM</span></a><div class="status-line"><span class="status-dot"></span> HARDWARE ARCHIVES // PART RECORD</div><nav class="main-nav" aria-label="Archive navigation"><a class="home-nav-link" href="../../../../index.html">HOME</a><a class="archive-nav-link" href="../../index.html">EXPANSION CARDS</a><a class="hardware-nav-link" href="../../../index.html">ALL CATEGORIES</a></nav></header>
+    <main class="hardware-record">
+      <nav class="record-back"><a href="../../subcategories/storage-and-disk-controllers/index.html">&larr; Storage and disk controllers</a><span>PART RECORD // EXPANSION CARDS</span></nav>
+      <section class="record-hero"><div><p class="eyebrow">[ INDIVIDUAL COMPONENT // STORAGE / DISK I/O ]</p><h1>Dell PERC H840</h1><p class="record-intro">External SAS hardware RAID adapter designed for PowerEdge systems and qualified external disk enclosures.</p></div><figure class="record-figure"><img class="record-art" src="diagram.svg" alt="Original schematic of the Dell PERC H840 external controller"><figcaption>SCHEMATIC // EXTERNAL STORAGE ADAPTER</figcaption></figure></section>
+      <p class="record-scope">MODEL SCOPE: Dell PERC H840 adapter. Confirm service tag/system generation, adapter part number, cache-protection configuration and enclosure qualification.</p>
+      <section class="record-section"><h2>Reference specifications</h2><table class="spec-table"><tbody>
+        <tr><th>Controller</th><td>Dell PERC 10-series hardware RAID controller, using a Broadcom RAID-on-Chip platform.</td></tr>
+        <tr><th>Host bus</th><td>PCI Express 3.0 x8 adapter interface.</td></tr>
+        <tr><th>Ports</th><td>Eight external lanes through two SFF-8644 Mini-SAS HD connectors.</td></tr>
+        <tr><th>Protocols</th><td>12 Gb/s SAS and 6 Gb/s SATA drives/enclosures supported by the H840 and host platform.</td></tr>
+        <tr><th>RAID / HBA mode</th><td>Hardware RAID 0, 1, 5, 6, 10, 50 and 60 with Dell-supported non-RAID/JBOD modes where configured.</td></tr>
+        <tr><th>Cache / protection</th><td>8 GB non-volatile cache configuration; cache protection is part of the PERC platform. Verify the actual controller kit and protection status in Dell management before write-back operation.</td></tr>
+        <tr><th>Firmware / OS</th><td>Use Dell-validated controller firmware, driver and OpenManage/PERC tools for the exact PowerEdge generation and OS. Generic Broadcom drivers do not replace Dell platform qualification.</td></tr>
+        <tr><th>Drive / backplane caveats</th><td>Designed for external SAS enclosures such as qualified Dell MD-series units. Match SAS cable type, enclosure firmware, dual-path topology and host-system support; SATA devices may not provide redundant paths.</td></tr>
+      </tbody></table></section>
+      <section class="record-section"><h2>Compatibility and service notes</h2><ul><li>Check the server's supported PCIe slot, firmware, lifecycle controller and OS driver matrix before installing this adapter.</li><li>Use Dell-qualified SFF-8644 cables and supported storage enclosures; do not assume any JBOD enclosure exposes identical management or multipath features.</li><li>Capture virtual-disk configuration and cache health before controller replacement, update or enclosure recabling.</li></ul></section>
+      <section class="record-section"><h2>Sources &amp; further reading</h2><ol class="record-sources">
+        <li><a href="https://www.dell.com/support/product-details/en-us/product/poweredge-rc-h840/resources/manuals" rel="noopener noreferrer">Dell — PowerEdge RAID Controller H840 manuals and documents</a><small>Official H840 installation, maintenance and troubleshooting resources.</small></li>
+        <li><a href="https://www.dell.com/support/manuals/en-us/perc-h745p-mx/perc10_ug/overview" rel="noopener noreferrer">Dell — PERC 10 User's Guide</a><small>Manufacturer reference for the PERC 10 family, configuration, cache and controller management.</small></li>
+        <li><a href="https://www.dell.com/en-us/shop/dell-perc-h840-raid-adapter-8gb-nv-cache-low-profile-full-height-customer-install/apd/405-aamz/storage-drives-media" rel="noopener noreferrer">Dell — PERC H840 adapter with 8 GB NV cache</a><small>Manufacturer listing for an H840 adapter configuration; verify service part number.</small></li>
+      </ol></section>
+    </main>
+    <footer class="footer"><p>&copy; 2026 ALIEN CULTIST LABS // GALT, CALIFORNIA</p><a href="../../subcategories/storage-and-disk-controllers/index.html">SUBCATEGORY FILE</a><a href="#top">BACK TO TOP &uarr;</a></footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300" role="img" aria-labelledby="title desc">
+<title id="title">SilverStone Raven RVZ02 enclosure schematic</title>
+<desc id="desc">Original schematic showing the RAVEN RVZ02 case layout and the riser cage feature. Not a dimensional drawing.</desc>
+<rect width="360" height="300" rx="16" fill="#101820"/><path d="M28 264h304" stroke="#566773" stroke-width="2"/>
+<path d="M42 107h276v88H42z" fill="#18232e" stroke="#7864a4" stroke-width="4"/><path d="M58 121h86v58H58z" fill="#202f3c" stroke="#84939d"/><path d="M158 121h144v58H158z" fill="#17212b" stroke="#84939d"/><path d="M112 72l124 140M236 72L112 212" stroke="#7864a4" stroke-width="3"/>
+<path d="M58 229h244" stroke="#667984" stroke-width="2"/><text x="180" y="258" fill="#d1d9dd" font-family="sans-serif" font-size="13" text-anchor="middle">RAVEN RVZ02</text>
+</svg>

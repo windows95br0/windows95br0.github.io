@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Model-specific archival record for the Microchip Adaptec RAID ASR-8805 SAS/SATA controller.">
+  <title>Microchip Adaptec RAID ASR-8805 // Expansion Cards // Hardware Archives</title>
+  <link rel="stylesheet" href="../../../../style.css">
+  <link rel="stylesheet" href="../../../archive.css">
+</head>
+<body class="hardware-page">
+  <div class="site-shell">
+    <header class="topbar" id="top"><a class="brand" href="../../../../index.html"><span class="brand-wordmark">ALIENCULTIST.COM</span></a><div class="status-line"><span class="status-dot"></span> HARDWARE ARCHIVES // PART RECORD</div><nav class="main-nav" aria-label="Archive navigation"><a class="home-nav-link" href="../../../../index.html">HOME</a><a class="archive-nav-link" href="../../index.html">EXPANSION CARDS</a><a class="hardware-nav-link" href="../../../index.html">ALL CATEGORIES</a></nav></header>
+    <main class="hardware-record">
+      <nav class="record-back"><a href="../../subcategories/storage-and-disk-controllers/index.html">&larr; Storage and disk controllers</a><span>PART RECORD // EXPANSION CARDS</span></nav>
+      <section class="record-hero"><div><p class="eyebrow">[ INDIVIDUAL COMPONENT // STORAGE / DISK I/O ]</p><h1>Microchip Adaptec RAID ASR-8805</h1><p class="record-intro">Eight internal SAS/SATA lanes and hardware RAID in the Adaptec Series 8 PCIe Gen3 adapter family.</p></div><figure class="record-figure"><img class="record-art" src="diagram.svg" alt="Original schematic of the Adaptec RAID ASR-8805"><figcaption>SCHEMATIC // STORAGE / DISK I/O ADD-IN CARD</figcaption></figure></section>
+      <p class="record-scope">MODEL SCOPE: Adaptec RAID ASR-8805. Check board revision, AFM-700 availability, exact firmware and supplied bracket before service.</p>
+      <section class="record-section"><h2>Reference specifications</h2><table class="spec-table"><tbody>
+        <tr><th>Controller</th><td>Adaptec Series 8 RAID-on-Chip controller.</td></tr>
+        <tr><th>Host bus</th><td>PCI Express 3.0 x8.</td></tr>
+        <tr><th>Ports</th><td>Eight internal lanes through two SFF-8643 Mini-SAS HD connectors.</td></tr>
+        <tr><th>Protocols</th><td>SAS 12 Gb/s and SATA 6 Gb/s; both legacy link rates negotiate when supported by the attached drive.</td></tr>
+        <tr><th>RAID / HBA mode</th><td>Hardware RAID 0, 1, 1E, 5, 6, 10, 50 and 60; supported raw/JBOD presentation is firmware- and configuration-dependent.</td></tr>
+        <tr><th>Cache / protection</th><td>1 GB DDR3 cache; optional Adaptec Flash Module AFM-700 provides flash-backed cache protection. Do not assume the module is bundled with a used card.</td></tr>
+        <tr><th>Firmware / OS</th><td>Use Microchip's Adaptec Series 8 firmware, maxView / ARCCONF tools and a driver listed for the target OS. Check archived Windows/Linux/hypervisor compatibility for this legacy generation.</td></tr>
+        <tr><th>Drive / backplane caveats</th><td>Check Mini-SAS HD cable map, drive sector format, expander firmware, backplane power and cooling. A SAS expander does not make SATA drives dual-path capable.</td></tr>
+      </tbody></table></section>
+      <section class="record-section"><h2>Compatibility and service notes</h2><ul><li>Use AFM-700 cache protection in the manner prescribed by the Series 8 manual before enabling protected write-back.</li><li>Legacy drivers and management software may not support modern OS releases; test the exact deployment image first.</li><li>Array import and migration depend on controller generation and firmware. Preserve a verified backup before replacement.</li></ul></section>
+      <section class="record-section"><h2>Sources &amp; further reading</h2><ol class="record-sources">
+        <li><a href="https://www.microchip.com/en-us/product/ASR-8805" rel="noopener noreferrer">Microchip — Adaptec RAID ASR-8805 product and support page</a><small>Manufacturer product entry for model details, firmware and documentation.</small></li>
+        <li><a href="https://ww1.microchip.com/downloads/aemDocuments/documents/adaptec/documents/msm_smart_3_24_users_guide.pdf" rel="noopener noreferrer">Microchip — maxView Storage Manager User Guide</a><small>Official Adaptec storage management and array configuration reference.</small></li>
+        <li><a href="https://support.microchip.com/s/article/Support-for-Adaptec-Products--SmartRAID--SmartHBA--HBA--SAS" rel="noopener noreferrer">Microchip — Adaptec RAID and SAS product support</a><small>Manufacturer support resource for archived firmware, drivers and product documentation.</small></li>
+      </ol></section>
+    </main>
+    <footer class="footer"><p>&copy; 2026 ALIEN CULTIST LABS // GALT, CALIFORNIA</p><a href="../../subcategories/storage-and-disk-controllers/index.html">SUBCATEGORY FILE</a><a href="#top">BACK TO TOP &uarr;</a></footer>
+  </div>
+</body>
+</html>

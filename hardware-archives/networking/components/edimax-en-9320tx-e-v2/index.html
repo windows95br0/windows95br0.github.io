@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Revision-specific record for the Edimax EN-9320TX-E V2 10GbE PCIe Ethernet adapter.">
+<title>Edimax EN-9320TX-E V2 10GbE Adapter // Networking Hardware // Hardware Archives</title>
+<link rel="stylesheet" href="../../../../style.css">
+<link rel="stylesheet" href="../../../archive.css">
+</head>
+<body class="hardware-page">
+<div class="site-shell">
+<header class="topbar" id="top"><a class="brand" href="../../../../index.html" aria-label="Alien Cultist Labs home"><span class="brand-wordmark">ALIENCULTIST.COM</span></a><div class="status-line"><span class="status-dot"></span> HARDWARE ARCHIVES <span class="status-divider">//</span> COMPONENT RECORD</div><nav class="main-nav" aria-label="Archive navigation"><a class="home-nav-link" href="../../../../index.html">HOME</a><a class="archive-nav-link" href="../../subcategories/ethernet-adapters/index.html">ETHERNET ADAPTERS</a><a class="hardware-nav-link" href="../../../index.html">ALL CATEGORIES</a></nav></header>
+<main class="hardware-record component-record">
+<nav class="record-back"><a href="../../subcategories/ethernet-adapters/index.html">← Ethernet adapters</a><span>NETWORKING // INDIVIDUAL PART RECORD</span></nav>
+<section class="record-hero"><div><p class="eyebrow">[ MODEL-SPECIFIC NETWORK HARDWARE RECORD ]</p><h1>Edimax EN-9320TX-E V2 10 Gigabit Ethernet Adapter</h1><p class="record-intro">Revision V2 is a single-port, NBASE-T-capable PCIe copper adapter. Do not transfer the V2 speed table or driver notes to the earlier EN-9320TX-E board.</p></div><figure class="record-figure"><img class="record-art" src="diagram.svg" alt="Original local schematic of the Edimax EN-9320TX-E V2 single-port PCIe adapter"><figcaption>UNIQUE LOCAL SVG // SCHEMATIC, NOT TO SCALE</figcaption></figure></section>
+<p class="record-scope"><strong>IDENTIFICATION:</strong> Exact product model EN-9320TX-E V2. The Edimax version-specific datasheet is the reference for this revision; verify the model suffix on the card itself.</p>
+<section class="record-section"><h2>Exact SKU, interface and compatibility</h2><table class="spec-table"><tbody>
+<tr><th>Exact model / SKU / revision</th><td>Edimax EN-9320TX-E V2 (10 Gigabit Ethernet PCI Express Server Adapter).</td></tr>
+<tr><th>Controller</th><td>Marvell/Aquantia AQtion multigigabit Ethernet controller family; the Edimax V2 datasheet identifies the adapter capabilities but does not specify a controller stepping. Do not assign AQC107 versus AQC113 solely from a similar retail card.</td></tr>
+<tr><th>Bus, ports and connector</th><td>PCI Express 3.0 x4; one 8P8C/RJ-45 copper port; standard and low-profile bracket support as described in the V2 documentation.</td></tr>
+<tr><th>Per-port link rates</th><td>10GBASE-T, 5GBASE-T, 2.5GBASE-T, 1000BASE-T and 100BASE-TX, with auto-negotiation.</td></tr>
+<tr><th>Driver and operating systems</th><td>Use the Edimax V2 driver package. Its archived matrix lists Windows 7/8.1/10, Windows Server 2008 R2/2012/2012 R2/2016, Linux 2.6/3.x/4.x, macOS 10.12, and ESXi 5.1/5.5/6.0 (plus Hyper-V/KVM); these are historical entries, not current-release certification.</td></tr>
+<tr><th>Cabling and compatibility caveats</th><td>Use Cat 6a/7 channel for 10GbE and the vendor-specified cable/length for lower NBASE-T rates. Requires four electrically connected PCIe lanes; the port’s negotiated speed is bounded by switch, cabling and far-end NIC.</td></tr>
+<tr><th>Revision warning</th><td>V2 suffix is required for this record. Earlier EN-9320TX-E revisions and other Edimax 10GbE cards may use different silicon, drivers, bracket packages or speed support.</td></tr>
+</tbody></table></section>
+<section class="record-section"><h2>Use and preservation notes</h2><p>Keep the V2 sticker, MAC address, PCB revision, controller marking and driver package together in the record. No throughput benchmark is claimed; measured data must name the negotiated speed, peer, cable, OS, driver, MTU and test method.</p></section>
+<section class="record-section"><h2>Edimax datasheet and product documentation</h2><ol class="record-sources">
+<li><a href="https://download.edimax.com/mw/cufiles/files/download/datasheet/EN-9320TX-E_V2_Datasheet_English.pdf" rel="noopener noreferrer">Edimax EN-9320TX-E V2 datasheet (PDF)</a><small>Revision-specific manufacturer technical specifications.</small></li>
+<li><a href="https://download.edimax.com/mw/cufiles/files/download/QIG/EN-9320SFP_plus_EN-9320TX-E/EN-9320SFP_plus_EN-9320TX-E_QIG_English_EN.pdf" rel="noopener noreferrer">Edimax EN-9320TX-E Quick Installation Guide (PDF)</a><small>Manufacturer card installation and driver guide; verify the V2 label because this bundled guide also names the earlier family member.</small></li>
+<li><a href="https://www.edimax.com/edimax/merchandise/merchandise_detail/data/edimax/global/smb_network_adapters_pci_card/en-9320tx-e_v2/" rel="noopener noreferrer">Edimax EN-9320TX-E V2 product page</a><small>Manufacturer product family, downloads and version identity.</small></li>
+<li><a href="https://www.marvell.com/content/dam/marvell/en/public-collateral/ethernet-adaptersandcontrollers/marvell-fastLinq-edge-product-brief.pdf" rel="noopener noreferrer">Marvell FastLinQ Edge controller family brief (PDF)</a><small>Controller-family context only; it does not identify the exact silicon revision on every EN-9320TX-E V2 card.</small></li>
+</ol></section>
+</main><footer class="footer"><p>© 2026 ALIEN CULTIST LABS // GALT, CALIFORNIA</p><a href="../../index.html">NETWORKING CATEGORY</a><a href="#top">BACK TO TOP ↑</a></footer>
+</div></body></html>

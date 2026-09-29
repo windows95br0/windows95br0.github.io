@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 150" role="img" aria-labelledby="title desc">
+  <title id="title">FirePro W4100 board schematic</title><desc id="desc">Low-profile Cape Verde graphics card with four Mini DisplayPort outputs.</desc>
+  <rect width="380" height="150" rx="8" fill="#16192a"/><path d="M28 31h271l31 24v61H28z" fill="#292846" stroke="#c6a9ec" stroke-width="2"/>
+  <circle cx="83" cy="78" r="26" fill="#171624" stroke="#75649c"/><path d="M83 53v50m-25-25h50m-43-18 36 36m0-36-36 36" stroke="#8b79b0"/>
+  <rect x="127" y="53" width="64" height="50" rx="4" fill="#111522" stroke="#aa92d0"/><text x="159" y="76" fill="#f0e8ff" text-anchor="middle" font-family="monospace" font-size="10">CAPE V.</text><text x="159" y="92" fill="#c6b5df" text-anchor="middle" font-family="monospace" font-size="8">2 GB GDDR5</text>
+  <path d="M38 114h222v7H38z" fill="#c2a15e"/><g fill="#0e1119" stroke="#ddd1f4"><rect x="295" y="51" width="25" height="11"/><rect x="295" y="67" width="25" height="11"/><rect x="295" y="83" width="25" height="11"/><rect x="295" y="99" width="25" height="11"/></g>
+  <text x="42" y="45" fill="#c6a9ec" font-family="monospace" font-size="9">W4100 // 50 W // LP</text>
+</svg>

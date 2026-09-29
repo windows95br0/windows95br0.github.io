@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-labelledby="title desc">
+  <title id="title">Areca ARC-1883ix-12 board schematic</title>
+  <desc id="desc">Original storage controller illustration with three internal ports, one external port and cache module.</desc>
+  <rect width="720" height="420" fill="#10131d"/>
+  <path d="M57 76h516l82 67v176H57z" fill="#20263a" stroke="#9b8bff" stroke-width="4"/>
+  <rect x="277" y="142" width="166" height="108" rx="15" fill="#141a2b" stroke="#f0efff" stroke-width="3"/>
+  <text x="360" y="183" fill="#f5f7ef" font-family="monospace" font-size="15" text-anchor="middle">ARECA ROC</text>
+  <text x="360" y="219" fill="#9b8bff" font-family="monospace" font-size="17" text-anchor="middle">1883ix-12</text>
+  <g fill="#303454" stroke="#9b8bff" stroke-width="2"><rect x="88" y="108" width="54" height="31" rx="4"/><rect x="88" y="165" width="54" height="31" rx="4"/><rect x="88" y="222" width="54" height="31" rx="4"/><rect x="559" y="179" width="54" height="31" rx="4"/></g>
+  <text x="115" y="128" fill="#f5f2ff" font-family="monospace" font-size="9" text-anchor="middle">INT 1-4</text>
+  <text x="115" y="185" fill="#f5f2ff" font-family="monospace" font-size="9" text-anchor="middle">INT 5-8</text>
+  <text x="115" y="242" fill="#f5f2ff" font-family="monospace" font-size="9" text-anchor="middle">INT 9-12</text>
+  <text x="586" y="199" fill="#f5f2ff" font-family="monospace" font-size="9" text-anchor="middle">EXT 1-4</text>
+  <path d="M142 123h135m-135 57h75m-75 57h75m166-82h70v41h70" fill="none" stroke="#9b8bff" stroke-width="3"/>
+  <path d="M139 338h445l-18 29H157z" fill="#c6c7d2"/>
+  <path d="M174 338v29m27-29v29m27-29v29m27-29v29m27-29v29m27-29v29m27-29v29m27-29v29m27-29v29m27-29v29m27-29v29m27-29v29m27-29v29" stroke="#45485b" stroke-width="7"/>
+  <text x="360" y="402" fill="#aaa9c0" font-family="monospace" font-size="14" text-anchor="middle">12 INTERNAL + 4 EXTERNAL LANES</text>
+</svg>

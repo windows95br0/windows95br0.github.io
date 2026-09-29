@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">Pretorian APPlicator switch access schematic</title><desc id="desc">Four wired external switches enter an APPlicator, which maps them to commands delivered over Bluetooth to a host.</desc>
+<rect width="640" height="360" fill="#101820"/><path d="M26 26h588v308H26z" fill="none" stroke="#557079" stroke-width="2"/>
+<text x="320" y="58" fill="#9fffe0" font-family="monospace" font-size="18" text-anchor="middle">APPLICATOR / MULTI-SWITCH BLUETOOTH ACCESS</text>
+<g fill="#182d38" stroke="#ffb46a" stroke-width="3"><rect x="62" y="97" width="100" height="38" rx="7"/><rect x="62" y="153" width="100" height="38" rx="7"/><rect x="62" y="209" width="100" height="38" rx="7"/><rect x="62" y="265" width="100" height="38" rx="7"/></g>
+<g fill="#fff" font-family="monospace" font-size="12" text-anchor="middle"><text x="112" y="121">SWITCH 1</text><text x="112" y="177">SWITCH 2</text><text x="112" y="233">SWITCH 3</text><text x="112" y="289">SWITCH 4</text></g>
+<path d="M166 116h56m-56 56h56m-56 56h56m-56 56h56" stroke="#ffb46a" stroke-width="2"/>
+<rect x="228" y="105" width="200" height="190" rx="14" fill="#21313a" stroke="#4ce0bd" stroke-width="4"/><text x="328" y="171" fill="#fff" font-family="monospace" font-size="21" text-anchor="middle">APPlicator</text><text x="328" y="200" fill="#9fffe0" font-family="monospace" font-size="12" text-anchor="middle">MAP EACH SOCKET</text>
+<path d="M270 235h116" stroke="#daff00" stroke-width="3"/><circle cx="281" cy="235" r="7" fill="#daff00"/><circle cx="311" cy="235" r="7" fill="#daff00"/><circle cx="341" cy="235" r="7" fill="#daff00"/><circle cx="371" cy="235" r="7" fill="#daff00"/>
+<path d="M441 198h68" stroke="#4ce0bd" stroke-width="4" stroke-dasharray="6 6"/><path d="m499 189 14 9-14 9" fill="none" stroke="#4ce0bd" stroke-width="4"/>
+<rect x="528" y="130" width="72" height="130" rx="10" fill="#182d38" stroke="#4ce0bd" stroke-width="3"/><rect x="540" y="143" width="48" height="82" fill="none" stroke="#daff00" stroke-width="2"/><text x="564" y="284" fill="#fff" font-family="monospace" font-size="11" text-anchor="middle">BT HOST</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 260" role="img" aria-labelledby="title desc">
+<title id="title">Thrustmaster T.Flight Stick X control silhouette</title>
+<desc id="desc">Original local vector diagram of the Thrustmaster T.Flight Stick X, showing its joystick grip, control base and integrated base controls.</desc>
+<rect width="360" height="260" rx="14" fill="#101820"/>
+<path d="M18 32H342 M18 222H342" stroke="#273744" stroke-width="1" stroke-dasharray="4 6"/>
+<g opacity=".35" stroke="#435564" stroke-width="1"><path d="M45 55V210 M90 55V210 M135 55V210 M180 55V210 M225 55V210 M270 55V210 M315 55V210"/></g>
+<g>
+  <path d="M129 171 L124 108 Q125 84 151 84 Q196 82 196 107 L191 171 Z" fill="#263540" stroke="#48a6aa" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M151 98 V145 M139 170 L142 189 M186 170 L183 190" fill="none" stroke="#8fa0ad" stroke-width="3"/>
+  <circle cx="150" cy="103" r="5" fill="#48a6aa"/>
+  <circle cx="169" cy="94" r="4" fill="#d3dde4"/>
+  <circle cx="184" cy="103" r="4" fill="#d3dde4"/>
+  <path d="M139 196 Q155 188 171 196 L199 214 Q208 221 198 228 H112 Q102 220 113 214 Z" fill="#1c2933" stroke="#718493" stroke-width="3"/>
+  <path d="M146 204H172 M151 210V221 M139 215H147 M178 215H185" stroke="#48a6aa" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="123" cy="218" r="3" fill="#d3dde4"/><circle cx="190" cy="218" r="3" fill="#d3dde4"/>
+  <text x="155" y="246" fill="#a8bac8" font-size="9" text-anchor="middle">JOYSTICK / AXIS CONTROL</text>
+</g>
+<text x="18" y="20" fill="#48a6aa" font-family="monospace" font-size="9" letter-spacing="1">THRUSTMASTER T.FLIGHT STICK X; PRODUCT NUM</text>
+</svg>

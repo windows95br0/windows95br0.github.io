@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">Eaton 9PX2200IRT2U-L functional schematic</title>
+  <desc id="desc">Configurable 200 to 240 volt online UPS with lithium-ion battery, eight C13 and two C19 outputs.</desc>
+  <rect width="720" height="360" rx="18" fill="#171a22"/>
+  <g fill="none" stroke="#f783ac" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M48 177h118m112 0h74m111 0h70m108 0h30"/>
+    <path d="M210 128v98m-26-49h52m107-47 47 47-47 47m72-94v94"/>
+    <path d="M322 260h88m-70-18v36m24-36v36m24-36v36"/>
+    <rect x="584" y="119" width="96" height="117" rx="7"/>
+    <path d="M600 143h23m-23 19h23m-23 19h23m-23 19h23m38-57h23m-23 19h23"/>
+  </g>
+  <g fill="#f4f4f5" font-family="monospace" font-size="17">
+    <text x="43" y="124">200–240 V</text><text x="176" y="98">RECTIFY</text>
+    <text x="302" y="98">INVERT</text><text x="317" y="308">LI-ION</text>
+    <text x="585" y="260">8 C13 / 2 C19</text>
+    <text x="44" y="337" fill="#f783ac">9PX2200IRT2U-L // 2200 VA / 2200 W</text>
+  </g>
+</svg>

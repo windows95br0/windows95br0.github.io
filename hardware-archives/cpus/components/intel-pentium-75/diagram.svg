@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-labelledby="title desc">
+<title id="title">Intel Pentium 75 functional schematic</title><desc id="desc">Original vector block diagram identifying Intel Pentium 75 as a desktop CPU. Not to scale and not a pinout.</desc>
+<rect width="720" height="420" fill="#101922"/><rect x="18" y="18" width="684" height="384" rx="16" fill="#14232c" stroke="#63c7ff" stroke-width="3"/>
+<text x="42" y="60" fill="#63c7ff" font-family="monospace" font-size="18" letter-spacing="3">HARDWARE ARCHIVES // CPU SCHEMATIC</text>
+<text x="42" y="102" fill="#eef5f2" font-family="sans-serif" font-size="24" font-weight="700">Intel Pentium 75</text>
+<rect x="56" y="145" width="260" height="166" rx="10" fill="#1c303a" stroke="#63c7ff" stroke-width="2"/>
+<text x="78" y="181" fill="#eef5f2" font-family="monospace" font-size="16">PROCESSOR CORE</text>
+<text x="78" y="218" fill="#9db6b6" font-family="monospace" font-size="14">1 core / 1 thread; 75 MHz; 50 MHz host bus</text>
+<text x="78" y="250" fill="#9db6b6" font-family="monospace" font-size="14">CACHE // 16 KB split L1 (8 KB instruction + 8 K</text>
+<text x="78" y="282" fill="#9db6b6" font-family="monospace" font-size="14">Socket 5 (320-pin SPGA)</text>
+<path d="M316 226h76" stroke="#63c7ff" stroke-width="4"/><path d="m382 216 14 10-14 10" fill="none" stroke="#63c7ff" stroke-width="4"/>
+<rect x="398" y="145" width="260" height="76" rx="10" fill="#1c303a" stroke="#739294" stroke-width="2"/><text x="420" y="178" fill="#eef5f2" font-family="monospace" font-size="15">HOST / MEMORY PLATFORM</text><text x="420" y="203" fill="#9db6b6" font-family="monospace" font-size="13">Platform/chipset-controlled FPM or</text>
+<rect x="398" y="235" width="260" height="76" rx="10" fill="#1c303a" stroke="#739294" stroke-width="2"/><text x="420" y="269" fill="#eef5f2" font-family="monospace" font-size="15">PLATFORM CHECK</text><text x="420" y="294" fill="#9db6b6" font-family="monospace" font-size="13">BIOS // SOCKET // POWER</text>
+<text x="42" y="365" fill="#739294" font-family="monospace" font-size="13">ORIGINAL LOCAL DIAGRAM // NOT TO SCALE // NOT A PINOUT</text>
+</svg>

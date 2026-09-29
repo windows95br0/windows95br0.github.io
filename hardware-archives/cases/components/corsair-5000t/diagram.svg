@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" role="img" aria-labelledby="title desc">
+<title id="title">CORSAIR 5000T RGB schematic</title><desc id="desc">Original mid-tower drawing with top, front and side radiator zones highlighted.</desc>
+<rect width="520" height="360" fill="#10171e"/><path d="M118 55h258l30 22v207H105V74z" fill="#1b2934" stroke="#74d8d1" stroke-width="4"/><rect x="134" y="82" width="203" height="179" fill="#0e171e" stroke="#536c78" stroke-width="2"/><path d="M125 67h236" stroke="#e7bf52" stroke-width="12" stroke-dasharray="12 8"/><path d="M117 81v175" stroke="#e7bf52" stroke-width="12" stroke-dasharray="12 8"/><path d="M347 91v156" stroke="#71cfe0" stroke-width="12" stroke-dasharray="10 7"/><rect x="174" y="119" width="121" height="75" fill="#263a47" stroke="#a8bec1" stroke-width="3"/><circle cx="234" cy="156" r="25" fill="none" stroke="#74d8d1" stroke-width="3"/><path d="M95 294h333" stroke="#7d9097" stroke-width="3"/><text x="260" y="329" fill="#f0f5f2" font-family="Arial,sans-serif" font-size="17" text-anchor="middle">5000T RGB // 530 × 251 × 560 mm</text>
+</svg>
+

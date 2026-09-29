@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" role="img" aria-labelledby="title desc">
+  <title id="title">TP-3 pad thickness diagram</title>
+  <desc id="desc">Original drawing showing a pad sheet and an enlarged one millimeter cross-section.</desc>
+  <rect width="640" height="260" rx="20" fill="#15212c"/>
+  <path d="M72 86l183-30 173 48-182 34z" fill="#5d83a0" stroke="#a8c5d7" stroke-width="3"/>
+  <path d="M72 86v41l174 53V138z" fill="#38556b"/>
+  <path d="M246 138l182-34v42l-182 34z" fill="#496d86"/>
+  <path d="M313 188h198v15H313z" fill="#ebbd73"/>
+  <path d="M313 214h198v20H313z" fill="#a7b7c1"/>
+  <path d="M540 188v15m-8-15h16m-16 15h16" stroke="#e8edf0" stroke-width="3"/>
+  <text x="96" y="70" fill="#c8e8f6" font-family="sans-serif" font-size="18" font-weight="700">TP-3 // 120 × 20 mm</text>
+  <text x="352" y="178" fill="#f1c980" font-family="sans-serif" font-size="17">1.0 mm</text>
+</svg>

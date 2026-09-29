@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Model-specific archival record for the Broadcom MegaRAID 9560-8i Tri-Mode storage adapter.">
+  <title>Broadcom MegaRAID 9560-8i // Expansion Cards // Hardware Archives</title>
+  <link rel="stylesheet" href="../../../../style.css">
+  <link rel="stylesheet" href="../../../archive.css">
+</head>
+<body class="hardware-page">
+  <div class="site-shell">
+    <header class="topbar" id="top"><a class="brand" href="../../../../index.html"><span class="brand-wordmark">ALIENCULTIST.COM</span></a><div class="status-line"><span class="status-dot"></span> HARDWARE ARCHIVES // PART RECORD</div><nav class="main-nav" aria-label="Archive navigation"><a class="home-nav-link" href="../../../../index.html">HOME</a><a class="archive-nav-link" href="../../index.html">EXPANSION CARDS</a><a class="hardware-nav-link" href="../../../index.html">ALL CATEGORIES</a></nav></header>
+    <main class="hardware-record">
+      <nav class="record-back"><a href="../../subcategories/storage-and-disk-controllers/index.html">&larr; Storage and disk controllers</a><span>PART RECORD // EXPANSION CARDS</span></nav>
+      <section class="record-hero"><div><p class="eyebrow">[ INDIVIDUAL COMPONENT // STORAGE / DISK I/O ]</p><h1>Broadcom MegaRAID 9560-8i</h1><p class="record-intro">Eight internal Tri-Mode lanes combine SAS/SATA RAID with NVMe support through supported tri-mode cabling and backplanes.</p></div><figure class="record-figure"><img class="record-art" src="diagram.svg" alt="Original schematic of the MegaRAID 9560-8i controller"><figcaption>SCHEMATIC // STORAGE / DISK I/O ADD-IN CARD</figcaption></figure></section>
+      <p class="record-scope">MODEL SCOPE: MegaRAID 9560-8i. Verify exact board revision, CacheVault accessory, firmware package, cable kit and platform qualification.</p>
+      <section class="record-section"><h2>Reference specifications</h2><table class="spec-table"><tbody>
+        <tr><th>Controller</th><td>Broadcom SAS3908 Tri-Mode RAID-on-Chip.</td></tr>
+        <tr><th>Host bus</th><td>PCI Express 4.0 x8.</td></tr>
+        <tr><th>Ports</th><td>Eight internal lanes on one SFF-8654 8i SlimSAS connector.</td></tr>
+        <tr><th>Protocols</th><td>SAS 12 Gb/s, SATA 6 Gb/s and NVMe over PCIe through supported Tri-Mode topologies.</td></tr>
+        <tr><th>RAID / HBA mode</th><td>MegaRAID hardware RAID 0, 1, 5, 6, 10, 50 and 60, plus supported JBOD/raw-device operation.</td></tr>
+        <tr><th>Cache / protection</th><td>4 GB onboard cache with CacheVault flash-backed protection using the compatible CVPM05 module. Verify installed protection hardware before write-back use.</td></tr>
+        <tr><th>Firmware / OS</th><td>Use Broadcom's model-specific MegaRAID firmware and StorCLI / management tools with a listed Windows, Linux or VMware driver version. Do not flash HBA firmware onto a RAID SKU.</td></tr>
+        <tr><th>Drive / backplane caveats</th><td>NVMe is not carried through a SAS expander; use a compatible tri-mode backplane and matched cable map. Validate SAS/SATA/NVMe drive support and server firmware together.</td></tr>
+      </tbody></table></section>
+      <section class="record-section"><h2>Compatibility and service notes</h2><ul><li>SFF-8654 physical fit does not establish the correct cable pinout or supported drive protocol routing.</li><li>CacheVault presence and health determine safe write-back operation; follow Broadcom guidance if protection is absent or degraded.</li><li>Record firmware, array layout and CacheVault module identity before maintenance or controller replacement.</li></ul></section>
+      <section class="record-section"><h2>Sources &amp; further reading</h2><ol class="record-sources">
+        <li><a href="https://docs.broadcom.com/doc/MegaRAID-9500-Tri-Mode-Storage-Adapters" rel="noopener noreferrer">Broadcom — MegaRAID 9500 PCIe Gen 4.0 Tri-Mode Storage Adapters Product Brief</a><small>Official product brief for the family, including the MegaRAID 9560-series adapters.</small></li>
+        <li><a href="https://docs.broadcom.com/doc/95xx-MR-HBA-Tri-Mode-UG" rel="noopener noreferrer">Broadcom — 95xx PCIe 4.0 MegaRAID and HBA Tri-Mode Storage Adapters User Guide</a><small>Manufacturer installation, configuration, firmware and cabling reference.</small></li>
+        <li><a href="https://techdocs.broadcom.com/us/en/storage-and-ethernet-connectivity/adapter/megaraid-95xx-tri-mode-compatibility/1-0/MegaRAID_95xx_Drive_Compatibility_Report.html" rel="noopener noreferrer">Broadcom — MegaRAID 95xx Tri-Mode drive compatibility report</a><small>Official drive and topology qualification reference.</small></li>
+      </ol></section>
+    </main>
+    <footer class="footer"><p>&copy; 2026 ALIEN CULTIST LABS // GALT, CALIFORNIA</p><a href="../../subcategories/storage-and-disk-controllers/index.html">SUBCATEGORY FILE</a><a href="#top">BACK TO TOP &uarr;</a></footer>
+  </div>
+</body>
+</html>

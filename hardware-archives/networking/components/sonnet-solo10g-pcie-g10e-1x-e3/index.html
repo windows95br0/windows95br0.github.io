@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="SKU-specific record for the Sonnet Solo10G PCIe Card, G10E-1X-E3.">
+<title>Sonnet Solo10G PCIe Card G10E-1X-E3 // Networking Hardware // Hardware Archives</title>
+<link rel="stylesheet" href="../../../../style.css">
+<link rel="stylesheet" href="../../../archive.css">
+</head>
+<body class="hardware-page">
+<div class="site-shell">
+<header class="topbar" id="top"><a class="brand" href="../../../../index.html" aria-label="Alien Cultist Labs home"><span class="brand-wordmark">ALIENCULTIST.COM</span></a><div class="status-line"><span class="status-dot"></span> HARDWARE ARCHIVES <span class="status-divider">//</span> COMPONENT RECORD</div><nav class="main-nav" aria-label="Archive navigation"><a class="home-nav-link" href="../../../../index.html">HOME</a><a class="archive-nav-link" href="../../subcategories/ethernet-adapters/index.html">ETHERNET ADAPTERS</a><a class="hardware-nav-link" href="../../../index.html">ALL CATEGORIES</a></nav></header>
+<main class="hardware-record component-record">
+<nav class="record-back"><a href="../../subcategories/ethernet-adapters/index.html">← Ethernet adapters</a><span>NETWORKING // INDIVIDUAL PART RECORD</span></nav>
+<section class="record-hero"><div><p class="eyebrow">[ MODEL-SPECIFIC NETWORK HARDWARE RECORD ]</p><h1>Sonnet Solo10G PCIe Card (G10E-1X-E3)</h1><p class="record-intro">Single-port 10GBASE-T adapter with 5/2.5GbE NBASE-T capability over suitable existing copper cabling. This is the PCIe card, not the separate Thunderbolt 3 Solo10G product.</p></div><figure class="record-figure"><img class="record-art" src="diagram.svg" alt="Original local schematic of the Sonnet Solo10G PCIe card"><figcaption>UNIQUE LOCAL SVG // SCHEMATIC, NOT TO SCALE</figcaption></figure></section>
+<p class="record-scope"><strong>IDENTIFICATION:</strong> Exact Sonnet part number G10E-1X-E3, Solo10G PCIe Card. Do not conflate it with G10E-TB3 (Thunderbolt) or the Solo10G SFP+ variant.</p>
+<section class="record-section"><h2>Exact SKU, interface and compatibility</h2><table class="spec-table"><tbody>
+<tr><th>Exact model / SKU / revision</th><td>Sonnet Solo10G PCIe Card, part G10E-1X-E3. Sonnet identifies the retail part number; record any individual PCB revision printed on the card.</td></tr>
+<tr><th>Controller</th><td>Marvell AQtion AQC107-family 10GbE controller, as identified for this Solo10G card family; the public product page does not identify a silicon stepping.</td></tr>
+<tr><th>Bus, ports and connector</th><td>PCI Express 3.0 x4 card; one 8P8C/RJ-45 copper port. The card can be installed in a compatible x4 or larger PCIe slot; a Thunderbolt-to-PCIe chassis is a separate host path.</td></tr>
+<tr><th>Per-port link rates</th><td>10GBASE-T, 5GBASE-T, 2.5GBASE-T and lower standard copper rates as supported by the peer and driver. Sonnet specifies Cat 6 to 55 m and Cat 6A to 100 m at 10GbE; 2.5/5GbE NBASE-T is supported over Cat 5e or better within the stated limits.</td></tr>
+<tr><th>Driver and operating systems</th><td>Sonnet lists macOS 10.13.6 and later, Windows 10/11 and Server 2019/2022 with its Marvell AQtion driver, and Linux where the distribution kernel includes the AQC107 driver. Check Sonnet’s current download notes for the exact OS build; an in-box driver is not the same as vendor certification.</td></tr>
+<tr><th>Compatibility caveats</th><td>Requires a PCIe x4 link or a compatible Thunderbolt expansion chassis. Slot bifurcation, macOS system model, driver signing, chassis bandwidth and airflow can constrain operation. A different Solo10G interface model is not interchangeable.</td></tr>
+<tr><th>Revision warning</th><td>G10E-1X-E3 is the identifying part number. Log PCB/label revision and driver build; do not infer the chipset stepping from the shared Solo10G family name.</td></tr>
+</tbody></table></section>
+<section class="record-section"><h2>Link and host notes</h2><p>Use the actual negotiated link rate for test reporting. Even with a 10GbE switch, cable quality, switch capability, host PCIe allocation, OS driver and remote system can reduce rate or prevent negotiation.</p></section>
+<section class="record-section"><h2>Sonnet product documentation</h2><ol class="record-sources">
+<li><a href="https://www.sonnettech.com/product/solo10g-pcie-card.html" rel="noopener noreferrer">Sonnet Solo10G PCIe Card product specifications</a><small>Manufacturer model-specific interface, cabling and feature details.</small></li>
+<li><a href="https://www.sonnettech.com/support/downloads/manuals/solo10g_pcie_card_qsg.pdf" rel="noopener noreferrer">Sonnet Solo10G PCIe Card Quick Start Guide (PDF)</a><small>Manufacturer installation and host compatibility guidance.</small></li>
+<li><a href="https://www.marvell.com/content/dam/marvell/en/public-collateral/ethernet-adaptersandcontrollers/marvell-fastLinq-edge-product-brief.pdf" rel="noopener noreferrer">Marvell FastLinQ Edge family brief (PDF)</a><small>Controller-family context; not a revision-specific Sonnet bill of materials.</small></li>
+</ol></section>
+</main><footer class="footer"><p>© 2026 ALIEN CULTIST LABS // GALT, CALIFORNIA</p><a href="../../index.html">NETWORKING CATEGORY</a><a href="#top">BACK TO TOP ↑</a></footer>
+</div></body></html>

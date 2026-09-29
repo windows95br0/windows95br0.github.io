@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Model-specific archival record for the Microchip Adaptec SmartRAID 3154-8i SAS/SATA RAID controller.">
+  <title>Microchip Adaptec SmartRAID 3154-8i // Expansion Cards // Hardware Archives</title>
+  <link rel="stylesheet" href="../../../../style.css">
+  <link rel="stylesheet" href="../../../archive.css">
+</head>
+<body class="hardware-page">
+  <div class="site-shell">
+    <header class="topbar" id="top"><a class="brand" href="../../../../index.html"><span class="brand-wordmark">ALIENCULTIST.COM</span></a><div class="status-line"><span class="status-dot"></span> HARDWARE ARCHIVES // PART RECORD</div><nav class="main-nav" aria-label="Archive navigation"><a class="home-nav-link" href="../../../../index.html">HOME</a><a class="archive-nav-link" href="../../index.html">EXPANSION CARDS</a><a class="hardware-nav-link" href="../../../index.html">ALL CATEGORIES</a></nav></header>
+    <main class="hardware-record">
+      <nav class="record-back"><a href="../../subcategories/storage-and-disk-controllers/index.html">&larr; Storage and disk controllers</a><span>PART RECORD // EXPANSION CARDS</span></nav>
+      <section class="record-hero"><div><p class="eyebrow">[ INDIVIDUAL COMPONENT // STORAGE / DISK I/O ]</p><h1>Microchip Adaptec SmartRAID 3154-8i</h1><p class="record-intro">Eight internal SAS/SATA lanes with hardware RAID and protected write cache, for direct-attached or expander-backed storage.</p></div><figure class="record-figure"><img class="record-art" src="diagram.svg" alt="Original schematic of the SmartRAID 3154-8i controller"><figcaption>SCHEMATIC // STORAGE / DISK I/O ADD-IN CARD</figcaption></figure></section>
+      <p class="record-scope">MODEL SCOPE: SmartRAID 3154-8i. Confirm the full Microchip part number, board revision, included cache-protection module, bracket and firmware before installation.</p>
+      <section class="record-section"><h2>Reference specifications</h2><table class="spec-table"><tbody>
+        <tr><th>Model / controller</th><td>Adaptec SmartRAID 3154-8i; SmartROC 3100-series RAID-on-Chip controller.</td></tr>
+        <tr><th>Host bus</th><td>PCI Express 3.0 x8; verify that the slot is electrically wired for the required lanes.</td></tr>
+        <tr><th>Ports</th><td>Eight internal SAS/SATA lanes through two SFF-8643 Mini-SAS HD connectors.</td></tr>
+        <tr><th>Protocols</th><td>SAS up to 12 Gb/s and SATA up to 6 Gb/s; use supported SAS expanders for larger enclosures.</td></tr>
+        <tr><th>RAID / HBA mode</th><td>Hardware RAID 0, 1, 5, 6, 10, 50 and 60; mixed RAID and raw-device presentation is supported by the SmartRAID firmware family.</td></tr>
+        <tr><th>Cache / protection</th><td>4 GB DDR4 cache; flash-backed cache protection is supported. Verify whether the exact board package includes its ASCM35F cache-protection module.</td></tr>
+        <tr><th>Firmware / OS</th><td>Use Microchip firmware, maxView and the driver matching the exact controller and OS release. Validate supported Windows, Linux and hypervisor versions in the SmartRAID 3100 documentation.</td></tr>
+        <tr><th>Drive / backplane caveats</th><td>Confirm SFF-8643 cable pinout, SAS/SATA backplane support, drive sector format and expander compatibility. Do not attach SATA devices through a SAS-only path unless the backplane explicitly supports SATA.</td></tr>
+      </tbody></table></section>
+      <section class="record-section"><h2>Compatibility and service notes</h2><ul><li>Keep the controller firmware, maxView version and operating-system driver within Microchip's supported combination.</li><li>Record array metadata and retain a verified backup before a firmware update, migration or controller replacement.</li><li>Cache protection depends on the proper module and service state; use write-through operation if protection is unavailable.</li></ul></section>
+      <section class="record-section"><h2>Sources &amp; further reading</h2><ol class="record-sources">
+        <li><a href="https://www.microchip.com/en-us/product/SmartRAID-3154-8i" rel="noopener noreferrer">Microchip — SmartRAID 3154-8i product and documentation page</a><small>Manufacturer model page with specifications, support downloads, firmware and documentation.</small></li>
+        <li><a href="https://ww1.microchip.com/downloads/aemDocuments/documents/adaptec/documents/adaptec_smarthba_smartraid_iug_12_2024.pdf" rel="noopener noreferrer">Microchip — SmartHBA / SmartRAID Installation and User Guide</a><small>Official installation, configuration, firmware and operating-system guidance.</small></li>
+        <li><a href="https://ww1.microchip.com/downloads/aemDocuments/documents/DCS/ProductDocuments/Brochures/00003031A.pdf" rel="noopener noreferrer">Microchip — Adaptec SmartRAID 3100 Series sell sheet</a><small>Manufacturer overview for the SmartRAID 3100 adapter family.</small></li>
+      </ol></section>
+    </main>
+    <footer class="footer"><p>&copy; 2026 ALIEN CULTIST LABS // GALT, CALIFORNIA</p><a href="../../subcategories/storage-and-disk-controllers/index.html">SUBCATEGORY FILE</a><a href="#top">BACK TO TOP &uarr;</a></footer>
+  </div>
+</body>
+</html>

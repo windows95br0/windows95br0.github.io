@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">ST4000LM024 4 TB drive schematic</title><desc id="desc">Original 15 mm HDD layout with layered media rings and model text.</desc>
+<rect width="640" height="360" fill="#151b25"/><rect x="68" y="72" width="504" height="220" rx="34" fill="#1d3248" stroke="#58a9ff" stroke-width="4"/>
+<circle cx="248" cy="178" r="73" fill="#142337" stroke="#86c0ff" stroke-width="4"/><circle cx="248" cy="178" r="53" fill="none" stroke="#5784aa" stroke-width="3"/><circle cx="248" cy="178" r="12" fill="#f3c16a"/>
+<path d="M248 178 350 119l12 21-101 57Z" fill="#d7e4ed"/><path d="M414 116h108v17H414zm0 29h108v17H414zm0 29h108v17H414z" fill="#64b1ff"/>
+<text x="94" y="108" fill="#8fc8ff" font-family="monospace" font-size="19">ST4000LM024 // 4 TB</text><text x="94" y="270" fill="#c5d6e6" font-family="monospace" font-size="17">15 mm • SATA 6 Gb/s</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+<title id="title">EIZO FlexScan T966 CRT monitor schematic</title>
+<desc id="desc">Original front and side schematic marked FlexScan T966 with a screen diagonal and analog video port notation.</desc>
+<rect width="640" height="400" rx="18" fill="#07110d"/>
+<g fill="none" stroke="#73ffc3" stroke-width="4" stroke-linejoin="round">
+<path d="M67 62h355q20 0 22 20l17 223q2 18-19 18H69q-19 0-21-18L31 82q-2-20 17-20z"/>
+<path d="M81 79h322q11 0 12 12l14 197q1 12-12 12H91q-12 0-13-12L68 92q-1-13 13-13z" stroke="#f3ffad" stroke-width="3"/>
+<path d="M106 322v24m300-24v24m-220 1h145"/>
+<path d="M479 104h83v199h-67l-15-199zm8 24h57m-54 18h54m-50 37h48m-45 12h45"/>
+<path d="M84 61l11-22h288l21 23M96 301l15 8h294"/>
+</g>
+<g fill="#f3ffad" font-family="monospace">
+<text x="64" y="34" font-size="18">EIZO // FLEXSCAN T966</text>
+<text x="112" y="177" font-size="22">CRT // ANALOG RGB</text>
+<text x="111" y="206" font-size="15">DIAGONAL / GEOMETRY</text>
+<text x="111" y="232" font-size="15">SCAN / REFRESH LIMITS</text>
+<text x="481" y="333" font-size="13">VGA / AC</text>
+<text x="58" y="376" font-size="14">FlexScan T966 // ORIGINAL ARCHIVE SVG</text>
+</g></svg>

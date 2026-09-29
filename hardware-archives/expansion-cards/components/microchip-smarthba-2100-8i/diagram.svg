@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-labelledby="title desc">
+  <title id="title">SmartHBA 2100-8i board schematic</title>
+  <desc id="desc">Original host adapter drawing showing two drive connectors and pass-through signal paths.</desc>
+  <rect width="720" height="420" fill="#101b18"/>
+  <path d="M48 92h536l78 54v170H48z" fill="#1d3229" stroke="#a2df68" stroke-width="4"/>
+  <circle cx="92" cy="119" r="9" fill="#d9e8dc"/><circle cx="612" cy="292" r="9" fill="#d9e8dc"/>
+  <rect x="283" y="142" width="156" height="103" rx="5" fill="#111d19" stroke="#edf4e8" stroke-width="3"/>
+  <text x="361" y="180" fill="#f5f7ef" font-family="monospace" font-size="16" text-anchor="middle">SMARTIOC</text>
+  <text x="361" y="215" fill="#a2df68" font-family="monospace" font-size="17" text-anchor="middle">2100-8i</text>
+  <path d="M283 164H211v-29h-57m129 69H211v29h-57m285-99h78v-24h57m-135 95h74v32h61" fill="none" stroke="#a2df68" stroke-width="3"/>
+  <rect x="111" y="115" width="39" height="42" fill="#344b3a" stroke="#a2df68" stroke-width="2"/>
+  <rect x="111" y="224" width="39" height="42" fill="#344b3a" stroke="#a2df68" stroke-width="2"/>
+  <path d="M128 342h460l-21 31H147z" fill="#c4ceca"/>
+  <g fill="#34433c"><path d="M169 342v31h8v-31m22 0v31h8v-31m22 0v31h8v-31m22 0v31h8v-31m22 0v31h8v-31m22 0v31h8v-31m22 0v31h8v-31m22 0v31h8v-31m22 0v31h8v-31m22 0v31h8v-31m22 0v31h8v-31m22 0v31h8v-31m22 0v31h8v-31"/></g>
+  <text x="360" y="403" fill="#a6b5ad" font-family="monospace" font-size="14" text-anchor="middle">PASS-THROUGH PATH // NOT TO SCALE</text>
+</svg>

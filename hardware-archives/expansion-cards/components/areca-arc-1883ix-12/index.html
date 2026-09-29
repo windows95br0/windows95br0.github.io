@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Model-specific archival record for the Areca ARC-1883ix-12 SAS RAID controller.">
+  <title>Areca ARC-1883ix-12 // Expansion Cards // Hardware Archives</title>
+  <link rel="stylesheet" href="../../../../style.css">
+  <link rel="stylesheet" href="../../../archive.css">
+</head>
+<body class="hardware-page">
+  <div class="site-shell">
+    <header class="topbar" id="top"><a class="brand" href="../../../../index.html"><span class="brand-wordmark">ALIENCULTIST.COM</span></a><div class="status-line"><span class="status-dot"></span> HARDWARE ARCHIVES // PART RECORD</div><nav class="main-nav" aria-label="Archive navigation"><a class="home-nav-link" href="../../../../index.html">HOME</a><a class="archive-nav-link" href="../../index.html">EXPANSION CARDS</a><a class="hardware-nav-link" href="../../../index.html">ALL CATEGORIES</a></nav></header>
+    <main class="hardware-record">
+      <nav class="record-back"><a href="../../subcategories/storage-and-disk-controllers/index.html">&larr; Storage and disk controllers</a><span>PART RECORD // EXPANSION CARDS</span></nav>
+      <section class="record-hero"><div><p class="eyebrow">[ INDIVIDUAL COMPONENT // STORAGE / DISK I/O ]</p><h1>Areca ARC-1883ix-12</h1><p class="record-intro">A SAS 12 Gb/s hardware RAID adapter with twelve internal and four external storage lanes and a cache DIMM socket.</p></div><figure class="record-figure"><img class="record-art" src="diagram.svg" alt="Original schematic of the Areca ARC-1883ix-12 RAID adapter"><figcaption>SCHEMATIC // INTERNAL + EXTERNAL STORAGE</figcaption></figure></section>
+      <p class="record-scope">MODEL SCOPE: ARC-1883ix-12. Check board revision, cache DIMM type/capacity, cache backup module, bracket and exact firmware package.</p>
+      <section class="record-section"><h2>Reference specifications</h2><table class="spec-table"><tbody>
+        <tr><th>Controller</th><td>Areca dual-core RAID-on-Chip controller, 1.2 GHz family specification.</td></tr>
+        <tr><th>Host bus</th><td>PCI Express 3.0 x8.</td></tr>
+        <tr><th>Ports</th><td>Twelve internal lanes via three SFF-8643 connectors and four external lanes via one SFF-8644 connector.</td></tr>
+        <tr><th>Protocols</th><td>SAS 12 Gb/s and SATA 6 Gb/s; lower SAS generations are supported by link negotiation.</td></tr>
+        <tr><th>RAID / HBA mode</th><td>Hardware RAID 0, 1, 1E, 3, 5, 6, 10, 30, 50 and 60, plus single-disk/JBOD modes as supported by firmware.</td></tr>
+        <tr><th>Cache / protection</th><td>2 GB DDR3 ECC cache as configured; DIMM capacity options and compatibility are model-specific. Optional flash-based backup module supports supercapacitor or battery protection.</td></tr>
+        <tr><th>Firmware / OS</th><td>Use Areca ARC-1883-series firmware and management software supported for the target Windows, Linux, FreeBSD, Solaris, macOS or VMware release; confirm the exact release matrix.</td></tr>
+        <tr><th>Drive / backplane caveats</th><td>Separate internal/external cable paths and match SFF-8643/8644 cabling to the enclosure. Expander, SES2/SGPIO, drive-sector format and cache DIMM compatibility must be checked.</td></tr>
+      </tbody></table></section>
+      <section class="record-section"><h2>Compatibility and service notes</h2><ul><li>Cache backup is an optional module and must be healthy before relying on protected write-back; check the card's management status.</li><li>Do not substitute arbitrary registered/unbuffered ECC DIMMs; use only Areca-approved cache modules for the controller revision.</li><li>Use matched external SAS cables and a powered enclosure; connector shape alone does not guarantee a compatible lane map.</li></ul></section>
+      <section class="record-section"><h2>Sources &amp; further reading</h2><ol class="record-sources">
+        <li><a href="https://www.areca.com.tw/products/sasadapters-1883.html" rel="noopener noreferrer">Areca — ARC-1883 SAS RAID adapter family</a><small>Manufacturer specifications and operating-system support for the 1883 family.</small></li>
+        <li><a href="https://www.areca.com.tw/support/download/adapter/doc/ARC-1883_specification.pdf" rel="noopener noreferrer">Areca — ARC-1883 adapter specification</a><small>Official technical reference for interfaces, cache, RAID functions and form factor.</small></li>
+        <li><a href="https://www.areca.com.tw/support/download/adapter/doc/ARC-1883_1884_installation_guide.pdf" rel="noopener noreferrer">Areca — ARC-1883 / ARC-1884 installation guide</a><small>Manufacturer installation, cabling and service instructions.</small></li>
+      </ol></section>
+    </main>
+    <footer class="footer"><p>&copy; 2026 ALIEN CULTIST LABS // GALT, CALIFORNIA</p><a href="../../subcategories/storage-and-disk-controllers/index.html">SUBCATEGORY FILE</a><a href="#top">BACK TO TOP &uarr;</a></footer>
+  </div>
+</body>
+</html>

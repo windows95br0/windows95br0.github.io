@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" role="img" aria-labelledby="title desc">
+  <title id="title">MX-4 compound syringe schematic</title>
+  <desc id="desc">Original diagram of a thermal-compound syringe and contact-layer cross section.</desc>
+  <rect width="640" height="260" rx="20" fill="#101c28"/>
+  <path d="M55 168h224l42 23H95z" fill="#8ea2b3" stroke="#c8d8e3" stroke-width="4"/>
+  <path d="M85 156h197v20H85z" fill="#51c8b8"/>
+  <path d="M279 127h199v64H279z" fill="#23384a" stroke="#69d6c5" stroke-width="4"/>
+  <path d="M478 137h53v44h-53" fill="#d8e7ec" stroke="#69d6c5" stroke-width="4"/>
+  <path d="M531 150h48l28 9-28 9h-48z" fill="#ffca63"/>
+  <path d="M312 127v64m38-64v64m38-64v64m38-64v64" stroke="#426176" stroke-width="3"/>
+  <text x="72" y="224" fill="#dce8ef" font-family="sans-serif" font-size="16">CONTACT INTERFACE</text>
+  <text x="310" y="109" fill="#69d6c5" font-family="sans-serif" font-size="18" font-weight="700">MX-4 // 4 g</text>
+</svg>

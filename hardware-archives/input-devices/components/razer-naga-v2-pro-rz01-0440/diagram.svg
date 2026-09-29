@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 230" role="img" aria-labelledby="title desc">
+  <title id="title">Modular mouse schematic</title>
+  <desc id="desc">Original outline of a mouse with removable side panel modules shown beside the body.</desc>
+  <rect width="360" height="230" fill="#11141a"/>
+  <g fill="none" stroke="#5be7d0" stroke-width="3" stroke-linejoin="round">
+    <path d="M137 37q43-22 86 0l14 52v67q-3 37-57 48-55-11-57-48V89z"/>
+    <path d="M180 35v56m-56 6h112m-56 0v41"/>
+    <rect x="174" y="55" width="12" height="31" rx="5"/>
+    <rect x="29" y="85" width="57" height="70" rx="8"/><rect x="97" y="85" width="27" height="70" rx="6"/>
+    <path d="M42 100h12m12 0h12m-36 15h12m12 0h12m-36 15h12m12 0h12m-36 15h12m12 0h12"/>
+    <path d="M90 116h7m-7 15h7m-7 15h7"/>
+  </g>
+  <g fill="#ffc857" font-family="monospace" font-size="11"><text x="15" y="25">SWAPPABLE CONTROL PANELS</text><text x="15" y="215">SCHEMATIC / NOT TO SCALE</text></g>
+</svg>

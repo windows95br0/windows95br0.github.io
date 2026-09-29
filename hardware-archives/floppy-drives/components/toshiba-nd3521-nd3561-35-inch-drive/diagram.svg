@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Toshiba ND3521/ND3561 schematic</title><desc id="desc">Original diagram of an internal 3.5-inch drive with variant-aware signal and power connections.</desc>
+  <rect width="640" height="360" rx="18" fill="#101c2a"/><text x="320" y="55" fill="#d3e5e7" font-family="sans-serif" font-size="21" text-anchor="middle">TOSHIBA ND3521 / ND3561 // 3.5-INCH</text>
+  <rect x="97" y="91" width="446" height="153" rx="10" fill="#1a3042" stroke="#73d4c4" stroke-width="4"/><rect x="130" y="124" width="380" height="64" rx="7" fill="#10202d" stroke="#d8b46a" stroke-width="4"/>
+  <path d="M166 156h116" stroke="#73d4c4" stroke-width="13" stroke-linecap="round"/><rect x="146" y="203" width="151" height="22" rx="5" fill="#d8b46a"/><rect x="337" y="203" width="150" height="22" rx="5" fill="#73d4c4"/>
+  <text x="221" y="219" fill="#10202d" font-family="sans-serif" font-size="12" text-anchor="middle">SIGNAL</text><text x="412" y="219" fill="#10202d" font-family="sans-serif" font-size="12" text-anchor="middle">POWER</text>
+  <path d="M320 245v50M264 295h112" fill="none" stroke="#73d4c4" stroke-width="4"/>
+  <text x="320" y="334" fill="#d3e5e7" font-family="sans-serif" font-size="16" text-anchor="middle">VERIFY MODEL-SPECIFIC PINOUT // NOT TO SCALE</text>
+</svg>

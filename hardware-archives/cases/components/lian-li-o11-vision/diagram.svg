@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" role="img" aria-labelledby="title desc">
+<title id="title">Lian Li O11 Vision schematic</title><desc id="desc">Original case sketch with glass top and side and radiator/fan zones at the side and floor.</desc>
+<rect width="520" height="360" fill="#10171f"/><path d="M91 77h290l55 26v180H91z" fill="#172630" stroke="#64e0d2" stroke-width="4"/><path d="M91 77h290l55 26M106 99h259v164H106z" fill="#0b141a" stroke="#9ab8be" stroke-width="3"/><path d="M386 82v185" stroke="#77969d" stroke-width="4"/><path d="M118 115v125" stroke="#edbe4f" stroke-width="13" stroke-dasharray="10 7"/><path d="M126 250h226" stroke="#edbe4f" stroke-width="13" stroke-dasharray="10 7"/><rect x="169" y="136" width="120" height="77" fill="#253744" stroke="#a4c0c4" stroke-width="3"/><circle cx="229" cy="174" r="25" fill="none" stroke="#64e0d2" stroke-width="3"/><path d="M209 174h40m-20-20v40M75 293h365" stroke="#788d98" stroke-width="3"/><text x="260" y="327" fill="#eff6f4" font-family="Arial,sans-serif" font-size="17" text-anchor="middle">O11 VISION // 480 × 304 × 464.5 mm</text>
+</svg>
+

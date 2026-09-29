@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">ST9200420AS 7200.2 drive schematic</title><desc id="desc">Original platter schematic with radial speed marks and SATA contacts.</desc>
+<rect width="640" height="360" fill="#121c18"/><rect x="72" y="55" width="496" height="250" rx="26" fill="#1b3529" stroke="#9bd36f" stroke-width="4"/>
+<circle cx="245" cy="178" r="86" fill="#102018" stroke="#c4e887" stroke-width="5"/><circle cx="245" cy="178" r="60" fill="none" stroke="#567c4b" stroke-width="2"/><circle cx="245" cy="178" r="13" fill="#f1bc63"/>
+<path d="M245 178 354 119l11 21-105 58Z" fill="#dce8d8"/><path d="M407 116h104v15H407zm0 25h104v15H407zm0 25h104v15H407z" fill="#a6d276"/>
+<text x="97" y="91" fill="#b8e280" font-family="monospace" font-size="20">ST9200420AS // 200 GB</text><text x="97" y="278" fill="#b9d2ba" font-family="monospace" font-size="16">7200 RPM • SATA 3 Gb/s</text>
+</svg>

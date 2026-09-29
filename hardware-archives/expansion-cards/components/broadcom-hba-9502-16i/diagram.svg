@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-labelledby="title desc">
+  <title id="title">Broadcom HBA 9502-16i OCP schematic</title>
+  <desc id="desc">Original OCP SFF storage adapter drawing with paired SlimSAS connectors and signal lanes.</desc>
+  <rect width="720" height="420" fill="#17131d"/>
+  <path d="M62 90h488l102 55v165H62z" fill="#2d2030" stroke="#f277ab" stroke-width="4"/>
+  <rect x="256" y="151" width="190" height="92" rx="10" fill="#1b1822" stroke="#f5e8ef" stroke-width="3"/>
+  <text x="351" y="185" fill="#f5f7ef" font-family="monospace" font-size="16" text-anchor="middle">BROADCOM HBA</text>
+  <text x="351" y="218" fill="#f277ab" font-family="monospace" font-size="18" text-anchor="middle">9502-16i</text>
+  <rect x="106" y="124" width="98" height="48" rx="6" fill="#402b3c" stroke="#f277ab" stroke-width="2"/>
+  <rect x="106" y="218" width="98" height="48" rx="6" fill="#402b3c" stroke="#f277ab" stroke-width="2"/>
+  <text x="155" y="153" fill="#fff3f8" font-family="monospace" font-size="12" text-anchor="middle">SFF-8654</text>
+  <text x="155" y="247" fill="#fff3f8" font-family="monospace" font-size="12" text-anchor="middle">SFF-8654</text>
+  <path d="M204 148h52m-52 94h52m190-72h93v-28h44m-137 67h65v45h67" fill="none" stroke="#f277ab" stroke-width="4"/>
+  <path d="M140 326h420v17H140z" fill="#debcc9"/>
+  <path d="M155 343h390v30H155z" fill="#553748"/>
+  <path d="M186 343v30m31-30v30m31-30v30m31-30v30m31-30v30m31-30v30m31-30v30m31-30v30m31-30v30m31-30v30m31-30v30m31-30v30" stroke="#f3dce6" stroke-width="3"/>
+  <text x="360" y="401" fill="#c2a9b6" font-family="monospace" font-size="14" text-anchor="middle">OCP 3.0 SFF // NOT STANDARD PCIe CARD</text>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">HTS541515A9E630 Travelstar 5K1500 schematic</title><desc id="desc">Original three-platter conceptual diagram for the 1.5 TB Travelstar model.</desc>
+<rect width="640" height="360" fill="#191b28"/><rect x="74" y="48" width="492" height="264" rx="28" fill="#292d43" stroke="#e0b963" stroke-width="4"/>
+<circle cx="250" cy="174" r="91" fill="#131b2a" stroke="#f0cf7a" stroke-width="4"/><circle cx="250" cy="174" r="70" fill="none" stroke="#8491a2" stroke-width="2"/><circle cx="250" cy="174" r="48" fill="none" stroke="#606f86" stroke-width="2"/><circle cx="250" cy="174" r="12" fill="#ffe39a"/>
+<path d="M250 174 360 113l14 23-108 58Z" fill="#dfe5e9"/><path d="M415 120h104v14H415zm0 25h104v14H415z" fill="#dfb65d"/>
+<text x="96" y="83" fill="#f0d17e" font-family="monospace" font-size="18">HTS541515A9E630</text><text x="96" y="282" fill="#c5cbd4" font-family="monospace" font-size="18">1.5 TB // 5K1500</text>
+</svg>

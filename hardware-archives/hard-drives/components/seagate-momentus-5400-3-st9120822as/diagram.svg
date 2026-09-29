@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">ST9120822AS mobile HDD schematic</title><desc id="desc">Original schematic highlighting the drive platter and 120 GB designation.</desc>
+<rect width="640" height="360" fill="#151523"/><rect x="70" y="48" width="500" height="264" rx="32" fill="#292c46" stroke="#bd91ff" stroke-width="4"/>
+<circle cx="245" cy="174" r="90" fill="#151a2b" stroke="#d1acff" stroke-width="4"/><circle cx="245" cy="174" r="56" fill="none" stroke="#6f638f" stroke-width="3"/><circle cx="245" cy="174" r="12" fill="#f5cb64"/>
+<path d="M245 174 347 117l12 21-99 55Z" fill="#d7d4e5"/><path d="M407 119h113v12H407zm0 22h113v12H407zm0 22h113v12H407z" fill="#bc91ff"/>
+<text x="96" y="83" fill="#d0a9ff" font-family="monospace" font-size="20">ST9120822AS // 120 GB</text><text x="96" y="279" fill="#c4bfd3" font-family="monospace" font-size="16">SATA • PERPENDICULAR RECORDING</text>
+</svg>

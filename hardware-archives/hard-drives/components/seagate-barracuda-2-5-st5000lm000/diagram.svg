@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">ST5000LM000 5 TB drive schematic</title><desc id="desc">Original high-capacity mobile drive schematic with five data bands.</desc>
+<rect width="640" height="360" fill="#17151f"/><path d="M82 60h476v240H82z" fill="#302039" stroke="#df78cf" stroke-width="4"/>
+<circle cx="248" cy="177" r="78" fill="#1c1725" stroke="#ea9add" stroke-width="4"/><circle cx="248" cy="177" r="62" fill="none" stroke="#984b94" stroke-width="2"/><circle cx="248" cy="177" r="45" fill="none" stroke="#b45da9" stroke-width="2"/><circle cx="248" cy="177" r="12" fill="#f3c66e"/>
+<path d="M248 177 351 117l12 21-102 58Z" fill="#e9d9e5"/><path d="M414 111h105v11H414zm0 21h105v11H414zm0 21h105v11H414zm0 21h105v11H414zm0 21h105v11H414z" fill="#dc82cd"/>
+<text x="102" y="95" fill="#e59ad9" font-family="monospace" font-size="19">ST5000LM000 / 5 TB</text><text x="102" y="278" fill="#d2c4d4" font-family="monospace" font-size="17">15 mm • SMR • 512e</text>
+</svg>

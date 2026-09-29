@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 260" role="img" aria-labelledby="title desc">
+<title id="title">Saitek Pro Flight X-55 Rhino H.O.T.A.S. control silhouette</title>
+<desc id="desc">Original local vector diagram of the Saitek Pro Flight X-55 Rhino H.O.T.A.S., showing its joystick grip, control base and separate throttle unit.</desc>
+<rect width="360" height="260" rx="14" fill="#101820"/>
+<path d="M18 32H342 M18 222H342" stroke="#273744" stroke-width="1" stroke-dasharray="4 6"/>
+<g opacity=".35" stroke="#435564" stroke-width="1"><path d="M45 55V210 M90 55V210 M135 55V210 M180 55V210 M225 55V210 M270 55V210 M315 55V210"/></g>
+<g>
+  <path d="M133 171 L128 113 Q129 89 151 89 Q201 87 201 112 L196 171 Z" fill="#263540" stroke="#f08a31" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M151 103 V150 M143 170 L146 189 M191 170 L188 190" fill="none" stroke="#8fa0ad" stroke-width="3"/>
+  <circle cx="150" cy="108" r="5" fill="#f08a31"/>
+  <circle cx="169" cy="99" r="4" fill="#d3dde4"/>
+  <circle cx="184" cy="108" r="4" fill="#d3dde4"/>
+  <path d="M139 196 Q155 188 171 196 L199 214 Q208 221 198 228 H112 Q102 220 113 214 Z" fill="#1c2933" stroke="#718493" stroke-width="3"/>
+  <path d="M146 204H172 M151 210V221 M139 215H147 M178 215H185" stroke="#f08a31" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="123" cy="218" r="3" fill="#d3dde4"/><circle cx="190" cy="218" r="3" fill="#d3dde4"/>
+  <text x="155" y="246" fill="#a8bac8" font-size="9" text-anchor="middle">JOYSTICK / AXIS CONTROL</text>
+</g>
+  <g transform="translate(238 119)">
+    <path d="M8 94 L11 37 Q12 28 23 26 L42 23 L52 35 L47 95 Z" fill="#17212b" stroke="#f08a31" stroke-width="3"/>
+    <path d="M24 25 L28 2 Q30 -4 40 1 L47 8 L43 28" fill="#303d49" stroke="#f08a31" stroke-width="3"/>
+    <path d="M5 96 H54 L61 106 H0 Z" fill="#253340" stroke="#718493" stroke-width="2"/>
+    <circle cx="24" cy="52" r="4" fill="#f08a31"/><circle cx="39" cy="64" r="4" fill="#c7d3dc"/>
+    <path d="M17 76 H43" stroke="#8193a1" stroke-width="2"/>
+    <text x="27" y="127" fill="#a8bac8" font-size="9" text-anchor="middle">THROTTLE</text>
+  </g>
+<text x="18" y="20" fill="#f08a31" font-family="monospace" font-size="9" letter-spacing="1">SAITEK PRO FLIGHT X-55 RHINO; INSPECT THE </text>
+</svg>

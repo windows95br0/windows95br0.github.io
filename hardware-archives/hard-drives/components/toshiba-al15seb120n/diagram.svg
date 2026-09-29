@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+<title id="title">Toshiba AL15SEB120N drive schematic</title><desc id="desc">Original schematic with a 1.2 terabyte platter stack and dual SAS port indicator.</desc>
+<rect width="640" height="400" rx="22" fill="#111827"/><rect x="56" y="52" width="528" height="296" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="4"/>
+<circle cx="248" cy="200" r="112" fill="#0f172a" stroke="#38bdf8" stroke-width="7"/><circle cx="248" cy="200" r="73" fill="none" stroke="#64748b" stroke-width="12"/><circle cx="248" cy="200" r="20" fill="#38bdf8"/>
+<path d="M248 200 390 126l25 34-145 58" fill="#94a3b8"/><rect x="430" y="118" width="95" height="44" rx="7" fill="#0f172a" stroke="#38bdf8" stroke-width="3"/><rect x="430" y="178" width="95" height="44" rx="7" fill="#0f172a" stroke="#38bdf8" stroke-width="3"/>
+<text x="430" y="148" fill="#e0f2fe" font-size="18" font-family="sans-serif">SAS A</text><text x="430" y="208" fill="#e0f2fe" font-size="18" font-family="sans-serif">SAS B</text><text x="82" y="312" fill="#f8fafc" font-size="26" font-family="sans-serif">AL15SEB120N · 1.2 TB</text><text x="80" y="90" fill="#7dd3fc" font-size="17" font-family="sans-serif">10,500 RPM // 512n</text></svg>

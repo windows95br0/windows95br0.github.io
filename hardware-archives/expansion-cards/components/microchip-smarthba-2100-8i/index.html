@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Model-specific archival record for the Microchip Adaptec SmartHBA 2100-8i SAS/SATA host bus adapter.">
+  <title>Microchip Adaptec SmartHBA 2100-8i // Expansion Cards // Hardware Archives</title>
+  <link rel="stylesheet" href="../../../../style.css">
+  <link rel="stylesheet" href="../../../archive.css">
+</head>
+<body class="hardware-page">
+  <div class="site-shell">
+    <header class="topbar" id="top"><a class="brand" href="../../../../index.html"><span class="brand-wordmark">ALIENCULTIST.COM</span></a><div class="status-line"><span class="status-dot"></span> HARDWARE ARCHIVES // PART RECORD</div><nav class="main-nav" aria-label="Archive navigation"><a class="home-nav-link" href="../../../../index.html">HOME</a><a class="archive-nav-link" href="../../index.html">EXPANSION CARDS</a><a class="hardware-nav-link" href="../../../index.html">ALL CATEGORIES</a></nav></header>
+    <main class="hardware-record">
+      <nav class="record-back"><a href="../../subcategories/storage-and-disk-controllers/index.html">&larr; Storage and disk controllers</a><span>PART RECORD // EXPANSION CARDS</span></nav>
+      <section class="record-hero"><div><p class="eyebrow">[ INDIVIDUAL COMPONENT // STORAGE / DISK I/O ]</p><h1>Microchip Adaptec SmartHBA 2100-8i</h1><p class="record-intro">A direct-attached SAS/SATA HBA with optional simple RAID functionality, intended for operating-system-managed storage stacks.</p></div><figure class="record-figure"><img class="record-art" src="diagram.svg" alt="Original schematic of the SmartHBA 2100-8i controller"><figcaption>SCHEMATIC // STORAGE / DISK I/O ADD-IN CARD</figcaption></figure></section>
+      <p class="record-scope">MODEL SCOPE: SmartHBA 2100-8i. This HBA is not interchangeable with a SmartRAID model; confirm the exact firmware mode and driver.</p>
+      <section class="record-section"><h2>Reference specifications</h2><table class="spec-table"><tbody>
+        <tr><th>Model / controller</th><td>Adaptec SmartHBA 2100-8i SAS/SATA host bus adapter; Microchip SmartIOC 2100-series controller.</td></tr>
+        <tr><th>Host bus</th><td>PCI Express 3.0 x8.</td></tr>
+        <tr><th>Ports</th><td>Eight internal SAS/SATA lanes on two SFF-8643 Mini-SAS HD connectors.</td></tr>
+        <tr><th>Protocols</th><td>SAS 12 Gb/s and SATA 6 Gb/s; attached drive speed is limited by the slowest link component.</td></tr>
+        <tr><th>RAID / HBA mode</th><td>Designed for HBA/pass-through operation. SmartHBA firmware also offers basic RAID 0, 1, 10 and 5 functions; it is not a SmartRAID write-cache array controller.</td></tr>
+        <tr><th>Cache / protection</th><td>No protected write-back cache or BBU is specified for this HBA. Do not treat host RAM or drive cache as controller-protected cache.</td></tr>
+        <tr><th>Firmware / OS</th><td>Use Microchip SmartHBA firmware and the current model-matched driver/management tools. Confirm the supported Windows, Linux, FreeBSD and hypervisor releases in Microchip's OS matrix.</td></tr>
+        <tr><th>Drive / backplane caveats</th><td>Check SFF-8643 cable wiring, expander support, enclosure management and SATA compatibility. ZFS and other software storage stacks generally require supported HBA/pass-through mode.</td></tr>
+      </tbody></table></section>
+      <section class="record-section"><h2>Compatibility and service notes</h2><ul><li>Simple RAID feature availability depends on the selected firmware and management utilities; verify before planning an array.</li><li>Confirm the card is in HBA mode when using host-managed software RAID, and avoid controller metadata on drives intended for another platform.</li><li>Keep a backup and record firmware, PCI IDs, drive sector sizes and backplane mapping.</li></ul></section>
+      <section class="record-section"><h2>Sources &amp; further reading</h2><ol class="record-sources">
+        <li><a href="https://www.microchip.com/en-us/product/SmartHBA-2100-8i" rel="noopener noreferrer">Microchip — SmartHBA 2100-8i product and documentation page</a><small>Manufacturer product information, driver and documentation entry point for the exact adapter.</small></li>
+        <li><a href="https://ww1.microchip.com/downloads/aemDocuments/documents/adaptec/documents/adaptec_smarthba_smartraid_iug_12_2024.pdf" rel="noopener noreferrer">Microchip — SmartHBA / SmartRAID Installation and User Guide</a><small>Official adapter installation, firmware, driver and configuration reference.</small></li>
+        <li><a href="https://support.microchip.com/s/article/Support-for-Adaptec-Products--SmartRAID--SmartHBA--HBA--SAS" rel="noopener noreferrer">Microchip — Adaptec SmartRAID, SmartHBA, HBA and SAS support</a><small>Manufacturer support and compatibility resources.</small></li>
+      </ol></section>
+    </main>
+    <footer class="footer"><p>&copy; 2026 ALIEN CULTIST LABS // GALT, CALIFORNIA</p><a href="../../subcategories/storage-and-disk-controllers/index.html">SUBCATEGORY FILE</a><a href="#top">BACK TO TOP &uarr;</a></footer>
+  </div>
+</body>
+</html>

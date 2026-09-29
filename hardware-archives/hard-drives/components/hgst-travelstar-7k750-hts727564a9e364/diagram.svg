@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">HTS727564A9E364 Travelstar drive schematic</title><desc id="desc">Original abstract platter illustration marked as the 640 GB 7K750 model.</desc>
+<rect width="640" height="360" fill="#101d25"/><path d="M80 64h476v232H80z" fill="#18323d" stroke="#57d7df" stroke-width="4"/>
+<circle cx="256" cy="178" r="84" fill="#0f1d25" stroke="#6ce4e5" stroke-width="5"/><circle cx="256" cy="178" r="52" fill="none" stroke="#2d8290" stroke-width="3"/><circle cx="256" cy="178" r="14" fill="#edbc61"/>
+<path d="M256 178 356 121l13 23-99 51Z" fill="#cddde1"/><path d="M417 119h92v17h-92zm0 29h92v17h-92z" fill="#56ced8"/>
+<text x="100" y="100" fill="#7be1e6" font-family="monospace" font-size="18">HTS727564A9E364</text><text x="100" y="277" fill="#c0d5de" font-family="monospace" font-size="18">640 GB // 7K750</text>
+</svg>

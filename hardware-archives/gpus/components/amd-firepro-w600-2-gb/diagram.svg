@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 150" role="img" aria-labelledby="title desc">
+  <title id="title">FirePro W600 board schematic</title><desc id="desc">Single-slot Cape Verde workstation board with six Mini DisplayPort connectors for display walls.</desc>
+  <rect width="380" height="150" rx="8" fill="#1e2112"/><path d="M25 32h278l28 22v61H25z" fill="#35391e" stroke="#c4cc79" stroke-width="2"/>
+  <rect x="83" y="54" width="70" height="49" rx="4" fill="#17190d" stroke="#979e59"/><text x="118" y="77" fill="#fbffda" text-anchor="middle" font-family="monospace" font-size="10">CAPE V.</text><text x="118" y="92" fill="#dce5aa" text-anchor="middle" font-family="monospace" font-size="8">2 GB GDDR5</text>
+  <path d="M34 114h220v7H34z" fill="#b8a75f"/><g fill="#101108" stroke="#edf0cf"><rect x="295" y="42" width="24" height="10"/><rect x="295" y="56" width="24" height="10"/><rect x="295" y="70" width="24" height="10"/><rect x="295" y="84" width="24" height="10"/><rect x="295" y="98" width="24" height="10"/><rect x="295" y="112" width="24" height="10"/></g>
+  <text x="39" y="46" fill="#c4cc79" font-family="monospace" font-size="9">W600 // SIX-HEAD DISPLAY WALL</text>
+</svg>

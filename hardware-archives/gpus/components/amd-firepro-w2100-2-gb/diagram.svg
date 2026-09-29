@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 150" role="img" aria-labelledby="title desc">
+  <title id="title">FirePro W2100 board schematic</title><desc id="desc">Compact low-profile graphics card with Oland GPU and two Mini DisplayPort outputs.</desc>
+  <rect width="380" height="150" rx="8" fill="#101c27"/><path d="M30 34h272l28 20v62H30z" fill="#193344" stroke="#8cc4db" stroke-width="2"/>
+  <rect x="111" y="54" width="72" height="52" rx="4" fill="#0b151d" stroke="#56a9c6"/><text x="147" y="77" fill="#dff7ff" text-anchor="middle" font-family="monospace" font-size="11">OLAND</text><text x="147" y="94" fill="#9dc8d7" text-anchor="middle" font-family="monospace" font-size="9">2 GB DDR3</text>
+  <path d="M42 114h214v7H42z" fill="#b38a47"/><path d="M295 67h25v14h-25zm0 22h25v14h-25z" fill="#111" stroke="#b7d6e2"/><text x="331" y="79" fill="#d7e9ef" font-family="monospace" font-size="8">mDP</text><text x="331" y="101" fill="#d7e9ef" font-family="monospace" font-size="8">mDP</text>
+  <text x="44" y="48" fill="#8cc4db" font-family="monospace" font-size="9">W2100 // 26 W // LOW PROFILE</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">Microsoft Adaptive D-pad signal path schematic</title><desc id="desc">Four-way button connects to an Adaptive Hub, which connects to a host computer.</desc>
+<rect width="640" height="360" fill="#101820"/><path d="M28 28h584v304H28z" fill="none" stroke="#557079" stroke-width="2"/>
+<text x="320" y="58" fill="#9fffe0" font-family="monospace" font-size="18" text-anchor="middle">D-PAD ACCESSORY / CONFIGURED HUB PATH</text>
+<rect x="74" y="112" width="184" height="176" rx="18" fill="#182d38" stroke="#4ce0bd" stroke-width="3"/>
+<circle cx="166" cy="200" r="52" fill="#101820" stroke="#daff00" stroke-width="3"/>
+<path d="M151 164h30v21h21v30h-21v21h-30v-21h-21v-30h21z" fill="#4ce0bd" stroke="#daff00" stroke-width="2"/>
+<text x="166" y="314" fill="#fff" font-family="monospace" font-size="14" text-anchor="middle">4-WAY BUTTON</text>
+<path d="M270 200h76" stroke="#ffb46a" stroke-width="4" stroke-dasharray="8 7"/><path d="m338 191 14 9-14 9" fill="none" stroke="#ffb46a" stroke-width="4"/>
+<rect x="360" y="134" width="120" height="132" rx="12" fill="#21313a" stroke="#ffb46a" stroke-width="3"/>
+<circle cx="420" cy="184" r="22" fill="none" stroke="#9fffe0" stroke-width="3"/><path d="M400 220h40m-20-36v36" stroke="#9fffe0" stroke-width="3"/>
+<text x="420" y="292" fill="#fff" font-family="monospace" font-size="14" text-anchor="middle">ADAPTIVE HUB</text>
+<path d="M492 200h54" stroke="#4ce0bd" stroke-width="4"/><path d="m538 191 14 9-14 9" fill="none" stroke="#4ce0bd" stroke-width="4"/>
+<rect x="556" y="150" width="54" height="100" rx="6" fill="#182d38" stroke="#4ce0bd" stroke-width="3"/><path d="M566 166h34v52h-34zm8 66h18" fill="none" stroke="#daff00" stroke-width="3"/>
+<text x="583" y="278" fill="#fff" font-family="monospace" font-size="12" text-anchor="middle">HOST</text>
+</svg>

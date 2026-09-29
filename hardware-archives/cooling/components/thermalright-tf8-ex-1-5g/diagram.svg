@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" role="img" aria-labelledby="title desc">
+  <title id="title">Thermalright TF8 EX schematic</title>
+  <desc id="desc">Original cross-section schematic illustrating paste at a CPU cooler contact interface.</desc>
+  <rect width="640" height="260" rx="20" fill="#182330"/>
+  <path d="M106 76h428v64H106z" fill="#b6c1c9" stroke="#edf2f4" stroke-width="3"/>
+  <path d="M106 141h428v11H106z" fill="#78a8d1"/>
+  <rect x="166" y="153" width="308" height="50" rx="4" fill="#425a70"/>
+  <path d="M185 203v20m60-20v20m60-20v20m60-20v20m60-20v20" stroke="#7b94a6" stroke-width="4"/>
+  <path d="M104 112h-32m464 0h32" stroke="#e7b96b" stroke-width="5"/>
+  <text x="255" y="116" fill="#243342" font-family="sans-serif" font-size="21" font-weight="700">TF8 EX</text>
+  <text x="188" y="247" fill="#e4edf2" font-family="sans-serif" font-size="16">THERMALRIGHT // 1.5 g COMPOUND</text>
+</svg>

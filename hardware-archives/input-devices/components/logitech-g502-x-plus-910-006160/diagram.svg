@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 230" role="img" aria-labelledby="title desc">
+  <title id="title">Programmable mouse schematic</title>
+  <desc id="desc">Original outline showing a mouse body, scroll wheel, side controls, and labeled control points.</desc>
+  <rect width="360" height="230" fill="#11141a"/>
+  <g fill="none" stroke="#5be7d0" stroke-width="3" stroke-linejoin="round">
+    <path d="M119 42q61-25 122 0l17 55v62q-4 38-78 43-73-5-78-43V97z"/>
+    <path d="M180 38v60m-62-4h124m-62 5v41"/>
+    <rect x="172" y="65" width="16" height="29" rx="7"/>
+    <circle cx="104" cy="117" r="7"/><circle cx="101" cy="139" r="7"/><path d="M252 111h23m-23 17h23m-23 17h23"/>
+  </g>
+  <g fill="#ffc857" font-family="monospace" font-size="11"><text x="15" y="25">MULTI-CONTROL INPUT</text><text x="15" y="215">SCHEMATIC / NOT TO SCALE</text></g>
+</svg>

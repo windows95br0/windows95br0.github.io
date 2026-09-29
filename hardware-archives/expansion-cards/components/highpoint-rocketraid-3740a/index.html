@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Model-specific archival record for the HighPoint RocketRAID 3740A SAS/SATA RAID controller.">
+  <title>HighPoint RocketRAID 3740A // Expansion Cards // Hardware Archives</title>
+  <link rel="stylesheet" href="../../../../style.css">
+  <link rel="stylesheet" href="../../../archive.css">
+</head>
+<body class="hardware-page">
+  <div class="site-shell">
+    <header class="topbar" id="top"><a class="brand" href="../../../../index.html"><span class="brand-wordmark">ALIENCULTIST.COM</span></a><div class="status-line"><span class="status-dot"></span> HARDWARE ARCHIVES // PART RECORD</div><nav class="main-nav" aria-label="Archive navigation"><a class="home-nav-link" href="../../../../index.html">HOME</a><a class="archive-nav-link" href="../../index.html">EXPANSION CARDS</a><a class="hardware-nav-link" href="../../../index.html">ALL CATEGORIES</a></nav></header>
+    <main class="hardware-record">
+      <nav class="record-back"><a href="../../subcategories/storage-and-disk-controllers/index.html">&larr; Storage and disk controllers</a><span>PART RECORD // EXPANSION CARDS</span></nav>
+      <section class="record-hero"><div><p class="eyebrow">[ INDIVIDUAL COMPONENT // STORAGE / DISK I/O ]</p><h1>HighPoint RocketRAID 3740A</h1><p class="record-intro">A sixteen-drive SAS/SATA hardware RAID adapter with four internal Mini-SAS HD connectors.</p></div><figure class="record-figure"><img class="record-art" src="diagram.svg" alt="Original schematic of the HighPoint RocketRAID 3740A"><figcaption>SCHEMATIC // STORAGE / DISK I/O ADD-IN CARD</figcaption></figure></section>
+      <p class="record-scope">MODEL SCOPE: RocketRAID 3740A, now an end-of-life product. Confirm board revision and legacy driver availability before relying on this adapter.</p>
+      <section class="record-section"><h2>Reference specifications</h2><table class="spec-table"><tbody>
+        <tr><th>Controller</th><td>HighPoint RocketRAID 3700-series SAS/SATA RAID controller.</td></tr>
+        <tr><th>Host bus</th><td>PCI Express 3.0 x8.</td></tr>
+        <tr><th>Ports</th><td>Sixteen internal lanes on four SFF-8643 Mini-SAS HD connectors; each connector carries up to four drive lanes.</td></tr>
+        <tr><th>Protocols</th><td>SAS up to 12 Gb/s and SATA up to 6 Gb/s.</td></tr>
+        <tr><th>RAID / HBA mode</th><td>Hardware RAID 0, 1, 5, 6, 10 and 50 with JBOD/raw modes supported by the product software.</td></tr>
+        <tr><th>Cache / protection</th><td>2 GB onboard DDR3 cache. The EOL record does not establish that a BBU is included; verify the exact board and supported cache-protection accessory, and avoid unprotected write-back.</td></tr>
+        <tr><th>Firmware / OS</th><td>Requires HighPoint RocketRAID 3740A firmware and a driver/management package compatible with the exact Windows, Linux or other supported OS release. Current status is EOL and HighPoint warns that EOL software is no longer tested.</td></tr>
+        <tr><th>Drive / backplane caveats</th><td>Use SFF-8643 breakout cables with the correct SAS/SATA connector and drive-power wiring. Validate 512n/512e/4Kn support, expander behavior and backplane cabling against the legacy manual.</td></tr>
+      </tbody></table></section>
+      <section class="record-section"><h2>Compatibility and service notes</h2><ul><li>HighPoint marks the driver/software offering end-of-life; test installation on the intended OS before purchasing or deploying.</li><li>Confirm any cache backup module against the exact board revision rather than assuming a 3700-series accessory is compatible.</li><li>Maintain a controller configuration export and independent backup; legacy array metadata may not import to a different RAID family.</li></ul></section>
+      <section class="record-section"><h2>Sources &amp; further reading</h2><ol class="record-sources">
+        <li><a href="https://www.highpoint-tech.com/eol-disclaimer/rr3740a-software%2Fmanuals" rel="noopener noreferrer">HighPoint — RocketRAID 3740A software and manuals</a><small>Manufacturer's EOL downloads page; HighPoint notes EOL updates are no longer tested.</small></li>
+        <li><a href="https://download.highpoint-tech.com/www/HighPoint-Download/filedn/RR3700/RR3740_RR3720_RR2840_RR840_QIG_V1.02_22_09_21.pdf" rel="noopener noreferrer">HighPoint — RR3740A/RR3720 quick installation guide</a><small>Official series installation document for adapter fitting and hardware connections.</small></li>
+        <li><a href="https://www.highpoint-tech.com/sas-sata-product-matrix" rel="noopener noreferrer">HighPoint — SAS/SATA product matrix</a><small>Manufacturer product-family reference for controller feature distinctions.</small></li>
+      </ol></section>
+    </main>
+    <footer class="footer"><p>&copy; 2026 ALIEN CULTIST LABS // GALT, CALIFORNIA</p><a href="../../subcategories/storage-and-disk-controllers/index.html">SUBCATEGORY FILE</a><a href="#top">BACK TO TOP &uarr;</a></footer>
+  </div>
+</body>
+</html>

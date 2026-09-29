@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+<title id="title">Toshiba X300 HDWR62AUZSVA schematic</title><desc id="desc">Original line-art schematic of a 3.5-inch desktop hard drive with its platters, actuator arm and model code.</desc>
+<rect width="640" height="420" fill="#10151b"/><path d="M40 50H600M40 370H600" stroke="#344350" stroke-width="2"/>
+<g fill="#18232c" stroke="#85b9c9" stroke-width="3"><rect x="118" y="92" width="404" height="224" rx="22"/><circle cx="268" cy="202" r="86"/><circle cx="268" cy="202" r="17"/><path d="M270 203 426 143l19 13-95 66-46 34-17-15z"/></g>
+<circle cx="268" cy="202" r="61" fill="none" stroke="#617b88" stroke-width="2"/><circle cx="268" cy="202" r="42" fill="none" stroke="#617b88" stroke-width="2"/><path d="M427 142v-24M460 270h34M146 278h42" stroke="#efbd72" stroke-width="3"/>
+<text x="54" y="34" fill="#efbd72" font-family="monospace" font-size="14" letter-spacing="2">HDD ARCHIVE // 3.5 IN SATA</text><text x="54" y="400" fill="#d4e1e7" font-family="monospace" font-size="18" letter-spacing="1">HDWR62AUZSVA // 20 TB</text><text x="472" y="348" fill="#91a8b2" font-family="monospace" font-size="12">SCHEMATIC</text>
+</svg>

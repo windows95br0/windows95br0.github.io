@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">ST3000LM024 3 TB drive schematic</title><desc id="desc">Original thick-profile 15 mm disk schematic with 3 TB marking.</desc>
+<rect width="640" height="360" fill="#211817"/><path d="M66 87Q66 58 96 58h448q30 0 30 29v186q0 29-30 29H96q-30 0-30-29Z" fill="#44221c" stroke="#ff765c" stroke-width="5"/>
+<circle cx="245" cy="180" r="77" fill="#22191a" stroke="#ff9c79" stroke-width="5"/><circle cx="245" cy="180" r="17" fill="#ffd279"/><path d="M245 180 347 126l12 21-101 49Z" fill="#e5d6ce"/>
+<path d="M410 115h104v22H410zm0 35h104v22H410z" fill="#ff765c"/><text x="410" y="206" fill="#fbe6dc" font-family="monospace" font-size="18">15 mm</text>
+<text x="92" y="93" fill="#ff9a7e" font-family="monospace" font-size="19">ST3000LM024 • 3 TB</text><text x="92" y="281" fill="#f2c9bb" font-family="monospace" font-size="17">SMR • 5400 RPM</text>
+</svg>

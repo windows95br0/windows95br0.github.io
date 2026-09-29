@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">ST980815A PATA drive schematic</title><desc id="desc">Original abstract top-view platter and 44-pin connector diagram.</desc>
+<rect width="640" height="360" fill="#111827"/><rect x="75" y="58" width="490" height="244" rx="24" fill="#182d42" stroke="#50c8d6" stroke-width="4"/>
+<circle cx="252" cy="180" r="82" fill="#0b1725" stroke="#71e2e7" stroke-width="5"/><circle cx="252" cy="180" r="16" fill="#f4bc52"/><path d="M252 180 346 128 356 144 272 190Z" fill="#91aabd" stroke="#dae8eb" stroke-width="3"/>
+<path d="M400 114h105v18H400zm0 30h105v18H400zm0 30h105v18H400z" fill="#e6ae4c"/><text x="400" y="230" fill="#dce8ee" font-family="monospace" font-size="20">44-PIN PATA</text>
+<text x="96" y="90" fill="#50c8d6" font-family="monospace" font-size="20">ST980815A // 80 GB</text><text x="96" y="278" fill="#96aebd" font-family="monospace" font-size="16">5400 RPM • ATA/100</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 230" role="img" aria-labelledby="title desc">
+  <title id="title">Wireless pointing device schematic</title>
+  <desc id="desc">Original abstract top view of an ergonomic mouse with optical sensor and receiver link.</desc>
+  <rect width="360" height="230" fill="#11141a"/>
+  <g fill="none" stroke="#5be7d0" stroke-width="3">
+    <path d="M181 34c-43 0-72 28-72 76v35c0 31 26 51 72 51s72-20 72-51v-35c0-48-29-76-72-76z"/>
+    <path d="M181 36v51m-69 23h138m-69-22v42"/>
+    <path d="M109 112l-23 12v28l25-4m142-36 22 12v28l-25-4"/>
+    <circle cx="181" cy="168" r="11"/><path d="M55 72q-26 38 0 76m250-76q26 38 0 76"/>
+  </g>
+  <g fill="#ffc857" font-family="monospace" font-size="11"><text x="15" y="25">SENSOR + RADIO PATH</text><text x="15" y="215">SCHEMATIC / NOT TO SCALE</text></g>
+</svg>
