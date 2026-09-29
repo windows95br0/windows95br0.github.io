@@ -66,6 +66,7 @@
 .dossier-hero { padding: 30px 0 12px; }
 .dossier-hero h1 { max-width: 880px; margin: 8px 0 14px; font: 600 clamp(34px, 5vw, 54px)/1.12 Arial, Helvetica, sans-serif; letter-spacing: -.025em; }
 .category-intro { max-width: 780px; color: var(--muted); font: 16px/1.7 Arial, Helvetica, sans-serif; }
+.health-safety-note { margin: 0 0 18px; padding: 12px 15px; border-left: 3px solid var(--pink); background: rgba(217, 75, 75, .06); color: var(--muted); font: 14px/1.65 Arial, Helvetica, sans-serif; }
 .area42-category-list { padding: 8px 0 64px; }
 .area42-dossier-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13px; }
 .area42-dossier-card { display: block; min-width: 0; padding: 19px 20px; border: 1px solid rgba(215, 182, 107, .22); background: rgba(0, 0, 0, .32); color: #f3eee4; text-decoration: none; }
