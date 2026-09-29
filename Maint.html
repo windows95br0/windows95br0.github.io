@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Alien Cultist Labs is temporarily offline for maintenance.">
+  <title>Alien Cultist Labs // Maintenance</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      min-height: 100vh;
+    }
+
+    .maintenance-page {
+      min-height: 100vh;
+      padding-bottom: 40px;
+    }
+
+    .maintenance-page .topbar {
+      padding-top: 8px;
+    }
+
+    .maintenance-page .brand-wordmark {
+      font-size: 26px;
+      letter-spacing: 0.06em;
+    }
+
+    .maintenance-page .main-nav {
+      padding-top: 10px;
+    }
+
+    .maintenance-hero {
+      align-items: center;
+      padding: 72px 0 90px;
+    }
+
+    .maintenance-copy {
+      max-width: 620px;
+    }
+
+    .maintenance-copy .eyebrow {
+      margin-bottom: 18px;
+    }
+
+    .maintenance-copy h1 {
+      margin-bottom: 18px;
+      max-width: 500px;
+    }
+
+    .maintenance-copy .hero-text {
+      max-width: 540px;
+    }
+
+    .maintenance-copy .hero-actions {
+      margin-top: 26px;
+    }
+
+    .maintenance-panel {
+      padding: 26px 22px 18px;
+      border: 1px solid var(--line);
+      background: rgba(0, 0, 0, 0.52);
+      box-shadow: 7px 7px 0 var(--pink);
+      min-height: 330px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .maintenance-panel img {
+      width: 100%;
+      max-width: 180px;
+      margin: 0 auto 18px;
+      filter: drop-shadow(0 0 18px rgba(122, 250, 255, .28));
+    }
+
+    .panel-label {
+      color: var(--pink);
+      margin-bottom: 12px;
+    }
+
+    .maintenance-panel .system-readout {
+      display: grid;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .readout-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(122, 250, 255, .25);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .readout-row strong {
+      color: var(--paper);
+      font-weight: 700;
+    }
+
+    .maintenance-note {
+      margin-top: 18px;
+      padding: 14px 16px;
+      border-left: 2px solid var(--pink);
+      background: rgba(0, 0, 0, 0.4);
+      color: var(--paper);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+    }
+
+    .maintenance-note .prompt {
+      color: var(--pink);
+    }
+
+    @media (max-width: 800px) {
+      .maintenance-hero {
+        grid-template-columns: 1fr;
+      }
+
+      .maintenance-panel {
+        max-width: 420px;
+      }
+    }
+  </style>
+</head>
+<body class="coming-soon-page maintenance-page">
+  <div class="site-shell">
+    <header class="topbar" id="top">
+      <a class="brand" href="index.html" aria-label="Alien Cultist Labs home">
+        <span class="brand-wordmark">ALIENCULTIST.COM</span>
+      </a>
+      <div class="status-line" aria-label="System status">
+        <span class="status-dot"></span>
+        SYSTEMS OFFLINE <span class="status-divider">//</span> GALT, CA <span class="status-divider">//</span> EST. 2026 BY Windows95br0
+      </div>
+    </header>
+
+    <div class="ticker" aria-label="Maintenance status">
+      <div class="ticker-track" aria-live="polite">
+        <span>MAINTENANCE MODE ACTIVE &nbsp; ✦ &nbsp; ARCHIVE RECOVERY IN PROGRESS &nbsp; ✦ &nbsp; BACK ONLINE SOON &nbsp; ✦ &nbsp;</span>
+        <span>MAINTENANCE MODE ACTIVE &nbsp; ✦ &nbsp; ARCHIVE RECOVERY IN PROGRESS &nbsp; ✦ &nbsp; BACK ONLINE SOON &nbsp; ✦ &nbsp;</span>
+        <span>MAINTENANCE MODE ACTIVE &nbsp; ✦ &nbsp; ARCHIVE RECOVERY IN PROGRESS &nbsp; ✦ &nbsp; BACK ONLINE SOON &nbsp; ✦ &nbsp;</span>
+      </div>
+    </div>
+
+    <main>
+      <section class="maintenance-hero section-grid" aria-labelledby="maintenance-title">
+        <div class="maintenance-copy">
+          <p class="eyebrow">[ SYSTEM STATUS ]</p>
+          <h1 id="maintenance-title">Lab is<br><span>under repair.</span></h1>
+          <p class="hero-text">The archive is currently offline while we update the site, refresh the recovery queue, and prepare the next wave of preservation work.</p>
+          <div class="terminal-note" aria-label="Status terminal output">
+            <span class="prompt">ACLAB:~$</span> maintenance --active<br>
+            <span class="prompt">READY.</span> archive queue paused until reboot.
+          </div>
+        </div>
+
+        <aside class="maintenance-panel" aria-label="Maintenance details panel">
+          <div>
+            <p class="panel-label">SERVICE WINDOW</p>
+            <div class="system-readout">
+              <div class="readout-row"><span>STATUS</span><strong>MAINT</strong></div>
+              <div class="readout-row"><span>MODE</span><strong>REBOOT</strong></div>
+              <div class="readout-row"><span>LOCATION</span><strong>GALT, CA</strong></div>
+            </div>
+          </div>
+          <div class="maintenance-note">
+            <span class="prompt">ACLAB:~$</span> restore --later
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 ALIEN CULTIST LABS // GALT, CALIFORNIA</p>
+      <a href="404.html">404 PAGE</a>
+      <a class="classified-link" href="area-42/index.html" aria-label="Area 42: classified archive">AREA 42</a>
+      <a href="#top">BACK TO TOP ↑</a>
+    </footer>
+  </div>
+</body>
+</html>
