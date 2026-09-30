@@ -182,7 +182,7 @@ h3 { font-size: 29px; margin-bottom: 14px; color: var(--cyan); text-shadow: 0 0 
 .about { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 100px 0; align-items: center; }
 .about-mark { width: min(100%, 360px); justify-self: center; }
 .about-mark img { width: 100%; height: auto; border: 1px solid var(--cyan); box-shadow: 7px 7px 0 var(--pink), 0 0 24px rgba(122, 250, 255, .35); }
-.spec-grid { display: flex; gap: 10px; margin-top: 38px; }
+.spec-grid { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 38px; }
 .spec-grid div { border-top: 2px solid var(--cyan); padding: 12px 18px 0 0; min-width: 120px; }
 .spec-grid strong { display: block; color: var(--pink); font-size: 24px; }
 .spec-grid span { display: block; color: var(--muted); font-size: 11px; }
@@ -203,7 +203,7 @@ h3 { font-size: 29px; margin-bottom: 14px; color: var(--cyan); text-shadow: 0 0 
 .shop-links .eyebrow { margin: 28px 0 14px; }
 .shop-links .social-link-list img { max-height: 34px; }
 /* Shared footer. */
-.footer { display: flex; justify-content: space-between; gap: 20px; padding: 24px 0 34px; color: var(--muted); border-top: 1px solid var(--line); }
+.footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 20px; padding: 24px 0 34px; color: var(--muted); border-top: 1px solid var(--line); }
 
 /* Shop page hero, eBay call to action, and section spacing. */
 .shop-hero { padding: 92px 0 80px; max-width: 760px; }
@@ -253,6 +253,13 @@ h3 { font-size: 29px; margin-bottom: 14px; color: var(--cyan); text-shadow: 0 0 
 .coming-soon-panel p:not(.eyebrow) { max-width: 520px; margin: 0 auto 28px; color: var(--muted); font-size: 17px; }
 .coming-soon-status { display: inline-block; margin-bottom: 24px; padding: 8px 12px; border: 1px solid var(--yellow); color: var(--yellow); font-size: 11px; letter-spacing: .15em; }
 
+
+/* Service-area note in the contact panel. */
+.service-area { color: var(--muted); font-size: 13px; }
+/* Phone link in the shared footer, so contact details are on every page. */
+.footer-phone { color: var(--cyan); text-decoration: none; }
+.footer-phone:hover { color: var(--pink); }
+
 /* Centred button row for the 404 and "coming soon" panels, so those pages
    can offer more than one way onward instead of a single dead end. */
 .panel-actions { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
@@ -282,7 +289,6 @@ h3 { font-size: 29px; margin-bottom: 14px; color: var(--cyan); text-shadow: 0 0 
   .shop-section + .shop-section { padding-top: 76px; }
   .about { padding: 80px 0; }
   .about-mark { order: 2; width: min(100%, 300px); min-width: 0; }
-  .spec-grid { flex-wrap: wrap; }
   .contact { padding: 88px 0; }
   .coming-soon { min-height: 520px; padding: 58px 0; }
 }
@@ -291,7 +297,15 @@ h3 { font-size: 29px; margin-bottom: 14px; color: var(--cyan); text-shadow: 0 0 
 @media (max-width: 480px) {
   .product-grid, .review-grid { grid-template-columns: 1fr; }
   .store-cta img { width: 150px; }
+  /* Impact headings are wider than a small phone at their default minimum size. */
+  h1 { font-size: clamp(34px, 11vw, 56px); }
+  h2 { font-size: clamp(28px, 9vw, 42px); }
+  .phone { font-size: clamp(26px, 9vw, 30px); }
+  .coming-soon-panel { padding: 26px 18px; }
 }
+
+/* Long unbroken words in display type must never push the page sideways. */
+h1, h2, h3, .phone, .brand-wordmark { overflow-wrap: break-word; }
 
 /* Respect visitors who request less animation in their operating system. */
 @media (prefers-reduced-motion: reduce) {

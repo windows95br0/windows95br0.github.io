@@ -1,0 +1,9 @@
+# Alien Cultist Labs
+User-agent: *
+Allow: /
+
+# Maintenance and error pages carry no search value.
+Disallow: /Maint.html
+Disallow: /404.html
+
+Sitemap: https://windows95br0.github.io/sitemap.xml
