@@ -5,8 +5,7 @@
 
 scripts/photos.py does the finding and writes hardware-archives/photos.json.
 This script does the applying: it downloads each accepted file, saves it beside
-the record as photo.jpg, and inserts a second <figure> above the existing
-schematic.
+the record as photo.jpg, and swaps it in for the existing schematic <figure>.
 
 Two things this script will not do:
 
@@ -17,8 +16,8 @@ Two things this script will not do:
     name, and a link back to the file page. If any of those are missing from
     the match, the record is skipped rather than published uncredited.
 
-The original schematic stays. It is drawn for the specific part and often shows
-detail a photograph cannot.
+The original schematic is retired once a verified photograph is in place; it
+was only ever a placeholder standing in for the real thing.
 """
 
 import argparse
@@ -183,12 +182,10 @@ def apply_one(path, match, dry_run):
 
     figure = figure_html(match, "photo.jpg", real_width, real_height)
 
-    # The record hero is a two-column grid: text on the left, artwork on the
-    # right. Dropping a second <figure> in would claim a grid cell of its own
-    # and break the layout, so both figures go in one wrapper instead.
-    stacked = ('<div class="record-figures">%s%s</div>'
-               % (figure, schematic.group(0)))
-    page = page[:schematic.start()] + stacked + page[schematic.end():]
+    # The schematic was only ever a placeholder until a verified photograph
+    # could be sourced. Once we have the real thing, it replaces the drawing
+    # outright rather than sitting alongside it.
+    page = page[:schematic.start()] + figure + page[schematic.end():]
     with open(path, "w", encoding="utf-8") as handle:
         handle.write(page)
     return "ok"

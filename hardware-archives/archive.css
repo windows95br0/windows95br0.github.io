@@ -63,9 +63,8 @@
 .record-sources a { color: var(--cyan); overflow-wrap: anywhere; }
 .record-sources small { color: var(--muted); }
 .hardware-page .footer { border-top-color: var(--line); }
-/* A part record with a real photograph stacks it above its schematic, both
-   inside the single artwork cell of the record hero grid. */
-.record-figures { display: grid; gap: 20px; min-width: 0; }
+/* A part record with a verified photograph shows it in place of the drawn
+   schematic, in the same artwork cell of the record hero grid. */
 .record-photo .record-art { width: auto; height: auto; max-width: 100%; max-height: 340px; margin: 0 auto; display: block; }
 .record-photo figcaption a { color: var(--cyan); }
 /* Browse-by pivot pages: manufacturers, connections and storage. */
