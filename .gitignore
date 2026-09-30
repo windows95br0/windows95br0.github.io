@@ -1,0 +1,4 @@
+# Editor and OS files that should not ship with the site.
+.vscode/
+.DS_Store
+Thumbs.db

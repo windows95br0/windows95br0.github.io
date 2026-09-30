@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Alien Cultist Labs is temporarily offline for maintenance.">
   <title>Alien Cultist Labs // Maintenance</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
   <style>
     body {
       min-height: 100vh;
@@ -102,6 +102,10 @@
     }
 
     .maintenance-note {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
       margin-top: 18px;
       padding: 14px 16px;
       border-left: 2px solid var(--pink);
@@ -109,6 +113,10 @@
       color: var(--paper);
       font-size: 12px;
       letter-spacing: 0.08em;
+    }
+
+    .maintenance-note .panel-label {
+      margin: 0;
     }
 
     .maintenance-note .prompt {
@@ -151,7 +159,7 @@
         <div class="maintenance-copy">
           <p class="eyebrow">[ SYSTEM STATUS ]</p>
           <h1 id="maintenance-title">Lab is<br><span>under repair.</span></h1>
-          <p class="hero-text">The archive is currently offline while we update the site, refresh the recovery queue, and prepare the next wave of preservation work.</p>
+          <p class="hero-text">We're offline for a bit while we update the site and work through the recovery queue. Nothing is lost — we'll be back shortly.</p>
           <div class="terminal-note" aria-label="Status terminal output">
             <span class="prompt">ACLAB:~$</span> maintenance --active<br>
             <span class="prompt">READY.</span> archive queue paused until reboot.
@@ -168,7 +176,9 @@
             </div>
           </div>
           <div class="maintenance-note">
-            <span class="prompt">ACLAB:~$</span> restore --later
+            <p class="panel-label">STILL REACHABLE</p>
+            <a class="button button-primary" href="tel:+12799772898">CALL (279) 977-2898 <span>→</span></a>
+            <a class="button button-quiet" href="sms:+12799772898">SEND A TEXT</a>
           </div>
         </aside>
       </section>
@@ -181,5 +191,6 @@
       <a href="#top">BACK TO TOP ↑</a>
     </footer>
   </div>
+<script src="scripts/site.js" defer></script>
 </body>
 </html>
