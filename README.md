@@ -13,6 +13,8 @@ Static HTML, CSS, and vanilla client-side JavaScript. **No build step and no dep
 | Path | What it is |
 | --- | --- |
 | `index.html` | Home page: services, about, contact |
+| `pricing.html` | Rate card and common questions |
+| `search.html` | Searches every page on the site |
 | `shopwithus.html` | Build portfolio and buyer reviews |
 | `dedicatedservers.html` | Game servers (placeholder) |
 | `xrayarchives.html` | X-Ray Archives (placeholder) |
@@ -20,10 +22,13 @@ Static HTML, CSS, and vanilla client-side JavaScript. **No build step and no dep
 | `404.html` | Served by GitHub Pages for unknown URLs |
 | `style.css` | Shared stylesheet and design tokens for every page |
 | `scripts/site.js` | Shared behaviour for every page |
+| `scripts/search.js` | Search page only |
+| `scripts/build.py` | Regenerates the files below |
 | `hardware-archives/` | ~4,200 pages of component reference records |
 | `area-42/` | 668 source-led dossier pages |
 | `assets/` | Images, logos, favicon, and social share cards |
 | `sitemap.xml`, `robots.txt` | Generated for search engines |
+| `search-index.json` | Generated; powers `search.html` |
 
 Both archive sections load `style.css` first and then their own `archive.css`, which overrides the colour tokens to give each section its own palette.
 
@@ -75,7 +80,23 @@ Copy the `<head>`, header, and footer from an existing page in the same section 
 
 ### After adding or removing pages
 
-Regenerate the sitemap so search engines see the change. It lists every page except `404.html` and `Maint.html`, and takes each page's `lastmod` from its most recent git commit.
+Regenerate the derived files:
+
+```bash
+python3 scripts/build.py
+```
+
+This rewrites `sitemap.xml` and `search-index.json` from the pages on disk, taking each page's `lastmod` from its most recent git commit and its search title from its `<title>` tag. `404.html`, `Maint.html`, and `search.html` are deliberately left out of both.
+
+Commit the regenerated files along with your page changes — GitHub Pages cannot run this script for you.
+
+## Search
+
+`search.html` downloads `search-index.json` once, on demand, and filters it in the browser. Nothing is sent anywhere.
+
+The index stores directory names once in a lookup table and references them by position, which keeps roughly 4,900 entries down to about 350KB — around 96KB gzipped, which is what actually travels.
+
+Because the index is built from `<title>` tags, a page with a vague title is hard to find. Titles ending in a section name (`// Hardware Archives`, `// Area 42`) have that part stripped automatically, since results already show the section.
 
 ## Images
 
