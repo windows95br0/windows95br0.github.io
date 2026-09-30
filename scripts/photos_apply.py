@@ -94,6 +94,27 @@ def fetch(url, tries=4):
     return None
 
 
+def shrink(path, longest=760):
+    """Resize a downloaded photo to something the page will actually use.
+
+    The record shows these at roughly 340 pixels tall. Commons hands out a
+    960 pixel thumbnail, which at full quality runs to two megabytes, and
+    shipping that is a waste of a visitor's bandwidth and of this repository.
+    760 on the long edge still looks sharp on a high-density screen.
+
+    Returns the final (width, height).
+    """
+    with Image.open(path) as opened:
+        opened = opened.convert("RGB")
+        width, height = opened.size
+        if max(width, height) > longest:
+            scale = longest / float(max(width, height))
+            width, height = int(round(width * scale)), int(round(height * scale))
+            opened = opened.resize((width, height), Image.LANCZOS)
+        opened.save(path, "JPEG", quality=82, optimize=True, progressive=True)
+    return width, height
+
+
 def figure_html(match, filename, width, height):
     """The photo figure, credit included. Returns None if it cannot be credited."""
     licence = licence_parts(match.get("licence"))
@@ -155,8 +176,7 @@ def apply_one(path, match, dry_run):
     # height attributes reserve the right space and no layout shift occurs.
     photo = os.path.join(os.path.dirname(path), "photo.jpg")
     try:
-        with Image.open(photo) as opened:
-            real_width, real_height = opened.size
+        real_width, real_height = shrink(photo)
     except Exception as err:
         os.remove(photo)
         return "not a readable image: %s" % err

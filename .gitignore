@@ -2,3 +2,7 @@
 .vscode/
 .DS_Store
 Thumbs.db
+
+# Python bytecode, created whenever a script is imported rather than run.
+__pycache__/
+*.pyc

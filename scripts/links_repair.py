@@ -25,6 +25,7 @@ to find a replacement source, and the script will not invent one.
 """
 
 import argparse
+import concurrent.futures
 import json
 import os
 import re
@@ -39,7 +40,8 @@ ROOT = "hardware-archives"
 REPORT = os.path.join(ROOT, "links.json")
 UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
       "Chrome/124.0 Safari/537.36")
-AVAILABILITY = "https://archive.org/wayback/available?url=%s"
+CDX = ("https://web.archive.org/cdx/search/cdx?url=%s&output=json"
+       "&filter=statuscode:200&collapse=urlkey&limit=-1")
 
 
 def context():
@@ -67,19 +69,42 @@ def still_dead(url):
     return True
 
 
+class RateLimited(Exception):
+    """The Internet Archive is asking us to slow down."""
+
+
 def snapshot(url):
-    """Closest Wayback snapshot URL, or None."""
-    query = AVAILABILITY % urllib.parse.quote(url, safe="")
-    for attempt in range(3):
+    """The most recent Wayback snapshot that returned a real page, or None.
+
+    This asks the CDX index rather than the availability API. The availability
+    API rate-limits aggressively and answers with a 429 *page* rather than an
+    error, which is easy to mistake for "no snapshot exists" and would quietly
+    strand links that are perfectly recoverable. CDX also lets us insist the
+    snapshot itself was a 200, so we do not swap a dead link for an archived
+    copy of a 404.
+    """
+    query = CDX % urllib.parse.quote(url, safe="")
+    for attempt in range(5):
         try:
             request = urllib.request.Request(query, headers={"User-Agent": UA})
-            with urllib.request.urlopen(request, timeout=40, context=context()) as response:
-                data = json.load(response)
-            closest = data.get("archived_snapshots", {}).get("closest") or {}
-            if closest.get("available") and closest.get("url"):
-                # The API hands back http:// more often than not.
-                return closest["url"].replace("http://web.archive.org",
-                                              "https://web.archive.org")
+            with urllib.request.urlopen(request, timeout=60, context=context()) as response:
+                body = response.read()
+            head = body[:200].lower()
+            if b"<html" in head:
+                raise RateLimited()
+            rows = json.loads(body or b"[]")
+            if len(rows) < 2:
+                return None
+            columns, latest = rows[0], rows[-1]
+            row = dict(zip(columns, latest))
+            return "https://web.archive.org/web/%s/%s" % (
+                row["timestamp"], row["original"])
+        except RateLimited:
+            time.sleep(min(180, 20 * (attempt + 1)))
+        except urllib.error.HTTPError as err:
+            if err.code in (429, 503):
+                time.sleep(min(180, 20 * (attempt + 1)))
+                continue
             return None
         except Exception:
             time.sleep(2 ** attempt)
@@ -122,17 +147,28 @@ def main():
     report = json.load(open(REPORT, encoding="utf-8"))
     dead = report.get("dead", {})
     cited_by = report.get("cited_by", {})
-    print("%d dead links to try" % len(dead))
+    candidates = sorted(dead)
+    if args.limit:
+        candidates = candidates[:args.limit]
+    print("%d dead links to try" % len(candidates))
 
-    revived = recovered = no_copy = alive_after_all = 0
+    # The bulk scan runs two dozen requests at once, and a slow server under
+    # that load looks exactly like a gone one. Re-check everything first, gently
+    # and with a long timeout, before touching a single page.
+    print("re-checking, because a timeout is not proof of death...")
+    confirmed = []
+    with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
+        for url, dead_now in zip(candidates, pool.map(still_dead, candidates)):
+            if dead_now:
+                confirmed.append(url)
+    alive_after_all = len(candidates) - len(confirmed)
+    print("  %d were alive after all, %d confirmed gone\n" % (
+        alive_after_all, len(confirmed)))
+
+    revived = recovered = no_copy = 0
     stranded = []
 
-    for index, url in enumerate(sorted(dead), 1):
-        if args.limit and recovered + no_copy + alive_after_all >= args.limit:
-            break
-        if not still_dead(url):
-            alive_after_all += 1
-            continue
+    for index, url in enumerate(confirmed, 1):
         replacement = snapshot(url)
         if not replacement:
             no_copy += 1
@@ -144,7 +180,7 @@ def main():
                 if os.path.exists(path) and rewrite(path, url, replacement):
                     revived += 1
         if index % 25 == 0:
-            print("  %d/%d" % (index, len(dead)), flush=True)
+            print("  %d/%d" % (index, len(confirmed)), flush=True)
         time.sleep(0.2)
 
     print("\n  alive on a second look   %d" % alive_after_all)

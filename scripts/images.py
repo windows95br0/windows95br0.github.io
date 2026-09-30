@@ -24,6 +24,9 @@ RASTER = ("jpg", "jpeg", "png", "gif")
 
 IMG_RE = re.compile(r"<img[^>]*?>", re.I)
 SRC_RE = re.compile(r'src="([^"]+)"', re.I)
+PICTURE_RE = re.compile(
+    r'<picture><source srcset="([^"]+)" type="image/webp">(<img[^>]*?>)</picture>',
+    re.I)
 
 
 def referenced_images():
@@ -78,11 +81,37 @@ def already_wrapped(html, index):
     return html.rfind("<picture", 0, index) > html.rfind("</picture>", 0, index)
 
 
+def unwrap_stale(page, html):
+    """Drop <picture> wrappers whose WebP is no longer on disk.
+
+    An image can stop being worth converting - if the JPEG itself is optimised,
+    the WebP may end up larger and this script rightly declines to keep it. When
+    that happens to an image that was wrapped on an earlier run, the <source>
+    left behind points at a file that is not there. Browsers fall back quietly,
+    but it is still a broken reference, so the wrapper comes back off.
+    """
+    removed = 0
+
+    def strip(match):
+        nonlocal removed
+        webp = match.group(1)
+        full = os.path.normpath(os.path.join(os.path.dirname(page), webp))
+        if os.path.exists(full):
+            return match.group(0)
+        removed += 1
+        return match.group(2)
+
+    html = PICTURE_RE.sub(strip, html)
+    return html, removed
+
+
 def wrap_pages():
-    pages = wrapped = 0
+    pages = wrapped = unwrapped = 0
     for page in sorted(glob.glob("**/*.html", recursive=True)):
         with open(page, encoding="utf-8") as fh:
-            html = fh.read()
+            original = fh.read()
+        html, removed = unwrap_stale(page, original)
+        unwrapped += removed
         parts, cursor, count = [], 0, 0
         for match in IMG_RE.finditer(html):
             tag = match.group(0)
@@ -105,11 +134,13 @@ def wrap_pages():
             count += 1
         if count:
             parts.append(html[cursor:])
+            html = "".join(parts)
+        if html != original:
             with open(page, "w", encoding="utf-8") as fh:
-                fh.write("".join(parts))
+                fh.write(html)
             pages += 1
             wrapped += count
-    return pages, wrapped
+    return pages, wrapped, unwrapped
 
 
 def main():
@@ -122,8 +153,10 @@ def main():
     print("webp kept           %d  (%.1f MB -> %.1f MB, %d%% smaller)"
           % (made, before / 1048576, after / 1048576, saved))
     print("left as-is          %d  (webp was no smaller)" % skipped)
-    pages, wrapped = wrap_pages()
+    pages, wrapped, unwrapped = wrap_pages()
     print("newly wrapped       %d <img> tags across %d pages" % (wrapped, pages))
+    if unwrapped:
+        print("unwrapped           %d whose webp is no longer kept" % unwrapped)
 
 
 if __name__ == "__main__":
