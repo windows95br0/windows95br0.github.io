@@ -135,11 +135,11 @@ a { color: inherit; }
 .shop-nav-link small { color: var(--ink); background: var(--yellow); padding: 1px 4px; font-size: 8px; font-weight: bold; letter-spacing: .08em; line-height: 1.2; text-shadow: none; }
 .shop-nav-link:hover { background: var(--pink); color: var(--ink) !important; box-shadow: 4px 4px 0 var(--cyan); }
 @keyframes shop-pulse { 0%, 100% { box-shadow: 3px 3px 0 var(--pink); } 50% { box-shadow: 3px 3px 0 var(--pink), 0 0 14px rgba(255, 89, 240, .5); } }
-.game-nav-link, .archive-nav-link, .hardware-nav-link { position: relative; display: inline-flex; align-items: center; gap: 7px; padding: 7px 9px; border: 1px solid var(--cyan-dark); color: var(--cyan) !important; text-decoration: none; }
+.game-nav-link, .archive-nav-link, .hardware-nav-link, .pricing-nav-link { position: relative; display: inline-flex; align-items: center; gap: 7px; padding: 7px 9px; border: 1px solid var(--cyan-dark); color: var(--cyan) !important; text-decoration: none; }
 .game-nav-link { border-color: var(--yellow); color: var(--yellow) !important; box-shadow: 3px 3px 0 var(--cyan-dark); }
 .game-nav-link small { color: var(--ink); background: var(--yellow); padding: 1px 4px; font-size: 8px; font-weight: bold; letter-spacing: .08em; line-height: 1.2; text-shadow: none; }
-.archive-nav-link, .hardware-nav-link { color: var(--paper) !important; }
-.game-nav-link:hover, .archive-nav-link:hover, .hardware-nav-link:hover { background: var(--cyan); color: var(--ink) !important; border-color: var(--cyan); }
+.archive-nav-link, .hardware-nav-link, .pricing-nav-link { color: var(--paper) !important; }
+.game-nav-link:hover, .archive-nav-link:hover, .hardware-nav-link:hover, .pricing-nav-link:hover { background: var(--cyan); color: var(--ink) !important; border-color: var(--cyan); }
 /* Typography and home-page hero controls. */
 .hero { min-height: 650px; max-width: 820px; align-items: center; padding: 90px 0 105px; }
 .eyebrow { color: var(--cyan); margin: 0 0 18px; }
@@ -275,7 +275,7 @@ h3 { font-size: 29px; margin-bottom: 14px; color: var(--cyan); text-shadow: 0 0 
   .home-nav-link { padding: 6px 5px; }
   .shop-nav-link { padding: 6px 5px; gap: 4px; }
   .shop-nav-link small { font-size: 7px; }
-  .game-nav-link, .archive-nav-link, .hardware-nav-link { padding: 6px 5px; gap: 4px; }
+  .game-nav-link, .archive-nav-link, .hardware-nav-link, .pricing-nav-link { padding: 6px 5px; gap: 4px; }
   .game-nav-link small { font-size: 7px; }
   .hero, .about, .contact { grid-template-columns: minmax(0, 1fr); gap: 48px; }
   .hero { padding: 72px 0 90px; }
@@ -477,3 +477,37 @@ summary:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   .skip-link, .to-top { transition: none; }
 }
+
+/* ---- Pricing page ---- */
+.pricing-hero { padding: 72px 0 40px; max-width: 760px; }
+.pricing-hero h1 { margin-bottom: 20px; }
+
+.pricing-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; padding-bottom: 20px; align-items: start; }
+.pricing-card { display: flex; flex-direction: column; height: 100%; padding: 28px 24px; background: #000; border: 1px solid rgba(220, 230, 223, .2); transition: border-color .2s, transform .2s; }
+.pricing-card:hover { border-color: var(--cyan); transform: translateY(-5px); }
+.pricing-card-featured { border-color: var(--cyan); box-shadow: 6px 6px 0 var(--pink); }
+.pricing-card h2 { font-size: 30px; margin: 10px 0 18px; }
+.pricing-amount { font-family: var(--display); font-size: 58px; line-height: 1; color: var(--cyan); text-shadow: 0 0 16px rgba(122, 250, 255, .45), 3px 3px 0 rgba(255, 89, 240, .5); }
+.pricing-unit { margin-top: 8px; color: var(--muted); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; }
+.pricing-list { list-style: none; margin: 22px 0 0; padding: 0; border-top: 1px solid var(--line); }
+.pricing-list li { padding: 11px 0 11px 20px; position: relative; border-bottom: 1px solid var(--line); font-size: 14px; }
+.pricing-list li::before { content: "+"; position: absolute; left: 0; color: var(--pink); }
+.pricing-note { margin: 18px 0 24px; color: var(--muted); font-size: 13px; }
+/* Pushes every card's button to the bottom so they line up across the row. */
+.pricing-card .button { margin-top: auto; align-self: flex-start; }
+
+.pricing-faq { padding: 80px 0 40px; }
+.faq-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 40px; margin-top: 34px; }
+.faq-item h3 { font-size: 20px; margin-bottom: 8px; color: var(--cyan); }
+.faq-item p { color: var(--muted); font-size: 14px; }
+
+@media (max-width: 800px) {
+  .pricing-grid { grid-template-columns: 1fr; }
+  .faq-list { grid-template-columns: 1fr; }
+  .pricing-hero { padding: 56px 0 32px; }
+  .pricing-faq { padding: 64px 0 32px; }
+}
+
+/* Price line on the home page service cards. */
+.service-price { margin-top: auto; padding-top: 14px; color: var(--cyan); font-size: 13px; letter-spacing: .08em; }
+.text-link-inline { color: var(--cyan); }
