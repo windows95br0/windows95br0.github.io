@@ -1007,18 +1007,6 @@
   "title": "Intel Xeon Phi 5110P",
   "width": 900
  },
- "hardware-archives/expansion-cards/components/m-audio-delta-1010lt/index.html": {
-  "author": "Adaw",
-  "category": "expansion-cards",
-  "confidence": 0.667,
-  "file": "File:Delta 1010lt Linux Alsa Jack Mixer.png",
-  "height": 546,
-  "licence": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:Delta_1010lt_Linux_Alsa_Jack_Mixer.png",
-  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Delta_1010lt_Linux_Alsa_Jack_Mixer.png/960px-Delta_1010lt_Linux_Alsa_Jack_Mixer.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-  "title": "M-Audio Delta 1010LT",
-  "width": 900
- },
  "hardware-archives/expansion-cards/components/motu-pci-424/index.html": {
   "author": "Ashley Pomeroy",
   "category": "expansion-cards",
