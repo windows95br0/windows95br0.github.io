@@ -26,6 +26,7 @@ Static HTML, CSS, and vanilla client-side JavaScript. **No build step and no dep
 | `scripts/build.py` | Regenerates the files below |
 | `scripts/images.py` | Makes WebP copies and wraps images in `<picture>` |
 | `scripts/check.py` | Finds pages that have drifted out of sync |
+| `scripts/pivots.py` | Rebuilds the hardware archive's browse-by indexes |
 | `hardware-archives/` | ~4,200 pages of component reference records |
 | `area-42/` | 668 source-led dossier pages |
 | `assets/` | Images, logos, favicon, and social share cards |
@@ -91,6 +92,38 @@ python3 scripts/build.py
 This rewrites `sitemap.xml` and `search-index.json` from the pages on disk, taking each page's `lastmod` from its most recent git commit and its search title from its `<title>` tag. `404.html`, `Maint.html`, and `search.html` are deliberately left out of both.
 
 Commit the regenerated files along with your page changes — GitHub Pages cannot run this script for you.
+
+### Hardware archive browse-by indexes
+
+```bash
+python3 scripts/pivots.py
+python3 scripts/build.py
+```
+
+The archive's 4,000 part records are filed by component type, which is the right
+primary split but a poor one when you already know the brand, the plug, or just
+that the thing in your hand is a hard drive. `scripts/pivots.py` reads every
+record and writes three extra ways in:
+
+- `hardware-archives/manufacturers/` — one page per maker with two or more parts
+- `hardware-archives/interfaces/` — one page per connection type, bus, or socket
+- `hardware-archives/storage/` — all drive records grouped by media technology
+
+These are generated *in addition to* the category tree. Nothing is moved or
+renamed, so no existing URL breaks.
+
+Two rules matter if you edit the script:
+
+- **Interface is a facet, not a category.** The same drive model ships in SATA
+  and SAS, and one M.2 slot carries either SATA or NVMe. So storage is grouped
+  by what the media physically is — flash, platter, optical, magnetic — and the
+  interface is a filter on top.
+- **A leading word is not always a maker.** "ATX 24-pin Motherboard Power Cable"
+  starts with a standard, not a company. `NOT_VENDORS` holds those words, and
+  `MULTIWORD` holds makers whose names run to more than one word, like
+  Western Digital and I-O DATA. Add to both as the catalogue grows.
+
+Run `scripts/build.py` afterwards so the new pages reach the sitemap and search.
 
 ### Before you commit
 
