@@ -52,6 +52,14 @@
 .claim-grid > div { padding: 18px 20px; border: 1px solid rgba(215, 182, 107, .2); background: rgba(0, 0, 0, .32); }
 .claim-grid p, .case-file > p:not(.file-id), .dossier-section p, .dossier-note { margin-top: 0; color: var(--muted); font: 16px/1.75 Arial, Helvetica, sans-serif; }
 .assessment, .dossier-verdict { margin: 20px 0; padding: 15px 18px; border-left: 3px solid var(--pink); background: rgba(217, 75, 75, .07); color: #f3eee4; font: 15px/1.75 Arial, Helvetica, sans-serif; }
+.dossier-image { margin: 22px 0 28px; border: 1px solid rgba(215, 182, 107, .24); background: rgba(0, 0, 0, .36); }
+.dossier-image img { display: block; width: 100%; max-height: 520px; object-fit: contain; background: #090807; }
+.dossier-image figcaption { padding: 10px 13px; color: var(--muted); font: 12px/1.6 Arial, Helvetica, sans-serif; overflow-wrap: anywhere; }
+.dossier-image figcaption a { color: #f0cc7b; text-underline-offset: 3px; }
+.area42-page figure { border: 1px solid rgba(215, 182, 107, .24); background: rgba(0, 0, 0, .36); }
+.area42-page figure img { display: block; max-width: 100%; max-height: 520px; height: auto; margin: 0 auto; object-fit: contain; background: #090807; }
+.area42-page figure figcaption { padding: 10px 13px; color: var(--muted); font: 12px/1.6 Arial, Helvetica, sans-serif; overflow-wrap: anywhere; }
+.area42-page figure figcaption a { color: #f0cc7b; text-underline-offset: 3px; }
 .case-file > ul, .dossier-section ul { padding-left: 23px; color: var(--muted); font: 15px/1.7 Arial, Helvetica, sans-serif; }
 .case-file > ul li, .dossier-section li { margin: 8px 0; }
 .sources { display: grid; gap: 11px; padding-left: 22px; color: var(--yellow); font: 14px/1.65 Arial, Helvetica, sans-serif; }
