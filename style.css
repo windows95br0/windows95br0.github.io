@@ -53,21 +53,6 @@ body {
   text-shadow: 0 0 12px rgba(255, 64, 95, .18);
 }
 
-/* The shop has its own green/purple inventory signal palette. */
-.shop-page {
-  --cyan: #70ff9b;
-  --cyan-dark: #16804b;
-  --pink: #c05cff;
-  --yellow: #dfff78;
-  --line: rgba(112, 255, 155, .52);
-  background-image:
-    radial-gradient(circle at 15% 18%, rgba(112, 255, 155, .28), transparent 22rem),
-    radial-gradient(circle at 80% 14%, rgba(192, 92, 255, .28), transparent 20rem),
-    radial-gradient(circle at 45% 70%, rgba(112, 255, 155, .12), transparent 28rem),
-    linear-gradient(180deg, rgba(4, 16, 11, .77), rgba(5, 10, 12, .94)),
-    linear-gradient(135deg, #03100a 0%, #091d16 26%, #180d24 55%, #07110d 100%);
-  text-shadow: 0 0 12px rgba(112, 255, 155, .18);
-}
 
 /* The 404 page uses a clear deep-red warning background. */
 .error-page {
@@ -133,10 +118,6 @@ a { color: inherit; }
 .footer .classified-link:hover, .footer .classified-link:focus-visible { opacity: 1; color: var(--pink); }
 .home-nav-link { display: inline-flex; align-items: center; padding: 7px 9px; border: 1px solid var(--cyan-dark); color: var(--paper) !important; text-decoration: none; box-shadow: 3px 3px 0 var(--cyan-dark); }
 .home-nav-link:hover { background: var(--cyan); color: var(--ink) !important; border-color: var(--cyan); }
-.shop-nav-link { position: relative; display: inline-flex; align-items: center; gap: 7px; padding: 7px 9px; border: 1px solid var(--pink); color: var(--cyan) !important; box-shadow: 3px 3px 0 var(--pink); text-shadow: 0 0 9px rgba(122, 250, 255, .7); animation: shop-pulse 3s ease-in-out infinite; }
-.shop-nav-link small { color: var(--ink); background: var(--yellow); padding: 1px 4px; font-size: 8px; font-weight: bold; letter-spacing: .08em; line-height: 1.2; text-shadow: none; }
-.shop-nav-link:hover { background: var(--pink); color: var(--ink) !important; box-shadow: 4px 4px 0 var(--cyan); }
-@keyframes shop-pulse { 0%, 100% { box-shadow: 3px 3px 0 var(--pink); } 50% { box-shadow: 3px 3px 0 var(--pink), 0 0 14px rgba(255, 89, 240, .5); } }
 .game-nav-link, .archive-nav-link, .hardware-nav-link, .pricing-nav-link, .search-nav-link { position: relative; display: inline-flex; align-items: center; gap: 7px; padding: 7px 9px; border: 1px solid var(--cyan-dark); color: var(--cyan) !important; text-decoration: none; }
 .game-nav-link { border-color: var(--yellow); color: var(--yellow) !important; box-shadow: 3px 3px 0 var(--cyan-dark); }
 .game-nav-link small { color: var(--ink); background: var(--yellow); padding: 1px 4px; font-size: 8px; font-weight: bold; letter-spacing: .08em; line-height: 1.2; text-shadow: none; }
@@ -161,7 +142,6 @@ h3 { font-size: 29px; margin-bottom: 14px; color: var(--cyan); text-shadow: 0 0 
 .button-game { border-color: var(--yellow); color: var(--yellow); box-shadow: 4px 4px 0 var(--cyan-dark); }
 .terminal-note { width: fit-content; padding: 15px 18px; border-left: 2px solid var(--pink); background: #000; color: var(--muted); font-size: 12px; }
 .prompt { color: var(--pink); }
-.shop-page .product-card .prompt { color: #c052ff; }
 /* Announcement ticker. The animation moves the duplicated text continuously. */
 .ticker { overflow: hidden; color: var(--ink); background: var(--cyan); border-top: 1px solid var(--cyan); border-bottom: 1px solid var(--cyan); white-space: nowrap; font-family: var(--display); letter-spacing: .12em; }
 .ticker-track { display: inline-flex; width: max-content; padding: 8px 0; animation: ticker 24s linear infinite; }
@@ -201,54 +181,10 @@ h3 { font-size: 29px; margin-bottom: 14px; color: var(--cyan); text-shadow: 0 0 
 .social-link-list a { display: inline-flex; align-items: center; justify-content: center; min-height: 36px; padding: 7px 10px; border: 1px solid rgba(220, 230, 223, .4); color: var(--paper); text-decoration: none; font-size: 10px; letter-spacing: .08em; transition: border-color .2s, transform .2s, background .2s; }
 .social-link-list a:hover { border-color: var(--cyan); background: #000; transform: translateY(-2px); }
 .social-link-list img { width: auto; max-width: 116px; max-height: 30px; object-fit: contain; }
-.shop-links { padding: 0 0 52px; border-top: 1px solid var(--line); }
-.shop-links .eyebrow { margin: 28px 0 14px; }
-.shop-links .social-link-list img { max-height: 34px; }
 /* Shared footer. */
 .footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 20px; padding: 24px 0 34px; color: var(--muted); border-top: 1px solid var(--line); }
 
-/* Shop page hero, eBay call to action, and section spacing. */
-.shop-hero { padding: 92px 0 80px; max-width: 760px; }
-.shop-hero h1 { margin-bottom: 24px; }
-.shop-hero-text { max-width: 620px; color: var(--muted); font-size: 17px; }
-.store-cta-row { display: flex; align-items: center; gap: 22px; margin-top: 28px; }
-.store-cta { display: inline-flex; align-items: center; justify-content: center; margin-top: 28px; padding: 12px 16px; border: 1px solid var(--cyan); background: #000; box-shadow: 5px 5px 0 var(--pink); transition: transform .2s, box-shadow .2s; }
-.store-cta-row .store-cta { margin-top: 0; }
-.store-cta:hover { transform: translate(-2px, -2px); box-shadow: 7px 7px 0 var(--cyan); }
-.store-cta img { width: 170px; height: auto; }
-.store-callout { max-width: 330px; margin: 0; padding: 12px 15px; border: 1px solid var(--pink); background: #000; color: var(--yellow); font-family: var(--display); font-size: 20px; line-height: 1.05; text-transform: uppercase; text-shadow: 0 0 10px rgba(223, 255, 120, .65); box-shadow: 4px 4px 0 var(--pink); }
-.store-callout span { display: inline-block; margin-right: 8px; color: var(--pink); font-family: var(--mono); font-size: 30px; line-height: .6; vertical-align: middle; text-shadow: 0 0 12px rgba(192, 92, 255, .9); }
-.shop-section { padding: 24px 0 110px; }
-.shop-section + .shop-section { border-top: 1px solid var(--line); padding-top: 100px; }
-.shop-section-heading { max-width: 620px; margin-bottom: 42px; }
-.shop-section-heading p:last-child { color: var(--muted); }
-.shop-section-heading .update-note { margin-top: 14px; color: var(--yellow); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
-.stock-banner { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 18px; margin: 0 0 24px; padding: 12px 16px; border: 1px solid var(--yellow); background: rgba(0, 0, 0, .72); color: var(--yellow); box-shadow: 4px 4px 0 var(--pink); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
-.stock-banner strong { color: var(--paper); }
-.stock-banner span { color: var(--muted); }
-/* Shop portfolio cards. Product images are examples of past workmanship. */
-.product-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
-.product-card, .review-card { margin: 0; border: 1px solid rgba(220, 230, 223, .2); background: #000; }
-.product-card { transition: border-color .2s, transform .2s; }
-.product-card { color: inherit; text-decoration: none; }
-.product-card:hover { border-color: var(--cyan); transform: translateY(-5px); }
-.product-card img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: var(--ink); border-bottom: 1px solid rgba(94, 244, 230, .35); }
-.product-card-caption { display: block; padding: 15px 16px 17px; color: var(--cyan); font-family: var(--display); font-size: 20px; line-height: 1; text-transform: uppercase; }
-/* Readable, text-based customer reviews. The summary spans both columns. */
-.review-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
-.review-card { padding: 24px; }
-.review-card p { margin: 20px 0 0; color: var(--paper); font-family: var(--mono); font-size: 15px; line-height: 1.65; text-shadow: none; }
-.review-summary { grid-column: 1 / -1; display: flex; align-items: baseline; flex-wrap: wrap; gap: 18px 28px; border-color: var(--cyan); box-shadow: 5px 5px 0 var(--pink); }
-.review-summary h3 { margin: 0; }
-.review-kicker { margin: 0 !important; color: var(--pink) !important; font-size: 11px !important; letter-spacing: .14em; }
-.review-stats { display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px 12px; color: var(--muted); font-size: 13px; }
-.review-stats strong { color: var(--cyan); font-family: var(--display); font-size: 26px; font-weight: 400; }
-.review-meta { display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px 18px; color: var(--muted); font-size: 11px; }
-.review-meta strong { color: var(--pink); font-size: 14px; }
-.review-meta span:last-child { margin-left: auto; color: var(--cyan-dark); }
-.shop-footer { margin-top: 0; }
 
-/* Placeholder pages reuse this centered panel until their full content is ready. */
 .coming-soon { min-height: 620px; display: grid; place-items: center; padding: 80px 0; }
 .coming-soon-panel { width: min(720px, 100%); padding: clamp(30px, 7vw, 76px); border: 1px solid var(--cyan); background: #000; box-shadow: 8px 8px 0 var(--pink), 0 0 30px rgba(122, 250, 255, .22); text-align: center; }
 .coming-soon-panel h1 { margin-bottom: 24px; }
@@ -275,8 +211,6 @@ h3 { font-size: 29px; margin-bottom: 14px; color: var(--cyan); text-shadow: 0 0 
   .status-line { display: none; }
   .main-nav { grid-column: 1 / -1; justify-content: space-between; gap: 8px; padding: 12px 0; }
   .home-nav-link { padding: 6px 5px; }
-  .shop-nav-link { padding: 6px 5px; gap: 4px; }
-  .shop-nav-link small { font-size: 7px; }
   .game-nav-link, .archive-nav-link, .hardware-nav-link, .pricing-nav-link, .search-nav-link { padding: 6px 5px; gap: 4px; }
   .game-nav-link small { font-size: 7px; }
   .hero, .about, .contact { grid-template-columns: minmax(0, 1fr); gap: 48px; }
@@ -284,11 +218,6 @@ h3 { font-size: 29px; margin-bottom: 14px; color: var(--cyan); text-shadow: 0 0 
   .services { padding: 88px 0; }
   .service-list { grid-template-columns: 1fr; }
   .service-image { aspect-ratio: 1; }
-  .product-grid, .review-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .shop-hero { padding: 72px 0 58px; }
-  .store-cta-row { align-items: flex-start; flex-direction: column; gap: 16px; }
-  .shop-section { padding-bottom: 80px; }
-  .shop-section + .shop-section { padding-top: 76px; }
   .about { padding: 80px 0; }
   .about-mark { order: 2; width: min(100%, 300px); min-width: 0; }
   .contact { padding: 88px 0; }
@@ -297,8 +226,6 @@ h3 { font-size: 29px; margin-bottom: 14px; color: var(--cyan); text-shadow: 0 0 
 
 /* Narrow-phone adjustments. */
 @media (max-width: 480px) {
-  .product-grid, .review-grid { grid-template-columns: 1fr; }
-  .store-cta img { width: 150px; }
   /* Impact headings are wider than a small phone at their default minimum size. */
   h1 { font-size: clamp(34px, 11vw, 56px); }
   h2 { font-size: clamp(28px, 9vw, 42px); }
@@ -314,7 +241,6 @@ h1, h2, h3, .phone, .brand-wordmark { overflow-wrap: break-word; }
   html { scroll-behavior: auto; }
   .ticker-track { animation: none; }
   .button, .service-card { transition: none; }
-  .shop-nav-link { animation: none; }
 }
 
 /* ==================================================================

@@ -15,7 +15,6 @@ Static HTML, CSS, and vanilla client-side JavaScript. **No build step and no dep
 | `index.html` | Home page: services, about, contact |
 | `pricing.html` | Rate card and common questions |
 | `search.html` | Searches every page on the site |
-| `shopwithus.html` | Build portfolio and buyer reviews |
 | `dedicatedservers.html` | Game servers (placeholder) |
 | `xrayarchives.html` | X-Ray Archives (placeholder) |
 | `Maint.html` | Maintenance page, not linked from the site |
