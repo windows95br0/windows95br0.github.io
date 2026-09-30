@@ -24,6 +24,7 @@ Static HTML, CSS, and vanilla client-side JavaScript. **No build step and no dep
 | `scripts/site.js` | Shared behaviour for every page |
 | `scripts/search.js` | Search page only |
 | `scripts/build.py` | Regenerates the files below |
+| `scripts/images.py` | Makes WebP copies and wraps images in `<picture>` |
 | `hardware-archives/` | ~4,200 pages of component reference records |
 | `area-42/` | 668 source-led dossier pages |
 | `assets/` | Images, logos, favicon, and social share cards |
@@ -102,4 +103,19 @@ Because the index is built from `<title>` tags, a page with a vague title is har
 
 Keep source images at a sensible size before committing — roughly 1600px on the longest edge is plenty for this layout. Oversized photos are the easiest way to make the site slow.
 
-Social share cards live in `assets/images/og-*.jpg` at 1200×630, one per section palette.
+After adding or replacing any JPG, PNG, or GIF, run:
+
+```bash
+python3 scripts/images.py
+```
+
+This writes a `.webp` next to each image and wraps the `<img>` tag in a `<picture>`, so modern browsers get the smaller file while the original stays as the fallback. Across the site that cuts 19.3MB of photos down to 11.2MB.
+
+Two things worth knowing:
+
+- A WebP is only kept when it saves at least 5%. Grainy scans and historical photographs often compress better as JPEG, so about a quarter of the images are deliberately left alone.
+- `style.css` sets `picture { display: contents; }`. Without it the wrapper becomes an inline box between the image and its container, which breaks the sizing rules that target `.service-image img` and friends. Don't remove it.
+
+Re-running the script is safe; it only touches images that changed and tags that aren't wrapped yet.
+
+Social share cards live in `assets/images/og-*.jpg` at 1200×630, one per section palette. They're referenced directly in meta tags, so they stay JPEG.

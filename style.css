@@ -112,6 +112,8 @@ body::after {
 
 /* Shared element defaults. */
 img { display: block; max-width: 100%; }
+/* Keep <picture> out of the box tree so images size against their real parent. */
+picture { display: contents; }
 a { color: inherit; }
 
 /* Layout and shared header/navigation styles. */
