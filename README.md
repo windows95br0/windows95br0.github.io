@@ -25,6 +25,7 @@ Static HTML, CSS, and vanilla client-side JavaScript. **No build step and no dep
 | `scripts/search.js` | Search page only |
 | `scripts/build.py` | Regenerates the files below |
 | `scripts/images.py` | Makes WebP copies and wraps images in `<picture>` |
+| `scripts/check.py` | Finds pages that have drifted out of sync |
 | `hardware-archives/` | ~4,200 pages of component reference records |
 | `area-42/` | 668 source-led dossier pages |
 | `assets/` | Images, logos, favicon, and social share cards |
@@ -90,6 +91,26 @@ python3 scripts/build.py
 This rewrites `sitemap.xml` and `search-index.json` from the pages on disk, taking each page's `lastmod` from its most recent git commit and its search title from its `<title>` tag. `404.html`, `Maint.html`, and `search.html` are deliberately left out of both.
 
 Commit the regenerated files along with your page changes — GitHub Pages cannot run this script for you.
+
+### Before you commit
+
+```bash
+python3 scripts/check.py
+```
+
+Every header, nav, and meta tag on this site is hand-copied across roughly 4,900 files. There is no template to change, so a sitewide edit that misses a few hundred pages looks exactly like one that worked. This script is what tells the difference.
+
+It reads every page and reports:
+
+- internal links that point at files which do not exist
+- pages that can no longer reach the home page or the search page
+- missing, empty, or duplicated `description`, `canonical`, `og:`, and `twitter:` tags
+- JSON-LD blocks that do not parse
+- images that are missing, have no `alt`, or declare a size they are not
+- `<picture>` tags that are unbalanced or point at a missing WebP
+- entries in `search-index.json` whose page has since been deleted or renamed
+
+It exits non-zero when it finds anything, and prints `all clear` when it doesn't. Run it after any bulk edit — that is exactly when things break quietly.
 
 ## Search
 
