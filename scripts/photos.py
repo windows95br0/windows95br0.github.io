@@ -74,6 +74,11 @@ CONFLICT_GROUPS = [
     # A roman-numeral generation marker ("Model I" vs "Model III") names a
     # different product even though every other word lines up.
     {"i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x", "xi", "xii"},
+    # Blackmagic Design's product-line names sit alongside shared words like
+    # "4K" and "Pro" across entirely different physical products - DeckLink
+    # is a capture card, HyperDeck is a standalone deck recorder, etc.
+    {"decklink", "hyperdeck", "atem", "intensity", "ultrastudio", "teranex",
+     "videohub", "smartview", "duet", "speededitor"},
 ]
 
 # Fan/cooler suffix qualifiers - "P12 Pro PST LN" and "P12 Pro A-RGB" are
