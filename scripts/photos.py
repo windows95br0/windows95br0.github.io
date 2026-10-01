@@ -82,10 +82,11 @@ CONFLICT_GROUPS = [
 # with one of these words is never a safe stand-in for an unlabelled base
 # record, even though the reverse (a plain photo standing in for any SKU) is
 # tolerated elsewhere in this file.
-SUFFIX_QUALIFIERS = {"argb", "rgb", "pwm", "dc", "pst", "co", "ln", "hs", "hp",
+SUFFIX_QUALIFIERS = {"argb", "rgb", "pwm", "dc", "pst", "ln", "hs", "hp",
                       "bionix", "chromax", "redux", "industrial", "plus", "evo",
-                      "led", "x2", "se", "turbo", "max", "ultra", "lite", "mk2",
-                      "v2", "black", "white", "gold", "silver", "edition"}
+                      "led", "x2", "se", "turbo", "ultra", "mk2",
+                      "v2", "black", "white", "gold", "silver", "edition",
+                      "xt", "ti", "ks", "kf", "x3d", "aqua", "vega"}
 
 
 def suffix_mismatch(record_title, image_title):
