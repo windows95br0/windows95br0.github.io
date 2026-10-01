@@ -74,6 +74,10 @@ CONFLICT_GROUPS = [
     # A roman-numeral generation marker ("Model I" vs "Model III") names a
     # different product even though every other word lines up.
     {"i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x", "xi", "xii"},
+    # Fan/cooler suffix qualifiers - "P12 Pro PST LN" and "P12 Pro A-RGB" are
+    # different SKUs of the same base fan even though the model number matches.
+    {"argb", "rgb", "pwm", "dc", "pst", "co", "ln", "hs", "hp", "bionix",
+     "chromax", "redux", "industrial"},
 ]
 
 # A part's physical kind - a case photo must not stand in for a motherboard
