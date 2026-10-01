@@ -47,6 +47,14 @@ FREE = {
     "cc-by-sa-1.0": "CC BY-SA 1.0", "attribution": "CC BY",
 }
 
+# Manual rejections discovered during candidate review.  These file titles
+# happen to share enough generic model-number tokens to pass the automatic
+# scorer, but depict a different product and must never re-enter a record.
+REJECTED_CANDIDATES = {
+    "AMD Turion 64 ML-34": {"File:AMD Turion 64 Lancaster MT-34 (bottom).jpg"},
+    "IBM 5.25-inch 360 KB PC floppy drive": {"File:IBM 360 Model 25.JPG"},
+}
+
 # Words that carry no identifying weight, so they must not count as a match.
 NOISE = {
     "the", "and", "for", "with", "series", "edition", "version", "rev",
@@ -273,6 +281,8 @@ def best_match(title, candidates, info):
     brand = want[0] if want else ""
     scored = []
     for cand in candidates:
+        if cand in REJECTED_CANDIDATES.get(title, set()):
+            continue
         meta = info.get(cand)
         if not meta:
             continue

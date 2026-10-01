@@ -1379,6 +1379,18 @@
   "title": "Intel Xeon Phi 5110P",
   "width": 900
  },
+ "hardware-archives/expansion-cards/components/m-audio-delta-1010lt/index.html": {
+  "author": "Adaw",
+  "category": "expansion-cards",
+  "confidence": 0.667,
+  "file": "File:Delta 1010lt Linux Alsa Jack Mixer.png",
+  "height": 546,
+  "licence": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Delta_1010lt_Linux_Alsa_Jack_Mixer.png",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Delta_1010lt_Linux_Alsa_Jack_Mixer.png/960px-Delta_1010lt_Linux_Alsa_Jack_Mixer.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "M-Audio Delta 1010LT",
+  "width": 900
+ },
  "hardware-archives/expansion-cards/components/motu-pci-424/index.html": {
   "author": "Ashley Pomeroy",
   "category": "expansion-cards",
@@ -1389,6 +1401,30 @@
   "page": "https://commons.wikimedia.org/wiki/File:MOTU_PCIX-424_7825.jpg",
   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/MOTU_PCIX-424_7825.jpg/960px-MOTU_PCIX-424_7825.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
   "title": "MOTU PCI-424",
+  "width": 900
+ },
+ "hardware-archives/expansion-cards/components/us-robotics-sportster-56k-isa-modem/index.html": {
+  "author": "US Robotics 56K Modem Front.JPG: Xiaowei\nderivative work of 30 March 2024: Pittigrilli",
+  "category": "expansion-cards",
+  "confidence": 0.833,
+  "file": "File:US Robotics 56K Sportster Voice telephone modem, front (removed background, horizontal, perspective).jpg",
+  "height": 436,
+  "licence": "CC BY 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:US_Robotics_56K_Sportster_Voice_telephone_modem,_front_(removed_background,_horizontal,_perspective).jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/US_Robotics_56K_Sportster_Voice_telephone_modem%2C_front_%28removed_background%2C_horizontal%2C_perspective%29.jpg/960px-US_Robotics_56K_Sportster_Voice_telephone_modem%2C_front_%28removed_background%2C_horizontal%2C_perspective%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "US Robotics Sportster 56K ISA Modem",
+  "width": 900
+ },
+ "hardware-archives/floppy-drives/components/apple-disk-ii-5-25-inch-drive/index.html": {
+  "author": "Pratyeka",
+  "category": "floppy-drives",
+  "confidence": 0.667,
+  "file": "File:Apple-disk2-5.25-diskdrive-and-original-box.jpg",
+  "height": 864,
+  "licence": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Apple-disk2-5.25-diskdrive-and-original-box.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Apple-disk2-5.25-diskdrive-and-original-box.jpg/960px-Apple-disk2-5.25-diskdrive-and-original-box.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "Apple Disk II 5.25-inch Drive",
   "width": 900
  },
  "hardware-archives/floppy-drives/components/apple-m0131-macintosh-800k-external-drive/index.html": {
@@ -1437,6 +1473,42 @@
   "page": "https://commons.wikimedia.org/wiki/File:Atari_XF551-7936.jpg",
   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Atari_XF551-7936.jpg/960px-Atari_XF551-7936.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
   "title": "Atari XF551 Disk Drive",
+  "width": 900
+ },
+ "hardware-archives/floppy-drives/components/chinon-fz-357-35-inch-mechanism/index.html": {
+  "author": "Raimond Spekking",
+  "category": "floppy-drives",
+  "confidence": 0.6,
+  "file": "File:Chinon FZ-357 - Sankyo MSDA020E01-0457.jpg",
+  "height": 506,
+  "licence": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Chinon_FZ-357_-_Sankyo_MSDA020E01-0457.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Chinon_FZ-357_-_Sankyo_MSDA020E01-0457.jpg/960px-Chinon_FZ-357_-_Sankyo_MSDA020E01-0457.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "Chinon FZ-357 3.5-inch Floppy Mechanism",
+  "width": 900
+ },
+ "hardware-archives/floppy-drives/components/commodore-1541-external-disk-drive/index.html": {
+  "author": "R. Henrik Nilsson",
+  "category": "floppy-drives",
+  "confidence": 1.0,
+  "file": "File:Commodore 1541 disk drive version C.jpg",
+  "height": 571,
+  "licence": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Commodore_1541_disk_drive_version_C.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Commodore_1541_disk_drive_version_C.jpg/960px-Commodore_1541_disk_drive_version_C.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "Commodore 1541 Disk Drive",
+  "width": 900
+ },
+ "hardware-archives/floppy-drives/components/commodore-1541-ii-disk-drive/index.html": {
+  "author": "",
+  "category": "floppy-drives",
+  "confidence": 1.0,
+  "file": "File:Commodore 1541-II.jpg",
+  "height": 633,
+  "licence": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Commodore_1541-II.jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Commodore_1541-II.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "title": "Commodore 1541-II Disk Drive",
   "width": 900
  },
  "hardware-archives/floppy-drives/components/commodore-1551-disk-drive/index.html": {
@@ -1509,6 +1581,18 @@
   "page": "https://commons.wikimedia.org/wiki/File:Commodore_CBM_2001_%26_8050.jpg",
   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Commodore_CBM_2001_%26_8050.jpg/960px-Commodore_CBM_2001_%26_8050.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
   "title": "Commodore 8050 Disk Drive",
+  "width": 900
+ },
+ "hardware-archives/floppy-drives/components/commodore-sfd-1001-disk-drive/index.html": {
+  "author": "Christo",
+  "category": "floppy-drives",
+  "confidence": 1.0,
+  "file": "File:Commodore SFD-1001 floppy drive.jpg",
+  "height": 675,
+  "licence": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Commodore_SFD-1001_floppy_drive.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Commodore_SFD-1001_floppy_drive.jpg/960px-Commodore_SFD-1001_floppy_drive.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "Commodore SFD-1001 Disk Drive",
   "width": 900
  },
  "hardware-archives/gpus/components/ati-3d-rage-pro/index.html": {
