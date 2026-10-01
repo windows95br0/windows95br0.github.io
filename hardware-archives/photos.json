@@ -323,16 +323,16 @@
   "title": "Tandy 1000 HX System Enclosure",
   "width": 900
  },
- "hardware-archives/cooling/components/cooler-master-hyper-212-black-edition/index.html": {
-  "author": "osman gucel",
+ "hardware-archives/cooling/components/arctic-p12-pro-a-rgb/index.html": {
+  "author": "Chaddy",
   "category": "cooling",
-  "confidence": 0.8,
-  "file": "File:Cooler Master Hyper 212 EVO - CPU Cooler with 120mm PWM Fan (RR-212E-20PK-R2).jpg",
-  "height": 1024,
-  "licence": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Cooler_Master_Hyper_212_EVO_-_CPU_Cooler_with_120mm_PWM_Fan_(RR-212E-20PK-R2).jpg",
-  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Cooler_Master_Hyper_212_EVO_-_CPU_Cooler_with_120mm_PWM_Fan_%28RR-212E-20PK-R2%29.jpg/960px-Cooler_Master_Hyper_212_EVO_-_CPU_Cooler_with_120mm_PWM_Fan_%28RR-212E-20PK-R2%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-  "title": "Cooler Master Hyper 212 Black Edition",
+  "confidence": 1.0,
+  "file": "File:Arctic P12 Pro A-RGB - Kabel.jpg",
+  "height": 1072,
+  "licence": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Arctic_P12_Pro_A-RGB_-_Kabel.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Arctic_P12_Pro_A-RGB_-_Kabel.jpg/960px-Arctic_P12_Pro_A-RGB_-_Kabel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "ARCTIC P12 Pro A-RGB",
   "width": 900
  },
  "hardware-archives/cooling/components/deepcool-ak400/index.html": {

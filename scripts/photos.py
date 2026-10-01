@@ -74,11 +74,23 @@ CONFLICT_GROUPS = [
     # A roman-numeral generation marker ("Model I" vs "Model III") names a
     # different product even though every other word lines up.
     {"i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x", "xi", "xii"},
-    # Fan/cooler suffix qualifiers - "P12 Pro PST LN" and "P12 Pro A-RGB" are
-    # different SKUs of the same base fan even though the model number matches.
-    {"argb", "rgb", "pwm", "dc", "pst", "co", "ln", "hs", "hp", "bionix",
-     "chromax", "redux", "industrial"},
 ]
+
+# Fan/cooler suffix qualifiers - "P12 Pro PST LN" and "P12 Pro A-RGB" are
+# different SKUs of the same base fan even though the model number matches.
+# Checked one-sided (see suffix_mismatch below): an image explicitly labelled
+# with one of these words is never a safe stand-in for an unlabelled base
+# record, even though the reverse (a plain photo standing in for any SKU) is
+# tolerated elsewhere in this file.
+SUFFIX_QUALIFIERS = {"argb", "rgb", "pwm", "dc", "pst", "co", "ln", "hs", "hp",
+                      "bionix", "chromax", "redux", "industrial"}
+
+
+def suffix_mismatch(record_toks, image_toks):
+    """True when the image names a suffix SKU the record's title does not."""
+    rhit = set(record_toks) & SUFFIX_QUALIFIERS
+    ihit = set(image_toks) & SUFFIX_QUALIFIERS
+    return bool(ihit - rhit)
 
 # A part's physical kind - a case photo must not stand in for a motherboard
 # photo (or vice versa) just because the model number matches. Unlike
@@ -275,6 +287,8 @@ def best_match(title, candidates, info):
         if category_mismatch(want, itoks):
             continue
         if generation_mismatch(title, name):
+            continue
+        if suffix_mismatch(want, itoks):
             continue
         overlap = len([t for t in want if t in iset])
         scored.append((overlap / len(want), cand, licence, meta))
