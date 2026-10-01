@@ -1379,18 +1379,6 @@
   "title": "Intel Xeon Phi 5110P",
   "width": 900
  },
- "hardware-archives/expansion-cards/components/m-audio-delta-1010lt/index.html": {
-  "author": "Adaw",
-  "category": "expansion-cards",
-  "confidence": 0.667,
-  "file": "File:Delta 1010lt Linux Alsa Jack Mixer.png",
-  "height": 546,
-  "licence": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:Delta_1010lt_Linux_Alsa_Jack_Mixer.png",
-  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Delta_1010lt_Linux_Alsa_Jack_Mixer.png/960px-Delta_1010lt_Linux_Alsa_Jack_Mixer.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-  "title": "M-Audio Delta 1010LT",
-  "width": 900
- },
  "hardware-archives/expansion-cards/components/motu-pci-424/index.html": {
   "author": "Ashley Pomeroy",
   "category": "expansion-cards",
@@ -2051,18 +2039,6 @@
   "title": "Logitech F710 Wireless Gamepad",
   "width": 900
  },
- "hardware-archives/input-devices/components/logitech-g502-hero/index.html": {
-  "author": "Panthermail",
-  "category": "input-devices",
-  "confidence": 1.0,
-  "file": "File:Logitech G502 Hero.jpg",
-  "height": 506,
-  "licence": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Logitech_G502_Hero.jpg",
-  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Logitech_G502_Hero.jpg/960px-Logitech_G502_Hero.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-  "title": "Logitech G502 HERO",
-  "width": 900
- },
  "hardware-archives/input-devices/components/logitech-g703-lightspeed-910-005638/index.html": {
   "author": "Slackman12",
   "category": "input-devices",
@@ -2171,6 +2147,30 @@
   "title": "Xbox Wireless Controller (Model 1914)",
   "width": 900
  },
+ "hardware-archives/memory/components/30-pin-simm-1-bit-9-bit-parity/index.html": {
+  "author": "Wolfgang \"Darkoneko\" ten Weges",
+  "category": "memory",
+  "confidence": 0.667,
+  "file": "File:30 pin SIMM - 1Mo - taken from an Atari STE.jpg",
+  "height": 272,
+  "licence": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:30_pin_SIMM_-_1Mo_-_taken_from_an_Atari_STE.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/30_pin_SIMM_-_1Mo_-_taken_from_an_Atari_STE.jpg/960px-30_pin_SIMM_-_1Mo_-_taken_from_an_Atari_STE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "30-pin SIMM (1-bit / 9-bit parity)",
+  "width": 900
+ },
+ "hardware-archives/memory/components/ddr4-ecc-rdimm-standard/index.html": {
+  "author": "ITEagle Europe - Sebastiaan Broekhoven",
+  "category": "memory",
+  "confidence": 0.8,
+  "file": "File:Samsung 8GB DDR4-2400 ECC Registered RDIMM M393A1G40EB1-CRC0Q - rear view.jpg",
+  "height": 899,
+  "licence": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Samsung_8GB_DDR4-2400_ECC_Registered_RDIMM_M393A1G40EB1-CRC0Q_-_rear_view.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Samsung_8GB_DDR4-2400_ECC_Registered_RDIMM_M393A1G40EB1-CRC0Q_-_rear_view.jpg/960px-Samsung_8GB_DDR4-2400_ECC_Registered_RDIMM_M393A1G40EB1-CRC0Q_-_rear_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "DDR4 ECC Registered DIMM (RDIMM)",
+  "width": 900
+ },
  "hardware-archives/motherboards/components/asrock-775dual-vsta/index.html": {
   "author": "Schubertz91 at German Wikipedia\n\n(Original text: Milan Schubert)",
   "category": "motherboards",
@@ -2231,6 +2231,18 @@
   "title": "ASUS P3B-F (Revision 1.04)",
   "width": 900
  },
+ "hardware-archives/motherboards/components/asus-pi-p55t2p4-rev-31/index.html": {
+  "author": "Al-CaPoNe85",
+  "category": "motherboards",
+  "confidence": 0.667,
+  "file": "File:ASUS PI-P55T2P4 Rev. 3.10 20100430.jpg",
+  "height": 675,
+  "licence": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:ASUS_PI-P55T2P4_Rev._3.10_20100430.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/ASUS_PI-P55T2P4_Rev._3.10_20100430.jpg/960px-ASUS_PI-P55T2P4_Rev._3.10_20100430.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "ASUS P/I-P55T2P4 (Revision 3.1)",
+  "width": 900
+ },
  "hardware-archives/motherboards/components/asus-prime-x570-p/index.html": {
   "author": "Oligopolism",
   "category": "motherboards",
@@ -2255,6 +2267,18 @@
   "title": "ASUS PVI-486SP3",
   "width": 900
  },
+ "hardware-archives/motherboards/components/gigabyte-ga-965p-ds3-rev-33/index.html": {
+  "author": "Lance Fisher",
+  "category": "motherboards",
+  "confidence": 1.0,
+  "file": "File:Gigabyte GA-965P-DS3 IMG 4940.jpg",
+  "height": 675,
+  "licence": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Gigabyte_GA-965P-DS3_IMG_4940.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Gigabyte_GA-965P-DS3_IMG_4940.jpg/960px-Gigabyte_GA-965P-DS3_IMG_4940.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "GIGABYTE GA-965P-DS3 (rev. 3.3)",
+  "width": 900
+ },
  "hardware-archives/motherboards/components/ibm-5160-xt-system-board/index.html": {
   "author": "htomari",
   "category": "motherboards",
@@ -2265,6 +2289,18 @@
   "page": "https://commons.wikimedia.org/wiki/File:IBM_XT_5160_motherboard_(2).jpg",
   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/IBM_XT_5160_motherboard_%282%29.jpg/960px-IBM_XT_5160_motherboard_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
   "title": "IBM 5160 XT System Board",
+  "width": 900
+ },
+ "hardware-archives/motherboards/components/ibm-pc-at-5170-planar-board/index.html": {
+  "author": "phreakindee",
+  "category": "motherboards",
+  "confidence": 0.75,
+  "file": "File:Restoring an IBM AT 5170.jpg",
+  "height": 835,
+  "licence": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Restoring_an_IBM_AT_5170.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Restoring_an_IBM_AT_5170.jpg/960px-Restoring_an_IBM_AT_5170.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "IBM PC/AT 5170 Planar Board",
   "width": 900
  },
  "hardware-archives/motherboards/components/intel-d945gclf2/index.html": {
@@ -2291,16 +2327,40 @@
   "title": "3Com EtherLink XL 3C905B-TX",
   "width": 900
  },
- "hardware-archives/networking/components/cisco-sfp-10g-sr/index.html": {
-  "author": "ITEagle Europe - Sebastiaan Broekhoven",
+ "hardware-archives/networking/components/arris-surfboard-sb6141-docsis-3-0/index.html": {
+  "author": "FASTILY",
   "category": "networking",
-  "confidence": 1.0,
-  "file": "File:Cisco SFP-10G-SR 10GBASE-SR SFP+ optical transceiver modules (lot) - overview.jpg",
+  "confidence": 0.5,
+  "file": "File:Motorola Arris Surfboard SB6141 1 2016-05-14.jpg",
+  "height": 1200,
+  "licence": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Motorola_Arris_Surfboard_SB6141_1_2016-05-14.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Motorola_Arris_Surfboard_SB6141_1_2016-05-14.jpg/960px-Motorola_Arris_Surfboard_SB6141_1_2016-05-14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "ARRIS SURFboard SB6141 DOCSIS 3.0 Cable Modem",
+  "width": 900
+ },
+ "hardware-archives/networking/components/linksys-wrt54gl-v1-1/index.html": {
+  "author": "Raimond Spekking",
+  "category": "networking",
+  "confidence": 0.5,
+  "file": "File:Linksys WRT54GL v1.1-2284.jpg",
   "height": 900,
   "licence": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Cisco_SFP-10G-SR_10GBASE-SR_SFP%2B_optical_transceiver_modules_(lot)_-_overview.jpg",
-  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Cisco_SFP-10G-SR_10GBASE-SR_SFP%2B_optical_transceiver_modules_%28lot%29_-_overview.jpg/960px-Cisco_SFP-10G-SR_10GBASE-SR_SFP%2B_optical_transceiver_modules_%28lot%29_-_overview.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-  "title": "Cisco SFP-10G-SR 10GBASE-SR SFP+ Transceiver",
+  "page": "https://commons.wikimedia.org/wiki/File:Linksys_WRT54GL_v1.1-2284.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Linksys_WRT54GL_v1.1-2284.jpg/960px-Linksys_WRT54GL_v1.1-2284.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "Linksys WRT54GL Version 1.1 Wireless-G Router",
+  "width": 900
+ },
+ "hardware-archives/nvme-ssds/components/adata-xpg-sx8200-pro-1tb/index.html": {
+  "author": "HiyoriX",
+  "category": "nvme-ssds",
+  "confidence": 1.0,
+  "file": "File:Adata XPG SX8200 Pro pcie adapter view.jpg",
+  "height": 405,
+  "licence": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Adata_XPG_SX8200_Pro_pcie_adapter_view.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Adata_XPG_SX8200_Pro_pcie_adapter_view.jpg/960px-Adata_XPG_SX8200_Pro_pcie_adapter_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "ADATA XPG SX8200 Pro 1 TB",
   "width": 900
  },
  "hardware-archives/nvme-ssds/components/samsung-980-pro-2tb/index.html": {
@@ -2327,6 +2387,18 @@
   "title": "Samsung 990 PRO 2 TB",
   "width": 900
  },
+ "hardware-archives/nvme-ssds/components/wd-pc-sn740-2tb-2230/index.html": {
+  "author": "User5515",
+  "category": "nvme-ssds",
+  "confidence": 0.5,
+  "file": "File:SN740.jpg",
+  "height": 1112,
+  "licence": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:SN740.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/SN740.jpg/960px-SN740.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "WD PC SN740 2 TB",
+  "width": 900
+ },
  "hardware-archives/optical-drives/components/asus-cd-s520-a4/index.html": {
   "author": "Asim18",
   "category": "optical-drives",
@@ -2349,6 +2421,18 @@
   "page": "https://commons.wikimedia.org/wiki/File:ASUS_CRW-5224A_front_view_20110702.jpg",
   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/ASUS_CRW-5224A_front_view_20110702.jpg/960px-ASUS_CRW-5224A_front_view_20110702.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
   "title": "ASUS CRW-5224A",
+  "width": 900
+ },
+ "hardware-archives/optical-drives/components/asus-sdrw-08d2s-u-lite/index.html": {
+  "author": "Jacek Halicki",
+  "category": "optical-drives",
+  "confidence": 0.571,
+  "file": "File:2023 Nagrywarka zewn\u0119trzna DVD-RW Asus SDRW-08D2S-U (3).jpg",
+  "height": 623,
+  "licence": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2023_Nagrywarka_zewn%C4%99trzna_DVD-RW_Asus_SDRW-08D2S-U_(3).jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/2023_Nagrywarka_zewn%C4%99trzna_DVD-RW_Asus_SDRW-08D2S-U_%283%29.jpg/960px-2023_Nagrywarka_zewn%C4%99trzna_DVD-RW_Asus_SDRW-08D2S-U_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "ASUS SDRW-08D2S-U LITE External DVD Writer",
   "width": 900
  },
  "hardware-archives/optical-drives/components/asus-sdrw-08d2s-u/index.html": {
@@ -2471,6 +2555,18 @@
   "title": "51120-1",
   "width": 900
  },
+ "hardware-archives/removable-media/components/imation-superdisk-ls-120-cartridge/index.html": {
+  "author": "Miguel Dur\u00e1n",
+  "category": "removable-media",
+  "confidence": 0.6,
+  "file": "File:3M Imation LS-120.png",
+  "height": 475,
+  "licence": "CC BY-SA 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:3M_Imation_LS-120.png",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/3M_Imation_LS-120.png/960px-3M_Imation_LS-120.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "Imation SuperDisk LS-120 Cartridge",
+  "width": 900
+ },
  "hardware-archives/removable-media/components/iomega-zip-100-drive-and-disk/index.html": {
   "author": "Yuri Litvinenko / 30pin",
   "category": "removable-media",
@@ -2483,6 +2579,18 @@
   "title": "Iomega Zip 100 Drive and Disk",
   "width": 900
  },
+ "hardware-archives/removable-media/components/iomega-zip-750-750mb-cartridge/index.html": {
+  "author": "Museo8bits",
+  "category": "removable-media",
+  "confidence": 1.0,
+  "file": "File:Iomega Zip 750.png",
+  "height": 609,
+  "licence": "CC BY-SA 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Iomega_Zip_750.png",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Iomega_Zip_750.png/960px-Iomega_Zip_750.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "Iomega Zip 750 750 MB Disk",
+  "width": 900
+ },
  "hardware-archives/removable-media/components/syquest-ezflyer-230-mb-cartridge/index.html": {
   "author": "Becksguy",
   "category": "removable-media",
@@ -2493,6 +2601,18 @@
   "page": "https://commons.wikimedia.org/wiki/File:SyQuest_EZFlyer_230_Cartridge.JPG",
   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/SyQuest_EZFlyer_230_Cartridge.JPG/960px-SyQuest_EZFlyer_230_Cartridge.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
   "title": "SyQuest EZFlyer 230 MB Cartridge",
+  "width": 900
+ },
+ "hardware-archives/sata-ssds/components/samsung-860-pro-1-tb-mz-76p1t0bw/index.html": {
+  "author": "Michael Bemmerl",
+  "category": "sata-ssds",
+  "confidence": 1.0,
+  "file": "File:Samsung SSD 860 Pro opened.jpg",
+  "height": 320,
+  "licence": "CC BY 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Samsung_SSD_860_Pro_opened.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Samsung_SSD_860_Pro_opened.jpg/960px-Samsung_SSD_860_Pro_opened.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "Samsung 860 PRO 1 TB",
   "width": 900
  },
  "hardware-archives/sound/components/analog-devices-ad1981b/index.html": {
@@ -2553,6 +2673,18 @@
   "page": "https://commons.wikimedia.org/wiki/File:Creative_Labs_Sound_Blaster_Live!_Value_(CT4670).jpg",
   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Creative_Labs_Sound_Blaster_Live%21_Value_%28CT4670%29.jpg/960px-Creative_Labs_Sound_Blaster_Live%21_Value_%28CT4670%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
   "title": "Creative Sound Blaster Live! Value (CT4670)",
+  "width": 900
+ },
+ "hardware-archives/sound/components/diamond-monster-sound-mx300/index.html": {
+  "author": "Gona.eu",
+  "category": "sound",
+  "confidence": 0.667,
+  "file": "File:Diamond Monster Sound MX300.jpg",
+  "height": 675,
+  "licence": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Diamond_Monster_Sound_MX300.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Diamond_Monster_Sound_MX300.jpg/960px-Diamond_Monster_Sound_MX300.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "Diamond Monster Sound MX300 (Aureal Vortex 2)",
   "width": 900
  },
  "hardware-archives/sound/components/focusrite-scarlett-solo-3rd-gen/index.html": {

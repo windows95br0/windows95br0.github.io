@@ -80,6 +80,42 @@ REJECTED_CANDIDATES = {
     "NVIDIA GeForce GTX 280 1 GB": {
         "File:NVIDIA@65nm@Tesla@GT200@GeForce GTX 280@18054233 0817A2 S TAIWAN NH1888.M01 G200-300-A2 DSCx11 polysilicon microscope stitched@2.5x.jpg",
     },
+    "Plustek OpticFilm 8200i SE": {"File:Plustek Opticfilm 8200i Ai.jpg"},
+    "Razer Naga V2 HyperSpeed": {"File:Razer Naga Hex v2 side on.jpg"},
+    "ASUS A8N-SLI Deluxe": {"File:Marvell 88E1115-RCJ on ASUS A8N-SLI.jpg"},
+    "GIGABYTE GA-Z170X-Gaming 5 (rev. 1.0)": {
+        "File:Gigabyte - GA-Z170X-Gaming 7 – CeBIT 2016 01.jpg",
+    },
+    "GIGABYTE X570 AORUS ELITE (rev. 1.0)": {
+        "File:Voltage regulator module for a modern Gigabyte Aorus X570 mainboard - 1.jpg",
+    },
+    "IBM 5150 System Board": {"File:IBM 5150 PC.JPG"},
+    "Ubiquiti UniFi U7 Pro Wi-Fi 7 Access Point": {"File:Ubiquiti UniFi U7 Pro XGS.jpg"},
+    "Samsung 970 EVO Plus 1 TB": {"File:2023 Napęd Samsung 970 EVO Plus 250GB (3).jpg"},
+    "Samsung PM9A1 1 TB": {"File:2023 Napęd Samsung PM9A1 512GB (1).jpg"},
+    "Sony Memory Stick Micro (M2) 2 GB Card": {"File:Sony M2 Adaptor.jpg"},
+    "Samsung 850 PRO 1 TB": {"File:Samsung SSD 850 PRO 512GB.jpg"},
+    "SanDisk Extreme PRO SDXC UHS-II 128 GB": {
+        "File:Sandisk 128 GB Extreme Pro SDHC 170 MB Memory Card DSC 5864.jpg",
+    },
+}
+
+REJECTED_CANDIDATE_PREFIXES = {
+    "GIGABYTE X570 AORUS ELITE (rev. 1.0)": (
+        "File:Voltage regulator module for a modern Gigabyte Aorus X570",
+    ),
+    "Samsung PM9A1 1 TB": (
+        "File:2023 Napęd Samsung PM9A1 512GB",
+    ),
+    "Iomega Zip 250 250 MB Removable Disk": (
+        "File:Iomega zip-250-Laufwerk",
+    ),
+    "Samsung 870 QVO 1 TB": (
+        "File:Samsung 870 QVO 8TB",
+    ),
+    "SanDisk Extreme PRO SDXC UHS-II 128 GB": (
+        "File:Sandisk 128 GB Extreme Pro SDHC 170 MB",
+    ),
 }
 
 # Words that carry no identifying weight, so they must not count as a match.
@@ -309,6 +345,8 @@ def best_match(title, candidates, info):
     scored = []
     for cand in candidates:
         if cand in REJECTED_CANDIDATES.get(title, set()):
+            continue
+        if cand.startswith(REJECTED_CANDIDATE_PREFIXES.get(title, ())):
             continue
         meta = info.get(cand)
         if not meta:
