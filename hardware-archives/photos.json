@@ -419,6 +419,18 @@
   "title": "AMD FX-8350",
   "width": 900
  },
+ "hardware-archives/cpus/components/amd-geode-lx-800/index.html": {
+  "author": "Kozuch",
+  "category": "cpus",
+  "confidence": 1.0,
+  "file": "File:AMD Geode LX 800 CPU.jpg",
+  "height": 888,
+  "licence": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:AMD_Geode_LX_800_CPU.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/AMD_Geode_LX_800_CPU.jpg/960px-AMD_Geode_LX_800_CPU.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "AMD Geode LX 800",
+  "width": 900
+ },
  "hardware-archives/cpus/components/amd-k5-pr166/index.html": {
   "author": "No machine-readable author provided. Denniss assumed (based on copyright claims).",
   "category": "cpus",
@@ -453,6 +465,18 @@
   "page": "https://commons.wikimedia.org/wiki/File:AMD-K6-III-400-AHX.jpg",
   "thumb": "https://upload.wikimedia.org/wikipedia/commons/a/a8/AMD-K6-III-400-AHX.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
   "title": "AMD-K6-III/400",
+  "width": 900
+ },
+ "hardware-archives/cpus/components/amd-phenom-ii-x6-1090t/index.html": {
+  "author": "D-Kuru",
+  "category": "cpus",
+  "confidence": 0.833,
+  "file": "File:AMD Phenom II X6 1090T (HDT90ZFBK6DGR) CPU-top PNr\u00b00293.jpg",
+  "height": 900,
+  "licence": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:AMD_Phenom_II_X6_1090T_(HDT90ZFBK6DGR)_CPU-top_PNr%C2%B00293.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/AMD_Phenom_II_X6_1090T_%28HDT90ZFBK6DGR%29_CPU-top_PNr%C2%B00293.jpg/960px-AMD_Phenom_II_X6_1090T_%28HDT90ZFBK6DGR%29_CPU-top_PNr%C2%B00293.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "AMD Phenom II X6 1090T Black Edition",
   "width": 900
  },
  "hardware-archives/cpus/components/amd-ryzen-3-2200g/index.html": {
@@ -803,6 +827,18 @@
   "title": "Intel Atom N270",
   "width": 900
  },
+ "hardware-archives/cpus/components/intel-celeron-300a/index.html": {
+  "author": "Qurren",
+  "category": "cpus",
+  "confidence": 0.75,
+  "file": "File:Intel Celeron 300A MHz.jpg",
+  "height": 488,
+  "licence": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Intel_Celeron_300A_MHz.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Intel_Celeron_300A_MHz.jpg/960px-Intel_Celeron_300A_MHz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "Intel Celeron 300A (Mendocino)",
+  "width": 900
+ },
  "hardware-archives/cpus/components/intel-core-2-duo-t7200/index.html": {
   "author": "ZyMOS",
   "category": "cpus",
@@ -873,6 +909,18 @@
   "page": "https://commons.wikimedia.org/wiki/File:Intel_Core_i5_13600K.jpg",
   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Intel_Core_i5_13600K.jpg/960px-Intel_Core_i5_13600K.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
   "title": "Intel Core i5-13600K",
+  "width": 900
+ },
+ "hardware-archives/cpus/components/intel-core-i5-14600k/index.html": {
+  "author": "INVADER PC",
+  "category": "cpus",
+  "confidence": 1.0,
+  "file": "File:Intel Core i5-14600K (INVADERPC) 01.png",
+  "height": 506,
+  "licence": "CC BY 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Intel_Core_i5-14600K_(INVADERPC)_01.png",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Intel_Core_i5-14600K_%28INVADERPC%29_01.png/960px-Intel_Core_i5-14600K_%28INVADERPC%29_01.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "Intel Core i5-14600K",
   "width": 900
  },
  "hardware-archives/cpus/components/intel-core-i5-2500k/index.html": {
@@ -1151,6 +1199,30 @@
   "title": "Intel Pentium Dual-Core E5200",
   "width": 900
  },
+ "hardware-archives/cpus/components/intel-pentium-ii-350/index.html": {
+  "author": "Qurren",
+  "category": "cpus",
+  "confidence": 0.8,
+  "file": "File:Intel Pentium II 350 MHz.jpg",
+  "height": 464,
+  "licence": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Intel_Pentium_II_350_MHz.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Intel_Pentium_II_350_MHz.jpg/960px-Intel_Pentium_II_350_MHz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "Intel Pentium II 350 MHz (Deschutes)",
+  "width": 900
+ },
+ "hardware-archives/cpus/components/intel-pentium-ii-400/index.html": {
+  "author": "",
+  "category": "cpus",
+  "confidence": 0.8,
+  "file": "File:Intel Pentium II 400 SL357 SECC2.jpg",
+  "height": 467,
+  "licence": "CC BY-SA 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Intel_Pentium_II_400_SL357_SECC2.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Intel_Pentium_II_400_SL357_SECC2.jpg/960px-Intel_Pentium_II_400_SL357_SECC2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "Intel Pentium II 400 MHz (Deschutes)",
+  "width": 900
+ },
  "hardware-archives/cpus/components/intel-pentium-mmx-200/index.html": {
   "author": "Konstantin Lanzet",
   "category": "cpus",
@@ -1185,6 +1257,30 @@
   "page": "https://commons.wikimedia.org/wiki/File:Ch2x_-_Motorola_MC68000P8_-_John_McMaster.jpg",
   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Ch2x_-_Motorola_MC68000P8_-_John_McMaster.jpg/960px-Ch2x_-_Motorola_MC68000P8_-_John_McMaster.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
   "title": "Motorola MC68000P8",
+  "width": 900
+ },
+ "hardware-archives/cpus/components/via-c3-1ghz-nehemiah/index.html": {
+  "author": "Endorphin",
+  "category": "cpus",
+  "confidence": 0.667,
+  "file": "File:VIA C3 C5XL CPGA.jpg",
+  "height": 924,
+  "licence": "CC BY-SA 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:VIA_C3_C5XL_CPGA.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/VIA_C3_C5XL_CPGA.jpg/960px-VIA_C3_C5XL_CPGA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "VIA C3 1.0 GHz (Nehemiah)",
+  "width": 900
+ },
+ "hardware-archives/cpus/components/zilog-z80a/index.html": {
+  "author": "Christian Bassow",
+  "category": "cpus",
+  "confidence": 1.0,
+  "file": "File:Zilog Z80A CPU 1.jpg",
+  "height": 494,
+  "licence": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Zilog_Z80A_CPU_1.jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Zilog_Z80A_CPU_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "title": "Zilog Z80A (4 MHz)",
   "width": 900
  },
  "hardware-archives/displays/components/asus-proart-pa246q/index.html": {
@@ -1223,6 +1319,18 @@
   "title": "BenQ SW2700PT",
   "width": 900
  },
+ "hardware-archives/displays/components/commodore-1084s-d2-pal-monitor/index.html": {
+  "author": "Gestumblindi",
+  "category": "displays",
+  "confidence": 0.6,
+  "file": "File:Commodore 1084S-D2.jpg",
+  "height": 506,
+  "licence": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Commodore_1084S-D2.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Commodore_1084S-D2.jpg/960px-Commodore_1084S-D2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "Commodore 1084S-D2 PAL Monitor",
+  "width": 900
+ },
  "hardware-archives/displays/components/dell-ultrasharp-2405fpw/index.html": {
   "author": "Glenn Gutierrez from Fremont, CA, US",
   "category": "displays",
@@ -1233,6 +1341,18 @@
   "page": "https://commons.wikimedia.org/wiki/File:Dell_2405FPW,_Tiger_screen_rotation_-_Flickr_-_Glenn_Gutierrez.jpg",
   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Dell_2405FPW%2C_Tiger_screen_rotation_-_Flickr_-_Glenn_Gutierrez.jpg/960px-Dell_2405FPW%2C_Tiger_screen_rotation_-_Flickr_-_Glenn_Gutierrez.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
   "title": "Dell UltraSharp 2405FPW",
+  "width": 900
+ },
+ "hardware-archives/displays/components/ibm-5151-monochrome-display/index.html": {
+  "author": "phreakindee (LGR)",
+  "category": "displays",
+  "confidence": 0.5,
+  "file": "File:IBM 5151, 5153, 5154 monitors.jpg",
+  "height": 506,
+  "licence": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:IBM_5151,_5153,_5154_monitors.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/IBM_5151%2C_5153%2C_5154_monitors.jpg/960px-IBM_5151%2C_5153%2C_5154_monitors.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "IBM 5151 Monochrome Display",
   "width": 900
  },
  "hardware-archives/expansion-cards/components/adaptec-aha-2940uw/index.html": {
