@@ -27,6 +27,7 @@ import glob
 import json
 import os
 import re
+import socket
 import sys
 import time
 import urllib.error
@@ -36,6 +37,20 @@ import urllib.request
 API = "https://commons.wikimedia.org/w/api.php"
 UA = "AlienCultistLabs-HardwareArchive/1.0 (static reference site; https://github.com/windows95br0)"
 OUT = "hardware-archives/photos.json"
+
+# The local network occasionally leaves IPv6 HTTPS connections to Commons in
+# SYN-SENT indefinitely.  Prefer IPv4 so every catalogue record can be checked
+# within urllib's normal timeout/retry behaviour instead of stalling a full run.
+_GETADDRINFO = socket.getaddrinfo
+
+
+def ipv4_getaddrinfo(host, port, family=0, type=0, proto=0, flags=0):
+    results = _GETADDRINFO(host, port, family, type, proto, flags)
+    ipv4_results = [result for result in results if result[0] == socket.AF_INET]
+    return ipv4_results or results
+
+
+socket.getaddrinfo = ipv4_getaddrinfo
 
 # Licences we may actually use, mapped to how they must be credited.
 FREE = {
@@ -53,6 +68,18 @@ FREE = {
 REJECTED_CANDIDATES = {
     "AMD Turion 64 ML-34": {"File:AMD Turion 64 Lancaster MT-34 (bottom).jpg"},
     "IBM 5.25-inch 360 KB PC floppy drive": {"File:IBM 360 Model 25.JPG"},
+    "AMD Radeon R9 Fury X 4 GB reference": {
+        "File:AMD@28nm@GCN 2nd gen@Hawaii@Radeon R9 290@215-0852020@ Stack-DSC06184-DSC06225 - ZS-DMap-1.jpg",
+    },
+    "Intel Arc A380 Limited Edition 6 GB": {
+        "File:УНИКАЛЬНАЯ видеокарта Intel ARC ¦ Мобильная A550M vs A380 в Maibenben P527 (1080p 25fps H264-128kbit AAC)-00.04.10.017.webp",
+    },
+    "AMD Radeon R9 290X 4 GB reference": {
+        "File:Sapphire Radeon R9 290X-front oblique PNr°0437.jpg",
+    },
+    "NVIDIA GeForce GTX 280 1 GB": {
+        "File:NVIDIA@65nm@Tesla@GT200@GeForce GTX 280@18054233 0817A2 S TAIWAN NH1888.M01 G200-300-A2 DSCx11 polysilicon microscope stitched@2.5x.jpg",
+    },
 }
 
 # Words that carry no identifying weight, so they must not count as a match.

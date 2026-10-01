@@ -25,6 +25,7 @@ import html
 import json
 import os
 import re
+import socket
 import sys
 import time
 import urllib.error
@@ -35,6 +36,20 @@ from PIL import Image
 ROOT = "hardware-archives"
 MATCHES = os.path.join(ROOT, "photos.json")
 UA = "AlienCultistLabs-archive/1.0 (https://windows95br0.github.io/; hardware archive illustration)"
+
+# See scripts/photos.py: this network can leave IPv6 HTTPS connections to
+# Wikimedia Commons in SYN-SENT indefinitely, so prefer IPv4 and retain the
+# normal timeout/retry behaviour for every verified thumbnail download.
+_GETADDRINFO = socket.getaddrinfo
+
+
+def ipv4_getaddrinfo(host, port, family=0, type=0, proto=0, flags=0):
+    results = _GETADDRINFO(host, port, family, type, proto, flags)
+    ipv4_results = [result for result in results if result[0] == socket.AF_INET]
+    return ipv4_results or results
+
+
+socket.getaddrinfo = ipv4_getaddrinfo
 
 # Commons file pages spell the licence in full; these are the short names we
 # show and the URL for each, so a reader can check the terms for themselves.

@@ -1595,6 +1595,114 @@
   "title": "Commodore SFD-1001 Disk Drive",
   "width": 900
  },
+ "hardware-archives/floppy-drives/components/nec-fd1231h-35-inch-mechanism/index.html": {
+  "author": "Solomon203",
+  "category": "floppy-drives",
+  "confidence": 0.5,
+  "file": "File:NEC FD1231H 2001-03.jpg",
+  "height": 675,
+  "licence": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:NEC_FD1231H_2001-03.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/NEC_FD1231H_2001-03.jpg/960px-NEC_FD1231H_2001-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "NEC FD1231H 3.5-inch Floppy Mechanism",
+  "width": 900
+ },
+ "hardware-archives/floppy-drives/components/sony-mpf520-d-35-inch-mechanism/index.html": {
+  "author": "Nicolasfoster",
+  "category": "floppy-drives",
+  "confidence": 0.5,
+  "file": "File:Sony MPF520-D Drive Top.png",
+  "height": 600,
+  "licence": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sony_MPF520-D_Drive_Top.png",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Sony_MPF520-D_Drive_Top.png/960px-Sony_MPF520-D_Drive_Top.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "Sony MPF520-D 3.5-inch Floppy Mechanism",
+  "width": 900
+ },
+ "hardware-archives/floppy-drives/components/teac-fd-235hf-3-5-inch-drive-family/index.html": {
+  "author": "Raimond Spekking",
+  "category": "floppy-drives",
+  "confidence": 0.75,
+  "file": "File:TEAC FD-235HF (C291)-8765.jpg",
+  "height": 985,
+  "licence": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:TEAC_FD-235HF_(C291)-8765.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/TEAC_FD-235HF_%28C291%29-8765.jpg/960px-TEAC_FD-235HF_%28C291%29-8765.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "TEAC FD-235HF 3.5-inch drive family",
+  "width": 900
+ },
+ "hardware-archives/gpus/components/3dlabs-permedia-2-8-mb-pci/index.html": {
+  "author": "Futase_tdkr.",
+  "category": "gpus",
+  "confidence": 1.0,
+  "file": "File:3dlabs oxygen acx permedia 2 pci card.jpg",
+  "height": 675,
+  "licence": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:3dlabs_oxygen_acx_permedia_2_pci_card.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/3dlabs_oxygen_acx_permedia_2_pci_card.jpg/960px-3dlabs_oxygen_acx_permedia_2_pci_card.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "3Dlabs Permedia 2 8 MB PCI",
+  "width": 900
+ },
+ "hardware-archives/gpus/components/amd-radeon-hd-3870-x2-1-gb/index.html": {
+  "author": "Anandtech",
+  "category": "gpus",
+  "confidence": 0.6,
+  "file": "File:Ati 3870 X2.jpg",
+  "height": 438,
+  "licence": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ati_3870_X2.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Ati_3870_X2.jpg/960px-Ati_3870_X2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "ATI Radeon HD 3870 X2 1 GB",
+  "width": 900
+ },
+ "hardware-archives/gpus/components/amd-radeon-hd-5770-1-gb/index.html": {
+  "author": "Monstapix",
+  "category": "gpus",
+  "confidence": 1.0,
+  "file": "File:ATI Radeon HD 5770 front side.jpg",
+  "height": 675,
+  "licence": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:ATI_Radeon_HD_5770_front_side.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/ATI_Radeon_HD_5770_front_side.jpg/960px-ATI_Radeon_HD_5770_front_side.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "ATI Radeon HD 5770 1 GB",
+  "width": 900
+ },
+ "hardware-archives/gpus/components/amd-radeon-hd-5970-2-gb/index.html": {
+  "author": "Advanced Micro Devices, Inc. (AMD)",
+  "category": "gpus",
+  "confidence": 0.8,
+  "file": "File:ATI Radeon HD 5970 Graphics Card-top view.jpg",
+  "height": 423,
+  "licence": "CC BY",
+  "page": "https://commons.wikimedia.org/wiki/File:ATI_Radeon_HD_5970_Graphics_Card-top_view.jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/1/1e/ATI_Radeon_HD_5970_Graphics_Card-top_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "title": "ATI Radeon HD 5970 2 GB dual-GPU",
+  "width": 900
+ },
+ "hardware-archives/gpus/components/amd-radeon-hd-6850-1-gb/index.html": {
+  "author": "Song Yanbo",
+  "category": "gpus",
+  "confidence": 0.8,
+  "file": "File:AMD Radeon HD 6850 GPU.JPG",
+  "height": 675,
+  "licence": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:AMD_Radeon_HD_6850_GPU.JPG",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/AMD_Radeon_HD_6850_GPU.JPG/960px-AMD_Radeon_HD_6850_GPU.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "AMD Radeon HD 6850 1 GB reference",
+  "width": 900
+ },
+ "hardware-archives/gpus/components/amd-radeon-rx-6600-xt-8-gb/index.html": {
+  "author": "Chi Ho Chan from Hong Kong",
+  "category": "gpus",
+  "confidence": 0.8,
+  "file": "File:ASUS AMD RX 6600 XT, in the box. (51999585263).jpg",
+  "height": 600,
+  "licence": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:ASUS_AMD_RX_6600_XT,_in_the_box._(51999585263).jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/ASUS_AMD_RX_6600_XT%2C_in_the_box._%2851999585263%29.jpg/960px-ASUS_AMD_RX_6600_XT%2C_in_the_box._%2851999585263%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "AMD Radeon RX 6600 XT 8 GB",
+  "width": 900
+ },
  "hardware-archives/gpus/components/ati-3d-rage-pro/index.html": {
   "author": "Jana.Wiki",
   "category": "gpus",
@@ -1617,6 +1725,18 @@
   "page": "https://commons.wikimedia.org/wiki/File:ATI-Radeon-9700-Pro.png",
   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/ATI-Radeon-9700-Pro.png/960px-ATI-Radeon-9700-Pro.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
   "title": "ATI Radeon 9700 PRO",
+  "width": 900
+ },
+ "hardware-archives/gpus/components/intel-arc-b580-limited-edition-12-gb/index.html": {
+  "author": "\u6781\u5ba2\u6e7eGeekerwan",
+  "category": "gpus",
+  "confidence": 0.8,
+  "file": "File:Intel Arc B580\u8bc4\u6d4b\uff1a\u610f\u5916\u5730\u8fd8\u4e0d\u9519\uff01 (2160p 60fps AV1-128kbit AAC)-00.01.12.039.png",
+  "height": 506,
+  "licence": "CC BY 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Intel_Arc_B580%E8%AF%84%E6%B5%8B%EF%BC%9A%E6%84%8F%E5%A4%96%E5%9C%B0%E8%BF%98%E4%B8%8D%E9%94%99%EF%BC%81_(2160p_60fps_AV1-128kbit_AAC)-00.01.12.039.png",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Intel_Arc_B580%E8%AF%84%E6%B5%8B%EF%BC%9A%E6%84%8F%E5%A4%96%E5%9C%B0%E8%BF%98%E4%B8%8D%E9%94%99%EF%BC%81_%282160p_60fps_AV1-128kbit_AAC%29-00.01.12.039.png/960px-Intel_Arc_B580%E8%AF%84%E6%B5%8B%EF%BC%9A%E6%84%8F%E5%A4%96%E5%9C%B0%E8%BF%98%E4%B8%8D%E9%94%99%EF%BC%81_%282160p_60fps_AV1-128kbit_AAC%29-00.01.12.039.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "Intel Arc B580 Limited Edition 12 GB",
   "width": 900
  },
  "hardware-archives/gpus/components/matrox-millennium-g200-8-mb/index.html": {
@@ -1655,6 +1775,18 @@
   "title": "NVIDIA GeForce 256 SDR",
   "width": 900
  },
+ "hardware-archives/gpus/components/nvidia-geforce-7950-gx2-1-gb/index.html": {
+  "author": "Hyins",
+  "category": "gpus",
+  "confidence": 0.8,
+  "file": "File:NVIDIA GeForce 7950 GX2.png",
+  "height": 675,
+  "licence": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:NVIDIA_GeForce_7950_GX2.png",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/NVIDIA_GeForce_7950_GX2.png/960px-NVIDIA_GeForce_7950_GX2.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "NVIDIA GeForce 7950 GX2 1 GB dual-GPU",
+  "width": 900
+ },
  "hardware-archives/gpus/components/nvidia-geforce-8800-gtx/index.html": {
   "author": "Hyins",
   "category": "gpus",
@@ -1665,6 +1797,78 @@
   "page": "https://commons.wikimedia.org/wiki/File:NVIDIA_GeForce_8800_GTX_Board.jpg",
   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/NVIDIA_GeForce_8800_GTX_Board.jpg/960px-NVIDIA_GeForce_8800_GTX_Board.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
   "title": "NVIDIA GeForce 8800 GTX",
+  "width": 900
+ },
+ "hardware-archives/gpus/components/nvidia-geforce-9800-gx2-1-gb/index.html": {
+  "author": "Hyins",
+  "category": "gpus",
+  "confidence": 0.8,
+  "file": "File:NVIDIA GeForce 9800 GX2.png",
+  "height": 675,
+  "licence": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:NVIDIA_GeForce_9800_GX2.png",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/NVIDIA_GeForce_9800_GX2.png/960px-NVIDIA_GeForce_9800_GX2.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "NVIDIA GeForce 9800 GX2 1 GB dual-GPU",
+  "width": 900
+ },
+ "hardware-archives/gpus/components/nvidia-geforce-gtx-1080-ti-founders-edition/index.html": {
+  "author": "Manifest Interactive from Portland, OR, USA",
+  "category": "gpus",
+  "confidence": 1.0,
+  "file": "File:Nvidia GeForce GTX 1080 Ti Founders Edition unpacking (26811932583).jpg",
+  "height": 675,
+  "licence": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Nvidia_GeForce_GTX_1080_Ti_Founders_Edition_unpacking_(26811932583).jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Nvidia_GeForce_GTX_1080_Ti_Founders_Edition_unpacking_%2826811932583%29.jpg/960px-Nvidia_GeForce_GTX_1080_Ti_Founders_Edition_unpacking_%2826811932583%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "NVIDIA GeForce GTX 1080 Ti Founders Edition",
+  "width": 900
+ },
+ "hardware-archives/gpus/components/nvidia-geforce-gtx-970-4-gb/index.html": {
+  "author": "Bailey Amiss",
+  "category": "gpus",
+  "confidence": 0.8,
+  "file": "File:Nvidia GeForce GTX 970.jpg",
+  "height": 600,
+  "licence": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Nvidia_GeForce_GTX_970.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Nvidia_GeForce_GTX_970.jpg/960px-Nvidia_GeForce_GTX_970.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "NVIDIA GeForce GTX 970 4 GB reference",
+  "width": 900
+ },
+ "hardware-archives/gpus/components/nvidia-geforce-rtx-4090-founders-edition/index.html": {
+  "author": "ZMASLO",
+  "category": "gpus",
+  "confidence": 0.8,
+  "file": "File:NVIDIA RTX 4090 Founders Edition - Unboxing (ZMASLO).png",
+  "height": 506,
+  "licence": "CC BY 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:NVIDIA_RTX_4090_Founders_Edition_-_Unboxing_(ZMASLO).png",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/NVIDIA_RTX_4090_Founders_Edition_-_Unboxing_%28ZMASLO%29.png/960px-NVIDIA_RTX_4090_Founders_Edition_-_Unboxing_%28ZMASLO%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "NVIDIA GeForce RTX 4090 Founders Edition",
+  "width": 900
+ },
+ "hardware-archives/gpus/components/nvidia-quadro-4000-2-gb/index.html": {
+  "author": "Jud McCranie",
+  "category": "gpus",
+  "confidence": 1.0,
+  "file": "File:Nvidia Quadro 4000.jpg",
+  "height": 601,
+  "licence": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Nvidia_Quadro_4000.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Nvidia_Quadro_4000.jpg/960px-Nvidia_Quadro_4000.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "NVIDIA Quadro 4000 2 GB",
+  "width": 900
+ },
+ "hardware-archives/gpus/components/s3-trio64v2-dx-2-mb-pci/index.html": {
+  "author": "Shpakov Ilya",
+  "category": "gpus",
+  "confidence": 0.75,
+  "file": "File:S3 Trio64V2-DX.png",
+  "height": 652,
+  "licence": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:S3_Trio64V2-DX.png",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/S3_Trio64V2-DX.png/960px-S3_Trio64V2-DX.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "title": "S3 Trio64V2/DX 2 MB PCI",
   "width": 900
  },
  "hardware-archives/hard-drives/components/seagate-barracuda-2-5-st4000lm024/index.html": {
