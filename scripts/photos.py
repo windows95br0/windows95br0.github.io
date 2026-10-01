@@ -71,7 +71,29 @@ CONFLICT_GROUPS = [
     # Mobile and desktop parts share a model number but are different products.
     {"m", "mobile", "laptop", "notebook", "desktop", "server", "embedded"},
     {"fh", "hh", "lp", "atx", "microatx", "miniitx", "flexatx"},
+    # A roman-numeral generation marker ("Model I" vs "Model III") names a
+    # different product even though every other word lines up.
+    {"i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x", "xi", "xii"},
 ]
+
+# A part's physical kind - a case photo must not stand in for a motherboard
+# photo (or vice versa) just because the model number matches. Unlike
+# CONFLICT_GROUPS, each inner set here is a group of synonyms for the SAME
+# kind of object, so synonyms never conflict with each other; only a hit in
+# one set against a hit in a *different* set counts as a mismatch.
+PHYSICAL_KIND_GROUPS = [
+    {"case", "enclosure", "chassis", "cabinet", "tower"},
+    {"motherboard", "mainboard", "mobo"},
+    {"keyboard"}, {"mouse"}, {"monitor", "display"}, {"speaker"}, {"headset"},
+    {"webcam"}, {"joystick", "gamepad", "controller"}, {"scanner"}, {"printer"},
+]
+
+
+def category_mismatch(record_toks, image_toks):
+    rset, iset = set(record_toks), set(image_toks)
+    rcats = {i for i, g in enumerate(PHYSICAL_KIND_GROUPS) if rset & g}
+    icats = {i for i, g in enumerate(PHYSICAL_KIND_GROUPS) if iset & g}
+    return bool(rcats) and bool(icats) and not (rcats & icats)
 
 TOKEN_RE = re.compile(r"[a-z0-9]+")
 MODELISH = re.compile(r"^(?=.*\d)[a-z0-9\-]{2,}$")
@@ -81,6 +103,10 @@ DISTINCTIVE = re.compile(r"^(?=.*\d)(?=.*[a-z])[a-z0-9]{4,}$")
 
 
 def tokens(text):
+    # A trailing "+" names a distinct model ("Amiga 500+" vs "Amiga 500"), but
+    # the token regex has no symbol class for it, so fold it into the token
+    # text instead of silently dropping it and conflating the two parts.
+    text = re.sub(r"(?<=[a-z0-9])\+", "plus", text, flags=re.I)
     return TOKEN_RE.findall(text.lower())
 
 
@@ -221,6 +247,8 @@ def best_match(title, candidates, info):
             continue
         if variant_mismatch(title, name):
             continue
+        if category_mismatch(want, itoks):
+            continue
         overlap = len([t for t in want if t in iset])
         scored.append((overlap / len(want), cand, licence, meta))
     if not scored:
@@ -294,7 +322,7 @@ def main():
             print("  ... %d/%d checked, %d matched" % (i, len(todo), hits))
             if not args.dry_run:
                 json.dump(have, open(OUT, "w"), indent=1, sort_keys=True)
-        time.sleep(0.35)
+        time.sleep(1.5)
 
     print("\nchecked %d, matched %d (%.1f%%)"
           % (len(todo), hits, 100.0 * hits / len(todo) if todo else 0))
