@@ -299,18 +299,6 @@
   "title": "IBM Personal Computer 5155 Portable",
   "width": 900
  },
- "hardware-archives/cases/components/lian-li-pc-o11-dynamic/index.html": {
-  "author": "PantheraLeo1359531",
-  "category": "cases",
-  "confidence": 1.0,
-  "file": "File:PC-Geh\u00e4use \"Lian Li O11 Dynamic Evo XL\" (der8auer-Edition) 20240407 HOF2022 RAW-Export 000176.png",
-  "height": 600,
-  "licence": "CC BY 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:PC-Geh%C3%A4use_%22Lian_Li_O11_Dynamic_Evo_XL%22_(der8auer-Edition)_20240407_HOF2022_RAW-Export_000176.png",
-  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/PC-Geh%C3%A4use_%22Lian_Li_O11_Dynamic_Evo_XL%22_%28der8auer-Edition%29_20240407_HOF2022_RAW-Export_000176.png/960px-PC-Geh%C3%A4use_%22Lian_Li_O11_Dynamic_Evo_XL%22_%28der8auer-Edition%29_20240407_HOF2022_RAW-Export_000176.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-  "title": "Lian Li PC-O11 Dynamic",
-  "width": 900
- },
  "hardware-archives/cases/components/tandy-1000-hx-system-case/index.html": {
   "author": "Blake Patterson from Alexandria, VA, USA",
   "category": "cases",
@@ -429,18 +417,6 @@
   "page": "https://commons.wikimedia.org/wiki/File:AMD_FX_8350_Prozessor.jpg",
   "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/b1/AMD_FX_8350_Prozessor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
   "title": "AMD FX-8350",
-  "width": 900
- },
- "hardware-archives/cpus/components/amd-geode-lx-800/index.html": {
-  "author": "AMD",
-  "category": "cpus",
-  "confidence": 1.0,
-  "file": "File:AMD Geode LX 800@0.9W Processor (white background).jpg",
-  "height": 575,
-  "licence": "CC BY",
-  "page": "https://commons.wikimedia.org/wiki/File:AMD_Geode_LX_800@0.9W_Processor_(white_background).jpg",
-  "thumb": "https://upload.wikimedia.org/wikipedia/commons/8/83/AMD_Geode_LX_800%400.9W_Processor_%28white_background%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-  "title": "AMD Geode LX 800",
   "width": 900
  },
  "hardware-archives/cpus/components/amd-k5-pr166/index.html": {
@@ -1343,18 +1319,6 @@
   "title": "Atari XF551 Disk Drive",
   "width": 900
  },
- "hardware-archives/floppy-drives/components/commodore-1541-external-disk-drive/index.html": {
-  "author": "user:afrank99",
-  "category": "floppy-drives",
-  "confidence": 1.0,
-  "file": "File:Commodore 1541 white.jpg",
-  "height": 600,
-  "licence": "CC BY-SA 2.5",
-  "page": "https://commons.wikimedia.org/wiki/File:Commodore_1541_white.jpg",
-  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Commodore_1541_white.jpg/960px-Commodore_1541_white.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-  "title": "Commodore 1541 Disk Drive",
-  "width": 900
- },
  "hardware-archives/floppy-drives/components/commodore-1551-disk-drive/index.html": {
   "author": "The original uploader was Retron at English Wikipedia.",
   "category": "floppy-drives",
@@ -1497,18 +1461,6 @@
   "page": "https://commons.wikimedia.org/wiki/File:NVIDIA_GeForce_8800_GTX_Board.jpg",
   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/NVIDIA_GeForce_8800_GTX_Board.jpg/960px-NVIDIA_GeForce_8800_GTX_Board.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
   "title": "NVIDIA GeForce 8800 GTX",
-  "width": 900
- },
- "hardware-archives/gpus/components/nvidia-geforce-rtx-4090-founders-edition/index.html": {
-  "author": "ZMASLO",
-  "category": "gpus",
-  "confidence": 0.8,
-  "file": "File:NVIDIA RTX 4090 Founders Edition - Unboxing (ZMASLO).png",
-  "height": 506,
-  "licence": "CC BY 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:NVIDIA_RTX_4090_Founders_Edition_-_Unboxing_(ZMASLO).png",
-  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/NVIDIA_RTX_4090_Founders_Edition_-_Unboxing_%28ZMASLO%29.png/960px-NVIDIA_RTX_4090_Founders_Edition_-_Unboxing_%28ZMASLO%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-  "title": "NVIDIA GeForce RTX 4090 Founders Edition",
   "width": 900
  },
  "hardware-archives/hard-drives/components/seagate-barracuda-2-5-st4000lm024/index.html": {

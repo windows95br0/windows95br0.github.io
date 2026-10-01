@@ -83,13 +83,20 @@ CONFLICT_GROUPS = [
 # record, even though the reverse (a plain photo standing in for any SKU) is
 # tolerated elsewhere in this file.
 SUFFIX_QUALIFIERS = {"argb", "rgb", "pwm", "dc", "pst", "co", "ln", "hs", "hp",
-                      "bionix", "chromax", "redux", "industrial"}
+                      "bionix", "chromax", "redux", "industrial", "plus", "evo",
+                      "led", "x2", "se", "turbo", "max", "ultra", "lite", "mk2",
+                      "v2", "black", "white", "gold", "silver", "edition"}
 
 
-def suffix_mismatch(record_toks, image_toks):
-    """True when the image names a suffix SKU the record's title does not."""
-    rhit = set(record_toks) & SUFFIX_QUALIFIERS
-    ihit = set(image_toks) & SUFFIX_QUALIFIERS
+def suffix_mismatch(record_title, image_title):
+    """True when the image names a suffix SKU the record's title does not.
+
+    Some of these words ("edition") are filtered out of significant() as
+    noise for ordinary overlap scoring, but they still have to be compared
+    here, so this re-tokenises the raw titles rather than reusing `want`.
+    """
+    rhit = set(tokens(record_title)) & SUFFIX_QUALIFIERS
+    ihit = set(tokens(image_title)) & SUFFIX_QUALIFIERS
     return bool(ihit - rhit)
 
 # A part's physical kind - a case photo must not stand in for a motherboard
@@ -288,7 +295,7 @@ def best_match(title, candidates, info):
             continue
         if generation_mismatch(title, name):
             continue
-        if suffix_mismatch(want, itoks):
+        if suffix_mismatch(title, name):
             continue
         overlap = len([t for t in want if t in iset])
         scored.append((overlap / len(want), cand, licence, meta))
