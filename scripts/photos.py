@@ -146,6 +146,27 @@ def variant_mismatch(record_title, image_title):
     return bool(MOBILE_RE.search(record_title)) != bool(MOBILE_RE.search(image_title))
 
 
+ROMAN_VALUES = {"i": 1, "ii": 2, "iii": 3, "iv": 4, "v": 5, "vi": 6, "vii": 7,
+                "viii": 8, "ix": 9, "x": 10, "xi": 11, "xii": 12}
+MODEL_GEN_RE = re.compile(r"\bmodel\s+([ivxlcdm]+|\d+)\b", re.I)
+
+
+def model_generation(text):
+    """The number after the word "Model", normalised from roman numerals, so
+    "Model III" and "Model 1" can be compared on equal footing."""
+    found = MODEL_GEN_RE.search(text.lower())
+    if not found:
+        return None
+    val = found.group(1)
+    return int(val) if val.isdigit() else ROMAN_VALUES.get(val)
+
+
+def generation_mismatch(record_title, image_title):
+    """True when both name a "Model N" but N differs (TRS-80 Model I vs III)."""
+    rg, ig = model_generation(record_title), model_generation(image_title)
+    return rg is not None and ig is not None and rg != ig
+
+
 def api_get(params, attempts=4):
     params = dict(params, format="json")
     url = API + "?" + urllib.parse.urlencode(params)
@@ -248,6 +269,8 @@ def best_match(title, candidates, info):
         if variant_mismatch(title, name):
             continue
         if category_mismatch(want, itoks):
+            continue
+        if generation_mismatch(title, name):
             continue
         overlap = len([t for t in want if t in iset])
         scored.append((overlap / len(want), cand, licence, meta))
