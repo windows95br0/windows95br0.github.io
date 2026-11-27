@@ -103,7 +103,8 @@ Web Design, Software, X-Ray Archives, and Game With Us share the same SOON
 flag in every active navbar.
 `scripts/check.py` checks these public navbar destinations and labels on every
 active page, their SOON flags, and rejects retired offer catalogs.
-The gray social strip covers the viewport's inset side edges to join the window chrome
+The gray social strip sits directly against the rainbow divider, overriding the
+legacy social-section spacing. It covers the viewport's inset side edges to join the window chrome
 without seams, including inside embedded pages.
 The fake window title remains
 `AlienCultist - Net Navigator`; the real document title follows the active page.

@@ -185,7 +185,7 @@ body.navigator-embedded::before, body.navigator-embedded::after { display: none;
   text-shadow: 3px 3px #a6009a;
 }
 .navigator-site .masthead .tagline, .navigator-embedded .masthead .tagline { color: #ffc9f9; font-size: 13px; }
-.navigator-site .site-navigation, .navigator-embedded .site-navigation { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px; margin-inline: -2px; padding: 9px 14px; background: #c0c0c0; color: #111; font: 12px Arial, sans-serif; }
+.navigator-site .site-navigation, .navigator-embedded .site-navigation { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px; margin-block: 0; margin-inline: -2px; padding: 9px 14px; border-top: 0; background: #c0c0c0; color: #111; font: 12px Arial, sans-serif; }
 .navigator-embedded .site-navigation a { padding: 4px 8px; border: 2px outset #ddd; background: #c0c0c0; color: #111; font: inherit; text-decoration: none; }
 .navigator-site .directory-bar .browser-navigation { display: grid; flex: 1; min-width: 0; justify-items: center; gap: 4px; }
 .navigator-site .directory-bar .main-nav { display: flex; flex-wrap: wrap; flex-direction: row; align-items: center; width: 100%; justify-content: center; gap: 4px; padding: 0; border: 0; font: inherit; letter-spacing: normal; }
