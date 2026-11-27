@@ -164,7 +164,7 @@ body.navigator-embedded::before, body.navigator-embedded::after { display: none;
 .navigator-site .page { border: 2px inset #ddd; background: #000; }
 .navigator-site .site-shell, .navigator-embedded .site-shell { width: 100%; padding: 0; }
 /* Draw frame side edges inside the document so the navbar can cover them. */
-.navigator-embedded .site-shell { border-inline: 2px inset #ddd; }
+.navigator-embedded .site-shell { min-height: 100vh; border-inline: 2px inset #ddd; }
 .navigator-site .masthead, .navigator-embedded .masthead {
   position: relative;
   isolation: isolate;
