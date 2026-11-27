@@ -84,9 +84,11 @@ location/founding tagline exactly. Existing navigation moves into the browser's
 directory-button row below Location. Contextual archive
 links follow the active embedded page and restore correctly with browser history.
 The old navigation strip below the masthead now holds Facebook, Instagram,
-Discord, YouTube, Steam, and GitHub pixel-style retro icon links, opened in new tabs. Icons have accessible names
+Discord, YouTube, Steam, and GitHub shaded retro icon links, opened in new tabs. Icons have accessible names
 and hover tooltips in desktop and mobile views. The shared preview supplies
 these social destinations and inline icons. What's Cool and People are no longer advertised.
+Social icons share the globe's beveled frame, circular shading, highlight,
+shadow, and responsive sizing, using smooth logo shapes instead of pixel edges.
 Steam links to `https://steamcommunity.com/groups/AlienCultist-Labs`;
 GitHub links to `https://github.com/windows95br0`.
 Navigation and social links share the browser directory buttons' raised gray styling.

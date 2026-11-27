@@ -229,17 +229,7 @@
       font: bold 24px/1 Georgia, serif;
       text-shadow: 1px 1px #fff;
     }
-    .navigator-badge {
-      display: grid;
-      flex-shrink: 0;
-      width: 48px;
-      height: 48px;
-      place-items: center;
-      border: 2px inset #ddd;
-      background: linear-gradient(#071426 55%, #007f88);
-      color: #fff;
-    }
-    .retro-globe {
+    .retro-globe, .social-orb {
       position: relative;
       width: 34px;
       height: 34px;
@@ -255,7 +245,7 @@
       height: 100%;
       animation: globe-spin 8s steps(24, end) infinite;
     }
-    .retro-globe::after {
+    .retro-globe::after, .social-orb::after {
       position: absolute;
       inset: 0;
       content: "";
@@ -292,8 +282,10 @@
     .directory-bar .main-nav { display: flex; flex-wrap: wrap; gap: 4px; }
     .directory-bar .main-nav a { display: inline-flex; align-items: center; gap: 7px; }
     .directory-bar small { padding: 1px 4px; background: #ffe66d; color: #040912; font-size: 8px; font-weight: bold; letter-spacing: .08em; line-height: 1.2; text-shadow: none; }
-    .social-links a { display: inline-flex; align-items: center; justify-content: center; }
-    .social-icon { width: 24px; height: 24px; }
+    .navigator-badge, .social-links a { display: grid; place-items: center; flex-shrink: 0; width: 48px; height: 48px; padding: 0; border: 2px inset #ddd; background: linear-gradient(#071426 55%, #007f88); }
+    .social-icon { display: block; width: 100%; height: 100%; }
+    .social-links a:hover { background: linear-gradient(#102840 55%, #00a4ad); }
+    .social-links a:focus-visible { outline-color: #80ffff; }
     .address {
       flex: 1 1 240px;
       min-width: 0;
@@ -495,8 +487,8 @@
       .navigator-tool { display: flex; flex: 1; min-width: 0; align-items: center; justify-content: center; padding: 4px 0; }
       .navigator-label { display: none; }
       .navigator-icon { font-size: 18px; }
-      .navigator-badge { width: 28px; height: 28px; }
-      .retro-globe { width: 22px; height: 22px; }
+      .navigator-badge, .social-links a { width: 28px; height: 28px; }
+      .retro-globe, .social-orb { width: 22px; height: 22px; }
     }
     @media (max-width: 650px) {
       .directory-bar small { font-size: 7px; }
@@ -692,22 +684,22 @@
       <div class="rainbow-rule" aria-hidden="true"></div>
       <nav class="status-strip social-links" aria-label="Social media">
         <a href="https://www.facebook.com/profile.php?id=100092184115147" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook">
-          <svg class="social-icon" viewBox="0 0 24 24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M2 0h20v2h2v20h-2v2H2v-2H0V2h2Z" fill="#3b5998"/><path d="M12 4h8v4h-4v4h4v4h-4v8h-4v-8H8v-4h4Z" fill="#fff"/></svg>
+          <span class="social-orb" aria-hidden="true"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="12" fill="#3b5998"/><path d="M13 22v-9h3l.5-3.5H13V7.5c0-1.2.4-2 2-2h2V2.3c-.6-.1-1.8-.3-3-.3-3 0-5 1.8-5 5v2.5H6V13h3v9Z" fill="#fff"/></svg></span>
         </a>
         <a href="https://www.instagram.com/aliencultist/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
-          <svg class="social-icon" viewBox="0 0 24 24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M2 2h20v2h2v16h-2v2H2v-2H0V4h2Z" fill="#8a6045"/><path d="M0 10h24v10h-2v2H2v-2H0Z" fill="#d8c3a5"/><path d="M2 2h2v8H2Z" fill="#e64747"/><path d="M4 2h2v8H4Z" fill="#ffd65a"/><path d="M6 2h2v8H6Z" fill="#66b879"/><path d="M8 2h2v8H8Z" fill="#5299cd"/><path d="M18 4h4v4h-4Z" fill="#302925"/><path d="M8 8h8v2h2v8h-2v2H8v-2H6v-8h2Z" fill="#eee"/><path d="M10 10h4v2h2v4h-2v2h-4v-2H8v-4h2Z" fill="#304558"/></svg>
+          <span class="social-orb" aria-hidden="true"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="24" height="24" fill="#d8c3a5"/><path d="M0 0h24v10H0Z" fill="#8a6045"/><path d="M3 0v10" stroke="#e64747" stroke-width="2"/><path d="M5 0v10" stroke="#ffd65a" stroke-width="2"/><path d="M7 0v10" stroke="#66b879" stroke-width="2"/><path d="M9 0v10" stroke="#5299cd" stroke-width="2"/><rect x="17" y="3" width="5" height="5" rx="1" fill="#302925"/><circle cx="12" cy="13" r="7" fill="#eee"/><circle cx="12" cy="13" r="5.5" fill="#527a99"/><circle cx="12" cy="13" r="3.5" fill="#172f46"/><circle cx="10.5" cy="11.5" r="1.5" fill="#c8f4ff"/></svg></span>
         </a>
         <a href="https://discord.gg/EB4MGUKesh" target="_blank" rel="noopener noreferrer" aria-label="Discord" title="Discord">
-          <svg class="social-icon" viewBox="0 0 24 24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M4 4h4v2h8V4h4v2h2v4h2v10h-6v-2h-2v-2H8v2H6v2H0V10h2V6h2Z" fill="#7289da"/><path d="M6 10h4v6H6Zm8 0h4v6h-4Z" fill="#fff"/><path d="M8 12h2v2H8Zm6 0h2v2h-2Z" fill="#3e4673"/></svg>
+          <span class="social-orb" aria-hidden="true"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="12" fill="#7289da"/><path d="M6 6c4-2 8-2 12 0 2 3 3 6 3 10l-4 2-1-2c-3 1-5 1-8 0l-1 2-4-2c0-4 1-7 3-10Z" fill="#fff"/><ellipse cx="8.5" cy="12" rx="1.8" ry="2.3" fill="#5667aa"/><ellipse cx="15.5" cy="12" rx="1.8" ry="2.3" fill="#5667aa"/></svg></span>
         </a>
         <a href="https://www.youtube.com/@AlienCultist-Labs" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube">
-          <svg class="social-icon" viewBox="0 0 24 24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M4 2h16v2h2v2h2v12h-2v2h-2v2H4v-2H2v-2H0V6h2V4h2Z" fill="#b32121"/><path d="M4 4h16v2h2v10h-2v2H4v-2H2V6h2Z" fill="#e33b32"/><path d="M8 6h2v2h4v2h4v4h-4v2h-4v2H8Z" fill="#fff"/></svg>
+          <span class="social-orb" aria-hidden="true"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="12" fill="#b32121"/><rect x="2" y="5" width="20" height="14" rx="4" fill="#e33b32"/><path d="m10 8 7 4-7 4Z" fill="#fff"/></svg></span>
         </a>
         <a href="https://steamcommunity.com/groups/AlienCultist-Labs" target="_blank" rel="noopener noreferrer" aria-label="Steam" title="Steam">
-          <svg class="social-icon" viewBox="0 0 24 24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M2 0h20v2h2v20h-2v2H2v-2H0V2h2Z" fill="#1b2838"/><path d="m8 14 8-8 4 4-8 8Z" fill="#c7d5e0"/><path d="M16 2h4v2h2v2h2v6h-2v2h-6v-2h-2V6h2Z" fill="#c7d5e0"/><path d="M18 6h2v2h2v2h-2v2h-2v-2h-2V8h2Z" fill="#1b2838"/><path d="M4 14h6v2h2v4h-2v2H4v-2H2v-4h2Z" fill="#c7d5e0"/><path d="M4 16h4v2h2v2H6v-2H4Z" fill="#1b2838"/></svg>
+          <span class="social-orb" aria-hidden="true"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="12" fill="#1b2838"/><path d="m7 15 9-9 3 3-9 9Z" fill="#c7d5e0"/><circle cx="17" cy="7" r="5" fill="#c7d5e0"/><circle cx="17" cy="7" r="3.3" fill="#1b2838"/><circle cx="6.5" cy="17" r="4.5" fill="#c7d5e0"/><circle cx="6.5" cy="17" r="2.8" fill="#1b2838"/><path d="m1 14 7 3" stroke="#c7d5e0" stroke-width="2" stroke-linecap="round"/></svg></span>
         </a>
         <a href="https://github.com/windows95br0" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
-          <svg class="social-icon" viewBox="0 0 24 24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M2 0h20v2h2v20h-2v2H2v-2H0V2h2Z" fill="#24292e"/><path d="M4 4h4v2h8V4h4v8h-2v4h-4v6h-4v-6H6v-4H4Z" fill="#fff"/><path d="M6 10h4v2H6Zm8 0h4v2h-4Z" fill="#24292e"/><path d="M2 14h2v2h4v2H4v-2H2Z" fill="#fff"/></svg>
+          <span class="social-orb" aria-hidden="true"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="12" fill="#24292e"/><path d="M6 7 5 3l5 2h4l5-2-1 4c3 5 1 9-4 10 1 1 1 3 1 5H9c0-2 0-4 1-5-5-1-7-5-4-10Z" fill="#fff"/><path d="M3 15c1 3 3 4 6 3" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/><ellipse cx="8.5" cy="11" rx="1.1" ry="1.5" fill="#24292e"/><ellipse cx="15.5" cy="11" rx="1.1" ry="1.5" fill="#24292e"/></svg></span>
         </a>
       </nav>
       <main class="layout" id="main-content">
