@@ -21,6 +21,14 @@ from collections import defaultdict
 
 SKIP_META = {"404.html", "Maint.html"}
 NOINDEX = {"search.html"}
+PUBLIC_NAV = {
+    "index.html": "HOME",
+    "pricing.html": "WEB DESIGN",
+    "software.html": "SOFTWARE",
+    "dedicatedservers.html": "GAME WITH US!!",
+    "xrayarchives.html": "X-RAY ARCHIVES",
+    "search.html": "SEARCH",
+}
 RASTER = ("jpg", "jpeg", "png", "gif")
 LINK_SCHEMES = re.compile(r"^(https?:|mailto:|tel:|sms:|javascript:|data:|#|//)", re.I)
 
@@ -73,6 +81,26 @@ def main():
         ):
             problems["missing archive noindex"].append(page)
 
+        if not unlisted_hardware:
+            nav = re.search(
+                r'<nav class="(?:main-nav|status-strip)"[^>]*>(.*?)</nav>', html, re.S
+            )
+            nav_links = defaultdict(list)
+            if nav:
+                for href, label in re.findall(
+                    r'<a[^>]+href="([^"]+)"[^>]*>(.*?)</a>', nav.group(1), re.S
+                ):
+                    nav_links[resolve(page, href)].append(
+                        re.sub(r"<small>.*?</small>|<[^>]*>", "", label).strip().upper()
+                    )
+            for target, label in PUBLIC_NAV.items():
+                if nav_links[target] != [label]:
+                    problems["incomplete public navigation"].append("%s -> %s" % (page, label))
+            if not page.startswith("area-42/") and any(
+                target and target.startswith("area-42/") for target in nav_links
+            ):
+                problems["advertised Area 42 navigation"].append(page)
+
         # Every internal link has to land on a file that exists.
         targets = set()
         for href in re.findall(r'href="([^"]+)"', html):
@@ -118,9 +146,14 @@ def main():
             r'<script[^>]*application/ld\+json[^>]*>(.*?)</script>', html, re.S | re.I
         ):
             try:
-                json.loads(block)
+                data = json.loads(block)
             except ValueError as err:
                 problems["invalid JSON-LD"].append("%s: %s" % (page, err))
+                continue
+            if not unlisted_hardware and isinstance(data, dict) and (
+                data.get("@type") == "OfferCatalog" or "hasOfferCatalog" in data
+            ):
+                problems["retired service offers"].append(page)
 
         # <picture> must be balanced, and its sources must exist.
         if html.count("<picture") != html.count("</picture>"):

@@ -1,6 +1,6 @@
 # Alien Cultist Labs
 
-Source for [windows95br0.github.io](https://windows95br0.github.io) — the site for Alien Cultist Labs, a media preservation, repair, and hardware recovery shop in Galt, California.
+Source for [windows95br0.github.io](https://windows95br0.github.io) — the site for Alien Cultist Labs in Galt, California.
 
 `aliencultist.com` forwards to the GitHub Pages URL, which is the canonical home of the content.
 
@@ -13,7 +13,8 @@ Static HTML, CSS, and vanilla client-side JavaScript. **No build step and no dep
 | Path | What it is |
 | --- | --- |
 | `index.html` | Home page: current maintenance status and contact |
-| `pricing.html` | Rate card and common questions |
+| `pricing.html` | Web Design information (coming soon); retains the old URL for existing links |
+| `software.html` | Software information (coming soon) |
 | `search.html` | Searches published pages; excludes unlisted hardware |
 | `dedicatedservers.html` | Game servers (placeholder) |
 | `xrayarchives.html` | X-Ray Archives (placeholder) |
@@ -82,6 +83,13 @@ The masthead reproduces the preview's welcome line, AlienCultist heading, and
 location/founding tagline exactly. Existing navigation replaces the maintenance
 banner text in a gray strip below the masthead, with its mobile toggle intact.
 Its links share the browser directory buttons' raised gray styling.
+All active pages link to Home, Web Design, Software, Game With Us, X-Ray
+Archives, and Search. Archive-specific index/category links remain alongside
+these public destinations. The previous service listings, prices, and offer
+metadata have been retired; Web Design and Software are information-only
+placeholders for now.
+`scripts/check.py` checks these public navbar destinations and labels on every
+active page and rejects retired offer catalogs.
 The gray strip covers the viewport's inset side edges to join the window chrome
 without seams, including inside embedded pages.
 The fake window title remains
