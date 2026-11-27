@@ -288,8 +288,10 @@
       outline: 1px dotted #111;
       outline-offset: -4px;
     }
-    .status-strip a { display: inline-flex; align-items: center; gap: 7px; }
-    .status-strip small { padding: 1px 4px; background: #ffe66d; color: #040912; font-size: 8px; font-weight: bold; letter-spacing: .08em; line-height: 1.2; text-shadow: none; }
+    .directory-bar .browser-navigation { flex: 1; min-width: 0; }
+    .directory-bar .main-nav { display: flex; flex-wrap: wrap; gap: 4px; }
+    .directory-bar .main-nav a { display: inline-flex; align-items: center; gap: 7px; }
+    .directory-bar small { padding: 1px 4px; background: #ffe66d; color: #040912; font-size: 8px; font-weight: bold; letter-spacing: .08em; line-height: 1.2; text-shadow: none; }
     .address {
       flex: 1 1 240px;
       min-width: 0;
@@ -494,7 +496,7 @@
       .retro-globe { width: 22px; height: 22px; }
     }
     @media (max-width: 650px) {
-      .status-strip small { font-size: 7px; }
+      .directory-bar small { font-size: 7px; }
       body { padding: 14px 10px 24px; }
       .layout { grid-template-columns: minmax(0, 1fr); padding: 18px; }
       .sidebar { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
@@ -609,12 +611,10 @@
         <summary><u>D</u>irectory</summary>
         <div class="menu-popup">
           <button disabled>What's New?</button>
-          <button disabled>What's Cool?</button>
           <a href="pricing.html">Destinations: Web Design</a>
           <a href="dedicatedservers.html">Game With Us</a>
           <a href="xrayarchives.html">X-Ray Archives</a>
           <a href="search.html">Net Search: Site Archives</a>
-          <button disabled>People</button>
           <a href="software.html">Software</a>
         </div>
       </details>
@@ -667,9 +667,17 @@
       <span class="address">https://aliencultist.com/</span>
     </div>
     <div class="directory-bar" role="group" aria-label="Site directory">
-      <button disabled>What's New?</button><button disabled>What's Cool?</button>
-      <a href="pricing.html">Destinations</a>
-      <a href="search.html">Net Search</a><button disabled>People</button><a href="software.html">Software</a>
+      <button disabled>What's New?</button>
+      <div class="browser-navigation">
+        <nav class="main-nav" aria-label="Main navigation">
+          <a class="home-nav-link" href="index.html">HOME</a>
+          <a class="web-design-nav-link" href="pricing.html"><span>WEB DESIGN</span><small>SOON</small></a>
+          <a class="software-nav-link" href="software.html"><span>SOFTWARE</span><small>SOON</small></a>
+          <a class="game-nav-link" href="dedicatedservers.html"><span>GAME WITH US!!</span><small>SOON</small></a>
+          <a class="archive-nav-link" href="xrayarchives.html"><span>X-RAY ARCHIVES</span><small>SOON</small></a>
+          <a class="search-nav-link" href="search.html">SEARCH</a>
+        </nav>
+      </div>
     </div>
     <div class="page">
       <header class="masthead">
@@ -679,13 +687,11 @@
         <p class="tagline">Galt, California &bull; Est. 2023 by Windows95br0</p>
       </header>
       <div class="rainbow-rule" aria-hidden="true"></div>
-      <nav class="status-strip" aria-label="Main navigation">
-        <a href="index.html">HOME</a>
-        <a href="pricing.html"><span>WEB DESIGN</span><small>SOON</small></a>
-        <a href="software.html"><span>SOFTWARE</span><small>SOON</small></a>
-        <a href="dedicatedservers.html"><span>GAME WITH US!!</span><small>SOON</small></a>
-        <a href="xrayarchives.html"><span>X-RAY ARCHIVES</span><small>SOON</small></a>
-        <a href="search.html">SEARCH</a>
+      <nav class="status-strip social-links" aria-label="Social media">
+        <a href="https://www.facebook.com/profile.php?id=100092184115147" target="_blank" rel="noopener noreferrer">FACEBOOK</a>
+        <a href="https://www.instagram.com/aliencultist/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
+        <a href="https://discord.gg/EB4MGUKesh" target="_blank" rel="noopener noreferrer">DISCORD</a>
+        <a href="https://www.youtube.com/@AlienCultist-Labs" target="_blank" rel="noopener noreferrer">YOUTUBE</a>
       </nav>
       <main class="layout" id="main-content">
         <section class="content" aria-labelledby="maintenance-title">

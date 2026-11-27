@@ -47,8 +47,17 @@
     const response = await fetch(previewURL);
     if (!response.ok) throw new Error('The browser shell returned HTTP ' + response.status + '.');
     const template = new DOMParser().parseFromString(await response.text(), 'text/html');
-    if (!template.querySelector('.window .page .masthead')) throw new Error('The browser shell template is incomplete.');
+    if (!template.querySelector('.window .page .masthead') ||
+        !template.querySelector('.directory-bar .browser-navigation .main-nav') ||
+        !template.querySelector('.social-links')) throw new Error('The browser shell template is incomplete.');
     return template;
+  }
+
+  function moveNavigation(navigation, directory) {
+    navigation.querySelectorAll('a[href]').forEach(link => { link.href = link.href; });
+    navigation.hidden = false;
+    const current = directory.querySelector('.browser-navigation');
+    if (current !== navigation) current.replaceWith(navigation);
   }
 
   function decoratePage(template) {
@@ -67,12 +76,21 @@
     masthead.after(rainbow);
     if (nav) {
       const navigation = document.createElement('div');
-      navigation.className = 'site-navigation';
+      navigation.className = 'browser-navigation';
       if (toggle) navigation.append(toggle);
       navigation.append(nav);
-      if (ticker) ticker.replaceWith(navigation);
-      else rainbow.after(navigation);
+      if (window.parent !== window) {
+        navigation.hidden = true;
+        rainbow.after(navigation);
+      } else {
+        moveNavigation(navigation, document.querySelector('.directory-bar'));
+      }
     }
+    const socials = template.querySelector('.social-links').cloneNode(true);
+    socials.classList.add('site-navigation');
+    if (ticker) ticker.replaceWith(socials);
+    else rainbow.after(socials);
+    document.dispatchEvent(new Event('navigator-ready'));
   }
 
   async function start() {
@@ -128,6 +146,8 @@
     let findOffset = 0;
     const originalTitle = document.title;
     const originalClasses = document.body.className;
+    const directory = browserWindow.querySelector('.directory-bar');
+    const originalNavigation = directory.querySelector('.browser-navigation');
 
     const buttons = action => browserWindow.querySelectorAll('[data-action="' + action + '"]');
     const contentDocument = () => frame.hidden ? document : frame.contentDocument;
@@ -159,6 +179,7 @@
         (document.body.classList.contains('effects-paused') ? '*, *::before, *::after { animation: none !important; } .ascii-starfield { display: none !important; }' : '');
     }
     function identity() {
+      syncNavigation(contentDocument());
       if (!document.body.classList.contains('navigator-site')) return;
       const paused = document.body.classList.contains('effects-paused');
       const classes = frame.hidden ? originalClasses : frame.contentDocument.body.className;
@@ -166,6 +187,11 @@
       document.body.classList.add('navigator-site');
       document.body.classList.toggle('effects-paused', paused);
       document.title = frame.hidden ? originalTitle : frame.contentDocument.title;
+    }
+    function syncNavigation(doc) {
+      if (doc !== contentDocument()) return;
+      const navigation = doc === document ? originalNavigation : doc.querySelector('.browser-navigation');
+      if (navigation?.querySelector('.main-nav')) moveNavigation(navigation, directory);
     }
     function commit(navigation) {
       if (navigation.index === undefined) {
@@ -259,8 +285,11 @@
       navigate(url.href);
     }
     function connectFrame() {
-      frame.contentDocument.addEventListener('click', closeMenus);
-      frame.contentDocument.addEventListener('click', linkClick);
+      const doc = frame.contentDocument;
+      doc.addEventListener('click', closeMenus);
+      doc.addEventListener('click', linkClick);
+      doc.addEventListener('navigator-ready', () => syncNavigation(doc));
+      syncNavigation(doc);
       applyOptions();
     }
     frame.addEventListener('load', async () => {
@@ -283,7 +312,7 @@
     });
     homePage.addEventListener('click', linkClick);
     menuBar.addEventListener('click', linkClick);
-    browserWindow.querySelector('.directory-bar').addEventListener('click', linkClick);
+    directory.addEventListener('click', linkClick);
 
     function openInput(action) {
       inputAction = action;

@@ -80,9 +80,13 @@ Interiors use the preview's compact serif headings, black backgrounds, beveled
 gray panels/buttons, and terminal styling. Maintenance pages also reuse its
 two-column content/sidebar layout.
 The masthead reproduces the preview's welcome line, AlienCultist heading, and
-location/founding tagline exactly. Existing navigation replaces the maintenance
-banner text in a gray strip below the masthead, with its mobile toggle intact.
-Its links share the browser directory buttons' raised gray styling.
+location/founding tagline exactly. Existing navigation and its mobile toggle
+move into the browser's directory-button row below Location. Contextual archive
+links follow the active embedded page and restore correctly with browser history.
+The old navigation strip below the masthead now holds Facebook, Instagram,
+Discord, and YouTube links, opened in new tabs. The shared preview supplies
+these social destinations. What's Cool and People are no longer advertised.
+Navigation and social links share the browser directory buttons' raised gray styling.
 The mobile Menu/Close toggle uses the same button styling, hover shading, and
 keyboard focus outline.
 At mobile widths (800px and below), the browser toolbar becomes one compact
@@ -97,7 +101,7 @@ Web Design, Software, X-Ray Archives, and Game With Us share the same SOON
 flag in every active navbar.
 `scripts/check.py` checks these public navbar destinations and labels on every
 active page, their SOON flags, and rejects retired offer catalogs.
-The gray strip covers the viewport's inset side edges to join the window chrome
+The gray social strip covers the viewport's inset side edges to join the window chrome
 without seams, including inside embedded pages.
 The fake window title remains
 `AlienCultist - Net Navigator`; the real document title follows the active page.

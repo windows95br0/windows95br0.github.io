@@ -155,16 +155,13 @@ body.navigator-embedded::before, body.navigator-embedded::after { display: none;
 .navigator-site .address { flex: 1 1 240px; min-width: 0; padding: 4px 7px; overflow-wrap: anywhere; border: 2px solid; border-color: #777 #fff #fff #777; background: #fff; color: #222; }
 .navigator-site .directory-bar { gap: 4px; }
 .navigator-site .directory-bar button, .navigator-site .directory-bar a,
-.navigator-site .site-navigation .main-nav a, .navigator-embedded .site-navigation .main-nav a,
-.navigator-site .site-navigation .nav-toggle, .navigator-embedded .site-navigation .nav-toggle { padding: 4px 8px; border: 2px outset #ddd; background: #c0c0c0; color: #111; font: inherit; text-decoration: none; }
-.navigator-site .site-navigation .nav-toggle, .navigator-embedded .site-navigation .nav-toggle { letter-spacing: normal; }
+.navigator-site .site-navigation a { padding: 4px 8px; border: 2px outset #ddd; background: #c0c0c0; color: #111; font: inherit; text-decoration: none; }
+.navigator-site .directory-bar .nav-toggle { letter-spacing: normal; }
 .navigator-site .directory-bar button:disabled { color: #666; text-shadow: 1px 1px #fff; }
-.navigator-site .directory-bar a:hover, .navigator-site .site-navigation .main-nav a:hover,
-.navigator-embedded .site-navigation .main-nav a:hover,
-.navigator-site .site-navigation .nav-toggle:hover, .navigator-embedded .site-navigation .nav-toggle:hover { background: #dedede; }
-.navigator-site .directory-bar a:focus-visible, .navigator-site .site-navigation .main-nav a:focus-visible,
-.navigator-embedded .site-navigation .main-nav a:focus-visible,
-.navigator-site .site-navigation .nav-toggle:focus-visible, .navigator-embedded .site-navigation .nav-toggle:focus-visible { outline: 1px dotted #111; outline-offset: -4px; }
+.navigator-site .directory-bar a:hover, .navigator-site .directory-bar .nav-toggle:hover,
+.navigator-site .site-navigation a:hover, .navigator-embedded .site-navigation a:hover { background: #dedede; }
+.navigator-site .directory-bar a:focus-visible, .navigator-site .directory-bar .nav-toggle:focus-visible,
+.navigator-site .site-navigation a:focus-visible, .navigator-embedded .site-navigation a:focus-visible { outline: 1px dotted #111; outline-offset: -4px; }
 .navigator-site .page { border: 2px inset #ddd; background: #000; }
 .navigator-site .site-shell, .navigator-embedded .site-shell { width: 100%; padding: 0; }
 /* Draw frame side edges inside the document so the navbar can cover them. */
@@ -188,9 +185,11 @@ body.navigator-embedded::before, body.navigator-embedded::after { display: none;
   text-shadow: 3px 3px #a6009a;
 }
 .navigator-site .masthead .tagline, .navigator-embedded .masthead .tagline { color: #ffc9f9; font-size: 13px; }
-.navigator-site .site-navigation, .navigator-embedded .site-navigation { display: grid; justify-items: center; margin-inline: -2px; padding: 9px 14px; background: #c0c0c0; color: #111; font: 12px Arial, sans-serif; }
-.navigator-site .site-navigation .main-nav, .navigator-embedded .site-navigation .main-nav { width: 100%; justify-content: center; gap: 4px; padding: 0; border: 0; font: inherit; letter-spacing: normal; }
-.navigator-site .site-navigation .main-nav a, .navigator-embedded .site-navigation .main-nav a { box-shadow: none; color: #111 !important; }
+.navigator-site .site-navigation, .navigator-embedded .site-navigation { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px; margin-inline: -2px; padding: 9px 14px; background: #c0c0c0; color: #111; font: 12px Arial, sans-serif; }
+.navigator-embedded .site-navigation a { padding: 4px 8px; border: 2px outset #ddd; background: #c0c0c0; color: #111; font: inherit; text-decoration: none; }
+.navigator-site .directory-bar .browser-navigation { display: grid; flex: 1; min-width: 0; justify-items: center; gap: 4px; }
+.navigator-site .directory-bar .main-nav { width: 100%; justify-content: center; gap: 4px; padding: 0; border: 0; font: inherit; letter-spacing: normal; }
+.navigator-site .directory-bar .main-nav a { box-shadow: none; color: #111 !important; }
 :is(.navigator-site, .navigator-embedded) .site-shell > main { padding: 24px; }
 :is(.navigator-site, .navigator-embedded) .site-shell main :is(h1, h2, h3) {
   font-family: Georgia, serif;
@@ -319,7 +318,7 @@ body.navigator-site.effects-paused::before, body.navigator-site.effects-paused::
   .navigator-site .navigator-icon { font-size: 18px; }
   .navigator-site .navigator-badge { width: 28px; height: 28px; }
   .navigator-site .retro-globe { width: 22px; height: 22px; }
-  .navigator-site .site-navigation .nav-toggle, .navigator-embedded .site-navigation .nav-toggle { justify-self: center; }
+  .navigator-site .directory-bar .nav-toggle { justify-self: center; }
 }
 @media (max-width: 650px) {
   body.navigator-site { padding: 14px 10px 24px; }
