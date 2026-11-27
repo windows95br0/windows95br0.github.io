@@ -69,7 +69,7 @@ Everything degrades gracefully: if the script fails to load, the pages still wor
 ### Retro browser theme
 
 `retro-preview.html` is the unindexed shell template as well as a standalone
-preview. Its menus, toolbar, globe, and dialogs are reused by
+preview. Its masthead, window title, menus, toolbar, globe, and dialogs are reused by
 `scripts/navigator.js`; do not delete it while the theme is enabled.
 `navigator.css` styles the production shell without replacing section
 stylesheets: Hardware keeps its mint/amber palette, Area 42 keeps its gold/red
@@ -78,6 +78,12 @@ status palettes. Original URLs, records, and sources remain intact.
 Interiors use the preview's compact serif headings, black backgrounds, beveled
 gray panels/buttons, and terminal styling. Maintenance pages also reuse its
 two-column content/sidebar layout.
+The masthead reproduces the preview's welcome line, AlienCultist heading, and
+location/founding tagline exactly. Existing navigation replaces the maintenance
+banner text in a gray strip below the masthead, with its mobile toggle intact.
+Its links share the browser directory buttons' raised gray styling.
+The fake window title remains
+`AlienCultist - Net Navigator`; the real document title follows the active page.
 Area 42 is intentionally omitted from the main navigation and browser menus;
 keep its entry point discreet in the footer.
 

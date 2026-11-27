@@ -274,7 +274,7 @@
       padding: 0 6px 6px;
       font: 11px Arial, sans-serif;
     }
-    .directory-bar button, .directory-bar a {
+    .directory-bar button, .directory-bar a, .status-strip a {
       padding: 4px 8px;
       border: 2px outset #ddd;
       background: #c0c0c0;
@@ -283,8 +283,8 @@
       text-decoration: none;
     }
     .directory-bar button:disabled { color: #666; text-shadow: 1px 1px #fff; }
-    .directory-bar a:hover { background: #dedede; }
-    .directory-bar a:focus-visible {
+    .directory-bar a:hover, .status-strip a:hover { background: #dedede; }
+    .directory-bar a:focus-visible, .status-strip a:focus-visible {
       outline: 1px dotted #111;
       outline-offset: -4px;
     }
@@ -368,11 +368,14 @@
       to { background-position: 100% 0; }
     }
     .status-strip {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 4px;
       padding: 9px 14px;
       background: #c0c0c0;
       color: #111;
-      font-size: 12px;
-      font-weight: bold;
+      font: 11px Arial, sans-serif;
       text-align: center;
     }
     .layout {
@@ -650,10 +653,13 @@
         <div class="ascii-starfield" aria-hidden="true"></div>
         <p class="welcome">* WELCOME TO THE WORLD WIDE WEB HOME OF *</p>
         <h1>AlienCultist</h1>
-        <p class="tagline">Galt, California &bull; Est. 2026 by Windows95br0</p>
+        <p class="tagline">Galt, California &bull; Est. 2023 by Windows95br0</p>
       </header>
       <div class="rainbow-rule" aria-hidden="true"></div>
-      <div class="status-strip">*** MAINTENANCE MODE ACTIVE &nbsp; // &nbsp; ARCHIVE RECOVERY IN PROGRESS ***</div>
+      <nav class="status-strip" aria-label="Main navigation">
+        <a href="pricing.html">PRICING</a>
+        <a href="search.html">SEARCH</a>
+      </nav>
       <main class="layout" id="main-content">
         <section class="content" aria-labelledby="maintenance-title">
           <h2 id="maintenance-title">The lab is under repair!</h2>

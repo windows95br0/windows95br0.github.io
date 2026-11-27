@@ -43,31 +43,49 @@
     });
   }
 
-  function decoratePage() {
+  async function loadTemplate() {
+    const response = await fetch(previewURL);
+    if (!response.ok) throw new Error('The browser shell returned HTTP ' + response.status + '.');
+    const template = new DOMParser().parseFromString(await response.text(), 'text/html');
+    if (!template.querySelector('.window .page .masthead')) throw new Error('The browser shell template is incomplete.');
+    return template;
+  }
+
+  function decoratePage(template) {
     const header = document.querySelector('.topbar');
-    const wordmark = header?.querySelector('.brand-wordmark');
-    if (wordmark) wordmark.textContent = 'AlienCultist';
-    addStars(header);
-    if (header && !header.nextElementSibling?.classList.contains('rainbow-rule')) {
-      const rainbow = document.createElement('div');
-      rainbow.className = 'rainbow-rule';
-      rainbow.setAttribute('aria-hidden', 'true');
-      header.after(rainbow);
+    if (!header) return;
+    const masthead = template.querySelector('.masthead').cloneNode(true);
+    masthead.id = header.id;
+    const nav = header.querySelector('.main-nav');
+    const toggle = header.querySelector('.nav-toggle');
+    const ticker = header.parentElement.querySelector(':scope > .ticker');
+    header.replaceWith(masthead);
+    addStars(masthead);
+    const rainbow = document.createElement('div');
+    rainbow.className = 'rainbow-rule';
+    rainbow.setAttribute('aria-hidden', 'true');
+    masthead.after(rainbow);
+    if (nav) {
+      const navigation = document.createElement('div');
+      navigation.className = 'site-navigation';
+      if (toggle) navigation.append(toggle);
+      navigation.append(nav);
+      if (ticker) ticker.replaceWith(navigation);
+      else rainbow.after(navigation);
     }
   }
 
   async function start() {
     if (window.parent !== window) {
       await loadStyles();
+      const template = await loadTemplate();
       document.body.classList.add('navigator-embedded');
-      decoratePage();
+      decoratePage(template);
       return;
     }
     if (!document.querySelector('.window')) {
       await loadStyles();
-      const response = await fetch(previewURL);
-      if (!response.ok) throw new Error('The browser shell returned HTTP ' + response.status + '.');
-      const template = new DOMParser().parseFromString(await response.text(), 'text/html');
+      const template = await loadTemplate();
       const templateShell = template.querySelector('.window');
       if (!templateShell?.querySelector('.page')) throw new Error('The browser shell template is incomplete.');
       const shell = templateShell.cloneNode(true);
@@ -77,14 +95,13 @@
       if (!source) throw new Error('This page has no site content container.');
       content.append(source);
       shell.querySelector('.page').replaceWith(content);
-      shell.querySelector('.title-bar > span').textContent = document.title.split(' // ')[0] + ' - Net Navigator';
       shell.querySelectorAll('.menu-popup a, .directory-bar a').forEach(link => {
         if (!link.getAttribute('href').startsWith('#')) link.href = new URL(link.getAttribute('href'), rootURL).href;
       });
       document.body.prepend(shell);
       template.querySelectorAll('body > dialog').forEach(dialog => document.body.append(dialog.cloneNode(true)));
       document.body.classList.add('navigator-site');
-      decoratePage();
+      decoratePage(template);
     }
     setupBrowser();
     addStars(document.querySelector('.masthead'));
@@ -149,7 +166,6 @@
       document.body.classList.add('navigator-site');
       document.body.classList.toggle('effects-paused', paused);
       document.title = frame.hidden ? originalTitle : frame.contentDocument.title;
-      browserWindow.querySelector('.title-bar > span').textContent = document.title.split(' // ')[0] + ' - Net Navigator';
     }
     function commit(navigation) {
       if (navigation.index === undefined) {
