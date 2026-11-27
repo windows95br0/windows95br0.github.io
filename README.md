@@ -87,7 +87,7 @@ The old navigation strip below the masthead now holds Facebook, Instagram,
 Discord, YouTube, Steam, and GitHub pixel-style retro icon links, opened in new tabs. Icons have accessible names
 and hover tooltips in desktop and mobile views. The shared preview supplies
 these social destinations and inline icons. What's Cool and People are no longer advertised.
-Steam currently links to Steam Community until a specific profile URL is provided;
+Steam links to `https://steamcommunity.com/groups/AlienCultist-Labs`;
 GitHub links to `https://github.com/windows95br0`.
 Navigation and social links share the browser directory buttons' raised gray styling.
 The browser navbar stays visible at mobile widths, wrapping its buttons rather
