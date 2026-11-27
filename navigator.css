@@ -192,8 +192,16 @@ body.navigator-embedded::before, body.navigator-embedded::after { display: none;
 .navigator-site .directory-bar .nav-toggle { display: none; }
 .navigator-site .navigator-badge, :is(.navigator-site, .navigator-embedded) .social-links a { display: grid; place-items: center; flex-shrink: 0; width: 48px; height: 48px; padding: 0; border: 2px inset #ddd; background: linear-gradient(#071426 55%, #007f88); }
 :is(.navigator-site, .navigator-embedded) .social-icon { display: block; width: 100%; height: 100%; }
-:is(.navigator-site, .navigator-embedded) .social-links a:hover { background: linear-gradient(#102840 55%, #00a4ad); }
-:is(.navigator-site, .navigator-embedded) .social-links a:focus-visible { outline-color: #80ffff; }
+:is(.navigator-site, .navigator-embedded) .social-facebook { --social-dark: #101d38; --social-color: #3b5998; --social-outline: #9bbcff; }
+:is(.navigator-site, .navigator-embedded) .social-instagram { --social-dark: #382619; --social-color: #a66b36; --social-outline: #ffd69a; }
+:is(.navigator-site, .navigator-embedded) .social-discord { --social-dark: #25203e; --social-color: #7260bb; --social-outline: #c6b5ff; }
+:is(.navigator-site, .navigator-embedded) .social-youtube { --social-dark: #3d1016; --social-color: #bc3038; --social-outline: #ff9b9b; }
+:is(.navigator-site, .navigator-embedded) .social-steam { --social-dark: #102c32; --social-color: #287e86; --social-outline: #8ce4dc; }
+:is(.navigator-site, .navigator-embedded) .social-github { --social-dark: #24292e; --social-color: #697580; --social-outline: #d5e0e8; }
+:is(.navigator-site, .navigator-embedded) .social-links a { border-color: var(--social-outline); background: linear-gradient(var(--social-dark) 55%, var(--social-color)); }
+:is(.navigator-site, .navigator-embedded) .social-orb { border-color: var(--social-outline); }
+:is(.navigator-site, .navigator-embedded) .social-links a:hover { background: linear-gradient(var(--social-color) 55%, var(--social-outline)); }
+:is(.navigator-site, .navigator-embedded) .social-links a:focus-visible { outline-color: var(--social-outline); }
 :is(.navigator-site, .navigator-embedded) .site-shell > main { padding: 24px; }
 :is(.navigator-site, .navigator-embedded) .site-shell main :is(h1, h2, h3) {
   font-family: Georgia, serif;

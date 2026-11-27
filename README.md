@@ -89,9 +89,12 @@ and hover tooltips in desktop and mobile views. The shared preview supplies
 these social destinations and inline icons. What's Cool and People are no longer advertised.
 Social icons share the globe's beveled frame, circular shading, highlight,
 shadow, and responsive sizing, using smooth logo shapes instead of pixel edges.
+Each platform has its own gradient and matching frame, orb outline, and keyboard
+focus color: blue Facebook, amber Instagram, violet Discord, red YouTube,
+teal Steam, and silver GitHub. Hover brightens the same platform palette.
 Steam links to `https://steamcommunity.com/groups/AlienCultist-Labs`;
 GitHub links to `https://github.com/windows95br0`.
-Navigation and social links share the browser directory buttons' raised gray styling.
+Navigation retains the browser directory buttons' raised gray styling.
 The browser navbar stays visible at mobile widths, wrapping its buttons rather
 than collapsing behind a Menu toggle. Its SOON flags and contextual links remain visible.
 The disabled What's New button shares this same wrapping navbar flow.
