@@ -288,6 +288,8 @@
       outline: 1px dotted #111;
       outline-offset: -4px;
     }
+    .status-strip a { display: inline-flex; align-items: center; gap: 7px; }
+    .status-strip small { padding: 1px 4px; background: #ffe66d; color: #040912; font-size: 8px; font-weight: bold; letter-spacing: .08em; line-height: 1.2; text-shadow: none; }
     .address {
       flex: 1 1 240px;
       min-width: 0;
@@ -482,7 +484,17 @@
       border: 1px inset #ddd;
     }
     .status-bar span:first-child { flex: 1; }
+    @media (max-width: 800px) {
+      .navigator-toolbar { flex-wrap: nowrap; gap: 4px; padding: 4px; }
+      .navigator-tools { min-width: 0; flex-wrap: nowrap; gap: 2px; }
+      .navigator-tool { display: flex; flex: 1; min-width: 0; align-items: center; justify-content: center; padding: 4px 0; }
+      .navigator-label { display: none; }
+      .navigator-icon { font-size: 18px; }
+      .navigator-badge { width: 28px; height: 28px; }
+      .retro-globe { width: 22px; height: 22px; }
+    }
     @media (max-width: 650px) {
+      .status-strip small { font-size: 7px; }
       body { padding: 14px 10px 24px; }
       .layout { grid-template-columns: minmax(0, 1fr); padding: 18px; }
       .sidebar { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
@@ -627,15 +639,15 @@
     </nav>
     <div class="navigator-toolbar" role="group" aria-label="Browser navigation">
       <div class="navigator-tools">
-        <button class="navigator-tool" data-action="back" disabled><span class="navigator-icon" aria-hidden="true">&larr;</span>Back</button>
-        <button class="navigator-tool" data-action="forward" disabled><span class="navigator-icon" aria-hidden="true">&rarr;</span>Forward</button>
-        <button class="navigator-tool" data-action="home"><span class="navigator-icon" aria-hidden="true">&#8962;</span>Home</button>
-        <button class="navigator-tool" data-action="reload"><span class="navigator-icon" aria-hidden="true">&#8635;</span>Reload</button>
-        <button class="navigator-tool" data-action="images" aria-pressed="true"><span class="navigator-icon" aria-hidden="true">&#10022;</span>Images</button>
-        <button class="navigator-tool" data-action="open"><span class="navigator-icon" aria-hidden="true">&#128194;</span>Open</button>
-        <button class="navigator-tool" data-action="print"><span class="navigator-icon" aria-hidden="true">&#128424;</span>Print</button>
-        <button class="navigator-tool" data-action="find"><span class="navigator-icon" aria-hidden="true">&#8981;</span>Find</button>
-        <button class="navigator-tool" data-action="stop" disabled><span class="navigator-icon" aria-hidden="true">&#10005;</span>Stop</button>
+        <button class="navigator-tool" data-action="back" aria-label="Back" title="Back" disabled><span class="navigator-icon" aria-hidden="true">&larr;</span><span class="navigator-label">Back</span></button>
+        <button class="navigator-tool" data-action="forward" aria-label="Forward" title="Forward" disabled><span class="navigator-icon" aria-hidden="true">&rarr;</span><span class="navigator-label">Forward</span></button>
+        <button class="navigator-tool" data-action="home" aria-label="Home" title="Home"><span class="navigator-icon" aria-hidden="true">&#8962;</span><span class="navigator-label">Home</span></button>
+        <button class="navigator-tool" data-action="reload" aria-label="Reload" title="Reload"><span class="navigator-icon" aria-hidden="true">&#8635;</span><span class="navigator-label">Reload</span></button>
+        <button class="navigator-tool" data-action="images" aria-label="Images" title="Images" aria-pressed="true"><span class="navigator-icon" aria-hidden="true">&#10022;</span><span class="navigator-label">Images</span></button>
+        <button class="navigator-tool" data-action="open" aria-label="Open" title="Open"><span class="navigator-icon" aria-hidden="true">&#128194;</span><span class="navigator-label">Open</span></button>
+        <button class="navigator-tool" data-action="print" aria-label="Print" title="Print"><span class="navigator-icon" aria-hidden="true">&#128424;</span><span class="navigator-label">Print</span></button>
+        <button class="navigator-tool" data-action="find" aria-label="Find" title="Find"><span class="navigator-icon" aria-hidden="true">&#8981;</span><span class="navigator-label">Find</span></button>
+        <button class="navigator-tool" data-action="stop" aria-label="Stop" title="Stop" disabled><span class="navigator-icon" aria-hidden="true">&#10005;</span><span class="navigator-label">Stop</span></button>
       </div>
       <span class="navigator-badge" role="img" aria-label="Spinning retro globe">
         <span class="retro-globe" aria-hidden="true">
@@ -669,10 +681,10 @@
       <div class="rainbow-rule" aria-hidden="true"></div>
       <nav class="status-strip" aria-label="Main navigation">
         <a href="index.html">HOME</a>
-        <a href="pricing.html">WEB DESIGN</a>
-        <a href="software.html">SOFTWARE</a>
-        <a href="dedicatedservers.html">GAME WITH US!!</a>
-        <a href="xrayarchives.html">X-RAY ARCHIVES</a>
+        <a href="pricing.html"><span>WEB DESIGN</span><small>SOON</small></a>
+        <a href="software.html"><span>SOFTWARE</span><small>SOON</small></a>
+        <a href="dedicatedservers.html"><span>GAME WITH US!!</span><small>SOON</small></a>
+        <a href="xrayarchives.html"><span>X-RAY ARCHIVES</span><small>SOON</small></a>
         <a href="search.html">SEARCH</a>
       </nav>
       <main class="layout" id="main-content">

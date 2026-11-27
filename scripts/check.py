@@ -29,6 +29,7 @@ PUBLIC_NAV = {
     "xrayarchives.html": "X-RAY ARCHIVES",
     "search.html": "SEARCH",
 }
+SOON_NAV = {"pricing.html", "software.html", "dedicatedservers.html", "xrayarchives.html"}
 RASTER = ("jpg", "jpeg", "png", "gif")
 LINK_SCHEMES = re.compile(r"^(https?:|mailto:|tel:|sms:|javascript:|data:|#|//)", re.I)
 
@@ -86,16 +87,21 @@ def main():
                 r'<nav class="(?:main-nav|status-strip)"[^>]*>(.*?)</nav>', html, re.S
             )
             nav_links = defaultdict(list)
+            nav_badges = defaultdict(list)
             if nav:
                 for href, label in re.findall(
                     r'<a[^>]+href="([^"]+)"[^>]*>(.*?)</a>', nav.group(1), re.S
                 ):
-                    nav_links[resolve(page, href)].append(
+                    target = resolve(page, href)
+                    nav_links[target].append(
                         re.sub(r"<small>.*?</small>|<[^>]*>", "", label).strip().upper()
                     )
+                    nav_badges[target].extend(re.findall(r"<small>(.*?)</small>", label))
             for target, label in PUBLIC_NAV.items():
                 if nav_links[target] != [label]:
                     problems["incomplete public navigation"].append("%s -> %s" % (page, label))
+                if target in SOON_NAV and nav_badges[target] != ["SOON"]:
+                    problems["missing coming-soon flag"].append("%s -> %s" % (page, label))
             if not page.startswith("area-42/") and any(
                 target and target.startswith("area-42/") for target in nav_links
             ):

@@ -120,7 +120,7 @@ a { color: inherit; }
 .home-nav-link:hover { background: var(--cyan); color: var(--ink) !important; border-color: var(--cyan); }
 .game-nav-link, .archive-nav-link, .hardware-nav-link, .pricing-nav-link, .web-design-nav-link, .software-nav-link, .search-nav-link { position: relative; display: inline-flex; align-items: center; gap: 7px; padding: 7px 9px; border: 1px solid var(--cyan-dark); color: var(--cyan) !important; text-decoration: none; }
 .game-nav-link { border-color: var(--yellow); color: var(--yellow) !important; box-shadow: 3px 3px 0 var(--cyan-dark); }
-.game-nav-link small { color: var(--ink); background: var(--yellow); padding: 1px 4px; font-size: 8px; font-weight: bold; letter-spacing: .08em; line-height: 1.2; text-shadow: none; }
+.game-nav-link small, .web-design-nav-link small, .software-nav-link small, .archive-nav-link small { color: var(--ink); background: var(--yellow); padding: 1px 4px; font-size: 8px; font-weight: bold; letter-spacing: .08em; line-height: 1.2; text-shadow: none; }
 .archive-nav-link, .hardware-nav-link, .pricing-nav-link, .web-design-nav-link, .software-nav-link, .search-nav-link { color: var(--paper) !important; }
 .game-nav-link:hover, .archive-nav-link:hover, .hardware-nav-link:hover, .pricing-nav-link:hover, .web-design-nav-link:hover, .software-nav-link:hover, .search-nav-link:hover { background: var(--cyan); color: var(--ink) !important; border-color: var(--cyan); }
 /* Typography and home-page hero controls. */
@@ -212,7 +212,7 @@ h3 { font-size: 29px; margin-bottom: 14px; color: var(--cyan); text-shadow: 0 0 
   .main-nav { grid-column: 1 / -1; justify-content: space-between; gap: 8px; padding: 12px 0; }
   .home-nav-link { padding: 6px 5px; }
   .game-nav-link, .archive-nav-link, .hardware-nav-link, .pricing-nav-link, .web-design-nav-link, .software-nav-link, .search-nav-link { padding: 6px 5px; gap: 4px; }
-  .game-nav-link small { font-size: 7px; }
+  .game-nav-link small, .web-design-nav-link small, .software-nav-link small, .archive-nav-link small { font-size: 7px; }
   .hero, .about, .contact { grid-template-columns: minmax(0, 1fr); gap: 48px; }
   .hero { padding: 72px 0 90px; }
   .services { padding: 88px 0; }

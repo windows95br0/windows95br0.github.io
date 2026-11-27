@@ -312,6 +312,13 @@ body.navigator-site.effects-paused::before, body.navigator-site.effects-paused::
 .navigator-site.effects-paused .ascii-starfield { display: none; }
 .navigator-site [hidden], .navigator-embedded [hidden] { display: none !important; }
 @media (max-width: 800px) {
+  .navigator-site .navigator-toolbar { flex-wrap: nowrap; gap: 4px; padding: 4px; }
+  .navigator-site .navigator-tools { min-width: 0; flex-wrap: nowrap; gap: 2px; }
+  .navigator-site .navigator-tool { display: flex; flex: 1; min-width: 0; align-items: center; justify-content: center; padding: 4px 0; }
+  .navigator-site .navigator-label { display: none; }
+  .navigator-site .navigator-icon { font-size: 18px; }
+  .navigator-site .navigator-badge { width: 28px; height: 28px; }
+  .navigator-site .retro-globe { width: 22px; height: 22px; }
   .navigator-site .site-navigation .nav-toggle, .navigator-embedded .site-navigation .nav-toggle { justify-self: center; }
 }
 @media (max-width: 650px) {

@@ -85,13 +85,18 @@ banner text in a gray strip below the masthead, with its mobile toggle intact.
 Its links share the browser directory buttons' raised gray styling.
 The mobile Menu/Close toggle uses the same button styling, hover shading, and
 keyboard focus outline.
+At mobile widths (800px and below), the browser toolbar becomes one compact
+icon row with a smaller spinning globe. Button names remain available to
+screen readers and as tooltips; desktop labels and sizing stay unchanged.
 All active pages link to Home, Web Design, Software, Game With Us, X-Ray
 Archives, and Search. Archive-specific index/category links remain alongside
 these public destinations. The previous service listings, prices, and offer
 metadata have been retired; Web Design and Software are information-only
 placeholders for now.
+Web Design, Software, X-Ray Archives, and Game With Us share the same SOON
+flag in every active navbar.
 `scripts/check.py` checks these public navbar destinations and labels on every
-active page and rejects retired offer catalogs.
+active page, their SOON flags, and rejects retired offer catalogs.
 The gray strip covers the viewport's inset side edges to join the window chrome
 without seams, including inside embedded pages.
 The fake window title remains
