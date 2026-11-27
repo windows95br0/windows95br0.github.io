@@ -82,6 +82,8 @@ The masthead reproduces the preview's welcome line, AlienCultist heading, and
 location/founding tagline exactly. Existing navigation replaces the maintenance
 banner text in a gray strip below the masthead, with its mobile toggle intact.
 Its links share the browser directory buttons' raised gray styling.
+The gray strip covers the viewport's inset side edges to join the window chrome
+without seams, including inside embedded pages.
 The fake window title remains
 `AlienCultist - Net Navigator`; the real document title follows the active page.
 Area 42 is intentionally omitted from the main navigation and browser menus;

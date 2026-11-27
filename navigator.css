@@ -163,6 +163,8 @@ body.navigator-embedded::before, body.navigator-embedded::after { display: none;
 .navigator-embedded .site-navigation .main-nav a:focus-visible { outline: 1px dotted #111; outline-offset: -4px; }
 .navigator-site .page { border: 2px inset #ddd; background: #000; }
 .navigator-site .site-shell, .navigator-embedded .site-shell { width: 100%; padding: 0; }
+/* Draw frame side edges inside the document so the navbar can cover them. */
+.navigator-embedded .site-shell { border-inline: 2px inset #ddd; }
 .navigator-site .masthead, .navigator-embedded .masthead {
   position: relative;
   isolation: isolate;
@@ -182,7 +184,7 @@ body.navigator-embedded::before, body.navigator-embedded::after { display: none;
   text-shadow: 3px 3px #a6009a;
 }
 .navigator-site .masthead .tagline, .navigator-embedded .masthead .tagline { color: #ffc9f9; font-size: 13px; }
-.navigator-site .site-navigation, .navigator-embedded .site-navigation { display: grid; justify-items: center; padding: 9px 14px; background: #c0c0c0; color: #111; font: 12px Arial, sans-serif; }
+.navigator-site .site-navigation, .navigator-embedded .site-navigation { display: grid; justify-items: center; margin-inline: -2px; padding: 9px 14px; background: #c0c0c0; color: #111; font: 12px Arial, sans-serif; }
 .navigator-site .site-navigation .main-nav, .navigator-embedded .site-navigation .main-nav { width: 100%; justify-content: center; gap: 4px; padding: 0; border: 0; font: inherit; letter-spacing: normal; }
 .navigator-site .site-navigation .main-nav a, .navigator-embedded .site-navigation .main-nav a { box-shadow: none; color: #111 !important; }
 :is(.navigator-site, .navigator-embedded) .site-shell > main { padding: 24px; }
@@ -290,7 +292,7 @@ body.navigator-embedded::before, body.navigator-embedded::after { display: none;
   80% { opacity: .65; }
   100% { left: var(--star-x); top: var(--star-y); transform: translate(-50%, -50%) scale(2.4); opacity: 0; }
 }
-.navigator-site .browser-page { display: block; width: 100%; height: 760px; border: 2px inset #ddd; background: #000; }
+.navigator-site .browser-page { display: block; width: 100%; height: 760px; border: 2px inset #ddd; border-inline: 0; background: #000; }
 .navigator-site .status-bar { justify-content: space-between; }
 .navigator-site .status-bar span { padding: 3px 6px; border: 1px inset #ddd; }
 .navigator-site .status-bar span:first-child { flex: 1; }
