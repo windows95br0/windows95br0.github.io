@@ -75,6 +75,8 @@ preview. Its menus, toolbar, globe, and dialogs are reused by
 stylesheets: Hardware keeps its mint/amber palette, Area 42 keeps its gold/red
 evidence-library presentation, and maintenance/error pages retain their
 status palettes. Original URLs, metadata, records, and sources are unchanged.
+Area 42 is intentionally omitted from the main navigation and browser menus;
+keep its entry point discreet in the footer.
 
 Internal navigation loads site pages inside the browser frame. Embedded pages
 receive the theme's content styling but never another browser shell. External
