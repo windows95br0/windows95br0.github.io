@@ -90,6 +90,7 @@ these social destinations and inline icons. What's Cool and People are no longer
 Navigation and social links share the browser directory buttons' raised gray styling.
 The browser navbar stays visible at mobile widths, wrapping its buttons rather
 than collapsing behind a Menu toggle. Its SOON flags and contextual links remain visible.
+The disabled What's New button shares this same wrapping navbar flow.
 At mobile widths (800px and below), the browser toolbar becomes one compact
 icon row with a smaller spinning globe. Button names remain available to
 screen readers and as tooltips; desktop labels and sizing stay unchanged.

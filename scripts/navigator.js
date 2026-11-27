@@ -48,7 +48,7 @@
     if (!response.ok) throw new Error('The browser shell returned HTTP ' + response.status + '.');
     const template = new DOMParser().parseFromString(await response.text(), 'text/html');
     if (!template.querySelector('.window .page .masthead') ||
-        !template.querySelector('.directory-bar .browser-navigation .main-nav') ||
+        !template.querySelector('.directory-bar .browser-navigation .main-nav .whats-new') ||
         !template.querySelector('.social-links')) throw new Error('The browser shell template is incomplete.');
     return template;
   }
@@ -75,6 +75,7 @@
     rainbow.setAttribute('aria-hidden', 'true');
     masthead.after(rainbow);
     if (nav) {
+      nav.prepend(template.querySelector('.whats-new').cloneNode(true));
       const navigation = document.createElement('div');
       navigation.className = 'browser-navigation';
       if (toggle) navigation.append(toggle);
