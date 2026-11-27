@@ -188,8 +188,11 @@ body.navigator-embedded::before, body.navigator-embedded::after { display: none;
 .navigator-site .site-navigation, .navigator-embedded .site-navigation { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px; margin-inline: -2px; padding: 9px 14px; background: #c0c0c0; color: #111; font: 12px Arial, sans-serif; }
 .navigator-embedded .site-navigation a { padding: 4px 8px; border: 2px outset #ddd; background: #c0c0c0; color: #111; font: inherit; text-decoration: none; }
 .navigator-site .directory-bar .browser-navigation { display: grid; flex: 1; min-width: 0; justify-items: center; gap: 4px; }
-.navigator-site .directory-bar .main-nav { width: 100%; justify-content: center; gap: 4px; padding: 0; border: 0; font: inherit; letter-spacing: normal; }
+.navigator-site .directory-bar .main-nav { display: flex; flex-wrap: wrap; flex-direction: row; align-items: center; width: 100%; justify-content: center; gap: 4px; padding: 0; border: 0; font: inherit; letter-spacing: normal; }
 .navigator-site .directory-bar .main-nav a { box-shadow: none; color: #111 !important; }
+.navigator-site .directory-bar .nav-toggle { display: none; }
+:is(.navigator-site, .navigator-embedded) .social-links a { display: inline-flex; align-items: center; justify-content: center; }
+:is(.navigator-site, .navigator-embedded) .social-icon { width: 24px; height: 24px; }
 :is(.navigator-site, .navigator-embedded) .site-shell > main { padding: 24px; }
 :is(.navigator-site, .navigator-embedded) .site-shell main :is(h1, h2, h3) {
   font-family: Georgia, serif;
@@ -318,7 +321,7 @@ body.navigator-site.effects-paused::before, body.navigator-site.effects-paused::
   .navigator-site .navigator-icon { font-size: 18px; }
   .navigator-site .navigator-badge { width: 28px; height: 28px; }
   .navigator-site .retro-globe { width: 22px; height: 22px; }
-  .navigator-site .directory-bar .nav-toggle { justify-self: center; }
+  .navigator-site .directory-bar .browser-navigation { flex-basis: 100%; }
 }
 @media (max-width: 650px) {
   body.navigator-site { padding: 14px 10px 24px; }

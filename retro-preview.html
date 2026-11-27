@@ -292,6 +292,8 @@
     .directory-bar .main-nav { display: flex; flex-wrap: wrap; gap: 4px; }
     .directory-bar .main-nav a { display: inline-flex; align-items: center; gap: 7px; }
     .directory-bar small { padding: 1px 4px; background: #ffe66d; color: #040912; font-size: 8px; font-weight: bold; letter-spacing: .08em; line-height: 1.2; text-shadow: none; }
+    .social-links a { display: inline-flex; align-items: center; justify-content: center; }
+    .social-icon { width: 24px; height: 24px; }
     .address {
       flex: 1 1 240px;
       min-width: 0;
@@ -487,6 +489,7 @@
     }
     .status-bar span:first-child { flex: 1; }
     @media (max-width: 800px) {
+      .directory-bar .browser-navigation { flex-basis: 100%; }
       .navigator-toolbar { flex-wrap: nowrap; gap: 4px; padding: 4px; }
       .navigator-tools { min-width: 0; flex-wrap: nowrap; gap: 2px; }
       .navigator-tool { display: flex; flex: 1; min-width: 0; align-items: center; justify-content: center; padding: 4px 0; }
@@ -688,10 +691,18 @@
       </header>
       <div class="rainbow-rule" aria-hidden="true"></div>
       <nav class="status-strip social-links" aria-label="Social media">
-        <a href="https://www.facebook.com/profile.php?id=100092184115147" target="_blank" rel="noopener noreferrer">FACEBOOK</a>
-        <a href="https://www.instagram.com/aliencultist/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
-        <a href="https://discord.gg/EB4MGUKesh" target="_blank" rel="noopener noreferrer">DISCORD</a>
-        <a href="https://www.youtube.com/@AlienCultist-Labs" target="_blank" rel="noopener noreferrer">YOUTUBE</a>
+        <a href="https://www.facebook.com/profile.php?id=100092184115147" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook">
+          <svg class="social-icon" viewBox="0 0 24 24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M2 0h20v2h2v20h-2v2H2v-2H0V2h2Z" fill="#3b5998"/><path d="M12 4h8v4h-4v4h4v4h-4v8h-4v-8H8v-4h4Z" fill="#fff"/></svg>
+        </a>
+        <a href="https://www.instagram.com/aliencultist/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
+          <svg class="social-icon" viewBox="0 0 24 24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M2 2h20v2h2v16h-2v2H2v-2H0V4h2Z" fill="#8a6045"/><path d="M0 10h24v10h-2v2H2v-2H0Z" fill="#d8c3a5"/><path d="M2 2h2v8H2Z" fill="#e64747"/><path d="M4 2h2v8H4Z" fill="#ffd65a"/><path d="M6 2h2v8H6Z" fill="#66b879"/><path d="M8 2h2v8H8Z" fill="#5299cd"/><path d="M18 4h4v4h-4Z" fill="#302925"/><path d="M8 8h8v2h2v8h-2v2H8v-2H6v-8h2Z" fill="#eee"/><path d="M10 10h4v2h2v4h-2v2h-4v-2H8v-4h2Z" fill="#304558"/></svg>
+        </a>
+        <a href="https://discord.gg/EB4MGUKesh" target="_blank" rel="noopener noreferrer" aria-label="Discord" title="Discord">
+          <svg class="social-icon" viewBox="0 0 24 24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M4 4h4v2h8V4h4v2h2v4h2v10h-6v-2h-2v-2H8v2H6v2H0V10h2V6h2Z" fill="#7289da"/><path d="M6 10h4v6H6Zm8 0h4v6h-4Z" fill="#fff"/><path d="M8 12h2v2H8Zm6 0h2v2h-2Z" fill="#3e4673"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@AlienCultist-Labs" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube">
+          <svg class="social-icon" viewBox="0 0 24 24" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M4 2h16v2h2v2h2v12h-2v2h-2v2H4v-2H2v-2H0V6h2V4h2Z" fill="#b32121"/><path d="M4 4h16v2h2v10h-2v2H4v-2H2V6h2Z" fill="#e33b32"/><path d="M8 6h2v2h4v2h4v4h-4v2h-4v2H8Z" fill="#fff"/></svg>
+        </a>
       </nav>
       <main class="layout" id="main-content">
         <section class="content" aria-labelledby="maintenance-title">

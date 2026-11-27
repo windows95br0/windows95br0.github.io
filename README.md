@@ -80,15 +80,16 @@ Interiors use the preview's compact serif headings, black backgrounds, beveled
 gray panels/buttons, and terminal styling. Maintenance pages also reuse its
 two-column content/sidebar layout.
 The masthead reproduces the preview's welcome line, AlienCultist heading, and
-location/founding tagline exactly. Existing navigation and its mobile toggle
-move into the browser's directory-button row below Location. Contextual archive
+location/founding tagline exactly. Existing navigation moves into the browser's
+directory-button row below Location. Contextual archive
 links follow the active embedded page and restore correctly with browser history.
 The old navigation strip below the masthead now holds Facebook, Instagram,
-Discord, and YouTube links, opened in new tabs. The shared preview supplies
-these social destinations. What's Cool and People are no longer advertised.
+Discord, and YouTube pixel-style retro icon links, opened in new tabs. Icons have accessible names
+and hover tooltips in desktop and mobile views. The shared preview supplies
+these social destinations and inline icons. What's Cool and People are no longer advertised.
 Navigation and social links share the browser directory buttons' raised gray styling.
-The mobile Menu/Close toggle uses the same button styling, hover shading, and
-keyboard focus outline.
+The browser navbar stays visible at mobile widths, wrapping its buttons rather
+than collapsing behind a Menu toggle. Its SOON flags and contextual links remain visible.
 At mobile widths (800px and below), the browser toolbar becomes one compact
 icon row with a smaller spinning globe. Button names remain available to
 screen readers and as tooltips; desktop labels and sizing stay unchanged.
