@@ -24,6 +24,7 @@ SITE = 'https://windows95br0.github.io'
 
 # Pages that should not be advertised to search engines or the site search.
 EXCLUDE = {'404.html', 'Maint.html', 'search.html', 'retro-preview.html'}
+EXCLUDE_PREFIXES = ('hardware-archives/',)
 
 # Trailing branding removed from titles, longest first so the more specific
 # suffixes win.
@@ -32,7 +33,7 @@ TITLE_SUFFIXES = (
     '// Area 42', '| Alien Cultist Labs',
 )
 
-SECTIONS = ('Hardware Archives', 'Area 42', 'Alien Cultist Labs')
+SECTIONS = ('Area 42', 'Alien Cultist Labs')
 
 
 def repo_root():
@@ -131,11 +132,9 @@ def write_sitemap(pages, dates):
 
 
 def section_of(page):
-    if page.startswith('hardware-archives/'):
-        return 0
     if page.startswith('area-42/'):
-        return 1
-    return 2
+        return 0
+    return 1
 
 
 def write_search_index(pages):
@@ -164,7 +163,7 @@ def write_search_index(pages):
         docs.append([prefix_ids[directory], name, title,
                      section_of(page), 1 if is_dir else 0])
 
-    index = {'v': 1, 'sections': list(SECTIONS), 'prefixes': prefixes,
+    index = {'v': 2, 'sections': list(SECTIONS), 'prefixes': prefixes,
              'labels': [prefix_label(p) for p in prefixes], 'docs': docs}
     with open('search-index.json', 'w', encoding='utf-8') as fh:
         json.dump(index, fh, ensure_ascii=False, separators=(',', ':'))
@@ -173,7 +172,7 @@ def write_search_index(pages):
 
 def main():
     os.chdir(repo_root())
-    pages = [p for p in page_paths() if p not in EXCLUDE]
+    pages = [p for p in page_paths() if p not in EXCLUDE and not p.startswith(EXCLUDE_PREFIXES)]
     if not pages:
         sys.exit('No HTML pages found - run this from inside the repository.')
 

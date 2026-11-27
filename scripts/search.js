@@ -7,7 +7,7 @@
 (function () {
   'use strict';
 
-  var INDEX_URL = 'search-index.json';
+  var INDEX_URL = 'search-index.json?v=2';
   var MAX_RESULTS = 60;
 
   var form = document.querySelector('[data-search-form]');
@@ -105,7 +105,7 @@
     var query = normalise(raw);
     if (!query) {
       list.textContent = '';
-      status.textContent = 'Type a component, manufacturer, or topic to search ' +
+      status.textContent = 'Type a topic, event, or service to search ' +
         index.docs.length.toLocaleString() + ' pages.';
       return;
     }

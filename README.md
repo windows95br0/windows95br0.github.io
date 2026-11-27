@@ -14,7 +14,7 @@ Static HTML, CSS, and vanilla client-side JavaScript. **No build step and no dep
 | --- | --- |
 | `index.html` | Home page: current maintenance status and contact |
 | `pricing.html` | Rate card and common questions |
-| `search.html` | Searches every page on the site |
+| `search.html` | Searches published pages; excludes unlisted hardware |
 | `dedicatedservers.html` | Game servers (placeholder) |
 | `xrayarchives.html` | X-Ray Archives (placeholder) |
 | `Maint.html` | Maintenance page, not linked from the site |
@@ -29,7 +29,7 @@ Static HTML, CSS, and vanilla client-side JavaScript. **No build step and no dep
 | `scripts/images.py` | Makes WebP copies and wraps images in `<picture>` |
 | `scripts/check.py` | Finds pages that have drifted out of sync |
 | `scripts/pivots.py` | Rebuilds the hardware archive's browse-by indexes |
-| `hardware-archives/` | ~4,200 pages of component reference records |
+| `hardware-archives/` | Retained, unlisted component reference records |
 | `area-42/` | 668 source-led dossier pages |
 | `assets/` | Images, logos, favicon, and social share cards |
 | `sitemap.xml`, `robots.txt` | Generated for search engines |
@@ -74,9 +74,19 @@ preview. Its menus, toolbar, globe, and dialogs are reused by
 `navigator.css` styles the production shell without replacing section
 stylesheets: Hardware keeps its mint/amber palette, Area 42 keeps its gold/red
 evidence-library presentation, and maintenance/error pages retain their
-status palettes. Original URLs, metadata, records, and sources are unchanged.
+status palettes. Original URLs, records, and sources remain intact.
+Interiors use the preview's compact serif headings, black backgrounds, beveled
+gray panels/buttons, and terminal styling. Maintenance pages also reuse its
+two-column content/sidebar layout.
 Area 42 is intentionally omitted from the main navigation and browser menus;
 keep its entry point discreet in the footer.
+
+Hardware Archives is currently delisted, not deleted. Public pages and browser
+menus must not link to it, and `scripts/build.py` excludes the entire directory
+from the sitemap and site search. Retained archive pages carry `noindex,
+nofollow`; crawlers remain allowed to fetch them so they can see that directive.
+Existing external search results may take time to disappear after recrawling.
+Keep these restrictions in place unless the archive is explicitly relaunched.
 
 Internal navigation loads site pages inside the browser frame. Embedded pages
 receive the theme's content styling but never another browser shell. External

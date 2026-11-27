@@ -66,6 +66,12 @@ def main():
         with open(page, encoding="utf-8") as fh:
             html = fh.read()
         name = os.path.basename(page)
+        unlisted_hardware = page.startswith("hardware-archives/")
+
+        if unlisted_hardware and not re.search(
+            r'<meta[^>]+name="robots"[^>]+content="noindex,\s*nofollow"', html, re.I
+        ):
+            problems["missing archive noindex"].append(page)
 
         # Every internal link has to land on a file that exists.
         targets = set()
@@ -76,6 +82,8 @@ def main():
             if landing is None:
                 continue
             targets.add(landing)
+            if not unlisted_hardware and landing.startswith("hardware-archives/"):
+                problems["link to delisted archive"].append("%s -> %s" % (page, href))
             if landing not in on_disk:
                 problems["broken link"].append("%s -> %s" % (page, href))
 
@@ -162,6 +170,13 @@ def main():
             url = index["prefixes"][prefix_idx] + name + ("/index.html" if is_dir else ".html")
             if url.lstrip("/") not in on_disk:
                 problems["stale search index"].append(url)
+            if url.lstrip("/").startswith("hardware-archives/"):
+                problems["delisted archive in search"].append(url)
+
+    if os.path.exists("sitemap.xml"):
+        with open("sitemap.xml", encoding="utf-8") as fh:
+            if re.search(r"<loc>[^<]*/hardware-archives/", fh.read()):
+                problems["delisted archive in sitemap"].append("run scripts/build.py")
 
     print("checked %d pages\n" % len(pages))
     if not problems:

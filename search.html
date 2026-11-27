@@ -4,12 +4,12 @@
   <!-- Basic browser and search-engine information for the search page. -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Search every page in the Alien Cultist Labs archives, covering thousands of hardware component records and Area 42 dossiers.">
+  <meta name="description" content="Search the Alien Cultist Labs site and its published reference dossiers.">
   <title>Search the archives // Alien Cultist Labs</title>
   <!-- The search page is a tool, not a landing page, so keep it out of results. -->
   <meta name="robots" content="noindex, follow">
   <!-- Every page uses this one shared stylesheet. -->
-  <link rel="canonical" href="https://windows95br0.github.io/search.html"><meta property="og:type" content="website"><meta property="og:site_name" content="Alien Cultist Labs"><meta property="og:title" content="Search the archives // Alien Cultist Labs"><meta property="og:description" content="Search every page in the Alien Cultist Labs archives, covering thousands of hardware component records and Area 42 dossiers."><meta property="og:url" content="https://windows95br0.github.io/search.html"><meta property="og:image" content="https://windows95br0.github.io/assets/images/og-card.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Alien Cultist Labs"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Search the archives // Alien Cultist Labs"><meta name="twitter:description" content="Search every page in the Alien Cultist Labs archives, covering thousands of hardware component records and Area 42 dossiers."><meta name="twitter:image" content="https://windows95br0.github.io/assets/images/og-card.jpg"><meta name="theme-color" content="#040912"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+  <link rel="canonical" href="https://windows95br0.github.io/search.html"><meta property="og:type" content="website"><meta property="og:site_name" content="Alien Cultist Labs"><meta property="og:title" content="Search the archives // Alien Cultist Labs"><meta property="og:description" content="Search the Alien Cultist Labs site and its published reference dossiers."><meta property="og:url" content="https://windows95br0.github.io/search.html"><meta property="og:image" content="https://windows95br0.github.io/assets/images/og-card.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Alien Cultist Labs"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Search the archives // Alien Cultist Labs"><meta name="twitter:description" content="Search the Alien Cultist Labs site and its published reference dossiers."><meta name="twitter:image" content="https://windows95br0.github.io/assets/images/og-card.jpg"><meta name="theme-color" content="#040912"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- site-shell keeps the content centered and limits its maximum width. -->
@@ -26,10 +26,9 @@
       <nav class="main-nav" aria-label="Main navigation">
         <a class="home-nav-link" href="index.html">HOME</a>
         <a class="pricing-nav-link" href="pricing.html">PRICING</a>
-        
         <a class="game-nav-link" href="dedicatedservers.html"><span>GAME WITH US!!</span><small>SOON</small></a>
         <a class="archive-nav-link" href="xrayarchives.html">X-RAY ARCHIVES</a>
-        <a class="hardware-nav-link" href="hardware-archives/index.html">HARDWARE ARCHIVES</a><a class="search-nav-link" href="search.html">SEARCH</a>
+        <a class="search-nav-link" href="search.html">SEARCH</a>
       </nav>
     </header>
 
@@ -37,22 +36,21 @@
       <section class="search-page" aria-labelledby="search-title">
         <p class="eyebrow">[ ARCHIVE QUERY ]</p>
         <h1 id="search-title">Search the archives</h1>
-        <p class="hero-text">One box across everything — component records, dossiers, and the rest of the site. Try a manufacturer, a model number, or a topic.</p>
+        <p class="hero-text">Search published dossiers and the rest of the site. Try a topic, event, or service.</p>
 
         <!-- Revealed by the script, since searching cannot work without it. -->
         <form class="search-form" role="search" data-search-form hidden>
           <label class="visually-hidden" for="search-input">Search the archives</label>
           <input class="search-input" id="search-input" type="search" name="q"
-                 placeholder="e.g. Iomega Zip, LTO Ultrium, Standard Oil"
+                 placeholder="e.g. Roswell, Standard Oil, pricing"
                  autocomplete="off" spellcheck="false" data-search-input>
           <button class="button button-primary" type="submit">SEARCH</button>
         </form>
 
         <div class="search-filters" data-search-filters role="group" aria-label="Limit results to one section">
           <button type="button" class="search-filter" data-section="all" aria-pressed="true">EVERYTHING</button>
-          <button type="button" class="search-filter" data-section="0" aria-pressed="false">HARDWARE</button>
-          <button type="button" class="search-filter" data-section="1" aria-pressed="false">AREA 42</button>
-          <button type="button" class="search-filter" data-section="2" aria-pressed="false">THE SITE</button>
+          <button type="button" class="search-filter" data-section="0" aria-pressed="false">AREA 42</button>
+          <button type="button" class="search-filter" data-section="1" aria-pressed="false">THE SITE</button>
         </div>
 
         <p class="search-status" role="status" aria-live="polite" data-search-status></p>
@@ -66,7 +64,6 @@
         <div class="search-fallback">
           <p class="panel-label">BROWSE INSTEAD</p>
           <div class="panel-actions">
-            <a class="button button-quiet" href="hardware-archives/index.html">HARDWARE ARCHIVES <span>→</span></a>
             <a class="button button-quiet" href="area-42/index.html">AREA 42 <span>→</span></a>
             <a class="button button-quiet" href="index.html">HOME <span>→</span></a>
           </div>
