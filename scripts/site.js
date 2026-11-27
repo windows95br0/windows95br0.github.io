@@ -9,6 +9,7 @@
   'use strict';
 
   var doc = document;
+  var navigatorScript = new URL('navigator.js', doc.currentScript.src).href;
 
   /* Small helpers so the rest of the file reads cleanly. */
   function make(tag, className, text) {
@@ -252,5 +253,11 @@
     setupNavToggle();
     setupBackToTop();
     setupFilter();
+    var script = doc.createElement('script');
+    script.src = navigatorScript;
+    script.addEventListener('error', function () {
+      console.error('The Net Navigator browser theme script could not load.');
+    });
+    doc.body.appendChild(script);
   });
 }());

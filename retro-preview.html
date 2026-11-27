@@ -1,0 +1,727 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A retro design preview of the AlienCultist Labs maintenance page.">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Retro Preview // AlienCultist Labs</title>
+  <link rel="canonical" href="https://windows95br0.github.io/retro-preview.html">
+  <meta property="og:title" content="Retro Preview // AlienCultist Labs">
+  <meta property="og:image" content="https://windows95br0.github.io/assets/images/og-card.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      position: relative;
+      isolation: isolate;
+      margin: 0;
+      padding: 28px 16px 40px;
+      color: #f3f5ff;
+      background: #040912 url("assets/images/aclab-logo.jpg") 85% 70% / 360px repeat fixed;
+      font: 16px/1.5 "Courier New", Courier, monospace;
+    }
+    body::before,
+    body::after {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      background: url("assets/images/aclab-logo.jpg") 85% 70% / 360px repeat;
+      content: "";
+      opacity: 0;
+      mix-blend-mode: screen;
+    }
+    body::before {
+      filter: hue-rotate(130deg) saturate(1.8);
+      animation: alien-glitch-cyan 8s steps(1, end) infinite;
+    }
+    body::after {
+      filter: hue-rotate(-80deg) saturate(1.8);
+      animation: alien-glitch-pink 8s steps(1, end) infinite;
+    }
+    @keyframes alien-glitch-cyan {
+      0%, 91%, 100% { clip-path: inset(0 100% 100% 0); opacity: 0; transform: translateX(0); }
+      92% { clip-path: inset(12% 0 76% 0); opacity: .7; transform: translateX(-5px); }
+      94% { clip-path: inset(54% 0 40% 0); opacity: .35; transform: translateX(4px); }
+      96% { clip-path: inset(80% 0 11% 0); opacity: .6; transform: translateX(-2px); }
+    }
+    @keyframes alien-glitch-pink {
+      0%, 93%, 100% { clip-path: inset(0 100% 100% 0); opacity: 0; transform: translateX(0); }
+      94% { clip-path: inset(32% 0 58% 0); opacity: .55; transform: translateX(5px); }
+      96% { clip-path: inset(69% 0 22% 0); opacity: .35; transform: translateX(-4px); }
+      97% { clip-path: inset(19% 0 72% 0); opacity: .6; transform: translateX(2px); }
+    }
+    a { color: #80ffff; }
+    a:focus-visible { outline: 3px dashed #ffff80; outline-offset: 3px; }
+    .skip-link {
+      position: absolute;
+      left: 16px;
+      top: -100px;
+      z-index: 1;
+      padding: 8px;
+      background: #fff;
+      color: #000;
+    }
+    .skip-link:focus { top: 8px; }
+    .preview-note {
+      margin: 0 auto 12px;
+      max-width: 980px;
+      padding: 4px 8px;
+      background: #070a24;
+      color: #ded8f5;
+      font-size: 12px;
+      text-align: center;
+    }
+    .preview-note a { color: #fff; }
+    .window {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 4px;
+      border: 2px solid;
+      border-color: #fff #353535 #353535 #fff;
+      background: #c0c0c0;
+      box-shadow: 8px 8px 0 #000;
+      color: #111;
+    }
+    .title-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 4px 5px 4px 8px;
+      background: #000080;
+      color: white;
+      font: bold 13px/1.2 Arial, sans-serif;
+    }
+    .window-controls { display: flex; gap: 2px; flex-shrink: 0; }
+    .window-controls span {
+      display: grid;
+      width: 18px;
+      height: 17px;
+      place-items: center;
+      border: 2px solid;
+      border-color: #fff #424242 #424242 #fff;
+      background: #c0c0c0;
+      color: #111;
+      font: bold 11px/1 Arial, sans-serif;
+    }
+    .window-controls span:hover {
+      background: #dedede;
+      box-shadow: inset 0 0 0 1px #fff;
+    }
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px 12px;
+      padding: 7px 5px;
+      font: 12px Arial, sans-serif;
+    }
+    .menu-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 18px;
+      padding: 6px 8px;
+      border-bottom: 1px solid #808080;
+      font: 12px Arial, sans-serif;
+    }
+    .browser-menu { position: relative; }
+    .browser-menu summary {
+      padding: 3px 5px;
+      cursor: pointer;
+      list-style: none;
+    }
+    .browser-menu summary::-webkit-details-marker { display: none; }
+    .browser-menu summary:hover,
+    .browser-menu summary:focus-visible,
+    .browser-menu[open] summary { background: #000080; color: #fff; }
+    .menu-popup {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 10;
+      width: 220px;
+      max-width: calc(100vw - 40px);
+      padding: 3px;
+      border: 2px outset #ddd;
+      background: #c0c0c0;
+      box-shadow: 3px 3px #333;
+    }
+    .browser-menu:nth-last-child(-n+3) .menu-popup { left: auto; right: 0; }
+    .menu-popup button, .menu-popup a {
+      display: block;
+      width: 100%;
+      padding: 6px 12px;
+      border: 0;
+      background: transparent;
+      color: #111;
+      font: 12px Arial, sans-serif;
+      text-align: left;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .menu-popup button:disabled { color: #666; text-shadow: 1px 1px #fff; cursor: default; }
+    .menu-popup button:not(:disabled):hover, .menu-popup a:hover,
+    .menu-popup button:focus-visible, .menu-popup a:focus-visible {
+      background: #000080;
+      color: #fff;
+      outline: 1px dotted #fff;
+      outline-offset: -3px;
+    }
+    .menu-popup hr { margin: 4px 2px; border: 0; border-top: 1px solid #808080; border-bottom: 1px solid #fff; }
+    .menu-popup button[aria-pressed="true"]::before { content: "\2713  "; }
+    body.effects-paused::before, body.effects-paused::after,
+    body.effects-paused .rainbow-rule,
+    body.effects-paused .globe-map { animation: none; }
+    body.effects-paused .ascii-starfield { display: none; }
+    .window.images-hidden .page img { visibility: hidden; }
+    .window:fullscreen { overflow: auto; max-width: none; }
+    .browser-dialog {
+      width: min(420px, calc(100% - 32px));
+      padding: 4px;
+      border: 2px outset #ddd;
+      background: #c0c0c0;
+      color: #111;
+      font: 14px/1.5 Arial, sans-serif;
+    }
+    .browser-dialog::backdrop { background: rgba(0, 0, 0, .6); }
+    .browser-dialog h2 { margin: 0; padding: 5px 8px; background: #000080; color: #fff; font: bold 14px Arial, sans-serif; }
+    .browser-dialog p { padding: 0 12px; }
+    .browser-dialog button { margin: 0 12px 12px; padding: 4px 20px; border: 2px outset #ddd; background: #c0c0c0; color: #111; cursor: pointer; }
+    .browser-dialog label { display: block; margin: 12px; }
+    .browser-dialog input { display: block; width: 100%; margin-top: 6px; padding: 5px; font: inherit; }
+    [hidden] { display: none !important; }
+    .navigator-toolbar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px;
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #808080;
+    }
+    .navigator-tools {
+      display: flex;
+      flex: 1;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+    .navigator-tool {
+      display: grid;
+      min-width: 54px;
+      padding: 3px 5px;
+      gap: 4px;
+      justify-items: center;
+      font: 11px Arial, sans-serif;
+      border: 2px solid transparent;
+      background: transparent;
+      color: #111;
+      cursor: pointer;
+    }
+    .navigator-tool:hover:not(:disabled) { border: 2px outset #ddd; }
+    .navigator-tool:active:not(:disabled) { border: 2px inset #ddd; }
+    .navigator-tool:focus-visible { outline: 1px dotted #111; }
+    .navigator-tool:disabled, .navigator-tool:disabled .navigator-icon { color: #777; cursor: default; text-shadow: 1px 1px #fff; }
+    .navigator-icon {
+      color: #006767;
+      font: bold 24px/1 Georgia, serif;
+      text-shadow: 1px 1px #fff;
+    }
+    .navigator-badge {
+      display: grid;
+      flex-shrink: 0;
+      width: 48px;
+      height: 48px;
+      place-items: center;
+      border: 2px inset #ddd;
+      background: linear-gradient(#071426 55%, #007f88);
+      color: #fff;
+    }
+    .retro-globe {
+      position: relative;
+      width: 34px;
+      height: 34px;
+      overflow: hidden;
+      border: 1px solid #80ffff;
+      border-radius: 50%;
+      background: #0053ad;
+      box-shadow: 1px 2px 0 #000;
+    }
+    .globe-map {
+      display: block;
+      width: 200%;
+      height: 100%;
+      animation: globe-spin 8s steps(24, end) infinite;
+    }
+    .retro-globe::after {
+      position: absolute;
+      inset: 0;
+      content: "";
+      pointer-events: none;
+      border-radius: inherit;
+      background: radial-gradient(circle at 35% 30%, rgba(255, 255, 255, .2), transparent 35%, rgba(0, 0, 0, .65) 100%);
+      box-shadow: inset -3px -2px 4px rgba(0, 0, 0, .5);
+    }
+    @keyframes globe-spin {
+      to { transform: translateX(-50%); }
+    }
+    .directory-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      padding: 0 6px 6px;
+      font: 11px Arial, sans-serif;
+    }
+    .directory-bar button, .directory-bar a {
+      padding: 4px 8px;
+      border: 2px outset #ddd;
+      background: #c0c0c0;
+      color: #111;
+      font: inherit;
+      text-decoration: none;
+    }
+    .directory-bar button:disabled { color: #666; text-shadow: 1px 1px #fff; }
+    .directory-bar a:hover { background: #dedede; }
+    .directory-bar a:focus-visible {
+      outline: 1px dotted #111;
+      outline-offset: -4px;
+    }
+    .address {
+      flex: 1 1 240px;
+      min-width: 0;
+      padding: 4px 7px;
+      overflow-wrap: anywhere;
+      border: 2px solid;
+      border-color: #777 #fff #fff #777;
+      background: #fff;
+      color: #222;
+    }
+    .page {
+      border: 2px solid;
+      border-color: #555 #fff #fff #555;
+      background: #000;
+      color: #f3f5ff;
+    }
+    .browser-page {
+      display: block;
+      width: 100%;
+      height: 700px;
+      border: 2px inset #ddd;
+      background: #000;
+    }
+    .masthead {
+      position: relative;
+      isolation: isolate;
+      padding: 25px 20px 20px;
+      text-align: center;
+      background: #000;
+    }
+    .masthead > p, .masthead > h1 { position: relative; z-index: 1; }
+    .ascii-starfield {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+      user-select: none;
+    }
+    .ascii-star {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      color: #fff;
+      font: 12px/1 "Courier New", Courier, monospace;
+      opacity: 0;
+      animation: ascii-star-flight var(--flight-time) linear var(--flight-delay) infinite;
+    }
+    .ascii-star:nth-child(3n) { color: #80ffff; }
+    .ascii-star:nth-child(5n) { color: #ffc9f9; }
+    @keyframes ascii-star-flight {
+      0% { left: 50%; top: 50%; transform: translate(-50%, -50%) scale(.15); opacity: 0; }
+      15% { opacity: .25; }
+      80% { opacity: .65; }
+      100% { left: var(--star-x); top: var(--star-y); transform: translate(-50%, -50%) scale(2.4); opacity: 0; }
+    }
+    .masthead p { margin: 0; }
+    .welcome {
+      color: #80ffff;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: .14em;
+    }
+    .masthead h1 {
+      margin: 8px 0;
+      color: #fff;
+      font: bold clamp(28px, 5vw, 48px)/1.05 Georgia, serif;
+      letter-spacing: .02em;
+      text-shadow: 3px 3px #a6009a;
+    }
+    .tagline { color: #ffc9f9; font-size: 13px; }
+    .rainbow-rule {
+      height: 6px;
+      background: linear-gradient(90deg, #ff45cb, #9261ff, #4eefff, #bfff63, #fff16b, #ff45cb);
+      background-size: 200% 100%;
+      animation: rainbow-cycle 6s linear infinite;
+    }
+    @keyframes rainbow-cycle {
+      to { background-position: 100% 0; }
+    }
+    .status-strip {
+      padding: 9px 14px;
+      background: #c0c0c0;
+      color: #111;
+      font-size: 12px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 240px;
+      gap: 20px;
+      padding: 24px;
+    }
+    .content { min-width: 0; }
+    h2 {
+      margin: 18px 0 12px;
+      color: #80ffff;
+      font: bold clamp(28px, 4vw, 38px)/1.1 Georgia, serif;
+    }
+    .intro { max-width: 520px; }
+    .terminal {
+      margin: 22px 0;
+      padding: 14px;
+      border: 2px inset #bdbdbd;
+      background: #000;
+      color: #b6ffba;
+      font-size: 13px;
+      overflow-wrap: anywhere;
+    }
+    .terminal p { margin: 0; }
+    .terminal strong { color: #63ff7c; }
+    .notice {
+      padding: 12px 14px;
+      border: 1px dotted #e59aff;
+      color: #f6d8ff;
+      font-size: 13px;
+    }
+    .sidebar { min-width: 0; }
+    .panel {
+      margin-bottom: 16px;
+      padding: 3px;
+      border: 2px solid;
+      border-color: #fff #333 #333 #fff;
+      background: #c0c0c0;
+      color: #111;
+      font: 13px/1.4 Arial, sans-serif;
+    }
+    .panel h3 {
+      margin: 0;
+      padding: 5px 7px;
+      background: #000080;
+      color: #fff;
+      font-size: 13px;
+    }
+    .panel-body { padding: 12px; }
+    .panel-body p { margin: 0 0 10px; }
+    .panel-body p:last-child { margin-bottom: 0; }
+    .readout { margin: 0; }
+    .readout div {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 5px 0;
+      border-bottom: 1px solid #999;
+    }
+    .readout div:last-child { border-bottom: 0; }
+    .readout dt { font-weight: bold; }
+    .readout dd { margin: 0; text-align: right; }
+    .button {
+      display: block;
+      margin-top: 8px;
+      padding: 8px;
+      border: 2px solid;
+      border-color: #fff #444 #444 #fff;
+      background: #dedede;
+      color: #000080;
+      font-weight: bold;
+      text-align: center;
+    }
+    .button:hover { background: #fff; }
+    .button:active { border-color: #444 #fff #fff #444; }
+    .logo {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 2px inset #aaa;
+    }
+    .footer {
+      padding: 16px 20px 20px;
+      border-top: 1px dashed #777db3;
+      text-align: center;
+      font-size: 12px;
+    }
+    .footer p { margin: 0 0 9px; }
+    .footer nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 18px; }
+    .status-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 4px 12px;
+      padding: 6px 5px 2px;
+      color: #222;
+      font: 12px Arial, sans-serif;
+    }
+    .status-bar span {
+      padding: 3px 6px;
+      border: 1px inset #ddd;
+    }
+    .status-bar span:first-child { flex: 1; }
+    @media (max-width: 650px) {
+      body { padding: 14px 10px 24px; }
+      .layout { grid-template-columns: minmax(0, 1fr); padding: 18px; }
+      .sidebar { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+      .panel { margin-bottom: 0; }
+      .logo-panel { display: none; }
+    }
+    @media (max-width: 400px) {
+      .sidebar { grid-template-columns: minmax(0, 1fr); }
+      .masthead { padding-inline: 12px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      body::before, body::after { animation: none; }
+      .rainbow-rule { animation: none; }
+      .globe-map { animation: none; }
+      .ascii-starfield { display: none; }
+    }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <p class="preview-note">RETRO DESIGN PREVIEW &mdash; <a href="index.html">back to the current site</a></p>
+  <div class="window">
+    <div class="title-bar">
+      <span>AlienCultist - Net Navigator</span>
+      <div class="window-controls" aria-hidden="true"><span>_</span><span>□</span><span>×</span></div>
+    </div>
+    <nav class="menu-bar" aria-label="Browser menus">
+      <details class="browser-menu" name="browser-menu">
+        <summary><u>F</u>ile</summary>
+        <div class="menu-popup">
+          <button disabled>New Web Browser</button>
+          <button data-action="open">Open Location...</button>
+          <button disabled>Open File...</button>
+          <hr>
+          <button disabled>Save As...</button>
+          <button disabled>Send Mail...</button>
+          <hr>
+          <button disabled>Page Setup...</button>
+          <button data-action="print">Print...</button>
+          <hr>
+          <button disabled>Close</button>
+          <button disabled>Exit</button>
+        </div>
+      </details>
+      <details class="browser-menu" name="browser-menu">
+        <summary><u>E</u>dit</summary>
+        <div class="menu-popup">
+          <button disabled>Undo</button><hr>
+          <button disabled>Cut</button>
+          <button disabled>Copy</button>
+          <button disabled>Paste</button>
+          <button data-action="select-all">Select All</button><hr>
+          <button data-action="find">Find...</button>
+          <button data-action="find-again" disabled>Find Again</button>
+        </div>
+      </details>
+      <details class="browser-menu" name="browser-menu">
+        <summary><u>V</u>iew</summary>
+        <div class="menu-popup">
+          <button data-toggle="navigator-toolbar" aria-pressed="true">Show Toolbar</button>
+          <button data-toggle="toolbar" aria-pressed="true">Show Location</button>
+          <button data-toggle="directory-bar" aria-pressed="true">Show Directory Buttons</button>
+          <button data-toggle="status-bar" aria-pressed="true">Show Status Bar</button><hr>
+          <button data-action="reload">Reload</button>
+          <button data-action="stop" disabled>Stop Loading</button><hr>
+          <button disabled>Document Source</button>
+          <button disabled>Document Information</button>
+        </div>
+      </details>
+      <details class="browser-menu" name="browser-menu">
+        <summary><u>G</u>o</summary>
+        <div class="menu-popup">
+          <button data-action="back" disabled>Back</button>
+          <button data-action="forward" disabled>Forward</button>
+          <button data-action="home">Home</button><hr>
+          <a href="index.html">AlienCultist Main Site</a>
+          <a href="pricing.html">Pricing and Services</a>
+          <a href="hardware-archives/index.html">Hardware Archives</a>
+          <a href="area-42/index.html">Area 42</a>
+          <a href="search.html">Site Search</a><hr>
+          <button disabled>History...</button>
+        </div>
+      </details>
+      <details class="browser-menu" name="browser-menu">
+        <summary><u>B</u>ookmarks</summary>
+        <div class="menu-popup">
+          <button disabled>Add Bookmark</button>
+          <button disabled>Go to Bookmarks...</button><hr>
+          <a href="index.html">AlienCultist Labs</a>
+          <a href="hardware-archives/index.html">Hardware Archives</a>
+          <a href="area-42/index.html">Area 42 Archive</a>
+          <a href="search.html">Search the Archives</a>
+        </div>
+      </details>
+      <details class="browser-menu" name="browser-menu">
+        <summary><u>O</u>ptions</summary>
+        <div class="menu-popup">
+          <button data-action="images" aria-pressed="true">Auto Load Images</button>
+          <button data-action="effects" aria-pressed="true">Digital Effects</button><hr>
+          <button disabled>General Preferences...</button>
+          <button disabled>Mail and News Preferences...</button>
+          <button disabled>Network Preferences...</button>
+          <button disabled>Security Preferences...</button><hr>
+          <button disabled>Save Options</button>
+        </div>
+      </details>
+      <details class="browser-menu" name="browser-menu">
+        <summary><u>D</u>irectory</summary>
+        <div class="menu-popup">
+          <button disabled>What's New?</button>
+          <button disabled>What's Cool?</button>
+          <a href="area-42/index.html">Destinations: Area 42</a>
+          <a href="search.html">Net Search: Site Archives</a>
+          <button disabled>People</button>
+          <button disabled>Software</button>
+        </div>
+      </details>
+      <details class="browser-menu" name="browser-menu">
+        <summary><u>W</u>indow</summary>
+        <div class="menu-popup">
+          <button data-action="fullscreen" aria-pressed="false">Full Screen</button>
+          <button disabled>Mail</button>
+          <button disabled>News</button><hr>
+          <a href="#top">AlienCultist - Net Navigator</a>
+        </div>
+      </details>
+      <details class="browser-menu" name="browser-menu">
+        <summary><u>H</u>elp</summary>
+        <div class="menu-popup">
+          <button data-action="help">Navigator Handbook</button>
+          <button disabled>Release Notes</button>
+          <button disabled>Technical Support</button><hr>
+          <button data-action="about">About Net Navigator...</button>
+        </div>
+      </details>
+    </nav>
+    <div class="navigator-toolbar" role="group" aria-label="Browser navigation">
+      <div class="navigator-tools">
+        <button class="navigator-tool" data-action="back" disabled><span class="navigator-icon" aria-hidden="true">&larr;</span>Back</button>
+        <button class="navigator-tool" data-action="forward" disabled><span class="navigator-icon" aria-hidden="true">&rarr;</span>Forward</button>
+        <button class="navigator-tool" data-action="home"><span class="navigator-icon" aria-hidden="true">&#8962;</span>Home</button>
+        <button class="navigator-tool" data-action="reload"><span class="navigator-icon" aria-hidden="true">&#8635;</span>Reload</button>
+        <button class="navigator-tool" data-action="images" aria-pressed="true"><span class="navigator-icon" aria-hidden="true">&#10022;</span>Images</button>
+        <button class="navigator-tool" data-action="open"><span class="navigator-icon" aria-hidden="true">&#128194;</span>Open</button>
+        <button class="navigator-tool" data-action="print"><span class="navigator-icon" aria-hidden="true">&#128424;</span>Print</button>
+        <button class="navigator-tool" data-action="find"><span class="navigator-icon" aria-hidden="true">&#8981;</span>Find</button>
+        <button class="navigator-tool" data-action="stop" disabled><span class="navigator-icon" aria-hidden="true">&#10005;</span>Stop</button>
+      </div>
+      <span class="navigator-badge" role="img" aria-label="Spinning retro globe">
+        <span class="retro-globe" aria-hidden="true">
+          <svg class="globe-map" viewBox="0 0 160 40" preserveAspectRatio="none" shape-rendering="crispEdges">
+            <defs>
+              <pattern id="retro-world-map" width="80" height="40" patternUnits="userSpaceOnUse">
+                <path fill="#79e589" stroke="#0e684e" stroke-width=".6" d="M4 8H9V5H20V7H28V12H24V16H19V20H14V16H10V12H4Z M23 20H30V23H35V29H32V34H28V38H25V31H22V25Z M31 3H38V7H34V10H30Z M43 7H48V4H62V7H75V13H70V17H64V21H60V17H55V14H48V17H42V12H39V9H43Z M43 18H54V23H58V28H53V33H48V29H44V24H41Z M66 29H74V32H77V36H65V33H62V30Z"/>
+              </pattern>
+            </defs>
+            <rect width="160" height="40" fill="url(#retro-world-map)"/>
+          </svg>
+        </span>
+      </span>
+    </div>
+    <div class="toolbar" aria-label="Page address">
+      <strong>Location:</strong>
+      <span class="address">https://aliencultist.com/</span>
+    </div>
+    <div class="directory-bar" role="group" aria-label="Site directory">
+      <button disabled>What's New?</button><button disabled>What's Cool?</button>
+      <a href="area-42/index.html">Destinations</a>
+      <a href="search.html">Net Search</a><button disabled>People</button><button disabled>Software</button>
+    </div>
+    <div class="page">
+      <header class="masthead">
+        <div class="ascii-starfield" aria-hidden="true"></div>
+        <p class="welcome">* WELCOME TO THE WORLD WIDE WEB HOME OF *</p>
+        <h1>AlienCultist</h1>
+        <p class="tagline">Galt, California &bull; Est. 2026 by Windows95br0</p>
+      </header>
+      <div class="rainbow-rule" aria-hidden="true"></div>
+      <div class="status-strip">*** MAINTENANCE MODE ACTIVE &nbsp; // &nbsp; ARCHIVE RECOVERY IN PROGRESS ***</div>
+      <main class="layout" id="main-content">
+        <section class="content" aria-labelledby="maintenance-title">
+          <h2 id="maintenance-title">The lab is under repair!</h2>
+          <p class="intro">We're offline for a bit while we update the site and work through the recovery queue. Nothing is lost &mdash; we'll be back shortly.</p>
+          <div class="terminal" aria-label="Status terminal output">
+            <p><strong>ACLAB:~$</strong> maintenance --active</p>
+            <p><strong>READY.</strong> archive queue paused until reboot.</p>
+          </div>
+          <p class="notice"><strong>PLEASE STAND BY...</strong><br>Thanks for visiting! The lab will be back online soon.</p>
+        </section>
+        <aside class="sidebar" aria-label="Maintenance details">
+          <section class="panel">
+            <h3>System Status</h3>
+            <div class="panel-body">
+              <dl class="readout">
+                <div><dt>STATUS</dt><dd>MAINT</dd></div>
+                <div><dt>MODE</dt><dd>REBOOT</dd></div>
+                <div><dt>LOCATION</dt><dd>GALT, CA</dd></div>
+              </dl>
+            </div>
+          </section>
+          <section class="panel">
+            <h3>Still Reachable!</h3>
+            <div class="panel-body">
+              <p>Need to get in touch?</p>
+              <a class="button" href="tel:+12799772898">CALL (279) 977-2898</a>
+              <a class="button" href="sms:+12799772898">SEND A TEXT</a>
+            </div>
+          </section>
+          <div class="panel logo-panel">
+            <div class="panel-body">
+              <picture><source srcset="assets/images/ac-logo.webp" type="image/webp"><img class="logo" src="assets/images/ac-logo.jpg" width="1024" height="1024" alt="AlienCultist Labs logo" loading="lazy" decoding="async"></picture>
+            </div>
+          </div>
+        </aside>
+      </main>
+      <footer class="footer">
+        <p>&copy; 2026 ALIENCULTIST LABS // GALT, CALIFORNIA</p>
+        <nav aria-label="Footer">
+          <a href="tel:+12799772898">(279) 977-2898</a>
+          <a href="404.html">404 PAGE</a>
+          <a href="area-42/index.html">AREA 42</a>
+          <a href="search.html">SEARCH</a>
+          <a href="#top">BACK TO TOP</a>
+        </nav>
+      </footer>
+    </div>
+    <iframe class="browser-page" title="Page inside Net Navigator" hidden></iframe>
+    <div class="status-bar"><span role="status" aria-live="polite">Done.</span><span>AlienCultist Labs // Systems Offline</span></div>
+  </div>
+  <dialog class="browser-dialog" aria-labelledby="dialog-title">
+    <h2 id="dialog-title"></h2>
+    <p id="dialog-message"></p>
+    <form method="dialog"><button>OK</button></form>
+  </dialog>
+  <dialog class="browser-dialog input-dialog" aria-labelledby="input-title">
+    <h2 id="input-title"></h2>
+    <form>
+      <label><span id="input-label"></span><input required aria-describedby="input-hint"></label>
+      <p id="input-hint"></p>
+      <button type="submit">OK</button>
+      <button type="button" data-dismiss>Cancel</button>
+    </form>
+  </dialog>
+  <script src="scripts/navigator.js" defer></script>
+</body>
+</html>

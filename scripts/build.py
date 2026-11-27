@@ -23,7 +23,7 @@ import xml.sax.saxutils as sx
 SITE = 'https://windows95br0.github.io'
 
 # Pages that should not be advertised to search engines or the site search.
-EXCLUDE = {'404.html', 'Maint.html', 'search.html'}
+EXCLUDE = {'404.html', 'Maint.html', 'search.html', 'retro-preview.html'}
 
 # Trailing branding removed from titles, longest first so the more specific
 # suffixes win.

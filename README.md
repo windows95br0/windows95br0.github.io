@@ -12,15 +12,18 @@ Static HTML, CSS, and vanilla client-side JavaScript. **No build step and no dep
 
 | Path | What it is |
 | --- | --- |
-| `index.html` | Home page: services, about, contact |
+| `index.html` | Home page: current maintenance status and contact |
 | `pricing.html` | Rate card and common questions |
 | `search.html` | Searches every page on the site |
 | `dedicatedservers.html` | Game servers (placeholder) |
 | `xrayarchives.html` | X-Ray Archives (placeholder) |
 | `Maint.html` | Maintenance page, not linked from the site |
+| `retro-preview.html` | Unindexed retro maintenance preview and shared browser-shell template |
 | `404.html` | Served by GitHub Pages for unknown URLs |
 | `style.css` | Shared stylesheet and design tokens for every page |
 | `scripts/site.js` | Shared behaviour for every page |
+| `scripts/navigator.js` | Shared retro browser shell, menus, toolbar, and embedded navigation |
+| `navigator.css` | Retro browser chrome and section-aware presentation |
 | `scripts/search.js` | Search page only |
 | `scripts/build.py` | Regenerates the files below |
 | `scripts/images.py` | Makes WebP copies and wraps images in `<picture>` |
@@ -58,8 +61,28 @@ Sections re-declare these on a body class (`.shop-page`, `.hardware-page`, `.are
 - **Mobile menu toggle** — collapses the nav below 800px
 - **Back-to-top button** — appears after scrolling 600px
 - **Skip-to-content link** — for keyboard and screen-reader users
+- **Net Navigator theme** — loads the browser shell and globe from the preview,
+  keeping the page's content, palette, archive filters, and navigation intact
 
 Everything degrades gracefully: if the script fails to load, the pages still work, they just lose these extras.
+
+### Retro browser theme
+
+`retro-preview.html` is the unindexed shell template as well as a standalone
+preview. Its menus, toolbar, globe, and dialogs are reused by
+`scripts/navigator.js`; do not delete it while the theme is enabled.
+`navigator.css` styles the production shell without replacing section
+stylesheets: Hardware keeps its mint/amber palette, Area 42 keeps its gold/red
+evidence-library presentation, and maintenance/error pages retain their
+status palettes. Original URLs, metadata, records, and sources are unchanged.
+
+Internal navigation loads site pages inside the browser frame. Embedded pages
+receive the theme's content styling but never another browser shell. External
+source links leave the frame in the outer tab (or their requested new tab).
+Telephone/text links, downloads, and modifier-clicks keep their normal browser
+behavior. Navigation requires an HTTP server, not `file://`.
+The Location bar shows the current embedded URL; options and frame history are
+per visit. Digital Effects and reduced-motion preferences disable animation.
 
 ## Working on the site
 
@@ -88,7 +111,7 @@ Regenerate the derived files:
 python3 scripts/build.py
 ```
 
-This rewrites `sitemap.xml` and `search-index.json` from the pages on disk, taking each page's `lastmod` from its most recent git commit and its search title from its `<title>` tag. `404.html`, `Maint.html`, and `search.html` are deliberately left out of both.
+This rewrites `sitemap.xml` and `search-index.json` from the pages on disk, taking each page's `lastmod` from its most recent git commit and its search title from its `<title>` tag. `404.html`, `Maint.html`, `search.html`, and `retro-preview.html` are deliberately left out of both.
 
 Commit the regenerated files along with your page changes — GitHub Pages cannot run this script for you.
 
