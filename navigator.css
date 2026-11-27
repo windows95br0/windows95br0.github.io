@@ -155,12 +155,16 @@ body.navigator-embedded::before, body.navigator-embedded::after { display: none;
 .navigator-site .address { flex: 1 1 240px; min-width: 0; padding: 4px 7px; overflow-wrap: anywhere; border: 2px solid; border-color: #777 #fff #fff #777; background: #fff; color: #222; }
 .navigator-site .directory-bar { gap: 4px; }
 .navigator-site .directory-bar button, .navigator-site .directory-bar a,
-.navigator-site .site-navigation .main-nav a, .navigator-embedded .site-navigation .main-nav a { padding: 4px 8px; border: 2px outset #ddd; background: #c0c0c0; color: #111; font: inherit; text-decoration: none; }
+.navigator-site .site-navigation .main-nav a, .navigator-embedded .site-navigation .main-nav a,
+.navigator-site .site-navigation .nav-toggle, .navigator-embedded .site-navigation .nav-toggle { padding: 4px 8px; border: 2px outset #ddd; background: #c0c0c0; color: #111; font: inherit; text-decoration: none; }
+.navigator-site .site-navigation .nav-toggle, .navigator-embedded .site-navigation .nav-toggle { letter-spacing: normal; }
 .navigator-site .directory-bar button:disabled { color: #666; text-shadow: 1px 1px #fff; }
 .navigator-site .directory-bar a:hover, .navigator-site .site-navigation .main-nav a:hover,
-.navigator-embedded .site-navigation .main-nav a:hover { background: #dedede; }
+.navigator-embedded .site-navigation .main-nav a:hover,
+.navigator-site .site-navigation .nav-toggle:hover, .navigator-embedded .site-navigation .nav-toggle:hover { background: #dedede; }
 .navigator-site .directory-bar a:focus-visible, .navigator-site .site-navigation .main-nav a:focus-visible,
-.navigator-embedded .site-navigation .main-nav a:focus-visible { outline: 1px dotted #111; outline-offset: -4px; }
+.navigator-embedded .site-navigation .main-nav a:focus-visible,
+.navigator-site .site-navigation .nav-toggle:focus-visible, .navigator-embedded .site-navigation .nav-toggle:focus-visible { outline: 1px dotted #111; outline-offset: -4px; }
 .navigator-site .page { border: 2px inset #ddd; background: #000; }
 .navigator-site .site-shell, .navigator-embedded .site-shell { width: 100%; padding: 0; }
 /* Draw frame side edges inside the document so the navbar can cover them. */

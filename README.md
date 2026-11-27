@@ -83,6 +83,8 @@ The masthead reproduces the preview's welcome line, AlienCultist heading, and
 location/founding tagline exactly. Existing navigation replaces the maintenance
 banner text in a gray strip below the masthead, with its mobile toggle intact.
 Its links share the browser directory buttons' raised gray styling.
+The mobile Menu/Close toggle uses the same button styling, hover shading, and
+keyboard focus outline.
 All active pages link to Home, Web Design, Software, Game With Us, X-Ray
 Archives, and Search. Archive-specific index/category links remain alongside
 these public destinations. The previous service listings, prices, and offer
