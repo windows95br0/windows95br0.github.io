@@ -3,27 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Software at Alien Cultist Labs. Information coming soon.">
-  <title>Software // Alien Cultist Labs</title>
+  <meta name="description" content="Open-source Linux tools by Windows95br0: a Debian-based app toolkit and a Kali NVIDIA driver update script.">
+  <title>Open Source Projects // Alien Cultist Labs</title>
   <link rel="canonical" href="https://windows95br0.github.io/software.html">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Alien Cultist Labs">
-  <meta property="og:title" content="Software // Alien Cultist Labs">
-  <meta property="og:description" content="Software at Alien Cultist Labs. Information coming soon.">
+  <meta property="og:title" content="Open Source Projects // Alien Cultist Labs">
+  <meta property="og:description" content="Open-source Linux tools by Windows95br0: a Debian-based app toolkit and a Kali NVIDIA driver update script.">
   <meta property="og:url" content="https://windows95br0.github.io/software.html">
   <meta property="og:image" content="https://windows95br0.github.io/assets/images/og-card.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Alien Cultist Labs">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Software // Alien Cultist Labs">
-  <meta name="twitter:description" content="Software at Alien Cultist Labs. Information coming soon.">
+  <meta name="twitter:title" content="Open Source Projects // Alien Cultist Labs">
+  <meta name="twitter:description" content="Open-source Linux tools by Windows95br0: a Debian-based app toolkit and a Kali NVIDIA driver update script.">
   <meta name="twitter:image" content="https://windows95br0.github.io/assets/images/og-card.jpg">
   <meta name="theme-color" content="#040912">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="coming-soon-page">
+<body>
   <div class="site-shell">
     <header class="topbar" id="top">
       <a class="brand" href="index.html" aria-label="Alien Cultist Labs home">
@@ -31,27 +31,67 @@
       </a>
       <div class="status-line" aria-label="System status">
         <span class="status-dot"></span>
-        COMING SOON <span class="status-divider">//</span> GALT, CA <span class="status-divider">//</span> EST. 2023 BY Windows95br0
+        OPEN SOURCE PROJECTS <span class="status-divider">//</span> GALT, CA <span class="status-divider">//</span> EST. 2023 BY Windows95br0
       </div>
       <nav class="main-nav" aria-label="Main navigation">
         <a class="home-nav-link" href="index.html">HOME</a>
         <a class="web-design-nav-link" href="pricing.html"><span>WEB DESIGN</span><small>SOON</small></a>
-        <a class="software-nav-link" href="software.html" aria-current="page"><span>SOFTWARE</span><small>SOON</small></a>
+        <a class="software-nav-link" href="software.html" aria-current="page"><span>SOFTWARE</span><small>NEW</small></a>
         <a class="game-nav-link" href="dedicatedservers.html"><span>GAME WITH US!!</span><small>SOON</small></a>
         <a class="archive-nav-link" href="xrayarchives.html"><span>X-RAY ARCHIVES</span><small>SOON</small></a>
         <a class="search-nav-link" href="search.html">SEARCH</a>
       </nav>
     </header>
     <main id="main-content">
-      <section class="coming-soon" aria-labelledby="software-title">
-        <div class="coming-soon-panel">
-          <p class="eyebrow">[ SOFTWARE // UNDER CONSTRUCTION ]</p>
-          <span class="coming-soon-status">INFORMATION COMING SOON</span>
-          <h1 id="software-title">Software</h1>
-          <p>Information about software is coming soon. Check back for updates.</p>
-          <div class="panel-actions">
-            <a class="button button-quiet" href="index.html">RETURN TO BASE</a>
-          </div>
+      <section class="software-projects" aria-labelledby="software-title">
+        <header class="software-projects-heading">
+          <p class="eyebrow">[ SOFTWARE // OPEN SOURCE ]</p>
+          <h1 id="software-title">Projects</h1>
+          <p>Small tools built to solve real Linux maintenance and setup problems. Browse the source, read each repository's instructions, and check the system requirements before running scripts.</p>
+        </header>
+        <div class="repo-grid">
+          <article class="repo-card" aria-labelledby="linux-toolkit-title">
+            <header class="repo-card-heading">
+              <div>
+                <p class="service-code">SYSTEM SETUP // DEBIAN-BASED LINUX</p>
+                <h2 id="linux-toolkit-title">Linux Toolkit</h2>
+              </div>
+              <span class="repo-language">SHELL</span>
+            </header>
+            <p class="repo-description">An interactive toolkit for installing a curated collection of apps and utilities on Debian-based distributions. Choose tools from a menu or pass app IDs directly; it also includes install verification, logging, and a network speed test.</p>
+            <figure class="repo-capture">
+              <a href="assets/images/project-screenshots/linux-toolkit.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size Linux Toolkit screenshot">
+                <img src="assets/images/project-screenshots/linux-toolkit.png" width="1469" height="1012" alt="Linux Toolkit interactive terminal menu showing categories including browsers, development, gaming, and Proton apps." loading="lazy" decoding="async">
+              </a>
+              <figcaption>Linux Toolkit's interactive category and app-selection menu.</figcaption>
+            </figure>
+            <p class="repo-note">Installs software and may request administrator access. Review the script and supported distributions first.</p>
+            <div class="repo-actions">
+              <a class="button" href="https://github.com/windows95br0/Linux-Toolkit" target="_blank" rel="noopener noreferrer">VIEW REPOSITORY <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="https://github.com/windows95br0/Linux-Toolkit/blob/main/Windows95br0s-Linux-Toolkit.sh" target="_blank" rel="noopener noreferrer">VIEW SCRIPT <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="repo-card" aria-labelledby="kali-update-title">
+            <header class="repo-card-heading">
+              <div>
+                <p class="service-code">SYSTEM MAINTENANCE // KALI LINUX</p>
+                <h2 id="kali-update-title">Kali NVIDIA Update</h2>
+              </div>
+              <span class="repo-language">SHELL</span>
+            </header>
+            <p class="repo-description">A Kali Rolling maintenance script that updates packages, ensures kernel headers are present, rebuilds NVIDIA DKMS modules, and checks that the default boot kernel has a working NVIDIA module before recommending a reboot.</p>
+            <figure class="repo-capture">
+              <a href="assets/images/project-screenshots/kali-update.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size Kali NVIDIA updater screenshot">
+                <img src="assets/images/project-screenshots/kali-update.png" width="1469" height="1012" alt="Kali NVIDIA update script running in a terminal, showing package-list updates and full-upgrade planning." loading="lazy" decoding="async">
+              </a>
+              <figcaption>Kali update script during package-list refresh and full-upgrade planning.</figcaption>
+            </figure>
+            <p class="repo-note">Requires root and makes system-wide package and driver changes. Read the repository instructions before use; it does not reboot automatically.</p>
+            <div class="repo-actions">
+              <a class="button" href="https://github.com/windows95br0/kali-nvidia-update-script" target="_blank" rel="noopener noreferrer">VIEW REPOSITORY <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="https://github.com/windows95br0/kali-nvidia-update-script/blob/main/kali-update.sh" target="_blank" rel="noopener noreferrer">VIEW SCRIPT <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
         </div>
       </section>
     </main>

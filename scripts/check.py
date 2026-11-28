@@ -29,7 +29,7 @@ PUBLIC_NAV = {
     "xrayarchives.html": "X-RAY ARCHIVES",
     "search.html": "SEARCH",
 }
-SOON_NAV = {"pricing.html", "software.html", "dedicatedservers.html", "xrayarchives.html"}
+SOON_NAV = {"pricing.html", "dedicatedservers.html", "xrayarchives.html"}
 RASTER = ("jpg", "jpeg", "png", "gif")
 LINK_SCHEMES = re.compile(r"^(https?:|mailto:|tel:|sms:|javascript:|data:|#|//)", re.I)
 
@@ -102,6 +102,8 @@ def main():
                     problems["incomplete public navigation"].append("%s -> %s" % (page, label))
                 if target in SOON_NAV and nav_badges[target] != ["SOON"]:
                     problems["missing coming-soon flag"].append("%s -> %s" % (page, label))
+                if target == "software.html" and nav_badges[target] != ["NEW"]:
+                    problems["missing new flag"].append("%s -> %s" % (page, label))
             if not page.startswith("area-42/") and any(
                 target and target.startswith("area-42/") for target in nav_links
             ):

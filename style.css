@@ -121,6 +121,7 @@ a { color: inherit; }
 .game-nav-link, .archive-nav-link, .hardware-nav-link, .pricing-nav-link, .web-design-nav-link, .software-nav-link, .search-nav-link { position: relative; display: inline-flex; align-items: center; gap: 7px; padding: 7px 9px; border: 1px solid var(--cyan-dark); color: var(--cyan) !important; text-decoration: none; }
 .game-nav-link { border-color: var(--yellow); color: var(--yellow) !important; box-shadow: 3px 3px 0 var(--cyan-dark); }
 .game-nav-link small, .web-design-nav-link small, .software-nav-link small, .archive-nav-link small { color: var(--ink); background: var(--yellow); padding: 1px 4px; font-size: 8px; font-weight: bold; letter-spacing: .08em; line-height: 1.2; text-shadow: none; }
+.software-nav-link small { background: #7afaff; color: #040912; }
 .archive-nav-link, .hardware-nav-link, .pricing-nav-link, .web-design-nav-link, .software-nav-link, .search-nav-link { color: var(--paper) !important; }
 .game-nav-link:hover, .archive-nav-link:hover, .hardware-nav-link:hover, .pricing-nav-link:hover, .web-design-nav-link:hover, .software-nav-link:hover, .search-nav-link:hover { background: var(--cyan); color: var(--ink) !important; border-color: var(--cyan); }
 /* Typography and home-page hero controls. */
@@ -383,11 +384,34 @@ summary:focus-visible {
   text-align: center;
 }
 
+/* Open-source project cards on the Software page. */
+.software-projects { padding: 82px 0 100px; }
+.software-projects-heading { max-width: 760px; margin-bottom: 42px; }
+.software-projects-heading h1 { margin-bottom: 20px; }
+.software-projects-heading > p:last-child { max-width: 680px; color: var(--muted); font-size: 16px; }
+.repo-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.repo-card { display: flex; flex-direction: column; min-width: 0; padding: 24px; border: 1px solid var(--line); background: rgba(0, 0, 0, .62); box-shadow: 5px 5px 0 rgba(255, 89, 240, .45); }
+.repo-card-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; margin-bottom: 14px; }
+.repo-card-heading .service-code { margin-bottom: 12px; }
+.repo-card-heading h2 { margin: 0; font-size: clamp(30px, 4vw, 42px); overflow-wrap: anywhere; }
+.repo-language { flex-shrink: 0; padding: 4px 7px; border: 1px solid var(--cyan-dark); color: var(--cyan); font-size: 10px; letter-spacing: .12em; }
+.repo-description { min-height: 112px; color: var(--muted); font-size: 14px; }
+.repo-capture { margin: 8px 0 18px; }
+.repo-capture a { display: block; border: 1px solid rgba(122, 250, 255, .4); background: #000; }
+.repo-capture img { width: 100%; height: auto; }
+.repo-capture figcaption { margin-top: 7px; color: var(--muted); font-size: 10px; }
+.repo-note { min-height: 64px; padding: 10px 12px; border-left: 2px solid var(--yellow); background: rgba(255, 230, 109, .06); color: var(--muted); font-size: 11px; }
+.repo-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 20px; margin-top: auto; padding-top: 10px; }
+.repo-actions .button { font-size: 10px; }
+
 @media (max-width: 800px) {
   /* Collapse the nav behind the menu button on small screens. */
   .nav-toggle { display: inline-flex; }
   .topbar { grid-template-columns: minmax(0, 1fr) auto; }
   .main-nav { display: none; }
+  .software-projects { padding: 58px 0 72px; }
+  .repo-grid { grid-template-columns: 1fr; }
+  .repo-description, .repo-note { min-height: 0; }
   .main-nav.is-open {
     display: flex;
     flex-direction: column;

@@ -296,7 +296,7 @@ body.navigator-embedded::before, body.navigator-embedded::after { display: none;
 :is(.navigator-site, .navigator-embedded) .site-shell .footer p { flex-basis: 100%; margin: 0; }
 .navigator-site .masthead > :not(.ascii-starfield), .navigator-embedded .masthead > :not(.ascii-starfield) { position: relative; z-index: 1; }
 .navigator-site .ticker, .navigator-embedded .ticker { background: #c0c0c0; color: #111; border-color: #808080; font: bold 12px/1.5 var(--mono); }
-.navigator-site .rainbow-rule, .navigator-embedded .rainbow-rule { height: 6px; background: linear-gradient(90deg, #ff45cb, #9261ff, #4eefff, #bfff63, #fff16b, #ff45cb); background-size: 200% 100%; animation: rainbow-cycle 6s linear infinite; }
+.navigator-site .rainbow-rule, .navigator-embedded .rainbow-rule { height: 6px; background: linear-gradient(90deg, #ff1744, #ff5a00, #ffe000, #ff5a00, #ec008c, #ff1744); background-size: 200% 100%; animation: rainbow-cycle 6s linear infinite; }
 @keyframes rainbow-cycle { to { background-position: 100% 0; } }
 .navigator-site .ascii-starfield, .navigator-embedded .ascii-starfield { position: absolute; inset: 0; overflow: hidden; pointer-events: none; user-select: none; }
 .navigator-site .ascii-star, .navigator-embedded .ascii-star { position: absolute; left: 50%; top: 50%; color: #fff; font: 12px/1 var(--mono); opacity: 0; animation: ascii-star-flight var(--flight-time) linear var(--flight-delay) infinite; }

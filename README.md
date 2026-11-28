@@ -14,7 +14,7 @@ Static HTML, CSS, and vanilla client-side JavaScript. **No build step and no dep
 | --- | --- |
 | `index.html` | Home page: current maintenance status and contact |
 | `pricing.html` | Web Design information (coming soon); retains the old URL for existing links |
-| `software.html` | Software information (coming soon) |
+| `software.html` | Open-source Linux projects and scripts |
 | `search.html` | Searches published pages; excludes unlisted hardware |
 | `dedicatedservers.html` | Game servers (placeholder) |
 | `xrayarchives.html` | X-Ray Archives (placeholder) |
