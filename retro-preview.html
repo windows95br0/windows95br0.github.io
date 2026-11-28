@@ -124,10 +124,10 @@
     .window.is-crashing { animation: window-malfunction 600ms ease-in-out; }
     @keyframes window-malfunction { 25% { transform: translateX(-6px); filter: hue-rotate(60deg); } 75% { transform: translateX(6px); filter: hue-rotate(-60deg); } }
     body:has(> .window.is-minimized) > .skip-link { display: none; }
-    .panic-screen { position: fixed; inset: 0; z-index: 1000; display: grid; place-content: center; padding: 24px; background: #06112a; color: #fff; font: bold clamp(14px, 2vw, 20px)/1.6 "Courier New", monospace; }
-    .panic-screen p { margin: 0 0 1em; }
-    .panic-screen-content { animation: panic-jitter 1s steps(2, end) infinite; }
-    @keyframes panic-jitter { 50% { transform: translateX(3px); } }
+    .panic-screen { position: fixed; inset: 0; z-index: 1000; padding: 24px; background: #06112a; color: #fff; font: 14px/1.5 "Courier New", monospace; }
+    .panic-screen-content { display: flex; flex-direction: column; height: 100%; }
+    .panic-screen p { flex: none; margin: 0 0 1em; font-weight: bold; }
+    .panic-log { flex: 1; min-height: 0; max-height: 600px; overflow: hidden; margin: 0 0 1em; color: inherit; font: inherit; white-space: pre-wrap; overflow-wrap: anywhere; }
     body.effects-paused :is(.panic-screen-content, .window.is-crashing) { animation: none; }
     .toolbar {
       display: flex;

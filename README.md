@@ -132,7 +132,7 @@ without seams, including inside embedded pages.
 The fake window title remains
 `AlienCultist - Net Navigator`; the real document title follows the active page.
 The title-bar controls minimize to a desktop-style title bar, maximize within
-the viewport, or display a simulated kernel panic before reloading the active
+the viewport, or display a scrolling simulated kernel log before reloading the active
 page. Click the minimized title to restore it; double-clicking the full title
 bar maximizes or restores its size.
 Area 42 is intentionally omitted from the main navigation and browser menus;

@@ -211,11 +211,47 @@
       content.className = 'panic-screen-content';
       const heading = document.createElement('p');
       heading.textContent = 'KERNEL PANIC';
-      const detail = document.createElement('p');
-      detail.textContent = 'Net Navigator has encountered a cosmic malfunction.';
+      const log = document.createElement('pre');
+      log.className = 'panic-log';
+      log.setAttribute('aria-hidden', 'true');
+      const lines = [
+        '[   42.137001] BUG: unable to handle kernel paging request at ffffdead00000000',
+        '[   42.137019] #PF: supervisor read access in kernel mode',
+        '[   42.137025] #PF: error_code(0x0000) - not-present page',
+        '[   42.137032] PGD 0 P4D 0',
+        '[   42.137041] Oops: 0000 [#1] PREEMPT SMP',
+        '[   42.137052] CPU: 0 PID: 95 Comm: navigator Not tainted',
+        '[   42.137063] Hardware name: AlienCultist Labs Virtual Machine',
+        '[   42.137074] RIP: 0010:browser_dispatch+0x3a/0xc0',
+        '[   42.137082] Code: 48 8b 47 08 48 85 c0 74 12 48 8b 10 ff 52 18',
+        '[   42.137090] RSP: 0018:ffffb80000103d80 EFLAGS: 00010246',
+        '[   42.137098] RAX: ffffdead00000000 RBX: ffff8880022a0000',
+        '[   42.137105] RCX: 0000000000000000 RDX: 0000000000000001',
+        '[   42.137113] RSI: ffff8880022a0060 RDI: ffff8880022a0000',
+        '[   42.137121] RBP: ffffb80000103dc0 R08: 0000000000000000',
+        '[   42.137129] R09: 0000000000000001 R10: ffff888001120000',
+        '[   42.137137] R11: 0000000000000202 R12: ffff8880022a0000',
+        '[   42.137145] R13: 0000000000000000 R14: ffff888001120000',
+        '[   42.137153] R15: 0000000000000001',
+        '[   42.137161] FS:  0000000000000000 GS:ffff88803fc00000',
+        '[   42.137169] CR0: 0000000080050033 CR2: ffffdead00000000',
+        '[   42.137177] CR3: 0000000001020000 CR4: 00000000003506f0',
+        '[   42.137186] Call Trace:',
+        '[   42.137193]  <TASK>',
+        '[   42.137201]  process_page_request+0x84/0x120',
+        '[   42.137209]  navigator_interrupt+0x2d/0x90',
+        '[   42.137217]  handle_irq_event+0x41/0xa0',
+        '[   42.137225]  __do_softirq+0x117/0x2f0',
+        '[   42.137233]  irq_exit_rcu+0x65/0x90',
+        '[   42.137241]  </TASK>',
+        '[   42.137249] ---[ end trace 0000000000000000 ]---',
+        '[   42.137257] Kernel panic - not syncing: Fatal exception in interrupt',
+        '[   42.137265] Kernel Offset: 0x1c000000 from 0xffffffff81000000',
+        '[   42.137273] Rebooting in progress...'
+      ];
       const progress = document.createElement('p');
       progress.textContent = 'System halted. Preparing reboot...';
-      content.append(heading, detail, progress);
+      content.append(heading, log, progress);
       screen.append(content);
       browserWindow.inert = true;
       browserWindow.classList.add('is-crashing');
@@ -224,6 +260,17 @@
       window.setTimeout(() => {
         document.body.append(screen);
         screen.focus();
+        if (reduced || document.body.classList.contains('effects-paused')) {
+          log.textContent = lines.join('\n');
+          log.scrollTop = log.scrollHeight;
+        } else {
+          let index = 0;
+          const output = window.setInterval(() => {
+            log.textContent += (index ? '\n' : '') + lines[index++];
+            log.scrollTop = log.scrollHeight;
+            if (index === lines.length) window.clearInterval(output);
+          }, 70);
+        }
       }, delay);
       window.setTimeout(() => { progress.textContent = 'Rebooting Net Navigator...'; }, 1900);
       window.setTimeout(() => {

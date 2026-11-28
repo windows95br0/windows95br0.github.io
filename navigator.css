@@ -90,10 +90,10 @@ body.navigator-embedded::before, body.navigator-embedded::after { display: none;
 .navigator-site .window.is-crashing { animation: window-malfunction 600ms ease-in-out; }
 @keyframes window-malfunction { 25% { transform: translateX(-6px); filter: hue-rotate(60deg); } 75% { transform: translateX(6px); filter: hue-rotate(-60deg); } }
 body.navigator-site:has(> .window.is-minimized) > :is(.skip-link, .to-top) { display: none; }
-.navigator-site .panic-screen { position: fixed; inset: 0; z-index: 1000; display: grid; place-content: center; padding: 24px; background: #06112a; color: #fff; font: bold clamp(14px, 2vw, 20px)/1.6 "Courier New", monospace; }
-.navigator-site .panic-screen p { margin: 0 0 1em; }
-.navigator-site .panic-screen-content { animation: panic-jitter 1s steps(2, end) infinite; }
-@keyframes panic-jitter { 50% { transform: translateX(3px); } }
+.navigator-site .panic-screen { position: fixed; inset: 0; z-index: 1000; padding: 24px; background: #06112a; color: #fff; font: 14px/1.5 "Courier New", monospace; }
+.navigator-site .panic-screen-content { display: flex; flex-direction: column; height: 100%; }
+.navigator-site .panic-screen p { flex: none; margin: 0 0 1em; font-weight: bold; }
+.navigator-site .panic-log { flex: 1; min-height: 0; max-height: 600px; overflow: hidden; margin: 0 0 1em; color: inherit; font: inherit; white-space: pre-wrap; overflow-wrap: anywhere; }
 .navigator-site.effects-paused :is(.panic-screen-content, .window.is-crashing) { animation: none; }
 .navigator-site .menu-bar, .navigator-site .navigator-toolbar,
 .navigator-site .toolbar, .navigator-site .directory-bar, .navigator-site .status-bar {
