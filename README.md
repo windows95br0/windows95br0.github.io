@@ -79,6 +79,16 @@ status palettes. Original URLs, records, and sources remain intact.
 Interiors use the preview's compact serif headings, black backgrounds, beveled
 gray panels/buttons, and terminal styling. Maintenance pages also reuse its
 two-column content/sidebar layout.
+The maintenance sidebar includes a noninteractive 1,000th-visitor parody GIF
+in place of its logo image. A still image is used when reduced motion is enabled.
+The repeating background uses 360px WebP tiles instead of decoding the original
+1024px logo. Its cyan and pink glitch variants are precolored with the original
+CSS hue-rotation/saturation matrices, avoiding full-screen color filters.
+`assets/images/aclab-logo.jpg` remains unchanged for other uses.
+Stars move through transforms rather than animated layout coordinates.
+Page visibility pauses decorative animations in hidden tabs; intersection
+observers pause stars and the globe while off-screen.
+Effects resume when visible, without overriding Digital Effects or reduced motion.
 The masthead reproduces the preview's welcome line, AlienCultist heading, and
 location/founding tagline exactly. Existing navigation moves into the browser's
 directory-button row below Location. Contextual archive
@@ -111,7 +121,7 @@ Web Design, Software, X-Ray Archives, and Game With Us share the same SOON
 flag in every active navbar.
 `scripts/check.py` checks these public navbar destinations and labels on every
 active page, their SOON flags, and rejects retired offer catalogs.
-The gray social strip sits directly against the rainbow divider, overriding the
+The gray social strip sits directly against the masthead, overriding the
 legacy social-section spacing. It covers the viewport's inset side edges to join the window chrome
 without seams, including inside embedded pages.
 The fake window title remains

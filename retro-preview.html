@@ -20,7 +20,7 @@
       margin: 0;
       padding: 28px 16px 40px;
       color: #f3f5ff;
-      background: #040912 url("assets/images/aclab-logo.jpg") 85% 70% / 360px repeat fixed;
+      background: #040912 url("assets/images/aclab-background.webp") 85% 70% / 360px repeat fixed;
       font: 16px/1.5 "Courier New", Courier, monospace;
     }
     body::before,
@@ -29,17 +29,16 @@
       inset: 0;
       z-index: -1;
       pointer-events: none;
-      background: url("assets/images/aclab-logo.jpg") 85% 70% / 360px repeat;
       content: "";
       opacity: 0;
       mix-blend-mode: screen;
     }
     body::before {
-      filter: hue-rotate(130deg) saturate(1.8);
+      background: url("assets/images/aclab-background-cyan.webp") 85% 70% / 360px repeat;
       animation: alien-glitch-cyan 8s steps(1, end) infinite;
     }
     body::after {
-      filter: hue-rotate(-80deg) saturate(1.8);
+      background: url("assets/images/aclab-background-pink.webp") 85% 70% / 360px repeat;
       animation: alien-glitch-pink 8s steps(1, end) infinite;
     }
     @keyframes alien-glitch-cyan {
@@ -174,7 +173,6 @@
     .menu-popup hr { margin: 4px 2px; border: 0; border-top: 1px solid #808080; border-bottom: 1px solid #fff; }
     .menu-popup button[aria-pressed="true"]::before { content: "\2713  "; }
     body.effects-paused::before, body.effects-paused::after,
-    body.effects-paused .rainbow-rule,
     body.effects-paused .globe-map { animation: none; }
     body.effects-paused .ascii-starfield { display: none; }
     .window.images-hidden .page img { visibility: hidden; }
@@ -334,6 +332,7 @@
       overflow: hidden;
       pointer-events: none;
       user-select: none;
+      container-type: size;
     }
     .ascii-star {
       position: absolute;
@@ -347,11 +346,15 @@
     .ascii-star:nth-child(3n) { color: #80ffff; }
     .ascii-star:nth-child(5n) { color: #ffc9f9; }
     @keyframes ascii-star-flight {
-      0% { left: 50%; top: 50%; transform: translate(-50%, -50%) scale(.15); opacity: 0; }
+      0% { transform: translate(-50%, -50%) translate(0px, 0px) scale(.15); opacity: 0; }
       15% { opacity: .25; }
       80% { opacity: .65; }
-      100% { left: var(--star-x); top: var(--star-y); transform: translate(-50%, -50%) scale(2.4); opacity: 0; }
+      100% { transform: translate(-50%, -50%) translate(var(--star-x), var(--star-y)) scale(2.4); opacity: 0; }
     }
+    body.effects-inactive::before, body.effects-inactive::after,
+    body.effects-inactive :is(.ascii-star, .globe-map),
+    .effects-offscreen .ascii-star,
+    .navigator-badge.effects-offscreen .globe-map { animation-play-state: paused; }
     .masthead p { margin: 0; }
     .welcome {
       color: #80ffff;
@@ -367,15 +370,6 @@
       text-shadow: 3px 3px #a6009a;
     }
     .tagline { color: #ffc9f9; font-size: 13px; }
-    .rainbow-rule {
-      height: 6px;
-      background: linear-gradient(90deg, #ff1744, #ff5a00, #ffe000, #ff5a00, #ec008c, #ff1744);
-      background-size: 200% 100%;
-      animation: rainbow-cycle 6s linear infinite;
-    }
-    @keyframes rainbow-cycle {
-      to { background-position: 100% 0; }
-    }
     .status-strip {
       display: flex;
       flex-wrap: wrap;
@@ -438,6 +432,7 @@
     .panel-body { padding: 12px; }
     .panel-body p { margin: 0 0 10px; }
     .panel-body p:last-child { margin-bottom: 0; }
+    .visitor-ad img { display: block; width: 100%; height: auto; }
     .readout { margin: 0; }
     .readout div {
       display: flex;
@@ -515,7 +510,6 @@
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
       body::before, body::after { animation: none; }
-      .rainbow-rule { animation: none; }
       .globe-map { animation: none; }
       .ascii-starfield { display: none; }
     }
@@ -691,7 +685,6 @@
         <h1>AlienCultist</h1>
         <p class="tagline">Galt, California &bull; Est. 2023 by Windows95br0</p>
       </header>
-      <div class="rainbow-rule" aria-hidden="true"></div>
       <nav class="status-strip social-links" aria-label="Social media">
         <a class="social-facebook" href="https://www.facebook.com/profile.php?id=100092184115147" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook">
           <span class="social-orb" aria-hidden="true"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="12" fill="#3b5998"/><path d="M13 22v-9h3l.5-3.5H13V7.5c0-1.2.4-2 2-2h2V2.3c-.6-.1-1.8-.3-3-.3-3 0-5 1.8-5 5v2.5H6V13h3v9Z" fill="#fff"/></svg></span>
@@ -736,25 +729,14 @@
               </dl>
             </div>
           </section>
-          <section class="panel">
-            <h3>Still Reachable!</h3>
-            <div class="panel-body">
-              <p>Need to get in touch?</p>
-              <a class="button" href="tel:+12799772898">CALL (279) 977-2898</a>
-              <a class="button" href="sms:+12799772898">SEND A TEXT</a>
-            </div>
-          </section>
-          <div class="panel logo-panel">
-            <div class="panel-body">
-              <picture><source srcset="assets/images/ac-logo.webp" type="image/webp"><img class="logo" src="assets/images/ac-logo.jpg" width="1024" height="1024" alt="AlienCultist Labs logo" loading="lazy" decoding="async"></picture>
-            </div>
-          </div>
+          <aside class="visitor-ad" aria-label="Parody advertisement">
+            <picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/images/visitor-ad-still.png"><img src="assets/images/visitor-ad.gif" width="480" height="340" alt="Congratulations! You're our 1,000th visitor! You've won!"></picture>
+          </aside>
         </aside>
       </main>
       <footer class="footer">
         <p>&copy; 2026 ALIENCULTIST LABS // GALT, CALIFORNIA</p>
         <nav aria-label="Footer">
-          <a href="tel:+12799772898">(279) 977-2898</a>
           <a href="404.html">404 PAGE</a>
           <a href="area-42/index.html">AREA 42</a>
           <a href="search.html">SEARCH</a>

@@ -70,7 +70,7 @@ body::before {
   inset: 0;
   pointer-events: none;
   opacity: .14;
-  background-image: url("assets/images/aclab-logo.jpg");
+  background-image: url("assets/images/aclab-background.webp");
   background-size: 360px;
   background-position: 85% 70%;
   mix-blend-mode: screen;
@@ -178,6 +178,7 @@ h3 { font-size: 29px; margin-bottom: 14px; color: var(--cyan); text-shadow: 0 0 
 .contact-panel .button + .button { margin-top: 14px; }
 .social-links { margin-top: 30px; padding-top: 22px; border-top: 1px solid rgba(122, 250, 255, .3); }
 .social-links .panel-label { margin-bottom: 14px; }
+.visitor-ad img { display: block; width: 100%; height: auto; }
 .social-link-list { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
 .social-link-list a { display: inline-flex; align-items: center; justify-content: center; min-height: 36px; padding: 7px 10px; border: 1px solid rgba(220, 230, 223, .4); color: var(--paper); text-decoration: none; font-size: 10px; letter-spacing: .08em; transition: border-color .2s, transform .2s, background .2s; }
 .social-link-list a:hover { border-color: var(--cyan); background: #000; transform: translateY(-2px); }

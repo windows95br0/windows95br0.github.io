@@ -21,13 +21,23 @@
       const duration = 4 + Math.random() * 4;
       star.className = 'ascii-star';
       star.textContent = symbols[index % symbols.length];
-      star.style.setProperty('--star-x', (50 + Math.cos(angle) * 100) + '%');
-      star.style.setProperty('--star-y', (50 + Math.sin(angle) * 100) + '%');
+      star.style.setProperty('--star-x', (Math.cos(angle) * 100) + 'cqw');
+      star.style.setProperty('--star-y', (Math.sin(angle) * 100) + 'cqh');
       star.style.setProperty('--flight-time', duration + 's');
       star.style.setProperty('--flight-delay', (-Math.random() * duration) + 's');
       stars.append(star);
     }
     field.append(stars);
+  }
+
+  function setupEffectVisibility() {
+    const updateVisibility = () => document.body.classList.toggle('effects-inactive', document.hidden);
+    document.addEventListener('visibilitychange', updateVisibility);
+    updateVisibility();
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => entry.target.classList.toggle('effects-offscreen', !entry.isIntersecting));
+    });
+    document.querySelectorAll('.masthead, .navigator-badge').forEach(element => observer.observe(element));
   }
 
   async function loadStyles() {
@@ -70,10 +80,6 @@
     const ticker = header.parentElement.querySelector(':scope > .ticker');
     header.replaceWith(masthead);
     addStars(masthead);
-    const rainbow = document.createElement('div');
-    rainbow.className = 'rainbow-rule';
-    rainbow.setAttribute('aria-hidden', 'true');
-    masthead.after(rainbow);
     if (nav) {
       nav.prepend(template.querySelector('.whats-new').cloneNode(true));
       const navigation = document.createElement('div');
@@ -82,7 +88,7 @@
       navigation.append(nav);
       if (window.parent !== window) {
         navigation.hidden = true;
-        rainbow.after(navigation);
+        masthead.after(navigation);
       } else {
         moveNavigation(navigation, document.querySelector('.directory-bar'));
       }
@@ -90,7 +96,7 @@
     const socials = template.querySelector('.social-links').cloneNode(true);
     socials.classList.add('site-navigation');
     if (ticker) ticker.replaceWith(socials);
-    else rainbow.after(socials);
+    else masthead.after(socials);
     document.dispatchEvent(new Event('navigator-ready'));
   }
 
@@ -100,6 +106,7 @@
       const template = await loadTemplate();
       document.body.classList.add('navigator-embedded');
       decoratePage(template);
+      setupEffectVisibility();
       return;
     }
     if (!document.querySelector('.window')) {
@@ -124,6 +131,7 @@
     }
     setupBrowser();
     addStars(document.querySelector('.masthead'));
+    setupEffectVisibility();
   }
 
   function setupBrowser() {
@@ -183,10 +191,12 @@
       syncNavigation(contentDocument());
       if (!document.body.classList.contains('navigator-site')) return;
       const paused = document.body.classList.contains('effects-paused');
+      const inactive = document.hidden;
       const classes = frame.hidden ? originalClasses : frame.contentDocument.body.className;
       document.body.className = classes.replace('navigator-embedded', 'navigator-site');
       document.body.classList.add('navigator-site');
       document.body.classList.toggle('effects-paused', paused);
+      document.body.classList.toggle('effects-inactive', inactive);
       document.title = frame.hidden ? originalTitle : frame.contentDocument.title;
     }
     function syncNavigation(doc) {
