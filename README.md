@@ -14,7 +14,8 @@ Static HTML, CSS, and vanilla client-side JavaScript. **No build step and no dep
 | --- | --- |
 | `index.html` | Home page: current maintenance status and contact |
 | `pricing.html` | Web Design information (coming soon); retains the old URL for existing links |
-| `software.html` | Open-source Linux projects and scripts |
+| `software.html` | Software directory with Android and Linux categories |
+| `android.html`, `linux.html` | Platform-specific software project pages |
 | `search.html` | Searches published pages; excludes unlisted hardware |
 | `dedicatedservers.html` | Game servers (placeholder) |
 | `xrayarchives.html` | X-Ray Archives (placeholder) |
@@ -115,10 +116,10 @@ screen readers and as tooltips; desktop labels and sizing stay unchanged.
 All active pages link to Home, Web Design, Software, Game With Us, X-Ray
 Archives, and Search. Archive-specific index/category links remain alongside
 these public destinations. The previous service listings, prices, and offer
-metadata have been retired; Web Design and Software are information-only
-placeholders for now.
-Web Design, Software, X-Ray Archives, and Game With Us share the same SOON
-flag in every active navbar.
+metadata have been retired; Web Design remains an information-only placeholder.
+Software links to the Android and Linux project categories.
+Web Design, X-Ray Archives, and Game With Us carry SOON flags, while Software
+carries a NEW flag in every active navbar.
 `scripts/check.py` checks these public navbar destinations and labels on every
 active page, their SOON flags, and rejects retired offer catalogs.
 The gray social strip sits directly against the masthead, overriding the
