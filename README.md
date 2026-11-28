@@ -91,7 +91,9 @@ Page visibility pauses decorative animations in hidden tabs; intersection
 observers pause stars and the globe while off-screen.
 Effects resume when visible, without overriding Digital Effects or reduced motion.
 The masthead reproduces the preview's welcome line, AlienCultist heading, and
-location/founding tagline exactly. Existing navigation moves into the browser's
+location/founding tagline exactly. "HOME OF" sits below the welcome line;
+on mobile, the welcome text and tagline scale to fit without wrapping.
+Existing navigation moves into the browser's
 directory-button row below Location. Contextual archive
 links follow the active embedded page and restore correctly with browser history.
 The old navigation strip below the masthead now holds Facebook, Threads, Instagram,
