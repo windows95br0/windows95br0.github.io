@@ -163,6 +163,80 @@
     const contentRoot = () => frame.hidden ? homePage : frame.contentDocument.body;
     function pressed(action, value) { buttons(action).forEach(button => button.setAttribute('aria-pressed', String(value))); }
     function closeMenus() { menus.forEach(menu => { menu.open = false; }); }
+    function updateWindowControls() {
+      const minimized = browserWindow.classList.contains('is-minimized');
+      const maximized = browserWindow.classList.contains('is-maximized');
+      const maximize = browserWindow.querySelector('[data-action="maximize"]');
+      maximize.setAttribute('aria-label', maximized && !minimized ? 'Restore window size' : 'Maximize window');
+      maximize.title = maximized && !minimized ? 'Restore' : 'Maximize';
+      maximize.setAttribute('aria-pressed', String(maximized && !minimized));
+    }
+    async function leaveFullscreen() {
+      if (!document.fullscreenElement) return true;
+      try {
+        await document.exitFullscreen();
+        return true;
+      } catch (error) {
+        message('Window Control Unavailable', error.message);
+        return false;
+      }
+    }
+    async function minimizeWindow() {
+      if (!await leaveFullscreen()) return;
+      browserWindow.classList.add('is-minimized');
+      updateWindowControls();
+    }
+    function restoreMinimizedWindow() {
+      browserWindow.classList.remove('is-minimized');
+      updateWindowControls();
+      browserWindow.querySelector('[data-action="minimize"]').focus();
+    }
+    async function maximizeWindow() {
+      if (!await leaveFullscreen()) return;
+      if (browserWindow.classList.contains('is-minimized')) {
+        browserWindow.classList.remove('is-minimized');
+        browserWindow.classList.add('is-maximized');
+      } else {
+        browserWindow.classList.toggle('is-maximized');
+      }
+      updateWindowControls();
+    }
+    function reboot() {
+      if (pending) stop();
+      const screen = document.createElement('div');
+      screen.className = 'panic-screen';
+      screen.setAttribute('role', 'alert');
+      screen.tabIndex = -1;
+      const content = document.createElement('div');
+      content.className = 'panic-screen-content';
+      const heading = document.createElement('p');
+      heading.textContent = 'SIMULATED KERNEL PANIC';
+      const detail = document.createElement('p');
+      detail.textContent = 'Net Navigator has encountered a cosmic malfunction.';
+      const progress = document.createElement('p');
+      progress.textContent = 'System halted. Preparing reboot...';
+      content.append(heading, detail, progress);
+      screen.append(content);
+      browserWindow.inert = true;
+      browserWindow.classList.add('is-crashing');
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const delay = reduced || document.body.classList.contains('effects-paused') ? 0 : 600;
+      window.setTimeout(() => {
+        document.body.append(screen);
+        screen.focus();
+      }, delay);
+      window.setTimeout(() => { progress.textContent = 'Rebooting Net Navigator...'; }, 1900);
+      window.setTimeout(() => {
+        const target = new URL(pages[pageIndex]);
+        const current = new URL(window.location.href);
+        if (target.origin === current.origin && target.pathname === current.pathname && target.search === current.search) {
+          window.location.hash = target.hash;
+          window.location.reload();
+        } else {
+          window.location.assign(target.href);
+        }
+      }, 3200);
+    }
     function message(title, text) {
       document.querySelector('#dialog-title').textContent = title;
       document.querySelector('#dialog-message').textContent = text;
@@ -386,6 +460,11 @@
     }));
     window.addEventListener('resize', () => menus.filter(menu => menu.open).forEach(positionMenu));
     document.addEventListener('click', event => { if (!menuBar.contains(event.target)) closeMenus(); });
+    browserWindow.querySelector('.title-bar').addEventListener('dblclick', event => {
+      if (event.target.closest('button')) return;
+      if (browserWindow.classList.contains('is-minimized')) restoreMinimizedWindow();
+      else maximizeWindow();
+    });
     menuBar.addEventListener('keydown', event => {
       const menu = event.target.closest('details');
       if (!menu) return;
@@ -414,6 +493,10 @@
         item.setAttribute('aria-pressed', String(!bar.hidden));
       }
       switch (item.dataset.action) {
+        case 'minimize': await minimizeWindow(); break;
+        case 'restore-minimized': restoreMinimizedWindow(); break;
+        case 'maximize': await maximizeWindow(); break;
+        case 'exit': if (await leaveFullscreen()) reboot(); break;
         case 'back': navigate(pages[pageIndex - 1], pageIndex - 1); break;
         case 'forward': navigate(pages[pageIndex + 1], pageIndex + 1); break;
         case 'home':

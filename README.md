@@ -100,6 +100,8 @@ The old navigation strip below the masthead now holds Facebook, Threads, Instagr
 Discord, YouTube, Steam, and GitHub shaded retro icon links, opened in new tabs. Icons have accessible names
 and hover tooltips in desktop and mobile views. The shared preview supplies
 these social destinations and inline icons. What's Cool and People are no longer advertised.
+The strip's blinking "JOIN THE CULT TODAY!" label and stationary arrows frame the icons;
+the arrows light up toward the icons. Both respect Digital Effects and reduced motion.
 Social icons share the globe's beveled frame, circular shading, highlight,
 shadow, and responsive sizing, using smooth logo shapes instead of pixel edges.
 Each platform has its own gradient and matching frame, orb outline, and keyboard
@@ -129,6 +131,10 @@ legacy social-section spacing. It covers the viewport's inset side edges to join
 without seams, including inside embedded pages.
 The fake window title remains
 `AlienCultist - Net Navigator`; the real document title follows the active page.
+The title-bar controls minimize to a desktop-style title bar, maximize within
+the viewport, or display a simulated kernel panic before reloading the active
+page. Click the minimized title to restore it; double-clicking the full title
+bar maximizes or restores its size.
 Area 42 is intentionally omitted from the main navigation and browser menus;
 keep its entry point discreet in the footer.
 

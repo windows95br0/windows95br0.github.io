@@ -96,21 +96,39 @@
       font: bold 13px/1.2 Arial, sans-serif;
     }
     .window-controls { display: flex; gap: 2px; flex-shrink: 0; }
-    .window-controls span {
+    .window-controls button {
       display: grid;
       width: 18px;
       height: 17px;
       place-items: center;
+      padding: 0;
       border: 2px solid;
       border-color: #fff #424242 #424242 #fff;
       background: #c0c0c0;
       color: #111;
       font: bold 11px/1 Arial, sans-serif;
+      cursor: pointer;
     }
-    .window-controls span:hover {
+    .window-controls button:hover {
       background: #dedede;
       box-shadow: inset 0 0 0 1px #fff;
     }
+    .window-controls button:focus-visible { outline: 2px dotted #fff; outline-offset: 1px; }
+    .window.is-maximized { position: fixed; inset: 0; z-index: 40; width: 100%; max-width: none; height: 100dvh; overflow: auto; margin: 0; box-shadow: none; }
+    .window.is-minimized { position: fixed; inset: auto auto 0 12px; z-index: 40; width: min(280px, calc(100% - 24px)); height: auto; overflow: visible; }
+    .window.is-minimized > :not(.title-bar) { display: none !important; }
+    .restore-minimized { display: none; }
+    .window.is-minimized .window-title { display: none; }
+    .window.is-minimized .restore-minimized { display: block; min-width: 0; overflow: hidden; padding: 0; border: 0; background: transparent; color: inherit; font: inherit; text-align: left; text-overflow: ellipsis; white-space: nowrap; cursor: pointer; }
+    .restore-minimized:focus-visible { outline: 2px dotted #fff; outline-offset: 2px; }
+    .window.is-crashing { animation: window-malfunction 600ms ease-in-out; }
+    @keyframes window-malfunction { 25% { transform: translateX(-6px); filter: hue-rotate(60deg); } 75% { transform: translateX(6px); filter: hue-rotate(-60deg); } }
+    body:has(> .window.is-minimized) > .skip-link { display: none; }
+    .panic-screen { position: fixed; inset: 0; z-index: 1000; display: grid; place-content: center; padding: 24px; background: #06112a; color: #fff; font: bold clamp(14px, 2vw, 20px)/1.6 "Courier New", monospace; }
+    .panic-screen p { margin: 0 0 1em; }
+    .panic-screen-content { animation: panic-jitter 1s steps(2, end) infinite; }
+    @keyframes panic-jitter { 50% { transform: translateX(3px); } }
+    body.effects-paused :is(.panic-screen-content, .window.is-crashing) { animation: none; }
     .toolbar {
       display: flex;
       flex-wrap: wrap;
@@ -382,6 +400,21 @@
       font: 11px Arial, sans-serif;
       text-align: center;
     }
+    .social-label { flex-basis: 100%; font: bold 13px Arial, sans-serif; animation: social-blink 2s steps(1, end) infinite; }
+    .social-arrow { align-self: center; color: #17639a; font: bold 20px/1 "Courier New", monospace; }
+    .social-arrow span { animation: social-light 1.2s infinite; }
+    .social-arrow-left span:nth-child(2), .social-arrow-right span:nth-child(3) { animation-delay: .3s; }
+    .social-arrow-left span:nth-child(3), .social-arrow-right span:nth-child(2) { animation-delay: .6s; }
+    .social-arrow-left span:nth-child(4), .social-arrow-right span:nth-child(1) { animation-delay: .9s; }
+    @keyframes social-light {
+      0%, 19% { color: #80ffff; text-shadow: 0 0 4px #007bcd; }
+      20%, 100% { color: #17639a; text-shadow: none; }
+    }
+    @keyframes social-blink { 50% { opacity: 0; } }
+    body.effects-paused .social-arrow span { animation: none; color: #80ffff; text-shadow: 0 0 4px #007bcd; }
+    body.effects-paused .social-label { animation: none; }
+    body.effects-inactive .social-arrow span { animation-play-state: paused; }
+    body.effects-inactive .social-label { animation-play-state: paused; }
     .layout {
       display: grid;
       grid-template-columns: minmax(0, 1fr) 240px;
@@ -494,6 +527,7 @@
       .navigator-icon { font-size: 18px; }
       .navigator-badge, .social-links a { width: 28px; height: 28px; }
       .retro-globe, .social-orb { width: 22px; height: 22px; }
+      .social-arrow { font-size: 13px; }
     }
     @media (max-width: 650px) {
       .directory-bar small { font-size: 7px; }
@@ -509,8 +543,13 @@
     @media (max-width: 400px) {
       .sidebar { grid-template-columns: minmax(0, 1fr); }
       .masthead { padding-inline: 12px; }
+      .social-links { gap: 1px; padding-inline: 2px; }
+      .social-arrow { padding-inline: 2px; font-size: 8px; }
     }
     @media (prefers-reduced-motion: reduce) {
+      :is(.panic-screen-content, .window.is-crashing) { animation: none; }
+      .social-arrow span { animation: none; color: #80ffff; text-shadow: 0 0 4px #007bcd; }
+      .social-label { animation: none; }
       html { scroll-behavior: auto; }
       body::before, body::after { animation: none; }
       .globe-map { animation: none; }
@@ -523,8 +562,13 @@
   <p class="preview-note">RETRO DESIGN PREVIEW &mdash; <a href="index.html">back to the current site</a></p>
   <div class="window">
     <div class="title-bar">
-      <span>AlienCultist - Net Navigator</span>
-      <div class="window-controls" aria-hidden="true"><span>_</span><span>□</span><span>×</span></div>
+      <span class="window-title">AlienCultist - Net Navigator</span>
+      <button type="button" class="restore-minimized" data-action="restore-minimized" aria-label="Restore window" title="Restore window">AlienCultist - Net Navigator</button>
+      <div class="window-controls">
+        <button type="button" data-action="minimize" aria-label="Minimize window" title="Minimize">_</button>
+        <button type="button" data-action="maximize" aria-label="Maximize window" title="Maximize" aria-pressed="false">□</button>
+        <button type="button" data-action="exit" aria-label="Exit window" title="Exit">×</button>
+      </div>
     </div>
     <nav class="menu-bar" aria-label="Browser menus">
       <details class="browser-menu" name="browser-menu">
@@ -689,6 +733,8 @@
         <p class="tagline">Galt, California &bull; Est. 2023 by Windows95br0</p>
       </header>
       <nav class="status-strip social-links" aria-label="Social media">
+        <span class="social-label">JOIN THE CULT TODAY!</span>
+        <span class="social-arrow social-arrow-left" aria-hidden="true"><span>&gt;</span><span>&gt;</span><span>&gt;</span><span>&gt;</span></span>
         <a class="social-facebook" href="https://www.facebook.com/profile.php?id=100092184115147" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook">
           <span class="social-orb" aria-hidden="true"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="12" fill="#3b5998"/><path d="M13 22v-9h3l.5-3.5H13V7.5c0-1.2.4-2 2-2h2V2.3c-.6-.1-1.8-.3-3-.3-3 0-5 1.8-5 5v2.5H6V13h3v9Z" fill="#fff"/></svg></span>
         </a>
@@ -710,6 +756,7 @@
         <a class="social-github" href="https://github.com/windows95br0" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
           <span class="social-orb" aria-hidden="true"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="12" fill="#24292e"/><path d="M6 7 5 3l5 2h4l5-2-1 4c3 5 1 9-4 10 1 1 1 3 1 5H9c0-2 0-4 1-5-5-1-7-5-4-10Z" fill="#fff"/><path d="M3 15c1 3 3 4 6 3" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/><ellipse cx="8.5" cy="11" rx="1.1" ry="1.5" fill="#24292e"/><ellipse cx="15.5" cy="11" rx="1.1" ry="1.5" fill="#24292e"/></svg></span>
         </a>
+        <span class="social-arrow social-arrow-right" aria-hidden="true"><span>&lt;</span><span>&lt;</span><span>&lt;</span><span>&lt;</span></span>
       </nav>
       <main class="layout" id="main-content">
         <section class="content" aria-labelledby="maintenance-title">
