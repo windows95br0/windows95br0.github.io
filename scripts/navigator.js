@@ -210,7 +210,7 @@
       const content = document.createElement('div');
       content.className = 'panic-screen-content';
       const heading = document.createElement('p');
-      heading.textContent = 'SIMULATED KERNEL PANIC';
+      heading.textContent = 'KERNEL PANIC';
       const detail = document.createElement('p');
       detail.textContent = 'Net Navigator has encountered a cosmic malfunction.';
       const progress = document.createElement('p');
